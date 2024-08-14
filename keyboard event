@@ -1,0 +1,53 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - A Pen by lukeplays33</title>
+
+    <link rel="canonical" href="https://codepen.io/lukeplays33/pen/JjQOmMb">
+  
+  
+  
+  
+
+  
+  
+  
+</head>
+
+<body>
+  <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
+  
+      <script id="rendered-js">
+window.onkeydown = function (e) {
+  ThunkableWebviewerExtension.postMessage(JSON.stringify({
+    type:'down',
+    key:e.code,
+    code:e.keyCode
+  }));
+}
+
+window.onkeyup = function (e) {
+  ThunkableWebviewerExtension.postMessage(JSON.stringify({
+    type:'up',
+    key:e.code,
+    code:e.keyCode
+  }));
+}
+
+window.onkeypress = function (e) {
+  ThunkableWebviewerExtension.postMessage(JSON.stringify({
+    type:'press',
+    key:e.code,
+    code:e.keyCode
+  }));
+}
+    </script>
+
+  
+
+
+
+</body></html>
