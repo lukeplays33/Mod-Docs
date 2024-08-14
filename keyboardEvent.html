@@ -35,7 +35,8 @@ window.onkeydown = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'down',
     key:e.code,
-    code:e.keyCode
+    code:e.keyCode,
+    heldDown: e.repeat
   }));
 }
 
@@ -43,7 +44,8 @@ window.onkeyup = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'up',
     key:e.code,
-    code:e.keyCode
+    code:e.keyCode,
+    heldDown: e.repeat
   }));
 }
 
@@ -51,7 +53,8 @@ window.onkeypress = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'press',
     key:e.code,
-    code:e.keyCode
+    code:e.keyCode,
+    heldDown: e.repeat
   }));
 }
     </script>
