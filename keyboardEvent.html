@@ -32,6 +32,7 @@
   
       <script id="rendered-js">
 window.onkeydown = function (e) {
+  console.log(e.repeat);
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'down',
     key:e.code,
