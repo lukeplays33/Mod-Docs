@@ -34,9 +34,9 @@
 window.onwheel = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'wheel',
-    daltaX: e.daltaX,
-    daltaY: e.daltaY,
-    daltaZ: e.daltaZ,
+    deltaX: e.deltaX,
+    deltaY: e.deltaY,
+    deltaZ: e.deltaZ,
   }));
 }
 
