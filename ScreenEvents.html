@@ -34,6 +34,10 @@
 window.onwheel = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify(e));
 }
+
+        window.onmousemove = function (e) {
+  ThunkableWebviewerExtension.postMessage(JSON.stringify(e));
+}
     </script>
 
   
