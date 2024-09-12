@@ -34,7 +34,7 @@
       <script id="rendered-js">
 ThunkableWebviewerExtension.receiveMessage(function(message) {
   let action = JSON.parse(messgae);
-  if(action[0] == 'copy') {
+  if(action.type == 'copy') {
      navigator.clipboard.writeText(action[1]);
   } else {
     
