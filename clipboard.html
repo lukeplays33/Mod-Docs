@@ -1,0 +1,56 @@
+
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - A Pen by lukeplays33</title>
+
+    <link rel="canonical" href="https://codepen.io/lukeplays33/pen/JjQOmMb">
+  
+  
+  
+  
+
+  
+  
+  
+</head>
+  <style>
+    body,html {
+      margin:0px;
+
+      width:100%;
+      height:100%;
+
+      background-color:TRANSPARENT;
+    }
+</style>
+
+<body>
+  <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
+  
+      <script id="rendered-js">
+ThunkableWebviewerExtension.receiveMessage(function(message) {
+  let action = JSON.parse(messgae);
+  if(action[0] == 'copy') {
+     navigator.clipboard.writeText(action[1]);
+  } else {
+    
+    navigator.clipboard.readText()
+  .then(text => {
+    ThunkableWebviewerExtension.postMessage(text);
+  })
+  .catch(err => {
+    console.error('Failed to read clipboard contents: ', err);
+  });
+  }
+});
+    </script>
+
+  
+
+
+
+</body></html>
