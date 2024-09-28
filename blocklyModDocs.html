@@ -28,7 +28,7 @@ body, html {
   
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/prettify.css"><style>.blocklyDraggable {}
 .blocklySvg {
-background-color: #fff;
+background-color: TRANSPARENT;
 outline: none;
 overflow: hidden;
 display: block;
@@ -805,15 +805,23 @@ padding: 0;
 <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
       <script id="rendered-js">
 
-  Blockly.javascript.javascriptGenerator.forBlock['themeswapped'] = function(block, generator) {
-  var dropdown_v = block.getFieldValue('v');
-  var dropdown_name = block.getFieldValue('NAME');
-  var value_s = generator.valueToCode(block, 's', javascript.Order.ATOMIC);
-  var value_v = generator.valueToCode(block, 'v', javascript.Order.ATOMIC);
-  var statements_st = generator.statementToCode(block, 'st');
-  // TODO: Assemble javascript into code variable.
-  var code = '...\n';
-  return code;
+Blockly.Blocks['themeswapped'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("when")
+        .appendField(new Blockly.FieldDropdown([["Theme_Swapper","OPTIONNAME"]]), "v")
+        .appendField(new Blockly.FieldDropdown([["themeSwapped","OPTIONNAME"]]), "NAME");
+    this.appendValueInput("s")
+        .setCheck(null);
+    this.appendValueInput("v")
+        .setCheck(null);
+    this.appendStatementInput("st")
+        .setCheck(null)
+        .appendField("do");
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
 };
 
 var workspace = Blockly.inject('blocklyDiv', {
