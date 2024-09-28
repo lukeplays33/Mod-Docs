@@ -800,6 +800,18 @@ padding: 0;
 
 <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
       <script id="rendered-js">
+
+  javascript.javascriptGenerator.forBlock['themeswapped'] = function(block, generator) {
+  var dropdown_v = block.getFieldValue('v');
+  var dropdown_name = block.getFieldValue('NAME');
+  var value_s = generator.valueToCode(block, 's', javascript.Order.ATOMIC);
+  var value_v = generator.valueToCode(block, 'v', javascript.Order.ATOMIC);
+  var statements_st = generator.statementToCode(block, 'st');
+  // TODO: Assemble javascript into code variable.
+  var code = '...\n';
+  return code;
+};
+
 var workspace = Blockly.inject('blocklyDiv', {
   toolbox: document.getElementById('toolbox'),
   trashcan: false,
