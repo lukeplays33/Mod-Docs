@@ -535,7 +535,7 @@ function loadBlocks(file) {
 }
 
 ThunkableWebviewerExtension.receiveMessage(function(message) {
-  Blockly.Xml.domToWorkspace(document.querySelector(message), workspace);
+  Blockly.Xml.domToWorkspace(document.getElementById(message), workspace);
 });
     </script><div class="blocklyWidgetDiv"></div><div class="blocklyTooltipDiv"></div>
 
