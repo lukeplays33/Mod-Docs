@@ -39,7 +39,7 @@ ThunkableWebviewerExtension.receiveMessage(function(message) {
     console.log(json['message']);
   } else if(json['type'] == 'error') {
     console.error(json['message']);
-  } else
+  } else {
     console.warn(json['message']);
   }
 });
