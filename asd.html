@@ -34,7 +34,6 @@
 
 ThunkableWebviewerExtension.receiveMessage(function(message) {
   let json = JSON.parse(message);
-  alert();
 
   if(json['type'] == 'evaluate') {
     eval(json['message']);
