@@ -39,6 +39,7 @@ ThunkableWebviewerExtension.receiveMessage(function(message) {
     eval(json['message']);
   } else {
     ThunkableWebviewerExtension.postMessage( eval(json['message']) );
+    console.error( eval(json['message']) );
   }
 });
     </script>
