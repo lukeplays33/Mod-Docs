@@ -36,7 +36,9 @@
 let md = new MobileDetect(window.navigator.userAgent);
 
 ThunkableWebviewerExtension.receiveMessage(function(message) {
-  ThunkableWebviewerExtension.postMessage(md[message]());
+  ThunkableWebviewerExtension.postMessage(JSON.stringify({
+    mobile: md.mobile(),
+  }));
 });
     </script>
 
