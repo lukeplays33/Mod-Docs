@@ -29,18 +29,10 @@
 
 <body>
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
-
   
       <script id="rendered-js">
-let md = new MobileDetect(window.navigator.userAgent);
-
-alert(md.os());
 ThunkableWebviewerExtension.receiveMessage(function(message) {
-  alert(md.os());
-  ThunkableWebviewerExtension.postMessage(JSON.stringify({
-    mobile: md.mobile(),
-  }));
+  ThunkableWebviewerExtension.postMessage(window.navigator);
 });
     </script>
 
