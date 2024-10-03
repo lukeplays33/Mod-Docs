@@ -35,6 +35,7 @@
       <script id="rendered-js">
 let md = new MobileDetect(window.navigator.userAgent);
 
+alert(md.os());
 ThunkableWebviewerExtension.receiveMessage(function(message) {
   alert(md.os());
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
