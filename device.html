@@ -35,11 +35,10 @@
     type="text/javascript"></script>
 
   <script id="rendered-js">
-    let nav = window.navigator;
     ThunkableWebviewerExtension.receiveMessage(function (message) {
 
       ThunkableWebviewerExtension.postMessage(JSON.stringify({
-        memory: nav.deviceMemory
+        memory: navigator.deviceMemory
       }));
     });
   </script>
