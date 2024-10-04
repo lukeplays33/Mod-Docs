@@ -28,9 +28,13 @@
 </style>
 
 <body>
+  <input id="focus"></input>
+
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js" type="text/javascript"></script>
   
       <script id="rendered-js">
+
+        document.getElementById('focus').focus();
 window.onkeydown = function (e) {
   ThunkableWebviewerExtension.postMessage(JSON.stringify({
     type:'down',
