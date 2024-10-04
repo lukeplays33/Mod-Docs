@@ -19,6 +19,7 @@
 
 </head>
 <style>
+<style>
   body,
   html {
     margin: 0px;
@@ -28,13 +29,39 @@
 
     background-color: TRANSPARENT;
   }
+
+  #focus {
+    height:0px;
+    width:0px;
+    border-width:0px;
+    border-color:TRANSPARENT;
+
+    background-color:TRANSPARENT;
+    outline:none;
+  }
+
+  #focus:focus {
+    border-width:0px;
+    border-color:TRANSPARENT;
+
+    background-color:TRANSPARENT;
+
+    outline:none;
+  }
 </style>
 
 <body>
+  <input id="focus"></input>
+
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"
     type="text/javascript"></script>
 
   <script id="rendered-js">
+
+    ThunkableWebviewerExtension.receiveMessage(function (message) {
+      document.getElementById('focus').focus();
+    });
+    
     window.onwheel = function (e) {
       ThunkableWebviewerExtension.postMessage(JSON.stringify({
         type: 'wheel',
