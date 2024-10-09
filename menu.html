@@ -139,6 +139,9 @@
       i.addEventListener('click', function () {
         if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
+          document.getElementById('bottom_nav').style.display = 'none';
+        } else if(this.innerHTML == 'Home') {
+          document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
         } else {
           document.getElementById('docs').style.display = 'flex';
