@@ -111,14 +111,14 @@
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
-        if(ignore.contains(this.innerHTML)) {
+        if(ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
         } else {
           document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
         }
-        
+
         ThunkableWebviewerExtension.postMessage(this.innerHTML);
       });
     }
