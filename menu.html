@@ -51,8 +51,6 @@
       right: 0;
 
       max-width: 90%;
-
-      height:80px;
     }
 
     #docs {
@@ -113,9 +111,9 @@
       i.addEventListener('click', function () {
         if(this.innerHTML == 'Home') {
           document.getElementById('docs').style.display = 'none';
-          document.getElementById('bottom_nav').style.display = 'block';
+          document.getElementById('bottom_nav').style.display = 'flex';
         } else {
-          document.getElementById('docs').style.display = 'block';
+          document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
         }
         ThunkableWebviewerExtension.postMessage(this.innerHTML);
