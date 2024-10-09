@@ -38,7 +38,7 @@
       width: 100%;
     }
 
-    #bottom_nav {
+    #bottom_nav, #docs {
       position: absolute;
       display: flex;
       flex-direction: row;
@@ -51,6 +51,11 @@
       right: 0;
 
       max-width: 90%;
+    }
+
+    #docs {
+      z-index:20;
+      display:none;
     }
 
     .tabBarHolder .tabBarHolder * {
@@ -90,6 +95,13 @@
     <a index="1" href="n">New</a>
     <a index="2" href="a">All</a>
   </tab-bar>
+
+  <tab-bar id="docs" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+    <a index="0" href="" class="current">Demo</a>
+    <a index="1" href="n">Docs</a>
+    <a index="2" href="a">Info</a>
+  </tab-bar>
+
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
   <script id="rendered-js" type="module">
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
@@ -101,6 +113,11 @@
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
+        if(this.innerHTML == 'Home') {
+          document.getElementById('docs').style.display = 'none';
+        } else {
+          document.getElementById('docs').style.display = 'block';
+        }
         ThunkableWebviewerExtension.postMessage(this.innerHTML);
       });
     }
