@@ -26,7 +26,8 @@
       --primaryContainer: #e5eefa;
       --primaryContainerTextColor: black;
 
-      --header: #ffffff
+      --header: #ffffff;
+      --headerColor:black;
     }
 
     body,
@@ -58,6 +59,7 @@
 
     .header {
       background-color: var(--header) !important;
+      color:var(--headerColor) !important;
     }
   </style>
 
@@ -111,6 +113,7 @@
       document.documentElement.style.setProperty('--primaryContainerTextColor', '#ffffff');
 
       document.documentElement.style.setProperty('--header', '#465463');
+      document.documentElement.style.setProperty('--headerColor', '#ffffff');
     });
   </script>
 
