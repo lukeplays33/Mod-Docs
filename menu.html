@@ -27,7 +27,7 @@
       --primaryContainerTextColor: black;
 
       --header: #ffffff;
-      --headerColor:black;
+      --headerColor: black;
     }
 
     body,
@@ -38,7 +38,8 @@
       width: 100%;
     }
 
-    #bottom_nav, #docs {
+    #bottom_nav,
+    #docs {
       position: absolute;
       display: flex;
       flex-direction: row;
@@ -54,31 +55,31 @@
     }
 
     #docs {
-      z-index:20;
-      display:none;
+      z-index: 20;
+      display: none;
     }
 
     .header {
       background-color: var(--header) !important;
-      color:var(--headerColor) !important;
+      color: var(--headerColor) !important;
     }
 
     #toggleMenu {
-      width:40px;
-      height:39px;
+      width: 40px;
+      height: 39px;
 
-      line-height:40px;
+      line-height: 40px;
 
-      background-color:var(--primary);
-      color:var(--primaryTextColor);
+      background-color: var(--primary);
+      color: var(--primaryTextColor);
 
-      position:fixed;
-      top:8px;
-      left:186px;
+      position: fixed;
+      top: 8px;
+      left: 186px;
     }
 
     .closed {
-      left:8px;
+      left: 8px !important;
     }
   </style>
 
@@ -88,7 +89,8 @@
 </head>
 
 <body style="background-image: initial;">
-  <i class="material-icons" id="toggleMenu">menu</i>
+  <i class="material-icons" id="toggleMenu">close</i>
+
   <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
     style="grid-template-columns: repeat(4, 1fr);">
     <a id="modules" class="header" href="">Home</a>
@@ -118,7 +120,8 @@
   </tab-bar>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
-  <script type="text/javascript" src="https://raw.githubusercontent.com/PoeHaH/devicedetector/master/devicedetector-min.js"></script>/>
+  <script type="text/javascript"
+    src="https://raw.githubusercontent.com/PoeHaH/devicedetector/master/devicedetector-min.js"></script>/>
   <script id="rendered-js" type="module">
 
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
@@ -132,7 +135,7 @@
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
-        if(ignore.includes(this.innerHTML)) {
+        if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
         } else {
@@ -161,7 +164,7 @@
     let drawer = document.getElementById('draawer');
 
     menu.addEventListener('click', function () {
-      if(menu.classList.contains('closed')) {
+      if (menu.classList.contains('closed')) {
         menu.classList.remove('closed');
         menu.innerHTML = 'close';
 
@@ -173,6 +176,10 @@
         drawer.style.display = 'none';
       }
     });
+
+    if (deviceDetector.device == 'phone') {
+      menu.click();
+    }
   </script>
 
 
