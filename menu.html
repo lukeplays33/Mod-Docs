@@ -76,6 +76,10 @@
       top:8px;
       left:186px;
     }
+
+    .closed {
+      left:8px;
+    }
   </style>
 
 
@@ -114,7 +118,9 @@
   </tab-bar>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
+  <script type="text/javascript" src="https://raw.githubusercontent.com/PoeHaH/devicedetector/master/devicedetector-min.js"></script>/>
   <script id="rendered-js" type="module">
+
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
     let pichai = new PichaiUX();
@@ -150,6 +156,23 @@
     });
 
     document.getElementById('HomeButton').click();
+
+    let menu = document.getElementById('toggleMenu');
+    let drawer = document.getElementById('draawer');
+
+    menu.addEventListener('click', function () {
+      if(menu.classList.includes('closed')) {
+        menu.classList.remove('closed');
+        menu.innerHTML = 'close';
+
+        drawer.style.display = 'flex';
+      } else {
+        menu.classList.add('closed');
+        menu.innerHTML = 'menu';
+
+        drawer.style.display = 'none';
+      }
+    });
   </script>
 
 
