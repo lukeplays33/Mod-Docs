@@ -27,7 +27,7 @@
       --primaryContainerTextColor: black;
 
       --header: #ffffff;
-      --headerColor:black;
+      --headerColor: black;
     }
 
     body,
@@ -38,7 +38,8 @@
       width: 100%;
     }
 
-    #bottom_nav, #docs {
+    #bottom_nav,
+    #docs {
       position: absolute;
       display: flex;
       flex-direction: row;
@@ -54,13 +55,13 @@
     }
 
     #docs {
-      z-index:20;
-      display:none;
+      z-index: 20;
+      display: none;
     }
 
     .header {
       background-color: var(--header) !important;
-      color:var(--headerColor) !important;
+      color: var(--headerColor) !important;
     }
   </style>
 
@@ -72,8 +73,8 @@
 <body style="background-image: initial;">
   <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
     style="grid-template-columns: repeat(4, 1fr);">
-    <a id="modules" class="header" href="">Home</a>
-    <a index="3" href="" id="HomeButton">Home</a>
+    <a id="modules" class="header" href=""><i class="material-icons">home</i> Home</a>
+    <a index="3" href="" id="HomeButton"><i class="material-icons">home</i> Home</a>
     <a index="3" href="">Settings</a>
     <a id="modules" class="header" href="">Modules</a>
 
@@ -111,7 +112,7 @@
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
-        if(ignore.includes(this.innerHTML)) {
+        if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
         } else {
