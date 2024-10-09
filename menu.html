@@ -141,7 +141,7 @@
     let pichai = new PichaiUX();
     pichai.initialize();
 
-    let ignore = ['Settings', 'Recent', 'New', 'All'];
+    let ignore = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
 
     let items = document.getElementsByTagName('A');
     let i;
@@ -150,12 +150,12 @@
         if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'none';
-        } else if(this.innerHTML == 'Home') {
-          document.getElementById('docs').style.display = 'none';
-          document.getElementById('bottom_nav').style.display = 'flex';
-        } else {
+        } else if(this.innerHTML !== 'Home') {
           document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
+        } else {
+          document.getElementById('docs').style.display = 'none';
+          document.getElementById('bottom_nav').style.display = 'flex';
         }
 
         ThunkableWebviewerExtension.postMessage(this.innerHTML);
