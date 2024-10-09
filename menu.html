@@ -1,113 +1,123 @@
-<html lang="en" style="background-image: none;"><head><link id="PichaiUXCss" rel="stylesheet" type="text/css" href="https://lukeplays33.github.io/Pichai-UX/CSS/main.css" media="all"><link id="google" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all">
+<html lang="en" style="background-image: none;">
+
+<head>
+  <link id="PichaiUXCss" rel="stylesheet" type="text/css" href="https://lukeplays33.github.io/Pichai-UX/CSS/main.css"
+    media="all">
+  <link id="google" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    media="all">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
+
+
+
 
   <title>CodePen - Pichai-UX Color explanation</title>
 
-    <link rel="canonical" href="https://codepen.io/lukeplays33/pen/rNgyNLd">
-  
-  
-  
-  
-<style>
-:root {
-      --primary: #C8DDF6; 
-     --primaryTextColor: black; 
+  <link rel="canonical" href="https://codepen.io/lukeplays33/pen/rNgyNLd">
 
-     --primaryContainer: #e5eefa; 
-     --primaryContainerTextColor: black; 
-  
-  --header:#ffffff
-}
 
-body, html {
-  background-color:TRANSPARENT;
 
-  height:100%;
-  width:100%;
-}
 
-#bottom_nav {
-  position:absolute;
-  display:flex;
-  flex-direction:row;
-  
-  margin-left:auto;
-  margin-right:auto;
-  
-  bottom:8px;
-  left:0;
-  right:0;
+  <style>
+    :root {
+      --primary: #C8DDF6;
+      --primaryTextColor: black;
 
-  max-width:90%;
-}
+      --primaryContainer: #e5eefa;
+      --primaryContainerTextColor: black;
 
-.tabBarHolder .tabBarHolder * {
-  width:300px !important;
-}
+      --header: #ffffff
+    }
 
-.header {
-  background-color:var(--header) !important;
-}
-</style>
+    body,
+    html {
+      background-color: TRANSPARENT;
 
-  
-  
-  
+      height: 100%;
+      width: 100%;
+    }
+
+    #bottom_nav {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      bottom: 8px;
+      left: 0;
+      right: 0;
+
+      max-width: 90%;
+    }
+
+    .tabBarHolder .tabBarHolder * {
+      width: 300px !important;
+    }
+
+    .header {
+      background-color: var(--header) !important;
+    }
+  </style>
+
+
+
+
 </head>
 
 <body style="background-image: initial;">
-  <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
-    <a id="modules" class="header" href="" >Home</a>
+  <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
+    style="grid-template-columns: repeat(4, 1fr);">
+    <a id="modules" class="header" href="">Home</a>
     <a index="3" href="" class="current">Home</a>
     <a index="3" href="">Settings</a>
     <a id="modules" class="header" href="">Modules</a>
-  
-      <a index="5" href="">Keyboard Events</a>
-  
-      <a id="extension" class="header" href="">Extensions</a>
-  
-      <a id="tutorials" class="header" href="">Tutorials</a>
-</tab-bar>
 
-<view-pager id="items" pageindex="NaN"></view-pager>
+    <a index="5" href="">Keyboard Events</a>
 
-<tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
-  <a index="0" href="" class="current">Recent</a>
-  <a index="1" href="n">New</a>
-  <a index="2" href="a">All</a>
-</tab-bar>
+    <a id="extension" class="header" href="">Extensions</a>
+
+    <a id="tutorials" class="header" href="">Tutorials</a>
+  </tab-bar>
+
+  <view-pager id="items" pageindex="NaN"></view-pager>
+
+  <tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+    <a index="0" href="" class="current">Recent</a>
+    <a index="1" href="n">New</a>
+    <a index="2" href="a">All</a>
+  </tab-bar>
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
-      <script id="rendered-js" type="module">
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+  <script id="rendered-js" type="module">
+    import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-let pichai = new PichaiUX();
-pichai.initialize();
+    let pichai = new PichaiUX();
+    pichai.initialize();
 
-        let items = document.getElementsByTagName('A');
-        let i;
-        for(i of items) {
-          i.addEventListener('click', function () {
-            ThunkableWebviewerExtension.postMessage(this.innerHTML);
-          });
-        }
-        
-ThunkableWebviewerExtension.receiveMessage(function(message) {
-  document.documentElement.style.setProperty('--primary', '#8C9BAC');
-    document.documentElement.style.setProperty('--primaryTextColor', '#ffffff');
-  
-    document.documentElement.style.setProperty('--primaryContainer', '#c7cfd7');
+    let items = document.getElementsByTagName('A');
+    let i;
+    for (i of items) {
+      i.addEventListener('click', function () {
+        ThunkableWebviewerExtension.postMessage(this.innerHTML);
+      });
+    }
+
+    ThunkableWebviewerExtension.receiveMessage(function (message) {
+      document.documentElement.style.setProperty('--primary', '#8C9BAC');
+      document.documentElement.style.setProperty('--primaryTextColor', '#ffffff');
+
+      document.documentElement.style.setProperty('--primaryContainer', '#c7cfd7');
       document.documentElement.style.setProperty('--primaryContainerTextColor', '#ffffff');
-  
-   document.documentElement.style.setProperty('--header', '#798ba0');
-});
-    </script>
 
-  
+      document.documentElement.style.setProperty('--header', '#8293a7');
+    });
+  </script>
 
 
 
-</body></html>
+
+
+</body>
+
+</html>
