@@ -105,11 +105,13 @@
     let pichai = new PichaiUX();
     pichai.initialize();
 
+    let ignore = ['Home', 'Settings', 'Recent', 'New', 'All', 'Docs', 'Demo', 'Info']
+
     let items = document.getElementsByTagName('A');
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
-        if(this.innerHTML == 'Home') {
+        if(ignore.contains(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
         } else {
