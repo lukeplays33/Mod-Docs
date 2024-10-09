@@ -111,6 +111,7 @@
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
+        alert(ignore.includes(this.innerHTML));
         if(ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
