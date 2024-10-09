@@ -77,16 +77,11 @@ import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 let pichai = new PichaiUX();
 pichai.initialize();
 
-function createItemsForDrawer (itemsArray) {
-  let i;
-  for(i of itemsArray){
-    let item = document.createElement('a');
-    item.href = '';
-    item.innerHTML = i;
-    
-    document.getElementById('draawer').appendChild(item);
-  }
-}
+document.getElementById('items').addEventListener('pageChange', (a) => {
+        let index = a.detail.pageIndex;
+ 
+  ThunkableWebviewerExtension.postMessage(index);
+    });
 
 ThunkableWebviewerExtension.receiveMessage(function(message) {
   document.documentElement.style.setProperty('--primary', '#8C9BAC');
@@ -95,7 +90,7 @@ ThunkableWebviewerExtension.receiveMessage(function(message) {
     document.documentElement.style.setProperty('--primaryContainer', '#c7cfd7');
       document.documentElement.style.setProperty('--primaryContainerTextColor', '#ffffff');
   
-   document.documentElement.style.setProperty('--header', '#000000');
+   document.documentElement.style.setProperty('--header', '#b0bac6');
 });
     </script>
 
