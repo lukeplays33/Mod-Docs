@@ -1,0 +1,104 @@
+<html lang="en" style="background-image: none;"><head><link id="PichaiUXCss" rel="stylesheet" type="text/css" href="https://lukeplays33.github.io/Pichai-UX/CSS/main.css" media="all"><link id="google" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all">
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - Pichai-UX Color explanation</title>
+
+    <link rel="canonical" href="https://codepen.io/lukeplays33/pen/rNgyNLd">
+  
+  
+  
+  
+<style>
+:root {
+      --primary: #C8DDF6; 
+     --primaryTextColor: black; 
+
+     --primaryContainer: #e5eefa; 
+     --primaryContainerTextColor: black; 
+  
+  --header:#ffffff
+}
+
+body, html {
+  background-color:TRANSPARENT;
+}
+
+#bottom_nav {
+  position:absolute;
+  display:flex;
+  flex-direction:row;
+  
+  margin-left:auto;
+  margin-right:auto;
+  
+  bottom:8px;
+  left:0;
+  right:0;
+}
+
+.header {
+  background-color:var(--header) !important;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body style="background-image: initial;">
+  <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+    <a id="modules" class="header" href="" index="0">Modules</a>
+  
+      <a index="keyboard" href="" class="current">Keyboard Events</a>
+  
+      <a id="extension" class="header" href="">Extensions</a>
+  
+      <a id="tutorials" class="header" href="">Tutorials</a>
+</tab-bar>
+
+<view-pager id="items" pageindex="NaN"></view-pager>
+
+<tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+  <a index="0" href="" class="current">Recent</a>
+  <a index="bew" href="n">New</a>
+  <a index="all" href="a">All</a>
+  <a index="settings" href="s">Settings</a>
+</tab-bar>
+  <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
+      <script id="rendered-js" type="module">
+import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+
+let pichai = new PichaiUX();
+pichai.initialize();
+
+function createItemsForDrawer (itemsArray) {
+  let i;
+  for(i of itemsArray){
+    let item = document.createElement('a');
+    item.href = '';
+    item.innerHTML = i;
+    
+    document.getElementById('draawer').appendChild(item);
+  }
+}
+
+ThunkableWebviewerExtension.receiveMessage(function(message) {
+  document.documentElement.style.setProperty('--primary', '#8C9BAC');
+    document.documentElement.style.setProperty('--primaryTextColor', '#ffffff');
+  
+    document.documentElement.style.setProperty('--primaryContainer', '#c7cfd7');
+      document.documentElement.style.setProperty('--primaryContainerTextColor', '#ffffff');
+  
+   document.documentElement.style.setProperty('--header', '#000000');
+});
+    </script>
+
+  
+
+
+
+</body></html>
