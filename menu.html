@@ -169,7 +169,7 @@
         if (hide.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'none';
-        } else if (ignore.includes(this.innerHTML)) {
+        } else if (!ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
         } else {
