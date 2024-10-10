@@ -1,0 +1,79 @@
+:root {
+    --header: #ffffff;
+    --headerColor: black;
+  }
+
+  body {
+    background-image: url('../Mod-Docs/assets/images/images/mountains.png');
+  }
+
+  body,
+  html {
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  #bottom_nav,
+  #docs {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    bottom: 8px;
+    left: 0;
+    right: 0;
+
+    max-width: 90%;
+  }
+
+  #docs {
+    z-index: 20;
+    display: none;
+  }
+
+  .header {
+    background-color: var(--header) !important;
+    color: var(--headerColor) !important;
+  }
+
+  #toggleMenu {
+    width: 40px;
+    height: 39px;
+
+    line-height: 40px;
+
+    background-color: var(--primary);
+    color: var(--primaryTextColor);
+
+    position: fixed;
+    top: 8px;
+    left: 320px;
+
+    border-radius: 200px;
+  }
+
+  .closed {
+    left: 8px !important;
+
+    border-radius: 10px !important;
+  }
+
+  #calculator {
+    width: calc(100% - 368px);
+    height: calc(100% - 50px);
+
+    margin-left: auto;
+
+    display: flex;
+  }
+
+  view-pager {
+    width: 0px;
+  }
