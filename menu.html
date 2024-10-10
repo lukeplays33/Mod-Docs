@@ -161,8 +161,8 @@
 
     let size = window.getComputedStyle(document.getElementById('calculator'));
     ThunkableWebviewerExtension.postMessage(JSON.stringify({
-      width:size.width,
-      height:size.height,
+      width:parseInt(size.width),
+      height:parseInt(size.height),
     }));
 
     let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
