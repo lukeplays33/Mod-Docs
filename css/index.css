@@ -107,7 +107,7 @@
   }
 
   .w100 section * {
-    width:calc(100% - 24px);
+    width:calc(100% - 16px);
   }
 
   h1 {
