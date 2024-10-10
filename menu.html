@@ -20,30 +20,25 @@
 
   <style>
     :root {
-      --primary: #C8DDF6;
-      --primaryTextColor: black;
-
-      --primaryContainer: #e5eefa;
-      --primaryContainerTextColor: black;
-
       --header: #ffffff;
       --headerColor: black;
     }
 
     body,
     html {
+      background-image: url('./assets/images/images/fullscreen\ image\ of\ the\ mountains.png');
       background-color: TRANSPARENT;
 
       height: 100%;
       width: 100%;
 
-      display:flex;
-      flex-direction:row;
+      display: flex;
+      flex-direction: row;
     }
 
     #bottom_nav,
     #docs {
-      position:absolute;
+      position: absolute;
       display: flex;
       flex-direction: row;
 
@@ -80,24 +75,24 @@
       top: 8px;
       left: 186px;
 
-      border-radius:200px;
+      border-radius: 200px;
     }
 
     .closed {
       left: 8px !important;
 
-      border-radius:10px !important;
+      border-radius: 10px !important;
     }
 
     #calculator {
-      width:calc(100% - 38px);
-      height:100%;
+      width: calc(100% - 38px);
+      height: 100%;
 
-      display:flex;
+      display: flex;
     }
 
     view-pager {
-      width:0px;
+      width: 0px;
     }
   </style>
 
@@ -135,19 +130,19 @@
 
   <div id="calculator">
 
-  <tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
-    <a index="0" href="" class="current">Recent</a>
-    <a index="1" href="n">New</a>
-    <a index="2" href="a">All</a>
-  </tab-bar>
+    <tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+      <a index="0" href="" class="current">Recent</a>
+      <a index="1" href="n">New</a>
+      <a index="2" href="a">All</a>
+    </tab-bar>
 
-  <tab-bar id="docs" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
-    <a index="4" href="" class="current">Demo</a>
-    <a index="99" href="n">Docs</a>
-    <a index="10" href="a">Info</a>
-  </tab-bar>
+    <tab-bar id="docs" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
+      <a index="4" href="" class="current">Demo</a>
+      <a index="99" href="n">Docs</a>
+      <a index="10" href="a">Info</a>
+    </tab-bar>
 
-</div>
+  </div>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
   <script id="rendered-js" type="module">
@@ -167,7 +162,7 @@
         if (hide.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'none';
-        } else if(ignore.includes(this.innerHTML)) {
+        } else if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
         } else {
