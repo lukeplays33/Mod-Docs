@@ -149,7 +149,7 @@
   </div>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
-  <script id="rendered-js" type="module">
+  <script id="rendered-js" type="module" defer>
 
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
@@ -157,7 +157,7 @@
       window.setTimeout(function () {
       let pichai = new PichaiUX();
       pichai.initialize();
-      },2000);
+      },10000);
     }
 
     let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
