@@ -154,8 +154,10 @@
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
     window.onload = function () {
+      window.setTimeout(function () {
       let pichai = new PichaiUX();
       pichai.initialize();
+      },2000);
     }
 
     let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
