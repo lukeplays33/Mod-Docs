@@ -7,7 +7,7 @@ window.onload = function () {
   pichai.initialize();
 }
 
-let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
+let hide = ['Settings', 'Discord Server', 'Support', 'Donate', 'About'];
 let ignore = ['Recent', 'New', 'All', 'Home'];
 
 let items = document.getElementsByTagName('A');
