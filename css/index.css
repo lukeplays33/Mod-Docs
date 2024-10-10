@@ -117,5 +117,7 @@
   }
 
   .content {
-    background-color:var(--secondairy)
+    background-color:var(--secondairy);
+
+    width:100%;
   }
