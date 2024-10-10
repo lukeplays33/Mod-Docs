@@ -88,7 +88,7 @@
 
     #calculator {
       width: calc(100% - 368px);
-      height: 100%;
+      height: calc(100% - 50px);
 
       margin-left: auto;
 
@@ -132,7 +132,7 @@
 
   <view-pager id="items" pageindex="NaN"></view-pager>
 
-  <div id="calculator">
+  <div id="calculator"></div>
 
     <tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
       <a index="0" href="" class="current">Recent</a>
@@ -145,8 +145,6 @@
       <a index="99" href="n">Docs</a>
       <a index="10" href="a">Info</a>
     </tab-bar>
-
-  </div>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
   <script id="rendered-js" type="module" defer>
