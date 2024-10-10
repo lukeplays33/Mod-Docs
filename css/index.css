@@ -77,3 +77,10 @@
   view-pager {
     width: 0px;
   }
+
+  iframe {
+    border-width: 0px;
+
+    height:100%;
+    width:100%;
+  }
