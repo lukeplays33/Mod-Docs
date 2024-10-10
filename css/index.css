@@ -119,5 +119,5 @@
   .content {
     background-color:var(--secondairy);
 
-    width:100%;
+    padding:8px;
   }
