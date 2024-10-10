@@ -25,7 +25,7 @@ for (i of items) {
       document.getElementById('bottom_nav').style.display = 'none';
     }
 
-    ThunkableWebviewerExtension.postMessage(this.innerHTML);
+    document.getElementById('pages').src = this.href;
   });
 }
 
