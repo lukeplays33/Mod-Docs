@@ -90,7 +90,7 @@
       width: calc(100% - 48px);
       height: 100%;
 
-      margin-left:auto;
+      margin-left: auto;
 
       display: flex;
     }
@@ -153,8 +153,10 @@
 
     import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-    let pichai = new PichaiUX();
-    pichai.initialize();
+    window.onload = function () {
+      let pichai = new PichaiUX();
+      pichai.initialize();
+    }
 
     let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
     let ignore = ['Recent', 'New', 'All'];
