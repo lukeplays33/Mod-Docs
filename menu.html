@@ -169,12 +169,12 @@
         if (hide.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'none';
-        } else if (!ignore.includes(this.innerHTML)) {
-          document.getElementById('docs').style.display = 'flex';
-          document.getElementById('bottom_nav').style.display = 'none';
-        } else {
+        } else if (ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'flex';
+        } else {
+          document.getElementById('docs').style.display = 'flex';
+          document.getElementById('bottom_nav').style.display = 'none';
         }
 
         ThunkableWebviewerExtension.postMessage(this.innerHTML);
