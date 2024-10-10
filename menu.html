@@ -155,6 +155,7 @@
 
     window.onload = function () {
       window.setTimeout(function () {
+        document.body.style.removeProperty('background-image'); //why????????
       let pichai = new PichaiUX();
       pichai.initialize();
       },10000);
