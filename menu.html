@@ -90,7 +90,7 @@
     }
 
     #calculator {
-      width:100%;
+      width:calc(100% - 38px);
       height:100%;
 
       display:flex;
@@ -159,16 +159,17 @@
     let pichai = new PichaiUX();
     pichai.initialize();
 
-    let ignore = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
+    let hide = ['Settings', 'Announcements', 'Support', 'Donate', 'About'];
+    let ignore = ['Recent', 'New', 'All'];
 
     let items = document.getElementsByTagName('A');
     let i;
     for (i of items) {
       i.addEventListener('click', function () {
-        if (ignore.includes(this.innerHTML)) {
+        if (hide.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'none';
           document.getElementById('bottom_nav').style.display = 'none';
-        } else if(this.innerHTML !== 'Home') {
+        } else if(ignore.includes(this.innerHTML)) {
           document.getElementById('docs').style.display = 'flex';
           document.getElementById('bottom_nav').style.display = 'none';
         } else {
