@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <template-header></template-header>
+
 
   <main class="row">
+    <template-header></template-header>
     <i class="material-icons" id="toggleMenu">close</i>
 
     <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
@@ -40,6 +41,8 @@
       <a id="tutorials" class="header" href="">Tutorials</a>
     </tab-bar>
 
+    <section class="column">
+
     <view-pager id="items" pageindex="NaN"></view-pager>
 
     <div id="calculator">
@@ -57,6 +60,7 @@
       <a index="99" href="n">Docs</a>
       <a index="10" href="a">Info</a>
     </tab-bar>
+  </section>
 
   </main>
 
