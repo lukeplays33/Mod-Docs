@@ -99,7 +99,7 @@
     width:calc(100% - 8px);
   }
 
-  .w100 * :not(header *) {
+  .w100 * :not(header *, li) {
     width:100%
   }
 
