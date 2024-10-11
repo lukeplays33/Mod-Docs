@@ -25,10 +25,7 @@ for (i of items) {
 
     document.getElementById('pages').src = this.href;
     
-    waitForElement('x-title', () => {
-      document.getElementsByTagName('x-title')[0].setAttribute('titleText', this.innerHTML);
       document.title = `Mod Docs! - ${this.innerHTML}`;
-    });
   });
 }
 
