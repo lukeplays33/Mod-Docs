@@ -97,11 +97,15 @@
     width:100%;
   }
 
+  template-header {
+    width:100%;
+  }
+
   .w100 * :not(header *) {
     width:100%
   }
 
-  .w100 section * :not(header) {
+  .w100 section {
     width:calc(100% - 16px);
   }
 
