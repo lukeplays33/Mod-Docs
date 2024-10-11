@@ -24,7 +24,8 @@ for (i of items) {
 
     document.getElementById('pages').src = this.href;
     
-    document.getElementsByTagName('x-title')[0].setAttribute('titleText', this.innerHTML);
+    console.log(document.getElementsByTagName('x-title'));
+    //document.getElementsByTagName('x-title')[0].setAttribute('titleText', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
   });
 }
