@@ -24,8 +24,8 @@ for (i of items) {
     }
 
     document.getElementById('pages').src = this.href;
-    
-      document.title = `Mod Docs! - ${this.innerHTML}`;
+
+    document.title = `Mod Docs! - ${this.innerHTML}`;
   });
 }
 
