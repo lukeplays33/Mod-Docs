@@ -1,10 +1,13 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
+
+let pichai = new PichaiUX();
+pichai.initialize();
+
 window.onload = function () {
-  document.body.style.removeProperty('background-image'); //why????????
-  let pichai = new PichaiUX();
-  pichai.initialize();
+  //document.body.style.removeProperty('background-image'); //why????????
+
 }
 
 let hide = ['Settings', 'Discord Server', 'Support', 'Donate', 'About'];
@@ -26,6 +29,7 @@ for (i of items) {
     }
 
     document.getElementById('pages').src = this.href;
+
     document.getElementsByTagName('x-title')[0].titleText = this.innerHTML;
     document.title = `Mod Docs! - ${this.innerHTML}`;
   });
