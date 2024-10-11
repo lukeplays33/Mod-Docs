@@ -52,7 +52,7 @@
     color: var(--primaryTextColor);
 
     position: fixed;
-    top: 8px;
+    top: 64px;
     left: 320px;
 
     border-radius: 200px;
