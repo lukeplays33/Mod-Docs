@@ -1,5 +1,6 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { waitForElement } from './utils';
 
 let pichai = new PichaiUX();
 pichai.initialize();
@@ -24,9 +25,10 @@ for (i of items) {
 
     document.getElementById('pages').src = this.href;
     
-    console.log(document.getElementsByTagName('x-title')[0]);
-    //document.getElementsByTagName('x-title')[0].setAttribute('titleText', this.innerHTML);
-    document.title = `Mod Docs! - ${this.innerHTML}`;
+    waitForElement('.x-title', () => {
+      document.getElementsByTagName('x-title')[0].setAttribute('titleText', this.innerHTML);
+      document.title = `Mod Docs! - ${this.innerHTML}`;
+    });
   });
 }
 
