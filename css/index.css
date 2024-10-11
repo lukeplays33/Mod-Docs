@@ -10,10 +10,15 @@
   }
 
   body,
-  html, main {
+  html {
 
     height: 100%;
     width: 100%;
+  }
+
+  main {
+    width:100%;
+    height:calc(100% - 56px);
   }
 
   #bottom_nav,
