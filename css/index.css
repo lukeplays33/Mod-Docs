@@ -4,7 +4,7 @@
   }
 
   body {
-    background-image: url('https://raw.githubusercontent.com/lukeplays33/Mod-Docs/refs/heads/main/assets/images/images/mountains.png');
+    background-image: url('../assets/images/images/mountains.png');
 
     margin:0px;
   }

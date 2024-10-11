@@ -5,6 +5,8 @@ window.onload = function () {
   document.body.style.removeProperty('background-image'); //why????????
   let pichai = new PichaiUX();
   pichai.initialize();
+
+  document.getElementById('HomeButton').click();
 }
 
 let hide = ['Settings', 'Discord Server', 'Support', 'Donate', 'About'];
@@ -31,8 +33,6 @@ for (i of items) {
     document.title = `Mod Docs! - ${this.innerHTML}`;
   });
 }
-
-document.getElementById('HomeButton').click();
 
 let menu = document.getElementById('toggleMenu');
 let drawer = document.getElementById('draawer');
