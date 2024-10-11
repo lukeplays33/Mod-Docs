@@ -68,8 +68,6 @@
     width:100%;
     height:calc(100% - 74px);
 
-    margin-left: 8px;
-
     display: flex;
   }
 
@@ -140,5 +138,9 @@
   }
 
   #draawer {
-    margin-left:0px;
+    margin-right:0px;
+  }
+
+  .marginLeft {
+    margin-left:8px;
   }
