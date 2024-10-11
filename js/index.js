@@ -1,6 +1,6 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
-import { waitForElement } from './utils';
+import { waitForElement } from '../js/utils.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
