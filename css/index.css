@@ -75,6 +75,7 @@
 
   view-pager {
     width: 0px;
+    height:0px;
   }
 
   iframe {
@@ -96,11 +97,13 @@
     width:100%;
   }
 
-  .w100 * {
+  .w100 * :not(header) {
     width:100%
   }
 
-
+  .w100 section * :not(header) {
+    width:calc(100% - 16px);
+  }
 
   h1 {
     margin-top:0px;
