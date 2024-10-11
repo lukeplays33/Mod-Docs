@@ -125,3 +125,7 @@
   .transparent {
     color:TRANSPARENT;
   }
+
+  .row {
+    flex-direction:row;
+  }

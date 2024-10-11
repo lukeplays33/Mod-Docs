@@ -7,46 +7,49 @@
     media="all">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../Mod-Docs/assets/images/images/logo.png">
 
   <title>Mod Docs!</title>
 
   <link rel="canonical" href="https://codepen.io/lukeplays33/pen/rNgyNLd">
-  <link rel="stylesheet" type="text/css" href="../Mod-Docs/css/index.css"
-  media="all">
+  <link rel="stylesheet" type="text/css" href="../Mod-Docs/css/index.css" media="all">
 
 </head>
 
 <body style="background-image: initial;">
-  <i class="material-icons" id="toggleMenu">close</i>
+  <header-template></header-template>
 
-  <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
-    style="grid-template-columns: repeat(4, 1fr);">
-    <a id="modules" class="header" href="">Home</a>
+  <main class="row">
+    <i class="material-icons" id="toggleMenu">close</i>
 
-    <a index="3" href="../Mod-Docs/docPages/home.html" id="HomeButton">Home</a>
-    <a index="3" href="../Mod-Docs/docPages/discord.html">Discord Server</a>
-    <a index="3" href="https://buymeacoffee.com/sketchdonate">Donate</a>
-    <a index="3" href="../Mod-Docs/docPages/about.html">About</a>
+    <tab-bar id="draawer" mode="drawer" for="items" class="drawer tabBarHolder"
+      style="grid-template-columns: repeat(4, 1fr);">
+      <a id="modules" class="header" href="">Home</a>
 
-    <a index="3" href="">Settings</a>
-    <a id="modules" class="header" href="">Modules</a>
+      <a index="3" href="../Mod-Docs/docPages/home.html" id="HomeButton">Home</a>
+      <a index="3" href="../Mod-Docs/docPages/discord.html">Discord Server</a>
+      <a index="3" href="https://buymeacoffee.com/sketchdonate">Donate</a>
+      <a index="3" href="../Mod-Docs/docPages/about.html">About</a>
 
-    <a index="5" href="">Keyboard Events</a>
-    <a index="5" href="">Mouse Events</a>
-    <a index="5" href="">Theme Swapper</a>
-    <a index="5" href="">Console</a>
-    <a index="5" href="">ASD</a>
+      <a index="3" href="">Settings</a>
+      <a id="modules" class="header" href="">Modules</a>
 
-    <a id="tutorials" class="header" href="">Libraries</a>
+      <a index="5" href="">Keyboard Events</a>
+      <a index="5" href="">Mouse Events</a>
+      <a index="5" href="">Theme Swapper</a>
+      <a index="5" href="">Console</a>
+      <a index="5" href="">ASD</a>
 
-    <a id="tutorials" class="header" href="">Tutorials</a>
-  </tab-bar>
+      <a id="tutorials" class="header" href="">Libraries</a>
 
-  <view-pager id="items" pageindex="NaN"></view-pager>
+      <a id="tutorials" class="header" href="">Tutorials</a>
+    </tab-bar>
 
-  <div id="calculator">
-    <iframe id="pages" src="../Mod-Docs/docPages/home.html"></iframe>
-  </div>
+    <view-pager id="items" pageindex="NaN"></view-pager>
+
+    <div id="calculator">
+      <iframe id="pages" src="../Mod-Docs/docPages/home.html"></iframe>
+    </div>
 
     <tab-bar id="bottom_nav" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
       <a index="0" href="" class="current">Recent</a>
@@ -59,6 +62,8 @@
       <a index="99" href="n">Docs</a>
       <a index="10" href="a">Info</a>
     </tab-bar>
+
+  </main>
 
   <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
   <script id="rendered-js" type="module" src="../Mod-Docs/js/index.js" defer></script>
