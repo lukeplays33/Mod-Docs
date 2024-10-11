@@ -1,11 +1,9 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-window.onload = function () {
-  let pichai = new PichaiUX();
-  pichai.initialize();
-  alert()
-}
+let pichai = new PichaiUX();
+pichai.initialize();
+alert()
 
 let hide = ['Settings', 'Discord Server', 'Support', 'Donate', 'About'];
 let ignore = ['Recent', 'New', 'All', 'Home'];
