@@ -154,9 +154,9 @@
   .actionButton {
     font-size:16px;
 
-    border-radius:2000px;
+    border-radius:2000px !important;
 
-    width:30px;
+    max-width:30px;
 
     margin-left:auto;
   }
