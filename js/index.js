@@ -31,23 +31,6 @@ for (i of items) {
 
 document.getElementById('HomeButton').click();
 
-let menu = document.getElementById('toggleMenu');
-let drawer = document.getElementById('draawer');
-
-menu.addEventListener('click', function () {
-  if (menu.classList.contains('closed')) {
-    menu.classList.remove('closed');
-    menu.innerHTML = 'close';
-
-    drawer.style.display = 'flex';
-  } else {
-    menu.classList.add('closed');
-    menu.innerHTML = 'menu';
-
-    drawer.style.display = 'none';
-  }
-});
-
 if (screen.width < 600) {
   menu.click();
 }
