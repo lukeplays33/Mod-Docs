@@ -42,22 +42,6 @@
     color: var(--headerColor) !important;
   }
 
-  #toggleMenu {
-    width: 35px;
-    height: 34px;
-
-    line-height: 35px;
-
-    background-color: var(--primary);
-    color: var(--primaryTextColor);
-
-    position: fixed;
-    top: 8px;
-    left: 320px;
-
-    border-radius: 200px;
-  }
-
   .closed {
     left: 8px !important;
 
