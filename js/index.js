@@ -6,7 +6,7 @@ let pichai = new PichaiUX();
 pichai.initialize();
 
 let drawer = document.getElementById('draawer');
-createSimpleDrawer(drawer);
+pichai.createSimpleDrawer(drawer);
 
 let hide = ['Settings', 'Contact', 'Support', 'Donate', 'About'];
 let ignore = ['Recent', 'New', 'All', 'Home'];
