@@ -42,12 +42,6 @@
     color: var(--headerColor) !important;
   }
 
-  .closed {
-    left: 8px !important;
-
-    border-radius: 10px !important;
-  }
-
   #calculator {
     width:100%;
     height:calc(100% - 74px);
