@@ -8,6 +8,8 @@ pichai.initialize();
 let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
+let headerGroups = document.getElementsByClassName('header');
+
 let hide = ['Settings', 'Support', 'Donate', 'About'];
 let ignore = ['Recent', 'New', 'All', 'Home'];
 
@@ -33,3 +35,13 @@ for (i of items) {
 }
 
 document.getElementById('HomeButton').click();
+
+for(i of headerGroups) {
+  i.addEventListener('click', function () {
+    if(this.nextElementSibling.style.display == 'flex')  {
+      this.nextElementSibling.style.display = 'none';
+    } else {
+      this.nextElementSibling.style.display = 'flex';
+    }
+  });
+}

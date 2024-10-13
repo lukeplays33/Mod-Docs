@@ -144,3 +144,10 @@
   list-viewer li {
     width:calc(100% - 16px);
   }
+
+  .headerContents {
+    display:flex;
+    flex-direction:column;
+
+    width:100%;
+  }
