@@ -82,7 +82,7 @@
   }
 
   .w100 section {
-    width:calc(100% - 0px);
+    width:100%;
   }
 
   h1 {
@@ -95,6 +95,8 @@
     background-color:var(--secondairy);
 
     padding:8px;
+
+    width:calc(100% - 16px);
   }
 
   .transparent {
