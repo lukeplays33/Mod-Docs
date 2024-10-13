@@ -35,13 +35,3 @@ for (i of items) {
 }
 
 document.getElementById('HomeButton').click();
-
-for(i of headerGroups) {
-  i.addEventListener('click', function () {
-    if(this.nextElementSibling.style.display == 'flex')  {
-      this.nextElementSibling.style.display = 'none';
-    } else {
-      this.nextElementSibling.style.display = 'flex';
-    }
-  });
-}
