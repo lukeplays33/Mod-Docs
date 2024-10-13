@@ -33,7 +33,3 @@ for (i of items) {
 }
 
 document.getElementById('HomeButton').click();
-
-if (screen.width < 600) {
-  menu.click();
-}
