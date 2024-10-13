@@ -8,7 +8,7 @@ pichai.initialize();
 let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
-let hide = ['Settings', 'Contact', 'Support', 'Donate', 'About'];
+let hide = ['Settings', 'Support', 'Donate', 'About'];
 let ignore = ['Recent', 'New', 'All', 'Home'];
 
 let items = document.getElementsByTagName('A');
