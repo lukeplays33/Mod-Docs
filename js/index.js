@@ -10,6 +10,8 @@ pichai.createSimpleDrawer(drawer, 'auto');
 
 let tutorials = document.getElementById('tutorials');
 
+let i;
+
 document.getElementById('HomeButton').click();
 
 for(i of Object.keys(docsItemsJson)) {
@@ -21,7 +23,7 @@ for(i of Object.keys(docsItemsJson)) {
 }
 
 let items = document.getElementsByTagName('A');
-let i;
+
 for (i of items) {
   i.addEventListener('click', function () {
     document.getElementById('pages').src = this.href;

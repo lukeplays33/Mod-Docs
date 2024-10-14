@@ -150,7 +150,7 @@
     top:8px;
     right:8px;
 
-    height: 19px;
+    height: 34px;
 
     margin-top: auto;
     margin-bottom: auto;
@@ -161,10 +161,10 @@
     border-radius: 200px;
     background-color: var(--secondairy);
 
-    line-height: 20px;
+    line-height: 35px;
 
     padding: 8px;
-    
+
     color: var(--secondairyTextColor);
   }
 
