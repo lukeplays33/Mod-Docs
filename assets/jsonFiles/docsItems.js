@@ -1,12 +1,6 @@
 let docsItemsJson = {
-    "Thunkable": {},
-    "Pichai-UX": {},
-    "Lucy": {},
-    "Gryffindor": {},
-    "NexOS": {},
-    "Stereo": {},
-    "Debugger": {},
-    "Mod_Docs!": {}
-  }
+  Thunkable: {},
+  Pichai_UX: {},
+}
 
   export { docsItemsJson }

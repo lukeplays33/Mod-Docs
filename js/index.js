@@ -27,7 +27,7 @@ document.getElementById('HomeButton').click();
 console.log(docsItemsJson)
 for(i of docsItemsJson.keys()) {
   let a = document.createElement('a');
-  a.innerHTML = i;
+  a.innerHTML = String(i).replaceAll('_', '');
   a.href = '';
 
   drawer.insertBefore(a, tutorials);
