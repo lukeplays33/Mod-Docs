@@ -25,7 +25,7 @@ for (i of items) {
 document.getElementById('HomeButton').click();
 
 console.log(docsItemsJson)
-for(i of docsItemsJson.keys()) {
+for(i of JSON.parse(docsItemsJson).keys()) {
   let a = document.createElement('a');
   a.innerHTML = String(i).replaceAll('_', '');
   a.href = '';
