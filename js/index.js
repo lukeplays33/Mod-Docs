@@ -8,8 +8,7 @@ pichai.initialize();
 let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
-let hide = ['Settings', 'Support', 'Donate', 'About'];
-let ignore = ['Recent', 'New', 'All', 'Home'];
+let tutorials = document.getElementById('tutorials');
 
 let items = document.getElementsByTagName('A');
 let i;
@@ -25,6 +24,10 @@ for (i of items) {
 
 document.getElementById('HomeButton').click();
 
-for(i of docsItemsJson.keys) {
+for(i of docsItemsJson.keys()) {
+  let a = document.createElement('a');
+  a.innerHTML = i;
+  a.href = '';
 
+  drawer.insertBefore(a, tutorials);
 }
