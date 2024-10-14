@@ -144,3 +144,9 @@
   list-viewer li {
     width:calc(100% - 16px);
   }
+
+  #search {
+    position:absolute;
+    top:8px;
+    right:8px;
+  }
