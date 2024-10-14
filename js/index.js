@@ -1,6 +1,6 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
-import { docsItemsJson } from '../assets/jsonFiles/docsItems';
+import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
