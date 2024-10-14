@@ -24,6 +24,7 @@ for (i of items) {
 
 document.getElementById('HomeButton').click();
 
+console.log(docsItemsJson)
 for(i of docsItemsJson.keys()) {
   let a = document.createElement('a');
   a.innerHTML = i;
