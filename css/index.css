@@ -170,6 +170,9 @@
   #description {
     display:flex;
     flex-direction:row;
+
+    align-items: center;
+    justify-content: center;
   }
 
   .text {
@@ -178,8 +181,8 @@
 
   .chipIcon {
     border-radius: 200px;
-    background-color: var(--primary);
-    color: var(--primaryTextColor);
+    background-color: var(--tertiart);
+    color: var(--tertiaryTextColor);
     font-size: 30px;
     padding: 8px;
   }
