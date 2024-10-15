@@ -183,8 +183,8 @@
 
   .chipIcon {
     border-radius: 200px;
-    background-color: var(--tertiary);
-    color: var(--tertiaryTextColor);
+    background-color: var(--primary);
+    color: var(--primaryTextColor);
     font-size: 30px;
     padding: 8px;
   }
