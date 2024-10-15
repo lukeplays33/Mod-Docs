@@ -77,7 +77,7 @@
     width:calc(100% - 8px);
   }
 
-  .w100 * :not(header *, li) {
+  .w100 * :not(header *, li, .chipIcon) {
     width:100%
   }
 
@@ -178,8 +178,8 @@
 
   .chipIcon {
     border-radius: 200px;
-    background-color: var(--secondairy);
-    color: var(--secondairyTextColor);
+    background-color: var(--primary);
+    color: var(--primaryTextColor);
     font-size: 30px;
     padding: 8px;
   }
