@@ -175,3 +175,11 @@
   .text {
     width:100%;
   }
+
+  .chipIcon {
+    border-radius: 200px;
+    background-color: var(--secondairy);
+    color: var(--secondairyTextColor);
+    font-size: 30px;
+    padding: 8px;
+  }
