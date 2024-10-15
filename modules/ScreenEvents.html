@@ -19,8 +19,7 @@
 
 </head>
 <style>
-<style>
-  body,
+  <style>body,
   html {
     margin: 0px;
 
@@ -31,22 +30,22 @@
   }
 
   #focus {
-    height:0px;
-    width:0px;
-    border-width:0px;
-    border-color:TRANSPARENT;
+    height: 0px;
+    width: 0px;
+    border-width: 0px;
+    border-color: TRANSPARENT;
 
-    background-color:TRANSPARENT;
-    outline:none;
+    background-color: TRANSPARENT;
+    outline: none;
   }
 
   #focus:focus {
-    border-width:0px;
-    border-color:TRANSPARENT;
+    border-width: 0px;
+    border-color: TRANSPARENT;
 
-    background-color:TRANSPARENT;
+    background-color: TRANSPARENT;
 
-    outline:none;
+    outline: none;
   }
 </style>
 
@@ -61,7 +60,7 @@
     ThunkableWebviewerExtension.receiveMessage(function (message) {
       document.getElementById('focus').focus();
     });
-    
+
     window.onwheel = function (e) {
       ThunkableWebviewerExtension.postMessage(JSON.stringify({
         type: 'wheel',
