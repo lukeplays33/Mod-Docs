@@ -25,7 +25,9 @@ for(i of Object.keys(docsItemsJson)) {
 let items = document.getElementsByTagName('A');
 
 for (i of items) {
-  i.addEventListener('click', function () {
+  i.addEventListener('click', function (e) {
+    e.preventDefault();
+    
     document.getElementById('pages').src = this.href;
     window.sessionStorage.setItem('docItem', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
