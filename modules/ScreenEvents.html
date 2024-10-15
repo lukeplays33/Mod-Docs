@@ -79,6 +79,20 @@
         y: e.clientY
       }));
     }
+
+    window.onresize = function (e) {
+      ThunkableWebviewerExtension.postMessage(JSON.stringify({
+        type: 'resize'
+      }));
+    }
+
+    window.onorientationchange = function (e) {
+      console.log(e);
+      ThunkableWebviewerExtension.postMessage(JSON.stringify({
+        type: 'orientation',
+        angle: e.target.screen.orientation.angle
+      }));
+    }
   </script>
 
 
