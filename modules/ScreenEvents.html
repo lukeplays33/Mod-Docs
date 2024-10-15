@@ -72,7 +72,6 @@
     }
 
     window.onmousemove = function (e) {
-      console.log(e);
       ThunkableWebviewerExtension.postMessage(JSON.stringify({
         type: 'move',
         x: e.clientX,
@@ -87,7 +86,6 @@
     }
 
     window.onorientationchange = function (e) {
-      console.log(e);
       ThunkableWebviewerExtension.postMessage(JSON.stringify({
         type: 'orientation',
         angle: e.target.screen.orientation.angle
