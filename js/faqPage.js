@@ -10,7 +10,7 @@ faqList.addEventListener('itemSelected', function (e) {
     } catch (e) { }
 
     let des = document.createElement('li');
-    des = faqItems[e.target.value];
+    des = faqItems[e.target.value.innerHTML];
 
     e.target.value.after(des);
 });
