@@ -17,7 +17,7 @@ document.getElementById('HomeButton').click();
 for(i of Object.keys(docsItemsJson)) {
   let a = document.createElement('a');
   a.innerHTML = String(i).replaceAll('_', '');
-  a.href = '../Mod-Docs/docPages/docs.html';
+  a.href = '../Mod-Docs/docPages/docsItems.html';
 
   drawer.insertBefore(a, tutorials);
 }
@@ -27,6 +27,7 @@ let items = document.getElementsByTagName('A');
 for (i of items) {
   i.addEventListener('click', function () {
     document.getElementById('pages').src = this.href;
+    window.sessionStorage.setItem('docItem', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
   });
 }
