@@ -167,4 +167,11 @@
     color: var(--secondairyTextColor);
   }
 
-  
+  #description {
+    display:flex;
+    flex-direction:row;
+  }
+
+  .text {
+    width:100%;
+  }
