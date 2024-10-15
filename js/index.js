@@ -26,7 +26,7 @@ let items = document.getElementsByTagName('A');
 
 for (i of items) {
   i.addEventListener('click', function (e) {
-    e.preventDefault();
+    //e.preventDefault();
     
     document.getElementById('pages').src = this.href;
     window.sessionStorage.setItem('docItem', this.innerHTML);
