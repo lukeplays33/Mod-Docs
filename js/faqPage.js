@@ -12,6 +12,6 @@ faqList.addEventListener('itemSelected', function (e) {
     let des = document.createElement('li');
     des = faqItems[e.target.item];
 
-    console.log(faqList.children[e.target.index])
+    console.log(faqList.children[e.target.index], e.target.index);
     faqList.children[e.target.index].after(des);
 });
