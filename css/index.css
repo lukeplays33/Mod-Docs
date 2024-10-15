@@ -173,6 +173,8 @@
 
     align-items: center;
     justify-content: center;
+
+    margin-bottom:8px;
   }
 
   .text {
@@ -186,3 +188,4 @@
     font-size: 30px;
     padding: 8px;
   }
+
