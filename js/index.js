@@ -15,14 +15,14 @@ let i;
 document.getElementById('HomeButton').click();
 
 for(i of Object.keys(docsItemsJson)) {
-  let a = document.createElement('a');
+  let a = document.createElement('li');
   a.innerHTML = String(i).replaceAll('_', '');
   a.href = '../Mod-Docs/docPages/docsItems.html';
 
   drawer.insertBefore(a, tutorials);
 }
 
-let items = document.getElementsByTagName('A');
+let items = drawer.getElementsByTagName('LI');
 
 for (i of items) {
   i.addEventListener('click', function (e) {
