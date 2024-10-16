@@ -5,6 +5,7 @@ let faqList = document.getElementById('faqs');
 faqList.listItems = Object.keys(faqItems);
 
 faqList.addEventListener('itemSelected', function (e) {
+    console.log(e)
     try {
         faqList.getElementsByClassName('des')[0].remove();
     } catch (e) { }
