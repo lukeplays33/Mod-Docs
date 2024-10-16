@@ -10,6 +10,7 @@ faqList.addEventListener('itemSelected', function (e) {
     } catch (e) { }
 
     let des = document.createElement('li');
+    des.classList.add('des')
     des.innerHTML = faqItems[e.detail.value];
 
     document.getElementById(e.detail.value).after(des);
