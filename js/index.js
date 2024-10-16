@@ -22,7 +22,7 @@ for(i of Object.keys(docsItemsJson)) {
   drawer.insertBefore(a, tutorials);
 }
 
-let items = drawer.getElementsByTagName('LI');
+let items = drawer.getElementsByTagName('LI').concat(drawer.getElementsByTagName('A'));
 
 for (i of items) {
   i.addEventListener('click', function (e) {
