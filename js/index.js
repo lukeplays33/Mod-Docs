@@ -29,7 +29,8 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    //e.preventDefault();
+    this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+    this.classList.add('current');
     
     document.getElementById('pages').src = this.href;
     window.sessionStorage.setItem('docItem', this.innerHTML);
