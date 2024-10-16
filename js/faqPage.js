@@ -13,5 +13,5 @@ faqList.addEventListener('itemSelected', function (e) {
     des = faqItems[e.target.value];
 
     console.log(e.target.value);
-    e.target.value.after(des);
+    document.getElementById(e.target.value).after(des);
 });
