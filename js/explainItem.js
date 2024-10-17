@@ -9,3 +9,5 @@ items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docIt
 if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo) {
     items.listItems.shift('Demo');
 }
+
+items.children[0].click();
