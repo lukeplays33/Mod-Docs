@@ -3,9 +3,8 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 let description = document.getElementById('description');
 let items = document.getElementById('items');
 
-console.log(docsItemsJson[window.sessionStorage.getItem('docItem')][window.sessionStorage.getItem('explainItem')])
-description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem('docItem')][window.sessionStorage.getItem('explainItem')].about.description;
-items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')][window.sessionStorage.getItem('explainItem')].contents);
+description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.description;
+items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents);
 
 items.addEventListener('itemSelected', function (e) {
     parent.document.title = 'Mod Docs - ' + e.detail.value;
