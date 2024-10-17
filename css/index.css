@@ -36,7 +36,7 @@
     z-index: 20;
   }
 
-  .header {
+  #Recent, #Documentation ,#Tutorials {
     background-color: var(--header) !important;
     color: var(--headerColor) !important;
   }
