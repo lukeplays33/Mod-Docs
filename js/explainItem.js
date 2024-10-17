@@ -7,8 +7,11 @@ description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem(
 items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents);
 
 if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo) {
-    items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents).concat('Demo');
+    items.listItems.unshift('Demo');
+    
 }
 
-items.listItems.push('eee')
+items.listItems.unshift('Information');
+
+//items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents).concat(concatList);
 items.children[0].click();
