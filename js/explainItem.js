@@ -9,5 +9,5 @@ items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docIt
 if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo) {
     items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents).concat('Demo');
 }
-
+items.listItems.push('eee')
 items.children[0].click();
