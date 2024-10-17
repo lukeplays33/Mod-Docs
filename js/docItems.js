@@ -7,8 +7,8 @@ description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem(
 items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items);
 
 items.addEventListener('itemSelected', function (e) {
+    window.sessionStorage.setItem('explainItem', e.detail.value);
+    
     parent.document.title = 'Mod Docs - ' + e.detail.value;
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
-
-    window.sessionStorage.setItem('explainItem', e.detail.value);
 });
