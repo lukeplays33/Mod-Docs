@@ -5,13 +5,14 @@ let items = document.getElementById('docs');
 
 let concatList = ['Information'];
 
-description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.description;
-items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents);
+let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
 
-if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo) {
+description.children[1].innerHTML = itemJSON.about.description;
+items.listItems = Object.keys(itemJSON.contents);
+
+if(itemJSON.about.demo) {
     concatList.unshift('Demo');
-    
 }
 
-items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents).concat(concatList);
+items.listItems = Object.keys(itemJSON.contents).concat(concatList);
 items.children[0].click();
