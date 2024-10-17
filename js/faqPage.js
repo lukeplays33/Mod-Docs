@@ -3,7 +3,8 @@ import { troubleShooting } from "../assets/jsonFiles/troubleshootings.js";
 
 let faqList = document.getElementById('faqs');
 
-let json = window.parent.title.includes('FAQ') ? faqItems : troubleShooting;
+console.log(window.parent.title)
+let json = String(window.parent.title).includes('FAQ') ? faqItems : troubleShooting;
 
 faqList.listItems = Object.keys(json);
 
