@@ -8,7 +8,7 @@ pichai.initialize();
 let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
-let tutorials = document.getElementById('tutorials');
+let tutorials = document.getElementById('Tutorials');
 
 let i;
 

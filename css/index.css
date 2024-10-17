@@ -36,7 +36,7 @@
     z-index: 20;
   }
 
-  #Home, #Documentation ,#Tutorials {
+  #Home, #Documentations ,#Tutorials {
     background-color: var(--header) !important;
     color: var(--headerColor) !important;
   }
