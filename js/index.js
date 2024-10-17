@@ -12,7 +12,7 @@ let tutorials = document.getElementById('tutorials');
 
 let i;
 
-document.getElementById('HomeButton').click();
+document.getElementById('Recent').click();
 
 for(i of Object.keys(docsItemsJson)) {
   let a = document.createElement('li');
