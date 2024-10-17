@@ -8,11 +8,11 @@ pichai.initialize();
 let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
-let tutorials = document.getElementById('Tutorials');
+let tutorials = document.getElementById('tutorials');
 
 let i;
 
-document.getElementById('Recent').click();
+document.getElementById('HomeButton').click();
 
 for(i of Object.keys(docsItemsJson)) {
   let a = document.createElement('li');
