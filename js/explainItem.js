@@ -6,6 +6,7 @@ let items = document.getElementById('docs');
 description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.description;
 items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].contents);
 
+console.log(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo)
 if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.demo) {
     items.listItems.shift('Demo');
 }
