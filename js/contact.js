@@ -1,4 +1,4 @@
-import { settings } from '../assets/jsonFiles/supportSettings.js';
+import { settings } from "../assets/jsonFiles/supportSettings.js";
 
 document.getElementById('support').addEventListener('itemSelected', function (e) {
     if(e.detail.index == 0) {
