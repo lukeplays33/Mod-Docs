@@ -1,5 +1,7 @@
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
+let demoTabItem, i;
+
 let description = document.getElementById('description');
 let items = document.getElementById('docs');
 
@@ -12,10 +14,23 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 description.children[1].innerHTML = itemJSON.about.description;
 items.listItems = Object.keys(itemJSON.contents);
 
-if(itemJSON.about.demoLink) {
+for(i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
+    i.href = `#${i.innerHTML}`;
+}
+
+if (itemJSON.about.demoLink) {
     concatList.unshift('Demo');
     demo.src = itemJSON.about.demoLink;
+
+    demoTabItem = document.getElementById('Demo'); // needs to have a href after creation
+    demoTabItem.href = '#demo';
+} else {
+    demo.remove();
 }
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
+
+let information = document.getElementById('Information'); // needs to have a href after creation
+information.href = '#information';
+
 items.children[0].click();
