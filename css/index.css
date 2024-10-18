@@ -213,7 +213,7 @@
     color: var(--tertiaryTextColor);
   }
 
-  .items, .items * :not(li) {
+  .items, .items * :not(li, .contents) {
     width:100%;
     height:100%;
   }
