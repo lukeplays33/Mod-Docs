@@ -116,6 +116,10 @@
     height:100%;
   }
 
+  .h100calc {
+    height:calc(100% - 55px);
+  }
+
   #draawer {
     margin-right:0px;
   }
