@@ -35,5 +35,9 @@ for (i of items) {
     document.getElementById('pages').src = this.href;
     window.sessionStorage.setItem('docItem', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
+
+    if(this.parentNode.mode == 'mobile') {
+      this.parentNode.toggle.click();
+  }
   });
 }
