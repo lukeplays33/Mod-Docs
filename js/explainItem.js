@@ -3,7 +3,7 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 let demoTabItem, i;
 
 let description = document.getElementById('description');
-let  = document.getElementById('useCases');
+let useCase = document.getElementById('useCases');
 
 let items = document.getElementById('docs');
 
