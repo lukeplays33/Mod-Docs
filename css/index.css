@@ -117,11 +117,7 @@
   }
 
   .h100calc {
-    height:calc(100% - 55px);
-  }
-
-  .h100calc article {
-    height:calc(100% - 16px);
+    height:calc(100% - 63px);
   }
 
   #draawer {
