@@ -53,6 +53,11 @@
     height:0px;
   }
 
+  view-pager * {
+    width:100%;
+    height:100%;
+  }
+
   #explainTheItem {
     height:100%;
   }
