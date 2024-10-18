@@ -70,7 +70,6 @@
 
   .w100 {
     width:100%;
-    height:100%;
   }
 
   template-header {
@@ -83,7 +82,6 @@
 
   .w100 section {
     width:100%;
-    height:100%;
   }
 
   h1 {
@@ -201,8 +199,4 @@
   .items, .items * :not(li) {
     width:100%;
     height:100%;
-  }
-
-  .items {
-    overflow:hidden;
   }
