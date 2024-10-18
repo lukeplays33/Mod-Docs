@@ -3,6 +3,8 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 let demoTabItem, i;
 
 let description = document.getElementById('description');
+let  = document.getElementById('useCases');
+
 let items = document.getElementById('docs');
 
 let demo = document.getElementById('demo');
@@ -12,6 +14,8 @@ let concatList = ['Information'];
 let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
 
 description.children[1].innerHTML = itemJSON.about.description;
+useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
+
 items.listItems = Object.keys(itemJSON.contents);
 
 for(i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
