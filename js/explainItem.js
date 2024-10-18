@@ -15,7 +15,7 @@ description.children[1].innerHTML = itemJSON.about.description;
 items.listItems = Object.keys(itemJSON.contents);
 
 for(i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
-    i.href = `#${i.innerHTML}`;
+    i.href = `#explanationItems`;
 }
 
 if (itemJSON.about.demoLink) {
