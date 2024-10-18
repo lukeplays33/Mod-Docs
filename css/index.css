@@ -183,7 +183,7 @@
     color: var(--secondairyTextColor);
   }
 
-  #description {
+  #description, #useCase {
     display:flex;
     flex-direction:row;
 
@@ -213,7 +213,7 @@
     color: var(--tertiaryTextColor);
   }
 
-  .items, .items * :not(li, .contents) {
+  .items, .items * :not(li, .contents, .contents *) {
     width:100%;
     height:100%;
   }
