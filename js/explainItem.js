@@ -23,10 +23,10 @@ description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
 moduleName.innerHTML = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)[0];
 
-openSource.innerHTML = itemJSON.about.repo.openSource;
-developer.innerHTML = itemJSON.about.repo.developer;
-version.innerHTML = itemJSON.about.repo.version;
-status.innerHTML = itemJSON.about.repo.status;
+openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
+developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;
+version.innerHTML = 'Version: ' + itemJSON.about.repo.version;
+status.innerHTML = 'Status: ' + itemJSON.about.repo.status;
 
 items.listItems = Object.keys(itemJSON.contents);
 

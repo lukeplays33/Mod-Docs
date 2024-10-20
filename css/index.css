@@ -218,13 +218,13 @@
     height:100%;
   }
 
-  .repoInfo, .repoInfo * {
+  .repoInfo{
     gap:8px;
-
-    margin-bottom:8px;
   }
 
   .repoInfo * {
+    gap:8px;
+
     margin:0px;
   }
 
