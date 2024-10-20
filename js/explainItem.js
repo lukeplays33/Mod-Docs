@@ -4,6 +4,7 @@ let demoTabItem, i;
 
 let description = document.getElementById('description');
 let useCase = document.getElementById('useCases');
+let moduleName = document.getElementById('moduleName');
 
 let items = document.getElementById('docs');
 
@@ -15,6 +16,7 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
+moduleName.innerHTML = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)[0];
 
 items.listItems = Object.keys(itemJSON.contents);
 
