@@ -22,7 +22,7 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
-moduleName.innerHTML = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)[0];
+moduleName.innerHTML = itemJSON.about.repo.repoName;
 
 openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
 developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;

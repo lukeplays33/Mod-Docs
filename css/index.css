@@ -241,3 +241,7 @@
   #information hr {
     margin:0px;
   }
+
+  #moduleName {
+    width: calc(100% - 16px);
+  }

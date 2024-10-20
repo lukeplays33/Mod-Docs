@@ -11,15 +11,19 @@ let docsItemsJson = {
     items: {
       "Keyboard_Events": {
         about: {
-          installationLink: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
+          installation : {
+            link: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
+            guide: ''
+          },
           description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
+          useCaseDescription: ['The keyboard events module can be used to capture the key down/up and press events of a physical keyboard, fro mthere you can acces the key name/code and if the user is holding the key down.'],
 
           demoLink: null,
-          useCaseDescription: ['The keyboard events module can be used to capture the key down/up and press events of a physical keyboard, fro mthere you can acces the key name/code and if the user is holding the key down.'],
           platforms: ['Android, Ios, ChromeOS'],
           required: ['Physical keyboard'],
 
           repo: {
+            repoName: 'Mod Docs',
             link: 'https://github.com/lukeplays33/Mod-Docs',
             openSource: true,
             developerDocs: '',
