@@ -183,7 +183,7 @@
     color: var(--secondairyTextColor);
   }
 
-  #description, #useCases {
+  #description, #useCases, #required, #platform {
     display:flex;
     flex-direction:row;
 

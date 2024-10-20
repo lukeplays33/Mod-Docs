@@ -4,8 +4,10 @@ let demoTabItem, i;
 
 let description = document.getElementById('description');
 let useCase = document.getElementById('useCases');
-let moduleName = document.getElementById('moduleName');
+let required = document.getElementById('required');
+let platform = document.getElementById('platform');
 
+let moduleName = document.getElementById('moduleName');
 let developer = document.getElementById('developer');
 let version = document.getElementById('version');
 let status = document.getElementById('status');
@@ -22,8 +24,11 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
-moduleName.innerHTML = itemJSON.about.repo.repoName;
+platform.children[1].innerHTML = itemJSON.about.platfroms;
+required.children[1].innerHTML = itemJSON.about.required;
 
+
+moduleName.innerHTML = itemJSON.about.repo.repoName;
 openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
 developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;
 version.innerHTML = 'Version: ' + itemJSON.about.repo.version;

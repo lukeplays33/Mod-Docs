@@ -16,7 +16,7 @@ let docsItemsJson = {
             guide: ''
           },
           description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
-          useCaseDescription: ['The keyboard events module can be used to capture the key down/up and press events of a physical keyboard, fro mthere you can acces the key name/code and if the user is holding the key down.'],
+          useCaseDescription: ['The keyboard events module can be used to capture the key down/up and press events of a physical keyboard, from there you can acces the key name/code and if the user is holding the key down.'],
 
           demoLink: null,
           platforms: ['Android, Ios, ChromeOS'],
