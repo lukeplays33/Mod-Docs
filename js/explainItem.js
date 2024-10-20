@@ -14,6 +14,9 @@ let status = document.getElementById('status');
 let openSource = document.getElementById('openSource');
 let license = document.getElementById('license');
 
+let install = doucment.getElementById('install');
+let copyBtn = document.getElementById('copy');
+
 let items = document.getElementById('docs');
 
 let demo = document.getElementById('demo');
@@ -27,6 +30,7 @@ useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
 platform.children[1].innerHTML = itemJSON.about.platforms;
 required.children[1].innerHTML = itemJSON.about.required;
 
+install.innerHTML = itemJSON.about.installation.link;
 
 moduleName.innerHTML = itemJSON.about.repo.repoName;
 openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
@@ -65,3 +69,13 @@ moduleName.addEventListener('click', function () {
 license.addEventListener('click', function () {
     window.open(itemJSON.about.repo.license.link)
 });
+
+copyBtn.addEventListener('click', function () {
+    navigator.clipboard.writeText(install.innerHTML);
+    copyBtn.innerHTML = 'Copied';
+
+    window.setTimeout(() => {
+        copyBtn.innerHTML = 'Copy';
+    },1000)
+
+})
