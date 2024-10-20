@@ -75,7 +75,7 @@ install.addEventListener('click', function () {
     install.innerHTML = 'Copied';
 
     window.setTimeout(() => {
-        install.innerHTML = 'Copy';
+        install.innerHTML = itemJSON.about.installation.link;
     },1000)
 
 });
