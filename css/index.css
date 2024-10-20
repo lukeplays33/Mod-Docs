@@ -200,7 +200,7 @@
   #required .chipIcon, #platform .chipIcon {
     max-height: 13px;
     max-width: 13px;
-    line-height: 14px;
+    line-height: 13px;
     text-align: left;
     font-size: 15px;
   }
