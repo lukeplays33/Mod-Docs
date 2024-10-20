@@ -2,7 +2,7 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 let demoTabItem, i;
 
-let description = document.getElementById('description');
+let description = document.getElementById('eDescription');
 let useCase = document.getElementById('useCases');
 let required = document.getElementById('required');
 let platform = document.getElementById('platform');
