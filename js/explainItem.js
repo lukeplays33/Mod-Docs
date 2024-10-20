@@ -24,7 +24,7 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
-platform.children[1].innerHTML = itemJSON.about.platfroms;
+platform.children[1].innerHTML = itemJSON.about.platforms;
 required.children[1].innerHTML = itemJSON.about.required;
 
 

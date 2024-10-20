@@ -193,6 +193,10 @@
     margin-bottom:8px;
   }
 
+  #required .chipIcon, #platform .chipIcon {
+
+  }
+
   .text {
     width:100%;
     text-align:left;
