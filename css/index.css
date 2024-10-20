@@ -232,3 +232,10 @@
     margin-top:auto;
     margin-bottom:auto;
   }
+
+  .repoInfo p {
+    margin-top:8px;
+
+    background-color:var(--secondairy);
+    color:var(--secondairyTextColor);
+  }
