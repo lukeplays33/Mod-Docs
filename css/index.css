@@ -227,3 +227,8 @@
   .repoInfo * {
     margin:0px;
   }
+
+  .repoInfo x-icon {
+    margin-top:auto;
+    margin-bottom:auto;
+  }
