@@ -14,7 +14,7 @@ let status = document.getElementById('status');
 let openSource = document.getElementById('openSource');
 let license = document.getElementById('license');
 
-let install = doucment.getElementById('install');
+let install = document.getElementById('install');
 let copyBtn = document.getElementById('copy');
 
 let items = document.getElementById('docs');
