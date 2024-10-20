@@ -15,7 +15,7 @@ let openSource = document.getElementById('openSource');
 let license = document.getElementById('license');
 
 let install = document.getElementById('install');
-let copyBtn = document.getElementById('copy');
+let guide = document.getElementById('guide');
 
 let items = document.getElementById('docs');
 
@@ -70,12 +70,16 @@ license.addEventListener('click', function () {
     window.open(itemJSON.about.repo.license.link)
 });
 
-copyBtn.addEventListener('click', function () {
+install.addEventListener('click', function () {
     navigator.clipboard.writeText(install.innerHTML);
-    copyBtn.innerHTML = 'Copied';
+    install.innerHTML = 'Copied';
 
     window.setTimeout(() => {
-        copyBtn.innerHTML = 'Copy';
+        install.innerHTML = 'Copy';
     },1000)
 
-})
+});
+
+guide.addEventListener('click', function () {
+    window.open(itemJSON.about.installation.guide);
+});

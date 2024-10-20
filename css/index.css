@@ -211,13 +211,6 @@
 
   #install {
     text-align:left;
-
-    background-color:var(--primary);
-    color:var(--primaryTextColor);
-
-    padding:8px;
-
-    margin-right:8px;
   }
 
   .text {
@@ -277,9 +270,9 @@
     gap:8px;
   }
 
-  #copy {
-    width:min-content;
+  #guide {
+    width:80px;
 
-    background-color:var(--primary);
-    color:var(--primaryTextColor)
+    background-color:var(--secondairyContainer);
+    color:var(--secondairyContainerTextColor);
   }

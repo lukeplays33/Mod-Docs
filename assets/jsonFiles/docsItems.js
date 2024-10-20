@@ -13,7 +13,7 @@ let docsItemsJson = {
         about: {
           installation : {
             link: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
-            guide: ''
+            guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
           },
           description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
           useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
