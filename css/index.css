@@ -183,7 +183,7 @@
     color: var(--secondairyTextColor);
   }
 
-  #description, #useCases, #required, #platform {
+  #eDescription, #useCases, #required, #platform, #install {
     display:flex;
     flex-direction:row;
 
@@ -193,16 +193,8 @@
     margin-bottom:8px;
   }
 
-  #eDescription, #useCases, #required, #platform {
-    display:flex;
-    flex-direction:row;
-
-    align-items: center;
-    justify-content: center;
-
+  #eDescription, #useCases, #required, #platform, #install {
     height:20px;
-
-    margin-bottom:8px;
   }
 
   #required, #platform {
