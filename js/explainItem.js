@@ -26,9 +26,9 @@ let concatList = ['Information'];
 let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
 
 description.children[1].innerHTML = itemJSON.about.description;
-useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
-platform.children[1].innerHTML = itemJSON.about.platforms;
-required.children[1].innerHTML = itemJSON.about.required;
+useCase.children[1].innerHTML = itemJSON.about.useCases.joinh(', ');
+platform.children[1].innerHTML = itemJSON.about.platforms.joinh(', ');
+required.children[1].innerHTML = itemJSON.about.required.joinh(', ');
 
 install.innerHTML = itemJSON.about.installation.link;
 
