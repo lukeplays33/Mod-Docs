@@ -213,7 +213,7 @@
     color: var(--tertiaryTextColor);
   }
 
-  .items, .items * :not(li, .content, .content *) {
+  .items, .items * :not(li, .content, .content *, .repoInfo) {
     width:100%;
     height:100%;
   }
