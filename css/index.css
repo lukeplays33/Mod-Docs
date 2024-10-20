@@ -190,14 +190,16 @@
     align-items: center;
     justify-content: center;
 
+    height:20px;
+
     margin-bottom:8px;
   }
 
   #required, #platform {
-    height:20px;
+    margin-bottom:0px;
   }
 
-  #required .chipIcon, #platform .chipIcon {
+  #required .chipIcon, #platform .chipIcon, #description .chipIcon, #useCases .chipIcon {
     max-height: 13px;
     max-width: 13px;
     line-height: 13px;
