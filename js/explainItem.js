@@ -30,7 +30,7 @@ useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
 platform.children[1].innerHTML = itemJSON.about.platforms.join(', ');
 required.children[1].innerHTML = itemJSON.about.required.join(', ');
 
-install.innerHTML = itemJSON.about.installation.link;
+install.children[1].innerHTML = itemJSON.about.installation.link;
 
 moduleName.innerHTML = itemJSON.about.repo.repoName;
 openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;

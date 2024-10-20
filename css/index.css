@@ -193,11 +193,11 @@
     margin-bottom:8px;
   }
 
-  #eDescription, #useCases, #required, #platform, #install {
+  #eDescription, #useCases, #required, #platform {
     height:20px;
   }
 
-  #required, #platform {
+  #required, #platform, #install {
     margin-bottom:0px;
   }
 
