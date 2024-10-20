@@ -213,7 +213,11 @@
     text-align:left;
 
     background-color:var(--primary);
-    color:var(--primaryTextColor)
+    color:var(--primaryTextColor);
+
+    padding:8px;
+
+    margin-right:8px;
   }
 
   .text {
