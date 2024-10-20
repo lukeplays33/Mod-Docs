@@ -216,6 +216,7 @@
 
     padding-top:8px;
     padding-bottom:8px;
+    padding-right:8px;
   }
 
   .text {
@@ -276,8 +277,11 @@
   }
 
   #guide {
-    width:80px;
-
-    background-color:var(--secondairyContainer);
-    color:var(--secondairyContainerTextColor);
+    width: 46px;
+    height:45px;
+    line-height:46px;
+    
+    background-color: var(--secondairyContainer);
+    color: var(--secondairyContainerTextColor);
+    padding: 4px;
   }
