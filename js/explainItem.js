@@ -9,6 +9,7 @@ let moduleName = document.getElementById('moduleName');
 let developer = document.getElementById('developer');
 let version = document.getElementById('version');
 let status = document.getElementById('status');
+let openSource = document.getElementById('openSource');
 
 let items = document.getElementById('docs');
 
@@ -22,6 +23,7 @@ description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
 moduleName.innerHTML = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)[0];
 
+openSource.innerHTML = itemJSON.about.repo.openSource;
 developer.innerHTML = itemJSON.about.repo.developer;
 version.innerHTML = itemJSON.about.repo.version;
 status.innerHTML = itemJSON.about.repo.status;
@@ -48,3 +50,7 @@ let information = document.getElementById('Information'); // needs to have a hre
 information.href = '#information';
 
 items.children[0].click();
+
+moduleName.addEventListener('click', function () {
+    window.open(itemJSON.about.repo.link)
+})
