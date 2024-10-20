@@ -6,6 +6,10 @@ let description = document.getElementById('description');
 let useCase = document.getElementById('useCases');
 let moduleName = document.getElementById('moduleName');
 
+let developer = document.getElementById('developer');
+let version = document.getElementById('version');
+let status = document.getElementById('status');
+
 let items = document.getElementById('docs');
 
 let demo = document.getElementById('demo');
@@ -17,6 +21,10 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCaseDescription;
 moduleName.innerHTML = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)[0];
+
+developer.innerHTML = itemJSON.about.repo.developer;
+version.innerHTML = itemJSON.about.repo.version;
+status.innerHTML = itemJSON.about.repo.status;
 
 items.listItems = Object.keys(itemJSON.contents);
 
