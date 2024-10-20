@@ -24,6 +24,8 @@ let docsItemsJson = {
             openSource: true,
             developerDocs: '',
             developer: 'DreamForge',
+            version: '0.0.1',
+            status: "alive", // deperecated/ no-longer maintained or alive
 
             license: {
               name: 'apache 2.0',
