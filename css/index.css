@@ -193,8 +193,16 @@
     margin-bottom:8px;
   }
 
-  #required .chipIcon, #platform .chipIcon {
+  #required, #platform {
+    height:20px;
+  }
 
+  #required .chipIcon, #platform .chipIcon {
+    max-height: 13px;
+    max-width: 13px;
+    line-height: 14px;
+    text-align: left;
+    font-size: 15px;
   }
 
   .text {
