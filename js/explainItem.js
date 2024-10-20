@@ -28,7 +28,7 @@ openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
 developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;
 version.innerHTML = 'Version: ' + itemJSON.about.repo.version;
 status.innerHTML = 'Status: ' + itemJSON.about.repo.status;
-license.innerHTML = 'Status: ' + itemJSON.about.repo.license;
+license.innerHTML = 'License: ' + itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents);
 
