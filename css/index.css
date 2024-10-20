@@ -183,7 +183,7 @@
     color: var(--secondairyTextColor);
   }
 
-  #description, #eDescription, #useCases, #required, #platform, #install {
+  #description, #eDescription, #useCases, #required, #platform, #installDiv {
     display:flex;
     flex-direction:row;
 
@@ -197,7 +197,7 @@
     height:20px;
   }
 
-  #required, #platform, #install {
+  #required, #platform, #installDiv {
     margin-bottom:0px;
   }
 
@@ -207,6 +207,13 @@
     line-height: 13px;
     text-align: left;
     font-size: 15px;
+  }
+
+  #install {
+    text-align:left;
+
+    background-color:var(--primary);
+    color:var(--primaryTextColor)
   }
 
   .text {
@@ -264,4 +271,11 @@
 
   .gap {
     gap:8px;
+  }
+
+  #copy {
+    width:min-content;
+
+    background-color:var(--primary);
+    color:var(--primaryTextColor)
   }
