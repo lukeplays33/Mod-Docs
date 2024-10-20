@@ -223,3 +223,7 @@
 
     margin-bottom:8px;
   }
+
+  .repoInfo * {
+    margin:0px;
+  }
