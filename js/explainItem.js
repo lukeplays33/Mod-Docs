@@ -10,6 +10,7 @@ let developer = document.getElementById('developer');
 let version = document.getElementById('version');
 let status = document.getElementById('status');
 let openSource = document.getElementById('openSource');
+let license = document.getElementById('license');
 
 let items = document.getElementById('docs');
 
@@ -27,6 +28,7 @@ openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
 developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;
 version.innerHTML = 'Version: ' + itemJSON.about.repo.version;
 status.innerHTML = 'Status: ' + itemJSON.about.repo.status;
+license.innerHTML = 'Status: ' + itemJSON.about.repo.license;
 
 items.listItems = Object.keys(itemJSON.contents);
 
@@ -53,4 +55,8 @@ items.children[0].click();
 
 moduleName.addEventListener('click', function () {
     window.open(itemJSON.about.repo.link)
-})
+});
+
+license.addEventListener('click', function () {
+    window.open(itemJSON.about.repo.license.link)
+});

@@ -29,7 +29,7 @@ let docsItemsJson = {
 
             license: {
               name: 'apache 2.0',
-              docs: 'https://httpd.apache.org/docs/2.4/license.html'
+              link: 'https://httpd.apache.org/docs/2.4/license.html'
             },
           },
 

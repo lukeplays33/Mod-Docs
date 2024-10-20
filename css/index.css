@@ -237,3 +237,7 @@
     background-color:var(--primary);
     color:var(--primaryTextColor);
   }
+
+  #information hr {
+    margin-top:0px;
+  }
