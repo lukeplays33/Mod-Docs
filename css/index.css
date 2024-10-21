@@ -206,8 +206,10 @@ list-viewer li {
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction:column;
+  }
 
-    gap:0px;
+  #eDescription {
+    margin-bottom:0px;
   }
 }
 
