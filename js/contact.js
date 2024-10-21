@@ -1,5 +1,17 @@
 import { settings } from "../assets/jsonFiles/supportSettings.js";
 
+if(!settings.faq) {
+    document.getElementById('FAQ').remove();
+}
+
+if(!settings.troubleShooting) {
+    document.getElementById('Troubleshooting').remove();
+}
+
+if(!settings.privacyPolicy) {
+    document.getElementById('Privacy policy').remove();
+}
+
 document.getElementById('support').addEventListener('itemSelected', function (e) {
     if(e.detail.index == 0) {
         window.open(settings.communityServer);
