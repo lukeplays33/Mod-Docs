@@ -203,10 +203,6 @@ list-viewer li {
   min-height: 20px;
 }
 
-.explainInfoItems * {
-  height:100%;
-}
-
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction:column;
