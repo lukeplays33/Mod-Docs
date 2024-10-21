@@ -196,6 +196,8 @@ list-viewer li {
   align-items: center;
   justify-content: center;
 
+  height:100% !important;
+
   margin-bottom: 8px;
 }
 
@@ -250,8 +252,8 @@ list-viewer li {
 
 .chipIcon {
   border-radius: 200px;
-  background-color: var(--primary);
-  color: var(--primaryTextColor);
+  background-color: var(--secondairyContainer);
+  color: var(--secondairyContainerTextColor);
   font-size: 30px;
   padding: 8px;
 }
@@ -313,4 +315,8 @@ list-viewer li {
 
 .drawerToggle {
   top:10px;
+}
+
+header a {
+  margin-left:33px;
 }
