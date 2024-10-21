@@ -274,8 +274,8 @@ list-viewer li {
   margin-bottom: auto;
 }
 
-#information hr {
-  margin: 0px;
+#information #firstHR {
+  margin-top: 0px;
 }
 
 .gap {
