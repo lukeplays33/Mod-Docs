@@ -344,9 +344,12 @@ header a {
 .listItemView .chipIcon {
   border-radius:10px;
 
-  width: 28px;
-  height: 27px;
-  line-height: 18px;
+  width: 35px;
+  height: 34px;
+  line-height: 25px;
+
+  padding-left:0px;
+  padding-right:0px;
 
   font-size: 17px;
 }
