@@ -205,23 +205,6 @@ list-viewer li {
   min-height: 20px;
 }
 
-@media (pointer: coarse) {
-  .explainInfoItems {
-    flex-direction:column;
-  }
-
-  #eDescription {
-    margin-bottom:0px;
-  }
-
-  .repoInformation {
-    display:grid;
-    grid-template-columns: 1fr;
-  
-    gap:8px;
-  }
-}
-
 #required,
 #platform,
 #installDiv {
@@ -359,4 +342,19 @@ header a {
   grid-template-columns: 1fr 1fr;
 
   gap:8px;
+}
+
+@media (pointer: coarse) {
+  .explainInfoItems {
+    flex-direction:column;
+  }
+
+  #eDescription {
+    margin-bottom:0px;
+  }
+
+  .repoInformation {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
 }
