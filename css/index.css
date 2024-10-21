@@ -235,7 +235,7 @@ list-viewer li {
 #install {
   text-align: left;
 
-  width: calc(100% - 86px);
+  width: calc(100% - 90px);
 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -319,4 +319,15 @@ list-viewer li {
 
 header a {
   margin-left:33px;
+}
+
+.listItemView {
+  display:flex;
+  flex-direction:row;
+
+  gap:8px;
+}
+
+.listItemView .chipIcon {
+  border-radius:10px;
 }
