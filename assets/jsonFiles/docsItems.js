@@ -25,7 +25,7 @@ let docsItemsJson = {
           repo: {
             repoName: 'Mod Docs',
             link: 'https://github.com/lukeplays33/Mod-Docs',
-            openSource: 'openSourced',
+            openSource: 'Open source',
             developerDocs: '',
             developer: 'DreamForge',
             version: '0.0.1',
