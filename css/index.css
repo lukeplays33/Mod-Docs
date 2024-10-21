@@ -296,11 +296,11 @@ list-viewer li {
 }
 
 #guide {
-  width: 36px;
-  height: 35px;
-  line-height: 26px;
+  width: 26px;
+  height: 25px;
+  line-height: 16px;
 
-  font-size: 25px;
+  font-size: 15px;
 
   background-color: var(--secondairyContainer);
   color: var(--secondairyContainerTextColor);
