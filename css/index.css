@@ -270,6 +270,8 @@
 
   #moduleName {
     width: calc(100% - 16px);
+
+    color:var(--secondairyTextColor)
   }
 
   .gap {
