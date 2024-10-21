@@ -352,9 +352,13 @@ header a {
   #eDescription {
     margin-bottom:0px;
   }
+}
 
-  .repoInformation {
-    display:grid;
-    grid-template-columns: 1fr;
-  }
+hr::before {
+  content: ' there this is some text that i use to create this divider it is very long yes yes, but not visible to user how that come you ask? well the font is no bigger than 0px wich means the user canHellonot see this font, funny right? well imma make this text even longer why? soo that this divider also works on a bigger screen like your TV but not only that then itll also work on some random screen that are even BIGGER than a normal TV, still not long engoug thats sad yes yes thats why im adding this very long and random bullshit message that also counts as a easteregg ;)';
+
+  height: 20px !important;
+  color: black;
+  overflow: hidden;
+  display: block;
 }
