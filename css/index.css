@@ -334,6 +334,9 @@ header a {
   flex-direction: column;
   justify-content: center;
 
+  background-color: var(--secondairy);
+  color: var(--secondairyTextColor);
+
 }
 
 .listItemView .chipIcon {
@@ -343,11 +346,7 @@ header a {
   height: 34px;
   line-height: 36px;
 
-  background-color: var(--secondairy);
-  color: var(--secondairyTextColor);
-
-  padding-left:0px;
-  padding-right:0px;
+  padding:0px;
 
   font-size: 17px;
 }
