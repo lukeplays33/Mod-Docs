@@ -25,14 +25,14 @@ let docsItemsJson = {
           repo: {
             repoName: 'Mod Docs',
             link: 'https://github.com/lukeplays33/Mod-Docs',
-            openSource: true,
+            openSource: 'openSourced',
             developerDocs: '',
             developer: 'DreamForge',
             version: '0.0.1',
-            status: "alive", // deperecated/ no-longer maintained or alive or custom
+            status: "Alive", // deperecated/ no-longer maintained or alive or custom
 
             license: {
-              name: 'apache 2.0',
+              name: 'Apache 2.0',
               link: 'https://httpd.apache.org/docs/2.4/license.html'
             },
           },
