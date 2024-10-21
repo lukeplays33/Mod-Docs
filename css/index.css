@@ -234,6 +234,8 @@ list-viewer li {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 8px;
+
+  color: var(--secondairyTextColor);
 }
 
 .text {
@@ -287,8 +289,6 @@ list-viewer li {
 
 #moduleName {
   width: calc(100% - 16px);
-
-  color: var(--secondairyTextColor);
 }
 
 .gap {
