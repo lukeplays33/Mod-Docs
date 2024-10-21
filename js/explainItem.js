@@ -63,10 +63,6 @@ information.href = '#information';
 
 items.children[0].click();
 
-moduleName.addEventListener('click', function () {
-    window.open(itemJSON.about.repo.link)
-});
-
 license.addEventListener('click', function () {
     window.open(itemJSON.about.repo.license.link)
 });
