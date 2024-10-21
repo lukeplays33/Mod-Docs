@@ -213,6 +213,13 @@ list-viewer li {
   #eDescription {
     margin-bottom:0px;
   }
+
+  .repoInformation {
+    display:grid;
+    grid-template-columns: 1fr;
+  
+    gap:8px;
+  }
 }
 
 #required,
@@ -345,4 +352,11 @@ header a {
   padding:0px;
 
   font-size: 25px;
+}
+
+.repoInformation {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap:8px;
 }
