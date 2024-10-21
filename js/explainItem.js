@@ -68,8 +68,6 @@ license.addEventListener('click', function () {
 });
 
 install.addEventListener('click', function (e) {
-    e.preventDefault();
-
     navigator.clipboard.writeText(install.innerHTML);
     install.innerHTML = 'Copied';
 
