@@ -284,11 +284,6 @@ list-viewer li {
   margin-bottom: auto;
 }
 
-.repoInfo p {
-  background-color: var(--primary);
-  color: var(--primaryTextColor);
-}
-
 #information hr {
   margin: 0px;
 }
@@ -347,6 +342,9 @@ header a {
   width: 36px;
   height: 34px;
   line-height: 36px;
+
+  background-color: var(--secondairy);
+  color: var(--secondairyTextColor);
 
   padding-left:0px;
   padding-right:0px;
