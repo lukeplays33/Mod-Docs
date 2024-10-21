@@ -71,7 +71,9 @@ license.addEventListener('click', function () {
     window.open(itemJSON.about.repo.license.link)
 });
 
-install.addEventListener('click', function () {
+install.addEventListener('click', function (e) {
+    e.preventDefault();
+    
     navigator.clipboard.writeText(install.innerHTML);
     install.innerHTML = 'Copied';
 
