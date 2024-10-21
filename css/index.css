@@ -206,6 +206,8 @@ list-viewer li {
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction:column;
+
+    gap:0px;
   }
 }
 
@@ -229,7 +231,7 @@ list-viewer li {
 #install {
   text-align: left;
 
-  width: min-content;
+  width: calc(100% - 86px);
 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -296,13 +298,17 @@ list-viewer li {
 }
 
 #guide {
-  width: 26px;
-  height: 25px;
-  line-height: 16px;
+  width: 36px;
+  height: 35px;
+  line-height: 26px;
 
-  font-size: 15px;
+  font-size: 25px;
 
   background-color: var(--secondairyContainer);
   color: var(--secondairyContainerTextColor);
   padding: 4px;
+}
+
+.drawerToggle {
+  top:10px;
 }
