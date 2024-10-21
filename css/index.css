@@ -328,6 +328,16 @@ header a {
   gap:8px;
 }
 
+.listItemView p {
+  height: 36px;
+}
+
 .listItemView .chipIcon {
   border-radius:10px;
+
+  width: 36px;
+  height: 35px;
+  line-height: 26px;
+
+  font-size: 25px;
 }
