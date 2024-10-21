@@ -288,10 +288,6 @@ list-viewer li {
   margin: 0px;
 }
 
-#moduleName {
-  width: calc(100% - 16px);
-}
-
 .gap {
   gap: 8px;
 }

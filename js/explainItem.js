@@ -7,7 +7,7 @@ let useCase = document.getElementById('useCases');
 let required = document.getElementById('required');
 let platform = document.getElementById('platform');
 
-let moduleName = document.getElementById('moduleName');
+let repoName = document.getElementById('repoName');
 let developer = document.getElementById('developer');
 let version = document.getElementById('version');
 let status = document.getElementById('status');
@@ -33,12 +33,12 @@ required.children[1].innerHTML = itemJSON.about.required.join(', ');
 install.innerHTML = itemJSON.about.installation.link;
 install.href = itemJSON.about.installation.link;
 
-moduleName.innerHTML = itemJSON.about.repo.repoName;
-openSource.innerHTML = 'openSource: ' + itemJSON.about.repo.openSource;
-developer.innerHTML = 'Developer: ' + itemJSON.about.repo.developer;
-version.innerHTML = 'Version: ' + itemJSON.about.repo.version;
-status.innerHTML = 'Status: ' + itemJSON.about.repo.status;
-license.innerHTML = 'License: ' + itemJSON.about.repo.license.name;
+repoName.innerHTML = itemJSON.about.repo.repoName;
+openSource.innerHTML = itemJSON.about.repo.openSource;
+developer.innerHTML = itemJSON.about.repo.developer;
+version.innerHTML = itemJSON.about.repo.version;
+status.innerHTML = itemJSON.about.repo.status;
+license.innerHTML = itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents);
 
@@ -73,7 +73,7 @@ license.addEventListener('click', function () {
 
 install.addEventListener('click', function (e) {
     e.preventDefault();
-    
+
     navigator.clipboard.writeText(install.innerHTML);
     install.innerHTML = 'Copied';
 
@@ -85,4 +85,8 @@ install.addEventListener('click', function (e) {
 
 guide.addEventListener('click', function () {
     window.open(itemJSON.about.installation.guide);
+});
+
+repoName.addEventListener('click', function () {
+    window.open(itemJSON.about.repo.link);
 });
