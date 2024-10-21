@@ -332,6 +332,13 @@ header a {
   height: 36px;
 
   text-align:left;
+
+  padding-left:8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .listItemView .chipIcon {
