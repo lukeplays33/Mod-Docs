@@ -1,289 +1,312 @@
 :root {
-    --header: #ffffff;
-    --headerColor: black;
-  }
+  --header: #ffffff;
+  --headerColor: black;
+}
 
-  body {
-    background-image: url('../assets/images/images/mountains.png');
+body {
+  background-image: url('../assets/images/images/mountains.png');
 
-    margin:0px;
-  }
+  margin: 0px;
+}
 
-  body,
-  html, main {
+body,
+html,
+main {
 
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+}
 
-  #bottom_nav,
-  #docs {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
+#bottom_nav,
+#docs {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    bottom: 8px;
-    left: 0;
-    right: 0;
+  bottom: 8px;
+  left: 0;
+  right: 0;
 
-    max-width: 90%;
-  }
+  max-width: 90%;
+}
 
-  #docs {
-    z-index: 20;
-  }
+#docs {
+  z-index: 20;
+}
 
-  .header {
-    background-color: var(--header) !important;
-    color: var(--headerColor) !important;
-  }
+.header {
+  background-color: var(--header) !important;
+  color: var(--headerColor) !important;
+}
 
-  #calculator {
-    width:100%;
-    height:calc(100% - 74px);
+#calculator {
+  width: 100%;
+  height: calc(100% - 74px);
 
-    display: flex;
-  }
+  display: flex;
+}
 
-  view-pager {
-    width: 0px;
-    height:0px;
-  }
+view-pager {
+  width: 0px;
+  height: 0px;
+}
 
-  view-pager * :not(.items, .chipIcon) {
-    width:100%;
-    height:100%;
-  }
+view-pager * :not(.items, .chipIcon) {
+  width: 100%;
+  height: 100%;
+}
 
-  #explainTheItem {
-    height:100%;
-  }
+#explainTheItem {
+  height: 100%;
+}
 
-  iframe {
-    border-width: 0px;
+iframe {
+  border-width: 0px;
 
-    height:100%;
-    width:100%;
+  height: 100%;
+  width: 100%;
 
-    margin:8px;
-    margin-left:0px;
-  }
+  margin: 8px;
+  margin-left: 0px;
+}
 
-  widgetbot {
-    width:100%;
-    height:100%;
-  }
+widgetbot {
+  width: 100%;
+  height: 100%;
+}
 
-  .w100 {
-    width:100%;
-  }
+.w100 {
+  width: 100%;
+}
 
-  template-header {
-    width:calc(100% - 8px);
-  }
+template-header {
+  width: calc(100% - 8px);
+}
 
-  .w100 * :not(header *, li, .chipIcon) {
-    width:100%
-  }
+.w100 * :not(header *, li, .chipIcon) {
+  width: 100%
+}
 
-  .w100 section {
-    width:100%;
-  }
+.w100 section {
+  width: 100%;
+}
 
-  h1 {
-    margin-top:0px;
-    margin-left:0px;
-    margin-right:0px;
-  }
+h1 {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-  .content {
-    background-color:var(--secondairy);
+.content {
+  background-color: var(--secondairy);
 
-    padding:8px;
+  padding: 8px;
 
-    width:calc(100% - 16px) !important;
-  }
+  width: calc(100% - 16px) !important;
+}
 
-  .transparent {
-    color:TRANSPARENT;
-  }
+.transparent {
+  color: TRANSPARENT;
+}
 
-  .row {
-    display:flex;
-    flex-direction:row;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
-  .column {
-    display:flex;
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.h100calc {
+  height: calc(100% - 55px);
+}
+
+.h100calc * {
+  overflow: hidden;
+}
+
+#draawer {
+  margin-right: 0px;
+}
+
+.marginLeft {
+  margin-left: 8px;
+}
+
+list-viewer {
+  width: 100%;
+
+  padding: 0px;
+}
+
+.actionButton {
+  font-size: 16px;
+
+  border-radius: 2000px !important;
+
+  max-width: 30px;
+
+  margin-left: auto;
+}
+
+list-viewer li {
+  width: calc(100% - 16px);
+}
+
+#search {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+
+  width: 200px;
+  height: 35px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 8px;
+
+  display: block;
+
+  border-radius: 200px;
+  background-color: var(--secondairy);
+
+  padding: 8px;
+
+  color: var(--secondairyTextColor);
+}
+
+#description,
+#eDescription,
+#useCases,
+#required,
+#platform,
+#installDiv {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+}
+
+.explainInfoItems {
+  min-height: 20px;
+}
+
+.explainInfoItems * {
+  height:100%;
+}
+
+@media (pointer: coarse) {
+  .explainInfoItems {
     flex-direction:column;
   }
+}
 
-  .h100 {
-    height:100%;
-  }
+#required,
+#platform,
+#installDiv {
+  margin-bottom: 0px;
+}
 
-  .h100calc {
-    height:calc(100% - 55px);
-  }
+#required .chipIcon,
+#platform .chipIcon,
+#eDescription .chipIcon,
+#useCases .chipIcon {
+  max-height: 13px;
+  max-width: 13px;
+  line-height: 13px;
+  text-align: left;
+  font-size: 15px;
+}
 
-  .h100calc * {
-    overflow:hidden;
-  }
+#install {
+  text-align: left;
 
-  #draawer {
-    margin-right:0px;
-  }
+  width: min-content;
 
-  .marginLeft {
-    margin-left:8px;
-  }
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+}
 
-  list-viewer {
-    width:100%;
+.text {
+  width: 100%;
+  text-align: left;
+  margin-left: 8px;
+}
 
-    padding:0px;
-  }
+.chipIcon {
+  border-radius: 200px;
+  background-color: var(--primary);
+  color: var(--primaryTextColor);
+  font-size: 30px;
+  padding: 8px;
+}
 
-  .actionButton {
-    font-size:16px;
+.des {
+  background-color: var(--tertiary);
+  color: var(--tertiaryTextColor);
+}
 
-    border-radius:2000px !important;
+.items,
+.items * :not(li, .items, .items *) {
+  width: 100%;
+  height: 100%;
+}
 
-    max-width:30px;
+.repoInfo {
+  gap: 8px;
+}
 
-    margin-left:auto;
-  }
+.repoInfo * {
+  gap: 8px;
 
-  list-viewer li {
-    width:calc(100% - 16px);
-  }
+  margin: 0px;
+}
 
-  #search {
-    position:absolute;
-    top:10px;
-    right:8px;
+.repoInfo x-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
-    width:200px;
-    height: 35px;
+.repoInfo p {
+  background-color: var(--primary);
+  color: var(--primaryTextColor);
+}
 
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 8px;
+#information hr {
+  margin: 0px;
+}
 
-    display: block;
+#moduleName {
+  width: calc(100% - 16px);
 
-    border-radius: 200px;
-    background-color: var(--secondairy);
+  color: var(--secondairyTextColor);
+}
 
-    padding: 8px;
+.gap {
+  gap: 8px;
+}
 
-    color: var(--secondairyTextColor);
-  }
+#guide {
+  width: 36px;
+  height: 35px;
+  line-height: 26px;
 
-  #description, #eDescription, #useCases, #required, #platform, #installDiv {
-    display:flex;
-    flex-direction:row;
+  font-size: 25px;
 
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom:8px;
-  }
-
-  #eDescription, #useCases, #required, #platform {
-    min-height:20px;
-  }
-
-  #required, #platform, #installDiv {
-    margin-bottom:0px;
-  }
-
-  #required .chipIcon, #platform .chipIcon, #eDescription .chipIcon, #useCases .chipIcon {
-    max-height: 13px;
-    max-width: 13px;
-    line-height: 13px;
-    text-align: left;
-    font-size: 15px;
-  }
-
-  #install {
-    text-align:left;
-
-    width: min-content;
-
-    padding-top:8px;
-    padding-bottom:8px;
-    padding-right:8px;
-  }
-
-  .text {
-    width:100%;
-    text-align:left;
-    margin-left:8px;
-  }
-
-  .chipIcon {
-    border-radius: 200px;
-    background-color: var(--primary);
-    color: var(--primaryTextColor);
-    font-size: 30px;
-    padding: 8px;
-  }
-
-
-  .des {
-    background-color: var(--tertiary);
-    color: var(--tertiaryTextColor);
-  }
-
-  .items, .items * :not(li, .items, .items *) {
-    width:100%;
-    height:100%;
-  }
-
-  .repoInfo{
-    gap:8px;
-  }
-
-  .repoInfo * {
-    gap:8px;
-
-    margin:0px;
-  }
-
-  .repoInfo x-icon {
-    margin-top:auto;
-    margin-bottom:auto;
-  }
-
-  .repoInfo p {
-    background-color:var(--primary);
-    color:var(--primaryTextColor);
-  }
-
-  #information hr {
-    margin:0px;
-  }
-
-  #moduleName {
-    width: calc(100% - 16px);
-
-    color:var(--secondairyTextColor)
-  }
-
-  .gap {
-    gap:8px;
-  }
-
-  #guide {
-    width: 36px;
-    height:35px;
-    line-height:46px;
-    
-    background-color: var(--secondairyContainer);
-    color: var(--secondairyContainerTextColor);
-    padding: 4px;
-  }
+  background-color: var(--secondairyContainer);
+  color: var(--secondairyContainerTextColor);
+  padding: 4px;
+}
