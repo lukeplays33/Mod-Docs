@@ -330,14 +330,16 @@ header a {
 
 .listItemView p {
   height: 36px;
+
+  text-align:left;
 }
 
 .listItemView .chipIcon {
   border-radius:10px;
 
-  width: 36px;
-  height: 35px;
-  line-height: 26px;
+  width: 28px;
+  height: 27px;
+  line-height: 18px;
 
-  font-size: 25px;
+  font-size: 17px;
 }
