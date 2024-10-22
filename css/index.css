@@ -214,7 +214,7 @@ list-viewer li {
 #required .chipIcon,
 #platform .chipIcon,
 #eDescription .chipIcon,
-#useCases .chipIcon {
+#useCases .chipIcon, #installDiv .chipIcon {
   max-height: 13px;
   max-width: 13px;
   line-height: 13px;
