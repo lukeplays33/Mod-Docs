@@ -284,18 +284,14 @@ list-viewer li {
 
 #guide,
 #installFaq {
-  height:max-content;
-  flex:1;
+  height: max-content;
+  flex: 1;
   line-height: 26px;
-
-  font-size: 25px;
-
+  font-size: 15px;
   background-color: var(--secondairyContainer);
   color: var(--secondairyContainerTextColor);
-  
-  padding: 4px;
-
-  margin-top:8px;
+  padding: 0px;
+  margin-top: 8px;
 }
 
 .drawerToggle {
