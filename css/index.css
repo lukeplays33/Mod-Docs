@@ -201,7 +201,7 @@ list-viewer li {
   margin-bottom: 8px;
 }
 
-.explainInfoItems :not(#installItems) {
+.explainInfoItems {
   min-height: 20px;
 }
 
@@ -350,7 +350,7 @@ header a {
 }
 
 @media (pointer: coarse) {
-  .explainInfoItems {
+  .explainInfoItems :not(#installItems) {
     flex-direction: column;
   }
 
