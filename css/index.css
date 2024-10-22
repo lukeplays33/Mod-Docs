@@ -305,12 +305,13 @@ header a {
 .listItemView {
   display:flex;
   flex-direction:row;
-
-  gap:8px;
 }
 
 .listItemView p {
   height: 36px;
+
+    border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
 
   text-align:left;
 
@@ -327,6 +328,9 @@ header a {
 
 .listItemView .chipIcon {
   border-radius:10px;
+
+  border-top-right-radius:0px;
+  border-bottom-right-radius:0px;
 
   width: 36px;
   height: 35px;
