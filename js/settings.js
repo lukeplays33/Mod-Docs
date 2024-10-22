@@ -22,6 +22,7 @@ document.getElementById('settingsListView').addEventListener('itemSelected', fun
             reader.onload = readerEvent => {
                 var content = readerEvent.target.result; // this is the content!
 
+                console.log(readerEvent.target.result)
                 document.body.style.backgroundImage = `url('${readerEvent.target.result}')`;
                 pichai.initialize();
 
