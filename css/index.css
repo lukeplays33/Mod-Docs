@@ -282,9 +282,7 @@ list-viewer li {
   gap: 8px;
 }
 
-#guide {
-  width: 36px;
-  height: 35px;
+#guide, #installFaq {
   line-height: 26px;
 
   font-size: 25px;
@@ -305,6 +303,8 @@ header a {
 .listItemView {
   display:flex;
   flex-direction:row;
+
+  gap:0px;
 }
 
 .listItemView p {
