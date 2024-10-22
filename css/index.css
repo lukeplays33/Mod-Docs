@@ -227,9 +227,7 @@ list-viewer li {
 
   width: calc(100% - 54px);
 
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 8px;
+  padding:0px;
 
   color: var(--secondairyTextColor);
 }
