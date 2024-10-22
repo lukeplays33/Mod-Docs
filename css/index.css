@@ -282,7 +282,7 @@ list-viewer li {
 }
 
 #guide,
-#installFaq {
+#installFaq, #examples {
   height: max-content;
   flex: 1;
   line-height: 26px;
@@ -290,7 +290,6 @@ list-viewer li {
   background-color: var(--secondairyContainer);
   color: var(--secondairyContainerTextColor);
   padding: 0px;
-  margin-top: 8px;
 }
 
 .drawerToggle {
