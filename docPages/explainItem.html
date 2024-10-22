@@ -16,6 +16,11 @@
                 <view-pager id="explainTheItem">
                     <div id="explanationItems"></div>
                     <div id="information">
+                        <div class="row gap explainInfoItems" id="installItems">
+                            <button class='chipIcon' id="guide">Installation guide</button>
+                            <button class='chipIcon' id="installFaq">Examples</button> <!-- displays a list of extra examples of code instead of only a interactive demo-->
+                            <button class='chipIcon' id="installFaq">Notes</button> <!-- for informing users about bus, temporary solutions and a quikc FAQ -->
+                        </div>
                         <hr id="firstHR" titleText="Installation">
 
                         <article>
@@ -23,10 +28,6 @@
                                 <i class="material-icons chipIcon">download</i>
                                 <p class="text" id="install"></p>
                             </article>
-                            <div class="row gap explainInfoItems" id="installItems">
-                                <button class='chipIcon' id="guide">Installation guide</button>
-                                <button class='chipIcon' id="installFaq">Common issues</button> <!-- for informing users about bus, temporary solutions and a quikc FAQ -->
-                            </div>
                         </article>
 
                         <hr titleText="Module Information">
