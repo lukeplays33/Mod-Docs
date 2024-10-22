@@ -38,7 +38,7 @@ for (i of items) {
 
     alert(this.parentNode.toggle)
     if(this.parentNode.platform == 'mobile') {
-      this.parentNode.toggle.click();
+      //this.parentNode.toggle.click();
   }
   });
 }
