@@ -201,7 +201,7 @@ list-viewer li {
   margin-bottom: 8px;
 }
 
-.explainInfoItems {
+.explainInfoItems :not(#installItems) {
   min-height: 20px;
 }
 
