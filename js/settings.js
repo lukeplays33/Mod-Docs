@@ -16,7 +16,7 @@ document.getElementById('settingsListView').addEventListener('itemSelected', fun
 
             // setting up the reader
             var reader = new FileReader();
-            reader.readAsText(file, 'UTF-8');
+            reader.readAsDataURL(file, 'UTF-8');
 
             // here we tell the reader what to do when it's done reading...
             reader.onload = readerEvent => {
