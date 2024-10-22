@@ -350,8 +350,12 @@ header a {
 }
 
 @media (pointer: coarse) {
-  .explainInfoItems :not(#installItems) {
+  .explainInfoItems {
     flex-direction: column;
+  }
+
+  #installItems {
+    flex-direction: row;
   }
 
   #eDescription {
