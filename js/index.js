@@ -35,10 +35,8 @@ for (i of items) {
     document.getElementById('pages').src = this.href;
     window.sessionStorage.setItem('docItem', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
-
-    alert(this.parentNode.toggle)
-    if(this.parentNode.platform == 'mobile') {
-      //this.parentNode.toggle.click();
+    if(this.parentNode.platform == 'mobile' && this.tagName == 'LI') {
+      this.parentNode.toggle.click();
   }
   });
 }
