@@ -36,7 +36,7 @@ for (i of items) {
     window.sessionStorage.setItem('docItem', this.innerHTML);
     document.title = `Mod Docs! - ${this.innerHTML}`;
 
-    alert(this.parentNode.platform)
+    alert(this.parentNode.toggle)
     if(this.parentNode.platform == 'mobile') {
       this.parentNode.toggle.click();
   }
