@@ -4,5 +4,5 @@ let pichai = new PichaiUX();
 pichai.initialize();
 
 let interval = window.setInterval( async () => {
-    document.body.style.backgroundImage = 'initial';
+    document.body.style.backgroundImage = 'none';
 }, 500);
