@@ -86,7 +86,7 @@ template-header {
   width: calc(100% - 8px);
 }
 
-.w100 * :not(header *, li, .chipIcon, i) {
+.w100 * :not(header *, li, .chipIcon, i, accordion-dropdown h5) {
   width: 100%
 }
 
@@ -362,7 +362,7 @@ header a {
   }
 }
 
-accordion-dropdown {
+accordion-dropdown h5 {
   width: calc(100% - 16px);
 }
 
