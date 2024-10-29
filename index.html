@@ -16,8 +16,7 @@
 
   <main class="row">
 
-    <tab-bar id="draawer" mode="drawer" for="items" class="tabBarHolder"
-      style="grid-template-columns: repeat(4, 1fr);">
+    <tab-bar id="draawer" mode="drawer" for="items" class="tabBarHolder" style="grid-template-columns: repeat(4, 1fr);">
       <a id="modules" class="header" href="">Home</a>
 
       <a index="3" href="../Mod-Docs/docPages/recent.html" id="HomeButton">Recent</a>
@@ -35,16 +34,27 @@
 
       <input id="search" type="search" placeholder="Search Mod Docs!...">
 
-    <view-pager id="items" pageindex="NaN"></view-pager>
+      <view-pager id="items" pageindex="NaN"></view-pager>
 
-    <div id="calculator">
-      <iframe id="pages" src="../Mod-Docs/docPages/recent.html"></iframe>
-    </div>
-  </section>
+      <div id="calculator">
+        <iframe id="pages" src="../Mod-Docs/docPages/recent.html"></iframe>
+      </div>
+    </section>
 
   </main>
 
-  <template-footer></template-footer>
+  <footer>
+    <x-icon></x-icon>
+    <a href="../Mod-Docs/docPages/about.html">
+      <x-title title='Mod Docs'></x-title>
+    </a>
+    <x-icon
+      src='https://raw.githubusercontent.com/lukeplays33/Pichai-UX/main/assets/shapes/pictures/twitter.png'></x-icon>
+    <x-icon
+      src='https://raw.githubusercontent.com/lukeplays33/Pichai-UX/main/assets/shapes/pictures/discord.png'></x-icon>
+    <x-icon
+      src='https://raw.githubusercontent.com/lukeplays33/Pichai-UX/main/assets/shapes/pictures/youtube.png'></x-icon>
+  </footer>
 
   <script id="rendered-js" type="module" src="../Mod-Docs/js/index.js" defer></script>
 
