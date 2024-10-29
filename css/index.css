@@ -363,7 +363,7 @@ header a {
 }
 
 accordion-dropdown h5 {
-  width: calc(100% - 16px);
+  width: calc(100% - 24px);
 }
 
 accordion-dropdown h5 i {
