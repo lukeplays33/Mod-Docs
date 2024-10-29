@@ -362,7 +362,7 @@ header a {
   }
 }
 
-accordion-dropdown h5, .accordionItems  {
+accordion-dropdown h5, .accordionItems * {
   width: calc(100% - 24px);
 }
 
