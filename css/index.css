@@ -361,3 +361,7 @@ header a {
     margin-bottom: 0px;
   }
 }
+
+accordion-dropdown {
+  width: calc(100% - 16px);
+}
