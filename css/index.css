@@ -86,7 +86,7 @@ template-header {
   width: calc(100% - 8px);
 }
 
-.w100 * :not(header *, li, .chipIcon) {
+.w100 * :not(header *, li, .chipIcon, i) {
   width: 100%
 }
 
