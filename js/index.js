@@ -30,6 +30,9 @@ for (i of items) {
 
   i.addEventListener('click', function (e) {
     if (i.id == 'promo') {
+      e.preventDefault();
+      e.stopPropagation();
+      
       window.open('https://lukeplays33.github.io/The-Magic-Garden/pages/about/moddocs.html');
     } else {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
