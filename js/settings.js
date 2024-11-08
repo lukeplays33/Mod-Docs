@@ -9,7 +9,7 @@ about.innerText = settings.about.message;
 
 document.getElementById('settingsListView').addEventListener('itemSelected', function (e) {
     if (e.detail.index == 1) {
-        window.open('../Mod-Docs/docPages/about.html');
+        window.open(settings.about.url);
     } else if (e.detail.index == 2) {
         window.open('https://buymeacoffee.com/sketchdonate');
     }
