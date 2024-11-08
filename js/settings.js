@@ -3,7 +3,7 @@ import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { settings } from '../assets/jsonFiles/supportSettings.js';
 
 let about = document.getElementById('What is Mod Docs?');
-about.innerText = settings.about.message;
+about.innerHTML = about.innerHTML.replace('What is Mod Docs?',settings.about.message);
 
 let pichai = new PichaiUX();
 
