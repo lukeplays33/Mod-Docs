@@ -14,7 +14,7 @@ let i;
 
 document.getElementById('HomeButton').click();
 
-for(i of Object.keys(docsItemsJson)) {
+for (i of Object.keys(docsItemsJson)) {
   let a = document.createElement('li');
   a.innerHTML = String(i).replaceAll('_', '');
   a.href = '../Mod-Docs/docPages/docsItems.html';
@@ -29,15 +29,19 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
-    this.classList.add('current');
-    
-    document.getElementById('pages').src = this.href;
-    window.sessionStorage.setItem('docItem', this.innerHTML);
-    document.title = `Mod Docs! - ${this.innerHTML}`;
-    
-    if(this.parentNode.platform == 'mobile' && this.tagName == 'LI') {
-      this.parentNode.toggle.click();
-  }
+    if (i.id == 'promo') {
+      window.open('https://lukeplays33.github.io/The-Magic-Garden/pages/about/moddocs.html');
+    } else {
+      this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      this.classList.add('current');
+
+      document.getElementById('pages').src = this.href;
+      window.sessionStorage.setItem('docItem', this.innerHTML);
+      document.title = `Mod Docs! - ${this.innerHTML}`;
+
+      if (this.parentNode.platform == 'mobile' && this.tagName == 'LI') {
+        this.parentNode.toggle.click();
+      }
+    }
   });
 }
