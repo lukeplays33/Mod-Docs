@@ -395,4 +395,6 @@ accordion-dropdown h5 i {
   border-radius:17px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+
+  padding-top:0px;
 }
