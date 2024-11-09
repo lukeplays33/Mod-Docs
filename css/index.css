@@ -374,15 +374,23 @@ accordion-dropdown h5 i {
 
 #promo {
   margin-top:auto;
+  margin-bottom:2px;
 
   background-color:var(--primaryContainer);
   color:var(--primaryContainerTextColor);
 
   height:min-content;
 
-  border-radius:10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-#promo p {
+#promoComp {
+  background-color:var(--primaryContainer);
+  color:var(--primaryContainerTextColor);
+
   font-size:12px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
