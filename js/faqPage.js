@@ -15,20 +15,13 @@ faqList.addEventListener('itemSelected', function (e) {
 
     let selectedItem = document.getElementById(e.detail.value);
 
-    alert(selectedItem.open)
-    if(selectedItem.open) {
-
-    } else {
-        des = document.createElement('li');
-        des.classList.add('des');
-        des.innerHTML = json[e.detail.value];
-    
-        selectedItem.after(des);
-        selectedItem.open = true;
-    }
-
     try {
         des.remove();
-        selectedItem.open = false;
     } catch (e) { }
+
+    des = document.createElement('li');
+    des.classList.add('des');
+    des.innerHTML = json[e.detail.value];
+
+    selectedItem.after(des);
 });
