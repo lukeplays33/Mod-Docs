@@ -18,6 +18,10 @@ faqList.addEventListener('itemSelected', function (e) {
         des.remove();
         des = '';
     } else {
+        try {
+            des.remove();
+            des = '';
+        } catch (e) { }
 
         des = document.createElement('li');
         des.classList.add('des');
