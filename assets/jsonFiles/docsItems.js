@@ -25,7 +25,7 @@ let docsItemsJson = {
           },
 
           demoLink: null,
-          platforms: ['Android, Ios, ChromeOS'],
+          platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
 
           repo: {
