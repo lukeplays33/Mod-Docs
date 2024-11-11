@@ -17,7 +17,7 @@ faqList.addEventListener('itemSelected', function (e) {
     } catch (e) { }
 
     if (faqList.getElementsByClassName('des')[0]) {
-
+        faqList.getElementsByClassName('des')[0].remove();
     } else {
         let des = document.createElement('li');
         des.classList.add('des');
