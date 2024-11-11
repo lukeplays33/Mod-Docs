@@ -5,15 +5,16 @@ import { settings } from '../assets/jsonFiles/supportSettings.js';
 let about = document.getElementById('What is Mod Docs?');
 let donate = document.getElementById('Donate to Mod Docs!');
 
-about.innerHTML = about.innerHTML.replace('What is Mod Docs?',settings.about.message);
-donate.innerHTML = donate.innerHTML.replace('What is Mod Docs?',settings.donations.message);
-
 if(!settings.about.message) {
     about.remove();
+} else {
+    about.innerHTML = about.innerHTML.replace('What is Mod Docs?',settings.about.message);
 }
 
 if(!settings.donations.message) {
     donate.remove();
+} else {
+    donate.innerHTML = donate.innerHTML.replace('What is Mod Docs?',settings.donations.message);
 }
 
 let pichai = new PichaiUX();
