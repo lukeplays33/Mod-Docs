@@ -8,6 +8,14 @@ let donate = document.getElementById('Donate to Mod Docs!');
 about.innerHTML = about.innerHTML.replace('What is Mod Docs?',settings.about.message);
 donate.innerHTML = donate.innerHTML.replace('What is Mod Docs?',settings.donations.message);
 
+if(!settings.about.message) {
+    about.remove();
+}
+
+if(!settings.donations.message) {
+    donate.remove();
+}
+
 let pichai = new PichaiUX();
 
 document.getElementById('settingsListView').addEventListener('itemSelected', function (e) {
