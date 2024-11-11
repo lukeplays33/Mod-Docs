@@ -4,19 +4,25 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 let faqList = document.getElementById('faqs');
 
-let json = String(window.parent.document.title).includes('FAQ') ? faqItems : 
-String(window.parent.document.title).includes('Notes') ? docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.notes : troubleShooting;
+let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
+    String(window.parent.document.title).includes('Notes') ? docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.notes : troubleShooting;
 
 faqList.listItems = Object.keys(json);
+
+let selectedItem = document.getElementById(e.detail.value);
 
 faqList.addEventListener('itemSelected', function (e) {
     try {
         faqList.getElementsByClassName('des')[0].remove();
     } catch (e) { }
 
-    let des = document.createElement('li');
-    des.classList.add('des')
-    des.innerHTML = json[e.detail.value];
+    if (faqList.getElementsByClassName('des')[0] == selectedItem.nextSibling) {
 
-    document.getElementById(e.detail.value).after(des);
+    } else {
+        let des = document.createElement('li');
+        des.classList.add('des')
+        des.innerHTML = json[e.detail.value];
+
+        selectedItem.after(des);
+    }
 });
