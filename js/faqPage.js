@@ -7,7 +7,7 @@ let faqList = document.getElementById('faqs');
 let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
     String(window.parent.document.title).includes('Notes') ? docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.notes : troubleShooting;
 
-let des = null;
+let des;
 
 faqList.listItems = Object.keys(json);
 
@@ -20,7 +20,7 @@ faqList.addEventListener('itemSelected', function (e) {
         des = null;
     } catch (e) { }
 
-    if (des == null) {
+    if (!des) {
         des.remove();
         des = null;
     } else {
