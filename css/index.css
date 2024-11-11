@@ -282,7 +282,7 @@ list-viewer li {
 }
 
 #guide,
-#installFaq, #examples {
+#notes, #examples {
   height: max-content;
   flex: 1;
   line-height: 26px;

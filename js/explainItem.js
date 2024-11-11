@@ -16,6 +16,7 @@ let license = document.getElementById('license');
 
 let install = document.getElementById('install');
 let guide = document.getElementById('guide');
+let notes = document.getElementById('notes');
 
 let items = document.getElementById('docs');
 
@@ -39,6 +40,7 @@ developer.innerHTML = itemJSON.about.repo.developer;
 version.innerHTML = itemJSON.about.repo.version;
 status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
+
 
 items.listItems = Object.keys(itemJSON.contents);
 
@@ -83,4 +85,9 @@ guide.addEventListener('click', function () {
 
 repoName.addEventListener('click', function () {
     window.open(itemJSON.about.repo.link);
+});
+
+notes.addEventListener('click', function (e) {
+    parent.document.title = parent.document.title + ' Notes';
+    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
 });
