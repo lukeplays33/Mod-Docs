@@ -17,13 +17,12 @@ if(!settings.hasOwnProperty('communityServer')) {
 }
 
 document.getElementById('support').addEventListener('itemSelected', function (e) {
-    alert(e.detail.value)
-    if(e.detail.index == 0) {
+    if(e.detail.value == 'Community') {
         window.open(settings.communityServer);
-    } else if(e.detail.index == 1) {
+    } else if(e.detail.value == 'FAQ') {
         parent.document.title = 'Mod Docs - FAQ';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
-    }  else if(e.detail.index == 2) {
+    }  else if(e.detail.value == 'communityServer') {
         parent.document.title = 'Mod Docs - Troubleshooting';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
     }

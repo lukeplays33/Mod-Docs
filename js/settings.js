@@ -20,9 +20,9 @@ if(!settings.hasOwnProperty('donations')) {
 let pichai = new PichaiUX();
 
 document.getElementById('settingsListView').addEventListener('itemSelected', function (e) {
-    if (e.detail.index == 1) {
+    if (e.detail.value == settings.about.message) {
         window.open(settings.about.url);
-    } else if (e.detail.index == 2) {
+    } else if (e.detail.value == settings.donations.message) {
         window.open(settings.donations.url);
     }
 });
