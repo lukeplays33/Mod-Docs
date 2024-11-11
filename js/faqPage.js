@@ -11,6 +11,7 @@ faqList.listItems = Object.keys(json);
 
 faqList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
+    console.log(selectedItem)
 
     try {
         faqList.getElementsByClassName('des')[0].remove();
@@ -21,7 +22,7 @@ faqList.addEventListener('itemSelected', function (e) {
 
     } else {
         let des = document.createElement('li');
-        des.classList.add('des')
+        des.classList.add('des');
         des.innerHTML = json[e.detail.value];
 
         selectedItem.after(des);
