@@ -9,17 +9,17 @@ let docAboutInfo;
 
 try {
 
-docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
+    docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
 
-} catch(e) {}
+} catch (e) { }
 
-let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
+let json = String(window.parent.document.title).includes('FAQ') ? faqItems ://page is used for multiple times
     String(window.parent.document.title).includes('Notes') ? docAboutInfo.notes :
         String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks : troubleShooting;
 
-        if (String(window.parent.document.title).includes('Examples')) {
-            faqList.setAttribute('actionbutton', 'open_in_new');
-        }
+if (String(window.parent.document.title).includes('Examples')) {
+    faqList.setAttribute('actionbutton', 'open_in_new');
+}
 
 let des;
 

@@ -8,12 +8,12 @@ let docsItemsJson = {
   "Mod_Docs!": {},
   "Thunkable": {
     description: 'Modules are a way that allows Thunkable users to create more functions for their app. it allows them to develop easier and faster. <br> Below is a list of Modules we have developed for Thunkable.',
-    
+
     items: {
       "Keyboard_Events": {
         about: {
 
-          installation : {
+          installation: {
             link: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
             guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
           },
@@ -25,9 +25,8 @@ let docsItemsJson = {
           },
 
           demoLinks: { // links to examples users can look at
-            'demo1': 'https://www.geeksforgeeks.org/how-to-check-if-json-key-value-is-null-in-javascript/',
           },
-          
+
           platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
 
