@@ -14,11 +14,6 @@ faqList.listItems = Object.keys(json);
 faqList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
 
-    try {
-        des.remove();
-    } catch (e) { }
-
-    alert(des)
     if (!des == '') {
         des.remove();
         des = '';
