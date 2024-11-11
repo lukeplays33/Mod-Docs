@@ -21,7 +21,7 @@ let docsItemsJson = {
           useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
 
           notes: { // allows the developer or ai to supply additional notes such as bugs
-
+            'Module stays visible after setting visible to false': "THis is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
           },
 
           demoLink: null,
