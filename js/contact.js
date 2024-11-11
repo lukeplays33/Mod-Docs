@@ -12,7 +12,7 @@ if(!settings.privacyPolicy) {
     document.getElementById('Privacy policy').remove();
 }
 
-if(!settings.hasOwnProperty('community')) {
+if(!settings.hasOwnProperty('communityServer')) {
     document.getElementById('Community').remove();
 }
 
