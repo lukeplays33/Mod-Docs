@@ -17,11 +17,17 @@ faqList.addEventListener('itemSelected', function (e) {
 
     try {
         des.remove();
+        selectedItem.open = false;
     } catch (e) { }
 
-    des = document.createElement('li');
-    des.classList.add('des');
-    des.innerHTML = json[e.detail.value];
-
-    selectedItem.after(des);
+    if(selectedItem.open) {
+        
+    } else {
+        des = document.createElement('li');
+        des.classList.add('des');
+        des.innerHTML = json[e.detail.value];
+    
+        selectedItem.after(des);
+        selectedItem.open = true;
+    }
 });
