@@ -4,7 +4,11 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 let faqList = document.getElementById('faqs');
 
+try {
+
 let docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
+
+} catch(e) {}
 
 let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
     String(window.parent.document.title).includes('Notes') ? docAboutInfo.notes :
