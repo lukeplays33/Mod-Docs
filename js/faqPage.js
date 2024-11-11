@@ -20,8 +20,9 @@ faqList.addEventListener('itemSelected', function (e) {
         selectedItem.open = false;
     } catch (e) { }
 
+    alert(selectedItem.open)
     if(selectedItem.open) {
-        
+
     } else {
         des = document.createElement('li');
         des.classList.add('des');
