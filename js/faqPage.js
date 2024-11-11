@@ -4,6 +4,9 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 let faqList = document.getElementById('faqs');
 
+
+let docAboutInfo;
+
 try {
 
 let docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
