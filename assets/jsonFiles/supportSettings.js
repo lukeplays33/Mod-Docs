@@ -3,7 +3,7 @@ let settings = {
     faq: true,
     troubleShooting: true,
     privacyPolicy: true,
-
+    
 }
 
 export { settings }
