@@ -9,9 +9,9 @@ let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
 
 faqList.listItems = Object.keys(json);
 
-let selectedItem = document.getElementById(e.detail.value);
-
 faqList.addEventListener('itemSelected', function (e) {
+    let selectedItem = document.getElementById(e.detail.value);
+    
     try {
         faqList.getElementsByClassName('des')[0].remove();
     } catch (e) { }
