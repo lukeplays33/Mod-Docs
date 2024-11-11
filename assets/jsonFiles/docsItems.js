@@ -8,15 +8,21 @@ let docsItemsJson = {
   "Mod_Docs!": {},
   "Thunkable": {
     description: 'Modules are a way that allows Thunkable users to create more functions for their app. it allows them to develop easier and faster. <br> Below is a list of Modules we have developed for Thunkable.',
+    
     items: {
       "Keyboard_Events": {
         about: {
+
           installation : {
             link: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
             guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
           },
           description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
           useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
+
+          notes: { // allows the developer or ai to supply additional notes such as bugs
+
+          },
 
           demoLink: null,
           platforms: ['Android, Ios, ChromeOS'],
