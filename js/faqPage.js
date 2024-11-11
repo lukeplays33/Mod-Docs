@@ -7,10 +7,11 @@ let faqList = document.getElementById('faqs');
 let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
     String(window.parent.document.title).includes('Notes') ? docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about.notes : troubleShooting;
 
+let des = '';
+
 faqList.listItems = Object.keys(json);
 
 faqList.addEventListener('itemSelected', function (e) {
-    let des = '';
     let selectedItem = document.getElementById(e.detail.value);
 
     try {
@@ -21,7 +22,7 @@ faqList.addEventListener('itemSelected', function (e) {
     alert(des)
     if (!des == null) {
         des.remove();
-        des = null;
+        //des = null;
     } else {
 
         des = document.createElement('li');
