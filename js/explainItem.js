@@ -59,6 +59,7 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     demoTabItem.href = '#demo';
 } else {
     demo.remove();
+    examples.remove();
 }
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
