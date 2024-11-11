@@ -9,7 +9,7 @@ let docAboutInfo;
 
 try {
 
-let docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
+docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
 
 } catch(e) {}
 
