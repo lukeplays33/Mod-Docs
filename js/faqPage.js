@@ -16,14 +16,19 @@ faqList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
 
     try {
-        faqList.getElementsByClassName('des')[0].remove();
+        des.remove();
+        des = null;
     } catch (e) { }
 
-    alert(des)
+    if (des) {
+        des.remove();
+        des = null;
+    } else {
 
-    des = document.createElement('li');
-    des.classList.add('des');
-    des.innerHTML = json[e.detail.value];
+        des = document.createElement('li');
+        des.classList.add('des');
+        des.innerHTML = json[e.detail.value];
 
-    selectedItem.after(des);
+        selectedItem.after(des);
+    }
 });
