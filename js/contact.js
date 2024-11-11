@@ -22,7 +22,7 @@ document.getElementById('support').addEventListener('itemSelected', function (e)
     } else if(e.detail.value == 'FAQ') {
         parent.document.title = 'Mod Docs - FAQ';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
-    }  else if(e.detail.value == 'communityServer') {
+    }  else if(e.detail.value == 'Troubleshooting') {
         parent.document.title = 'Mod Docs - Troubleshooting';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
     }
