@@ -19,7 +19,7 @@ faqList.addEventListener('itemSelected', function (e) {
         des = '';
     } catch (e) { }
 
-    alert(des == '')
+    alert(des)
     if (!des == null) {
         des.remove();
         des = null;
