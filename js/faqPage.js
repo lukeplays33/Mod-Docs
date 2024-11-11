@@ -11,11 +11,12 @@ faqList.listItems = Object.keys(json);
 
 faqList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
-    
+
     try {
         faqList.getElementsByClassName('des')[0].remove();
     } catch (e) { }
 
+    alert(selectedItem.class == 'des')
     if (faqList.getElementsByClassName('des')[0] == selectedItem.nextSibling) {
 
     } else {
