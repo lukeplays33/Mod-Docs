@@ -5,13 +5,13 @@ import { settings } from '../assets/jsonFiles/supportSettings.js';
 let about = document.getElementById('What is Mod Docs?');
 let donate = document.getElementById('Donate to Mod Docs!');
 
-if(!settings.about.message) {
+if(!settings.hasOwnProperty('about')) {
     about.remove();
 } else {
     about.innerHTML = about.innerHTML.replace('What is Mod Docs?',settings.about.message);
 }
 
-if(!settings.donations.message) {
+if(!settings.hasOwnProperty('donations')) {
     donate.remove();
 } else {
     donate.innerHTML = donate.innerHTML.replace('What is Mod Docs?',settings.donations.message);
