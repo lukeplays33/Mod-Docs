@@ -17,7 +17,6 @@ faqList.addEventListener('itemSelected', function (e) {
 
     try {
         des.remove();
-        selectedItem.open = false;
     } catch (e) { }
 
     alert(selectedItem.open)
