@@ -10,6 +10,10 @@ let json = String(window.parent.document.title).includes('FAQ') ? faqItems :
     String(window.parent.document.title).includes('Notes') ? docAboutInfo.notes :
         String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks : troubleShooting;
 
+        if (String(window.parent.document.title).includes('Examples')) {
+            faqList.setAttribute('actionbutton', 'open_in_new');
+        }
+
 let des;
 
 faqList.listItems = Object.keys(json);
