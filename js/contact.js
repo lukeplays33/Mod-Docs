@@ -12,7 +12,12 @@ if(!settings.privacyPolicy) {
     document.getElementById('Privacy policy').remove();
 }
 
+if(!settings.hasOwnProperty('community')) {
+    document.getElementById('Community').remove();
+}
+
 document.getElementById('support').addEventListener('itemSelected', function (e) {
+    alert(e.detail.value)
     if(e.detail.index == 0) {
         window.open(settings.communityServer);
     } else if(e.detail.index == 1) {
