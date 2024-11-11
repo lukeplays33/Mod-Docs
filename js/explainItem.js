@@ -52,7 +52,7 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     concatList.unshift('Demo');
     demo.src = Object.keys(itemJSON.about.demoLinks)[0];
 
-    demoTabItem = document.getElementById('demo'); // needs to have a href after creation
+    demoTabItem = document.getElementById('Demo'); // needs to have a href after creation
     demoTabItem.href = '#demo';
 } else {
     demo.remove();
