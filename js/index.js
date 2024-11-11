@@ -36,7 +36,7 @@ for (i of items) {
       window.open('https://lukeplays33.github.io/The-Magic-Garden/pages/about/moddocs.html'); // open link to moddocs about page to inform and promote mod docs
     } else if(this.id == 'promoComp') {
       window.open('https://lukeplays33.github.io/The-Magic-Garden/');
-    } else {
+    } else if(!this.classList.contains('header')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
