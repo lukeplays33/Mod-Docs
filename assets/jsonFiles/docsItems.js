@@ -24,7 +24,9 @@ let docsItemsJson = {
             'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
           },
 
-          demoLinks: {},
+          demoLinks: { // links to examples users can look at
+            'demo1': '',
+          },
           platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
 
