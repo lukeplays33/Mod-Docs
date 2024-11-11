@@ -16,13 +16,12 @@ faqList.addEventListener('itemSelected', function (e) {
 
     try {
         des.remove();
-        des = '';
     } catch (e) { }
 
     alert(des)
     if (!des == null) {
         des.remove();
-        //des = null;
+        des = '';
     } else {
 
         des = document.createElement('li');
