@@ -14,19 +14,18 @@ faqList.listItems = Object.keys(json);
 faqList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
 
-    if (!des == '') {
+    try {
         des.remove();
-        des = '';
-    } else {
-        try {
-            des.remove();
-            des = '';
-        } catch (e) { }
+    } catch (e) { }
 
+    if (des == '') {
         des = document.createElement('li');
         des.classList.add('des');
         des.innerHTML = json[e.detail.value];
 
         selectedItem.after(des);
+    } else {
+        des.remove();
+        des = '';
     }
 });
