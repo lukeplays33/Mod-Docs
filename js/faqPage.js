@@ -16,13 +16,11 @@ faqList.addEventListener('itemSelected', function (e) {
         faqList.getElementsByClassName('des')[0].remove();
     } catch (e) { }
 
-    if (faqList.getElementsByClassName('des')[0]) {
-        faqList.getElementsByClassName('des')[0].remove();
-    } else {
-        let des = document.createElement('li');
-        des.classList.add('des');
-        des.innerHTML = json[e.detail.value];
+    alert(des)
 
-        selectedItem.after(des);
-    }
+    let des = document.createElement('li');
+    des.classList.add('des');
+    des.innerHTML = json[e.detail.value];
+
+    selectedItem.after(des);
 });
