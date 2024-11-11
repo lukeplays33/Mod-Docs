@@ -25,8 +25,9 @@ let docsItemsJson = {
           },
 
           demoLinks: { // links to examples users can look at
+            'demo1': 'https://www.geeksforgeeks.org/how-to-check-if-json-key-value-is-null-in-javascript/',
           },
-
+          
           platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
 
