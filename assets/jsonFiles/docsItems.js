@@ -24,7 +24,7 @@ let docsItemsJson = {
             'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
           },
 
-          demoLink: null,
+          demoLinks: {},
           platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
 
@@ -55,11 +55,6 @@ let docsItemsJson = {
             type: 'Event', // boolean,int, string etc or event if it's a event or property for property of elements etc
             code: null,
             image: '../assets/images/docs/Event: keyPress.png',
-
-            usage: {
-              do: [],
-              dont: []
-            }
           },
         },
         quickLinks: [], //e.g. for quickly navigating to a tutorial

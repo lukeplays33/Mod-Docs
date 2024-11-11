@@ -48,9 +48,9 @@ for(i of items.children) { // give al ltabbar elements a href so we can connect 
     i.href = `#explanationItems`;
 }
 
-if (itemJSON.about.demoLink) {
+if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     concatList.unshift('Demo');
-    demo.src = itemJSON.about.demoLink;
+    demo.src = Object.keys(itemJSON.about.demoLinks)[0];
 
     demoTabItem = document.getElementById('Demo'); // needs to have a href after creation
     demoTabItem.href = '#demo';
