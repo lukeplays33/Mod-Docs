@@ -12,7 +12,6 @@ let des = null;
 faqList.listItems = Object.keys(json);
 
 faqList.addEventListener('itemSelected', function (e) {
-
     let selectedItem = document.getElementById(e.detail.value);
 
     try {
@@ -20,6 +19,7 @@ faqList.addEventListener('itemSelected', function (e) {
         des = null;
     } catch (e) { }
 
+    alert(des == null)
     if (!des == null) {
         des.remove();
         des = null;
