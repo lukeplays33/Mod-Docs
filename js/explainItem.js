@@ -17,6 +17,7 @@ let license = document.getElementById('license');
 let install = document.getElementById('install');
 let guide = document.getElementById('guide');
 let notes = document.getElementById('notes');
+let examples = document.getElementById('examples');
 
 let items = document.getElementById('docs');
 
@@ -91,5 +92,10 @@ repoName.addEventListener('click', function () {
 
 notes.addEventListener('click', function (e) {
     parent.document.title = parent.document.title + ' Notes';
+    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
+});
+
+examples.addEventListener('click', function (e) {
+    parent.document.title = parent.document.title + ' Examples';
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
 });
