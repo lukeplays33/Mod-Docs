@@ -49,7 +49,7 @@ license.innerHTML = itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents);
 
-for(i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
+for (i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
     i.href = `#explanationItems`;
 }
 
@@ -83,7 +83,7 @@ install.addEventListener('click', function (e) {
 
     window.setTimeout(() => {
         install.innerHTML = itemJSON.about.installation.link;
-    },1000)
+    }, 1000)
 
 });
 
@@ -109,7 +109,7 @@ viewPager.addEventListener('pageChange', function (e) {
     loadDocItem(e.detail.pageIndex);
 });
 
-function loadDocItem (index) {
+function loadDocItem(index) {
     let i;
 
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
@@ -119,27 +119,46 @@ function loadDocItem (index) {
 
     description.children[1].innerHTML = item.description;
 
-    if(item.image) {
+    if (item.image) {
         blockExampleImage.src = item.image;
     }
 
-    for(i of Object.keys(item.variables)) {
+    for (i of Object.keys(item.variables)) {
         try {
             document.getElementById(`explainVariable ${i}`).remove();
-        } catch(e) {}
+        } catch (e) { }
 
         let dropdown = document.createElement('accordion-dropdown');
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
-        dropdown.innerHTML = `<table>
-        <tr>
-        <td>Readonly: </td>
-        <td>${item.variables[i].readOnly}</td>
-        </tr>
-        </table>`;
+
+        dropdown.appendChild(createVaraibleTable(i, variables));
 
         variablesAndInfo.appendChild(dropdown);
     }
 }
 
 loadDocItem(0);
+
+function createVariableTable (variable, variables) {
+    let i;
+
+    let table = document.createElement('table');
+
+    for(i of variables[variable]) {
+        let tr = document.createElement('tr');
+
+        let name = document.createElement('td');
+        name.innerHTML = i;
+
+        let value = document.createElement('td');
+        value.innerHTML = variables[variable][i];
+
+        tr.appendChild(name);
+        tr.appendChild(value);
+
+        table.appendChild(tr);
+    }
+
+    return table;
+}
