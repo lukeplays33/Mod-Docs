@@ -104,5 +104,13 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    alert(e.detail.pageIndex);
+    loadDocItem(e.detail.pageIndex);
 });
+
+function loadDocItem (index) {
+    index = OBject.keys(itemJSON.contents)[index]; // get the item name from index
+
+    let description = document.getElementById('description');
+
+    description.children[1].innerHTML = itemJSON.contents[index];
+}
