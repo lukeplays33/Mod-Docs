@@ -148,7 +148,7 @@ function createVariableTable(variable, variables) { //creates a display table to
     for (i of Object.keys(variables[variable])) {
         let tr = document.createElement('tr');
 
-        if (variables[variable][i] || variables[variable][i].length === 0) {
+        if (variables[variable][i]) {
             let name = document.createElement('td');
             name.innerHTML = i;
 
