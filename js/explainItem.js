@@ -114,3 +114,5 @@ function loadDocItem (index) {
 
     description.children[1].innerHTML = itemJSON.contents[index];
 }
+
+loadDocItem(0);
