@@ -354,6 +354,8 @@ header a {
   display:grid;
 
   grid-template-columns: 1fr 1fr;
+
+  gap:8px;
 }
 
 accordion-dropdown h5, .accordionItems * {
@@ -391,6 +393,13 @@ accordion-dropdown h5 i {
   border-top-right-radius: 0px;
 
   padding-top:0px;
+}
+
+#blockExampleImage {
+  background-color: white;
+  height: 200px;
+  object-fit: contain;
+  object-position: left;
 }
 
 @media (pointer: coarse) {
