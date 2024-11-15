@@ -24,6 +24,7 @@ let items = document.getElementById('docs');
 let demo = document.getElementById('demo');
 
 let viewPager = document.getElementById('explainTheItem');
+let blockExampleImage = document.getElementById('blockExampleImage');
 
 let concatList = ['Information'];
 
@@ -109,10 +110,15 @@ viewPager.addEventListener('pageChange', function (e) {
 
 function loadDocItem (index) {
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
+    let item = itemJSON.contents[index];
 
     let description = document.getElementById('description');
 
-    description.children[1].innerHTML = itemJSON.contents[index].description;
+    description.children[1].innerHTML = item.description;
+
+    if(item.image) {
+        blockExampleImage.src = item.image;
+    }
 }
 
 loadDocItem(0);

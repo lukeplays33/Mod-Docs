@@ -245,8 +245,8 @@ list-viewer li {
   border-radius: 200px;
   background-color: var(--secondairyContainer);
   color: var(--secondairyContainerTextColor);
-  font-size: 30px;
-  padding: 8px;
+  font-size: 25px;
+  padding: 4px;
 }
 
 .des {
