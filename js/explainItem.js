@@ -25,6 +25,7 @@ let demo = document.getElementById('demo');
 
 let viewPager = document.getElementById('explainTheItem');
 let blockExampleImage = document.getElementById('blockExampleImage');
+let variablesAndInfo = document.getElementById('variablesAndInfo');
 
 let concatList = ['Information'];
 
@@ -109,6 +110,8 @@ viewPager.addEventListener('pageChange', function (e) {
 });
 
 function loadDocItem (index) {
+    let i;
+
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
     let item = itemJSON.contents[index];
 
@@ -118,6 +121,13 @@ function loadDocItem (index) {
 
     if(item.image) {
         blockExampleImage.src = item.image;
+    }
+
+    for(i of Object.keys(item.variables)) {
+        let dropdown = document.createElement('accordion-dropdown');
+        dropdown.setAttribute('titleText', i);
+
+        variablesAndInfo.appendChild(dropdown);
     }
 }
 
