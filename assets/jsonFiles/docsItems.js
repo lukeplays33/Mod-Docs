@@ -35,7 +35,7 @@ let docsItemsJson = {
             link: 'https://github.com/lukeplays33/Mod-Docs',
             openSource: 'Open source',
             developerDocs: '',
-            developer: 'DreamForge',
+            developer: 'dreamForge',
             version: '0.0.1',
             status: "Alive", // deperecated/ no-longer maintained or alive or custom
 
@@ -49,17 +49,57 @@ let docsItemsJson = {
         contents: {
           keyPress: {
             description: 'The key pressed event fires when a key is pressed and released on the keyboard.',
-            variables: { //the input or outputs it can have
-              keyName: 'The name of the key that is pressed.',
-              keyCode: 'The code of the key that is pressed.',
-              heldDown: 'Returns true if the key is held down for long periods of time.'
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+
+              keyName: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+
+                returnTypes: ['string'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The name of the key that is pressed.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+
+              keyCode: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+
+                returnTypes: ['string'],
+                inputTypes: [],
+
+                description: 'The code of the key that is pressed.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+
+              heldDown: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+
+                returnTypes: ['string'],
+                inputTypes: [],
+
+                description: 'Returns true if the key is held down for long periods of time.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
             },
-            type: 'Event', // boolean,int, string etc or event if it's a event or property for property of elements etc
+            
+            type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             code: null,
             image: '../assets/images/docs/Event: keyPress.png',
           },
         },
-        quickLinks: [], //e.g. for quickly navigating to a tutorial
+        //quickLinks: [], //e.g. for quickly navigating to a tutorial
       },
       "Screen_Events": {},
       "Theme_Swapper": {},
