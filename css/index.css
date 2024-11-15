@@ -423,8 +423,8 @@ accordion-dropdown h5 i {
 #variablesAndInfo accordion-dropdown .accordionItems {
   margin: 0px;
   margin-bottom:8px;
-  
-  width: calc(100% - 12px);
+
+  width: calc(100% - 12px) !important;
 }
 
 @media (pointer: coarse) {
