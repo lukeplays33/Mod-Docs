@@ -23,6 +23,8 @@ let items = document.getElementById('docs');
 
 let demo = document.getElementById('demo');
 
+let viewPager = document.getElementById('explainTheItem');
+
 let concatList = ['Information'];
 
 let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
@@ -99,4 +101,8 @@ notes.addEventListener('click', function (e) {
 examples.addEventListener('click', function (e) {
     parent.document.title = parent.document.title + ' Examples';
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
+});
+
+viewPager.addEventListener('pageChange', function (e) {
+    alert(e.detail.pageIndex);
 });
