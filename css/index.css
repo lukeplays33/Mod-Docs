@@ -350,18 +350,10 @@ header a {
   gap: 8px;
 }
 
-@media (pointer: coarse) {
-  .explainInfoItems {
-    flex-direction: column;
-  }
+#explanationItems {
+  display:grid;
 
-  #installItems {
-    flex-direction: row;
-  }
-
-  #eDescription {
-    margin-bottom: 0px;
-  }
+  grid-template-columns: 1fr 1fr;
 }
 
 accordion-dropdown h5, .accordionItems * {
@@ -399,4 +391,24 @@ accordion-dropdown h5 i {
   border-top-right-radius: 0px;
 
   padding-top:0px;
+}
+
+@media (pointer: coarse) {
+  .explainInfoItems {
+    flex-direction: column;
+  }
+
+  #installItems {
+    flex-direction: row;
+  }
+
+  #eDescription {
+    margin-bottom: 0px;
+  }
+
+  #explanationItems {
+    display:flex;
+
+    flex-direction:column;
+  }
 }
