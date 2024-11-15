@@ -132,7 +132,7 @@ function loadDocItem(index) {
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
 
-        dropdown.appendChild(createVariableTable(i, variables));
+        dropdown.appendChild(createVariableTable(i, item.variables));
 
         variablesAndInfo.appendChild(dropdown);
     }
