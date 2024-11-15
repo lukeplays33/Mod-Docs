@@ -132,7 +132,7 @@ function loadDocItem(index) {
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
 
-        dropdown.appendChild(createVaraibleTable(i, variables));
+        dropdown.appendChild(createVariableTable(i, variables));
 
         variablesAndInfo.appendChild(dropdown);
     }
@@ -140,7 +140,7 @@ function loadDocItem(index) {
 
 loadDocItem(0);
 
-function createVariableTable (variable, variables) {
+function createVariableTable (variable, variables) { //creates a display table to read variable info
     let i;
 
     let table = document.createElement('table');
