@@ -446,3 +446,7 @@ accordion-dropdown h5 i {
     flex-direction: column;
   }
 }
+
+tr {
+  width: 100% !important;
+}
