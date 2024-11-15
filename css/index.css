@@ -410,6 +410,11 @@ accordion-dropdown h5 i {
   width:min-content !important;
 }
 
+#variablesAndInfo accordion-dropdown h5 {
+  margin: 0px;
+width: calc(100% - 12px);
+}
+
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction: column;
