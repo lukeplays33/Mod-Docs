@@ -112,7 +112,7 @@ function loadDocItem (index) {
 
     let description = document.getElementById('description');
 
-    description.children[1].innerHTML = itemJSON.contents[index];
+    description.children[1].innerHTML = itemJSON.contents[index].description;
 }
 
 loadDocItem(0);
