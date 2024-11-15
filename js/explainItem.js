@@ -131,6 +131,12 @@ function loadDocItem (index) {
         let dropdown = document.createElement('accordion-dropdown');
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
+        dropdown.innerHTML = `<table>
+        <tr>
+        <td>Readonly: </td>
+        <td>${item.variables[i].readOnly}</td>
+        </tr>
+        </table>`;
 
         variablesAndInfo.appendChild(dropdown);
     }
