@@ -402,7 +402,7 @@ accordion-dropdown h5 i {
   object-position: left;
 }
 
-#variablesAndInfo #description {
+#variablesAndInfo * {
   height: max-content !important;
 }
 
