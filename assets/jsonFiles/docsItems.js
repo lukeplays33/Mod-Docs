@@ -71,7 +71,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['string'],
+                returnTypes: ['number'],
                 inputTypes: [],
 
                 description: 'The code of the key that is pressed.',
@@ -85,7 +85,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['string'],
+                returnTypes: ['boolean'],
                 inputTypes: [],
 
                 description: 'Returns true if the key is held down for long periods of time.',

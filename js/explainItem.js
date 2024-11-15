@@ -124,8 +124,13 @@ function loadDocItem (index) {
     }
 
     for(i of Object.keys(item.variables)) {
+        try {
+            document.getElementById(`explainVariable ${i}`).remove();
+        } catch(e) {}
+
         let dropdown = document.createElement('accordion-dropdown');
         dropdown.setAttribute('titleText', i);
+        dropdown.id = `explainVariable ${i}`;
 
         variablesAndInfo.appendChild(dropdown);
     }
