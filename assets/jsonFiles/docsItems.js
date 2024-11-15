@@ -55,7 +55,7 @@ let docsItemsJson = {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
-                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
                 returnTypes: ['string'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
@@ -69,7 +69,7 @@ let docsItemsJson = {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
-                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
                 returnTypes: ['number'],
                 inputTypes: [],
@@ -83,7 +83,7 @@ let docsItemsJson = {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
-                valueOptions: {}, // an array of options telling the developer wich choices are accepted by the input
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
                 returnTypes: ['boolean'],
                 inputTypes: [],
