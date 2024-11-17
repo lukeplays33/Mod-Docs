@@ -420,7 +420,7 @@ accordion-dropdown h5 i {
   width: calc(100% - 12px);
 }
 
-#variablesAndInfo accordion-dropdown .accordionItems * :not(table) {
+#variablesAndInfo accordion-dropdown .accordionItems {
   margin: 0px;
   margin-bottom: 8px;
 
