@@ -361,7 +361,7 @@ header a {
 }
 
 accordion-dropdown h5,
-.accordionItems * {
+.accordionItems * :not(table) {
   width: calc(100% - 24px);
 }
 
