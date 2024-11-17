@@ -361,7 +361,7 @@ header a {
 }
 
 accordion-dropdown h5,
-.accordionItems * :not(table) {
+.accordionItems *  {
   width: calc(100% - 24px);
 }
 
@@ -420,7 +420,7 @@ accordion-dropdown h5 i {
   width: calc(100% - 12px);
 }
 
-#variablesAndInfo accordion-dropdown .accordionItems * {
+#variablesAndInfo accordion-dropdown .accordionItems * :not(table) {
   margin: 0px;
   margin-bottom: 8px;
 
