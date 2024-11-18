@@ -1,5 +1,13 @@
 import { settings } from "../assets/jsonFiles/supportSettings.js";
 
+let blog = document.getElementById('Blog');
+
+if(!settings.hasOwnProperty('blog')) {
+    blog.remove();
+} else {
+    blog.innerHTML = blog.innerHTML.replace('Blog',settings.blog.message);
+}
+
 if(!settings.faq) {
     document.getElementById('FAQ').remove();
 }
@@ -14,14 +22,6 @@ if(!settings.privacyPolicy) {
 
 if(!settings.hasOwnProperty('communityServer')) {
     document.getElementById('Community').remove();
-}
-
-let blog = document.getElementById('Blog');
-
-if(!settings.hasOwnProperty('blog')) {
-    blog.remove();
-} else {
-    blog.innerHTML = blog.innerHTML.replace('Blog',settings.blog.message);
 }
 
 document.getElementById('support').addEventListener('itemSelected', function (e) {
