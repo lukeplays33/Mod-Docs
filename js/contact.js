@@ -1,8 +1,8 @@
 import { settings } from "../assets/jsonFiles/supportSettings.js";
 
 let blog = document.getElementById('Blog');
-let about = document.getElementById('What is Mod Docs?');
-let donate = document.getElementById('Donate to Mod Docs!');
+let about = document.getElementById('about');
+let donate = document.getElementById('donate');
 
 if (!settings.hasOwnProperty('blog')) {
     blog.remove();
