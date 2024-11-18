@@ -35,5 +35,7 @@ document.getElementById('support').addEventListener('itemSelected', function (e)
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
     }   else if(e.detail.value == 'Privacy policy') {
         window.open(settings.privacyPolicy);
+    }    else if(e.detail.value == 'Blog') {
+        window.open(settings.blog);
     }
 });
