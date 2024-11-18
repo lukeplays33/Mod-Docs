@@ -24,7 +24,7 @@ let items = document.getElementById('docs');
 let demo = document.getElementById('demo');
 
 let viewPager = document.getElementById('explainTheItem');
-let blockExampleImage = document.getElementById('blockExampleImage');
+let displayFile = document.getElementById('displayFile');
 let variablesAndInfo = document.getElementById('variablesAndInfo');
 
 let concatList = ['Information'];
@@ -119,8 +119,8 @@ function loadDocItem(index) {
 
     description.children[1].innerHTML = item.description;
 
-    if (item.image) {
-        blockExampleImage.src = item.image;
+    if (item.displayFile) {
+        displayFile.src = item.image;
     }
 
     for (i of Object.keys(item.variables)) {
