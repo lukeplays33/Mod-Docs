@@ -120,7 +120,7 @@ function loadDocItem(index) {
     description.children[1].innerHTML = item.description;
 
     if (item.displayFile) {
-        displayFile.src = item.image;
+        displayFile.src = item.displayFile;
     }
 
     for (i of Object.keys(item.variables)) {
