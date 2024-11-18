@@ -41,19 +41,26 @@ if (!settings.hasOwnProperty('communityServer')) {
 document.getElementById('support').addEventListener('itemSelected', function (e) {
     if (e.detail.value == 'Community') {
         window.open(settings.communityServer);
+
     } else if (e.detail.value == 'FAQ') {
         parent.document.title = 'Mod Docs - FAQ';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
+
     } else if (e.detail.value == 'Troubleshooting') {
         parent.document.title = 'Mod Docs - Troubleshooting';
         parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
+
     } else if (e.detail.value == 'Privacy policy') {
         window.open(settings.privacyPolicy);
+
     } else if (e.detail.value == 'Blog') {
         window.open(settings.blog.url);
+
     } else if (e.detail.value == 'about') {
         window.open(settings.about.url);
+
     } else if (e.detail.value == 'donate') {
         window.open(settings.donations.url);
+        
     }
 });
