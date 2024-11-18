@@ -398,11 +398,11 @@ accordion-dropdown h5 i {
   padding-top: 0px;
 }
 
-#blockExampleImage {
+#displayFile {
   background-color: white;
   height: 200px;
-  object-fit: contain;
-  object-position: left;
+
+  margin-top:0px;
 }
 
 #variablesAndInfo * {
