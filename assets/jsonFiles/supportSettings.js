@@ -14,7 +14,7 @@ let settings = {
     },
     blog: { // quick links for blog posts that can be either normal or for support (support guides, preverbally support blog posts)
         url: 'https://buymeacoffee.com/sketchdonate',
-        message: 'Blog Posts'
+        message: 'Blog'
     }
 }
 
