@@ -95,7 +95,7 @@ let docsItemsJson = {
             },
             
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Mod-Docs/refs/heads/main/assets/images/docs/Event%3A%20keyPress.png', // the file that is displayed all together with the info, it can be an image, video or a code file.
+            displayFile: '../assets/images/docs/Event: keyPress.png', // the file that is displayed all together with the info, it can be an image, video or a code file.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
