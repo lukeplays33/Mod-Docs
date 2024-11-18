@@ -51,9 +51,9 @@ document.getElementById('support').addEventListener('itemSelected', function (e)
         window.open(settings.privacyPolicy);
     } else if (e.detail.value == 'Blog') {
         window.open(settings.blog.url);
-    } else if (e.detail.value == settings.about.message) {
+    } else if (e.detail.value == 'about') {
         window.open(settings.about.url);
-    } else if (e.detail.value == settings.donations.message) {
+    } else if (e.detail.value == 'donate') {
         window.open(settings.donations.url);
     }
 });
