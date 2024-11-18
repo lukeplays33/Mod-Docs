@@ -5,7 +5,7 @@ let blog = document.getElementById('Blog');
 if(!settings.hasOwnProperty('blog')) {
     blog.remove();
 } else {
-    blog.innerHTML = blog.innerHTML.replace('What is Mod Docs?',settings.blog.message);
+    blog.innerHTML = blog.innerHTML.replace('Blog',settings.blog.message);
 }
 
 if(!settings.faq) {
@@ -25,6 +25,7 @@ if(!settings.hasOwnProperty('communityServer')) {
 }
 
 document.getElementById('support').addEventListener('itemSelected', function (e) {
+    alert(e)
     if(e.detail.value == 'Community') {
         window.open(settings.communityServer);
     } else if(e.detail.value == 'FAQ') {
