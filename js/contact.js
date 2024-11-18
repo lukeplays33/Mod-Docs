@@ -36,6 +36,6 @@ document.getElementById('support').addEventListener('itemSelected', function (e)
     }   else if(e.detail.value == 'Privacy policy') {
         window.open(settings.privacyPolicy);
     }    else if(e.detail.value == 'Blog') {
-        window.open(settings.blog);
+        window.open(settings.blog.url);
     }
 });
