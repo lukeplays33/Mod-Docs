@@ -20,7 +20,8 @@ function setRecents (name) {
     localforage.getItem('recentDocItems').then(function(value) {
         // This code runs once the value has been loaded
         // from the offline store.
-        console.log(value);
+
+        value = JSON.parse(value);
         value.unshift(name);
         console.log(value);
 
@@ -28,7 +29,7 @@ function setRecents (name) {
     }).catch(function(err) {
         // This code runs if there were any errors
         console.log(err);
-        
+
         localforage.setItem('recentDocItems', JSON.stringify([]));
         setRecents();
     });
