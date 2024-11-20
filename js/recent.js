@@ -17,7 +17,11 @@ localforage.getItem('recentDocItems').then(function(value) {
 
 recentArticles.addEventListener('itemSelected', function (e) {
     let item = e.detail.value;
+    parent.document.title = item;
 
-    let categoryName = item.substring(0, item.indexOf(' '))
+    let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
+
+    window.sessionStorage.setItem('explainItem', item.substring(0, item.indexOf(' ')).replaceAll(' - ', ''));
+    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
 });
