@@ -17,7 +17,7 @@ localforage.getItem('recentDocItems').then(function(value) {
 
 recentArticles.addEventListener('itemSelected', function (e) {
     let item = e.detail.value;
-    parent.document.title = item;
+    parent.document.title = e.detail.value;
 
     let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
