@@ -455,3 +455,24 @@ widgetbot {
   width: 100% !important;
   height: 500px;
 }
+
+#recentArticles {
+  width:calc(100% - 16px) !important;
+}
+
+#recentArticles:lastChild {
+  margin-bottom:0px;
+}
+
+#recentArticles * {
+  width:100% !important;
+
+  background-color: var(--secondairy);
+  color:var(--secondairyTextColor)
+}
+
+#recentArticles * .actionButton {
+
+  background-color: var(--primaryContainer);
+  color:var(--primaryContainerTextColor)
+}
