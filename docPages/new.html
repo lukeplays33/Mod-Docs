@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/index.css"
-    media="all">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" media="all">
     <title>Document</title>
 </head>
+
 <body>
 
     <main class="w100">
         <section>
+            <accordion-dropdown titleText="Announcements" open="true">
+                <widgetbot server="1037411700632195143" channel="1158462175191515136" width="800" height="600">
+                </widgetbot>
+            </accordion-dropdown>
             <accordion-dropdown titleText="New or Updated Articles" open="true"></accordion-dropdown>
             <accordion-dropdown titleText="New or Updated Tutorials" open="true"></accordion-dropdown>
         </section>
     </main>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
     <script type="module" src="../js/setup.js"></script>
 </body>
+
 </html>
