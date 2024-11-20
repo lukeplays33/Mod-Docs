@@ -24,11 +24,11 @@ function setRecents (name) {
         value.unshift(name);
         console.log(value);
 
-        localForage.setItem('recentDocItems', JSON.stringify(value));
+        localforage.setItem('recentDocItems', JSON.stringify(value));
     }).catch(function(err) {
         // This code runs if there were any errors
         console.log(err);
-        localForage.setItem('recentDocItems', JSON.stringify([]));
+        localforage.setItem('recentDocItems', JSON.stringify([]));
         setRecents();
     });
 }
