@@ -46,7 +46,7 @@ developer.innerHTML = itemJSON.about.repo.developer;
 version.innerHTML = itemJSON.about.repo.version;
 status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
-language.innerHTML = itemJSON.about.languages
+language.innerHTML = itemJSON.about.languages.join(', ');
 
 
 items.listItems = Object.keys(itemJSON.contents);

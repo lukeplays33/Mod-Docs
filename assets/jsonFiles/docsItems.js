@@ -27,7 +27,7 @@ let docsItemsJson = {
           demoLinks: { // links to examples users can look at
           },
 
-          platforms: ['Android, Ios, ChromeOS, Web'],
+          platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
           required: ['Physical keyboard'],
           languages: ['Javascript', 'Thunkable Blockly'],
 
