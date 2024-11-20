@@ -66,9 +66,12 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
 
-for (i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
+for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     i.href = `#explanationItems`;
-    i.setAttribute('index', '0');
+
+    if (i.innerHTML != 'Demo' || i.innerHTML != 'Information') {
+        i.setAttribute('index', '0');
+    }
 }
 
 let information = document.getElementById('Information'); // needs to have a href after creation
