@@ -116,6 +116,7 @@ viewPager.addEventListener('pageChange', function (e) {
 });
 
 function loadDocItem(index) {
+    alert(index)
     let i;
 
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
