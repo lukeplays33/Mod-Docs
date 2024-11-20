@@ -28,6 +28,7 @@ function setRecents (name) {
     }).catch(function(err) {
         // This code runs if there were any errors
         console.log(err);
+        
         localforage.setItem('recentDocItems', JSON.stringify([]));
         setRecents();
     });
