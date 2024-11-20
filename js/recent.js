@@ -7,9 +7,8 @@ localforage.getItem('recentDocItems').then(function(value) {
     value = JSON.parse(value);
     recentArticles.listItems = value;
 
-    alert(value.length)
     if(value.length == 0) {
-        recentArticles.parentNode.innerHTMl = 'THere are no recent articles found.'
+        recentArticles.parentNode.innerHTML = 'THere are no recent articles found.'
     }
 }).catch(function(err) {
     // This code runs if there were any errors
