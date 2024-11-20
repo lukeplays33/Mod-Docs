@@ -452,6 +452,6 @@ table {
 }
 
 widgetbot {
-  width: 100%;
+  width: 100% !important;
   height: 500px;
 }
