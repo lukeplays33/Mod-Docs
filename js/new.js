@@ -2,5 +2,9 @@ import { settings } from "../assets/jsonFiles/supportSettings.js";
 
 let server = document.getElementById('server');
 
-server.setAttribute('server', settings.server.serverID);
-server.setAttribute('channel', settings.server.channelID);
+let widgetBot = document.createElement('widgetbot');
+
+widgetBot.setAttribute('server', settings.server.serverID);
+widgetBot.setAttribute('channel', settings.server.channelID);
+
+server.appendChild(widgetBot);
