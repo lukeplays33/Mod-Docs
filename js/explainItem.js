@@ -112,7 +112,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    loadDocItem(Object.keys(itemJSON.contents).indexOf(i.parentNode.getElementsByClassName('current')[0].innerHTML));
+    loadDocItem(Object.keys(itemJSON.contents).indexOf(items.getElementsByClassName('current')[0].innerHTML));
 });
 
 function loadDocItem(index) {
