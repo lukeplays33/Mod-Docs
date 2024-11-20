@@ -8,8 +8,8 @@ localforage.getItem('recentDocItems').then(function(value) {
     recentArticles.listItems = value;
 }).catch(function(err) {
     // This code runs if there were any errors
-    console.log(err);
-    recentArticles.before('<p>No recent pages found.</p>');
+    recentArticles.listItems = ['No items found.'];
+
 
     localforage.setItem('recentDocItems', JSON.stringify([]));
     setRecents();
