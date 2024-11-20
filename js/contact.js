@@ -40,7 +40,7 @@ if (!settings.hasOwnProperty('communityServer')) {
 
 document.getElementById('support').addEventListener('itemSelected', function (e) {
     if (e.detail.value == 'Community') {
-        window.open(settings.communityServer);
+        window.open(settings.server.inviteURL);
 
     } else if (e.detail.value == 'FAQ') {
         parent.document.title = 'Mod Docs - FAQ';

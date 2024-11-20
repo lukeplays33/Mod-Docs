@@ -1,5 +1,10 @@
 let settings = {
-    communityServer: 'https://discord.gg/2tJvuH73Kq',
+    server: { // a server where announcements are placed or support can be found
+        "inviteURL": 'https://discord.gg/2tJvuH73Kq',
+        "serverID": '1037411700632195143',
+        'channelID': '1037419802215583905',
+    },
+    
     faq: true,
     troubleShooting: true,
     privacyPolicy: 'https://lukeplays33.github.io/The-Magic-Garden/pages/privacyPolicy.html',

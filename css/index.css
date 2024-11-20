@@ -453,7 +453,7 @@ table {
 
 widgetbot {
   width: 100% !important;
-  height: 500px;
+  height: 100%;
 }
 
 #recentArticles {
