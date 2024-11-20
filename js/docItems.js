@@ -7,8 +7,21 @@ description.children[1].innerHTML = docsItemsJson[window.sessionStorage.getItem(
 items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items);
 
 items.addEventListener('itemSelected', function (e) {
+    let name = window.sessionStorage.getItem('docItem') + ' - ' + e.detail.value; // the new document.title
+    localforage.getItem('recentDocItems').then(function(value) {
+        // This code runs once the value has been loaded
+        // from the offline store.
+        console.log(value);
+        value.unshift(name);
+        console.log(value);
+
+        localForage.setItem('recentDocItems', JSON.stringify(value));
+    }).catch(function(err) {
+        // This code runs if there were any errors
+        console.log(err);
+    });
     window.sessionStorage.setItem('explainItem', e.detail.value);
     
-    parent.document.title = window.sessionStorage.getItem('docItem') + ' - ' + e.detail.value;
+    parent.document.title = name;
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
 });

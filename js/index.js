@@ -14,9 +14,10 @@ let i;
 
 document.getElementById('HomeButton').click();
 
-for (i of Object.keys(docsItemsJson)) {
+for (i of Object.keys(docsItemsJson)) { // load all doc items
   let a = document.createElement('li');
   a.innerHTML = String(i).replaceAll('_', '');
+  a.id = String(i).replaceAll('_', '');
   a.href = '../Mod-Docs/docPages/docsItems.html';
 
   drawer.insertBefore(a, tutorials);
