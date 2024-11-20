@@ -112,6 +112,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
+    alert(e.detail.pageIndex)
     loadDocItem(e.detail.pageIndex);
 });
 
