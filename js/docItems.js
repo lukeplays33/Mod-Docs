@@ -8,7 +8,19 @@ items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docIt
 
 items.addEventListener('itemSelected', function (e) {
     let name = window.sessionStorage.getItem('docItem') + ' - ' + e.detail.value; // the new document.title
+    setRecents(name);
+
+    window.sessionStorage.setItem('explainItem', e.detail.value);
+    
+    parent.document.title = name;
+    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
+});
+
+function setRecents (name) {
     localforage.getItem('recentDocItems').then(function(value) {
+        if(value) {
+            alert()
+        }
         // This code runs once the value has been loaded
         // from the offline store.
         console.log(value);
@@ -20,8 +32,4 @@ items.addEventListener('itemSelected', function (e) {
         // This code runs if there were any errors
         console.log(err);
     });
-    window.sessionStorage.setItem('explainItem', e.detail.value);
-    
-    parent.document.title = name;
-    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
-});
+}
