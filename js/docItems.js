@@ -18,9 +18,6 @@ items.addEventListener('itemSelected', function (e) {
 
 function setRecents (name) {
     localforage.getItem('recentDocItems').then(function(value) {
-        if(value) {
-            alert()
-        }
         // This code runs once the value has been loaded
         // from the offline store.
         console.log(value);
@@ -31,5 +28,7 @@ function setRecents (name) {
     }).catch(function(err) {
         // This code runs if there were any errors
         console.log(err);
+        localForage.setItem('recentDocItems', JSON.stringify([]));
+        setRecents();
     });
 }
