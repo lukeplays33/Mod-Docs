@@ -9,7 +9,7 @@ localforage.getItem('recentDocItems').then(function(value) {
 }).catch(function(err) {
     // This code runs if there were any errors
     console.log(err);
-    recentArticles.innerHTML = 'No recent pages found.';
+    recentArticles.parentNode.innerHTML = 'No recent pages found.';
 
     localforage.setItem('recentDocItems', JSON.stringify([]));
     setRecents();
