@@ -19,5 +19,5 @@ recentArticles.addEventListener('itemSelected', function (e) {
     let item = e.detail.value;
 
     let categoryName = item.substring(0, item.indexOf(' '))
-    parent.document.getElementById()
+    parent.document.getElementById(categoryName).click();
 });
