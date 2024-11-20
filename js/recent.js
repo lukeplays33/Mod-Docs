@@ -12,7 +12,7 @@ localforage.getItem('recentDocItems').then(function(value) {
     }
 }).catch(function(err) {
     // This code runs if there were any errors
-    localforage.setItem('recentDocItems', JSON.stringify([]));
+    localforage.setItem('recentDocItems', JSON.stringify([])); // set storage item to key if not set
     setRecents();
 });
 
