@@ -29,6 +29,7 @@ let docsItemsJson = {
 
           platforms: ['Android, Ios, ChromeOS, Web'],
           required: ['Physical keyboard'],
+          languages: ['Javascript', 'THunkable Blockly'],
 
           repo: {
             repoName: 'Mod Docs',

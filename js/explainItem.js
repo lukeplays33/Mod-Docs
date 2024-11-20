@@ -13,6 +13,7 @@ let version = document.getElementById('version');
 let status = document.getElementById('status');
 let openSource = document.getElementById('openSource');
 let license = document.getElementById('license');
+let language = document.getElementById('language');
 
 let install = document.getElementById('install');
 let guide = document.getElementById('guide');
@@ -45,6 +46,7 @@ developer.innerHTML = itemJSON.about.repo.developer;
 version.innerHTML = itemJSON.about.repo.version;
 status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
+language.innerHTML = itemJSON.about.languages.join(', ');
 
 
 items.listItems = Object.keys(itemJSON.contents);
