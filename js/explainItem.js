@@ -69,7 +69,7 @@ items.listItems = Object.keys(itemJSON.contents).concat(concatList);
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     i.href = `#explanationItems`;
 
-    if (i.innerHTML != 'Demo' || i.innerHTML != 'Information') {
+    if (i.id == 'Demo' || i.id == 'Information') {} else {
         i.setAttribute('index', '0');
     }
 }
