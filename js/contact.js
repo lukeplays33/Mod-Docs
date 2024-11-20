@@ -34,7 +34,7 @@ if (!settings.privacyPolicy) {
     document.getElementById('Privacy policy').remove();
 }
 
-if (!settings.hasOwnProperty('communityServer')) {
+if (!settings.server.hasOwnProperty('inviteURL')) {
     document.getElementById('Community').remove();
 }
 
