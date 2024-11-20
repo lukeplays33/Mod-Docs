@@ -53,6 +53,7 @@ items.listItems = Object.keys(itemJSON.contents);
 
 for (i of items.children) { // give al ltabbar elements a href so we can connect to the viewpager
     i.href = `#explanationItems`;
+    i.setAttribute('index', '0')
 }
 
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
