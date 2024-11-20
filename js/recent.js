@@ -14,3 +14,10 @@ localforage.getItem('recentDocItems').then(function(value) {
     localforage.setItem('recentDocItems', JSON.stringify([]));
     setRecents();
 });
+
+recentArticles.addEventListener('itemSelected', function (e) {
+    let item = e.detail.value;
+
+    let categoryName = item.substring(0, item.indexOf(' '))
+    parent.document.getElementById()
+});
