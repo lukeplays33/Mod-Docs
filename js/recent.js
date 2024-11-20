@@ -22,6 +22,6 @@ recentArticles.addEventListener('itemSelected', function (e) {
     let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
 
-    window.sessionStorage.setItem('explainItem', item.substring(0, item.indexOf(' ')).replaceAll(' - ', ''));
+    window.sessionStorage.setItem('explainItem', item.substring(item.indexOf(' '), item.length).replaceAll(' - ', ''));
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/explainItem.html';
 });
