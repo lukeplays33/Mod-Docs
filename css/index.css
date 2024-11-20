@@ -474,5 +474,5 @@ widgetbot {
 #recentArticles * .actionButton {
 
   background-color: var(--primaryContainer);
-  color:var(--primaryContainerTextColor)
+  color:var(--primaryContainerTextColor);
 }
