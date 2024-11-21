@@ -123,7 +123,7 @@ function loadDocItem(index) {
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
     let item = itemJSON.contents[index];
 
-    let description = ocument.getElementById(item);
+    let description = document.getElementById(item);
     let displayFile = description.getElementsByTagName('IFRAME')[0];
 
     description.children[1].innerHTML = item.description;
