@@ -120,7 +120,7 @@ function loadDocItem(index) {
     alert(index)
     let i;
 
-    let itemName = Object.keys(itemJSON.contents)[index + 1];
+    let itemName = Object.keys(itemJSON.contents)[index];
     index = itemName; // get the item name from index
     let item = itemJSON.contents[index];
 
