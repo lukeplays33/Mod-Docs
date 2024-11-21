@@ -120,7 +120,6 @@ function loadDocItem(index) {
     let i;
 
     let itemName = Object.keys(itemJSON.contents)[index];
-    alert(itemName)
     index = itemName; // get the item name from index
     let item = itemJSON.contents[index];
 
@@ -135,6 +134,7 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
+    alert(item.variables)
     for (i of Object.keys(item.variables)) {
         try {
             document.getElementById(`explainVariable ${i}`).remove();
