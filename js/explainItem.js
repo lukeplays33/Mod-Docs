@@ -125,10 +125,10 @@ function loadDocItem(index) {
     index = itemName; // get the item name from index
     let item = itemJSON.contents[index];
 
-    let description = document.getElementById(itemName);
-    console.log(itemName)
-    console.log(description)
-    let displayFile = description.getElementsByTagName('IFRAME')[0];
+    let itemHTML = document.getElementById(itemName);
+
+    let description = itemHTML.getElementsByClassName('description')[0];
+    let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
 
     description.children[1].innerHTML = item.description;
 

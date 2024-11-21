@@ -184,7 +184,7 @@ list-viewer li {
   color: var(--secondairyTextColor);
 }
 
-#description,
+#description, .description,
 #eDescription,
 #useCases,
 #language,
