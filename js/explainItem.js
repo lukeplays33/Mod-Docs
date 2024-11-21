@@ -124,6 +124,7 @@ function loadDocItem(index) {
     let item = itemJSON.contents[index];
 
     let description = document.getElementById(item);
+    console.log(description)
     let displayFile = description.getElementsByTagName('IFRAME')[0];
 
     description.children[1].innerHTML = item.description;
