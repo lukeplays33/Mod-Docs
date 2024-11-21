@@ -70,8 +70,8 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
     i.href = `#explanationItems`;
 
     if (i.id == 'Demo' || i.id == 'Information') {} else {
-        i.setAttribute('actualIndex', i.getAttribute('index'));
-        i.setAttribute('index', '0');
+        //i.setAttribute('actualIndex', i.getAttribute('index'));
+        //i.setAttribute('index', '0');
     }
 }
 
@@ -113,8 +113,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    alert(items.getElementsByClassName('current')[0].getAttribute('actualIndex'))
-    loadDocItem(Object.keys(itemJSON.contents).indexOf(items.getElementsByClassName('current')[0].innerHTML));
+    loadDocItem(e.detail.index);
 });
 
 function loadDocItem(index) {
