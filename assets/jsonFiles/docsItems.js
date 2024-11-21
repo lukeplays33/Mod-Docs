@@ -49,7 +49,7 @@ let docsItemsJson = {
         },
         contents: {
           keyPress: {
-            description: 'The key pressed event fires when a key is pressed and released on the keyboard.',
+            description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               keyName: {
@@ -100,7 +100,7 @@ let docsItemsJson = {
           },
 
           keyDown: {
-            description: 'The key down event fires when a key is pressed down on the keyboard.',
+            description: 'The keyDown event fires when a key is pressed down on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               keyName: {
@@ -151,7 +151,7 @@ let docsItemsJson = {
           },
 
           keyUp: {
-            description: 'The key pressed event fires when a key is released on the keyboard.',
+            description: 'The keyUp event fires when a key is released on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               keyName: {
