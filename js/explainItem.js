@@ -50,7 +50,7 @@ license.innerHTML = itemJSON.about.repo.license.name;
 language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 
 
-items.listItems = Object.keys(itemJSON.contents);
+items.listItems = Object.keys(itemJSON.contents).reverse();
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
