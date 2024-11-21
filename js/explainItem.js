@@ -70,7 +70,7 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
     i.href = `#explanationItems`;
 
     if (i.id == 'Demo' || i.id == 'Information') {} else {
-        i.setAttribute('actualIndex', i.getAttribute('index');)
+        i.setAttribute('actualIndex', i.getAttribute('index'));
         i.setAttribute('index', '0');
     }
 }
