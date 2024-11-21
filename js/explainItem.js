@@ -54,7 +54,7 @@ language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 items.listItems = Object.keys(itemJSON.contents);
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
-    let cloneTemplate = docItems.cloneNode(true);
+    let cloneTemplate = docItems.content.cloneNode(true);
     cloneTemplate.id = i.innerHTML;
 
     viewPager.prepend(cloneTemplate);
