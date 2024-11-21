@@ -134,7 +134,7 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    alert(item.variables)
+    console.log(item.variables)
     for (i of Object.keys(item.variables)) {
         try {
             document.getElementById(`explainVariable ${i}`).remove();
