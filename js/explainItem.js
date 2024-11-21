@@ -51,6 +51,10 @@ language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 
 items.listItems = Object.keys(itemJSON.contents);
 
+for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
+    i.href = `#explanationItems`;
+}
+
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     concatList.push('Demo');
     items.listItems = Object.keys(itemJSON.contents).concat(concatList);
@@ -65,15 +69,6 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
 }
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
-
-for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
-    i.href = `#explanationItems`;
-
-    if (i.id == 'Demo' || i.id == 'Information') {} else {
-        //i.setAttribute('actualIndex', i.getAttribute('index'));
-        //i.setAttribute('index', '0');
-    }
-}
 
 let information = document.getElementById('Information'); // needs to have a href after creation
 information.href = '#information';
@@ -117,7 +112,6 @@ viewPager.addEventListener('pageChange', function (e) {
 });
 
 function loadDocItem(index) {
-    alert(index)
     let i;
 
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
