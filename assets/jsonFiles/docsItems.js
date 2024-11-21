@@ -48,6 +48,14 @@ let docsItemsJson = {
 
         },
         contents: {
+          requestFocus: {
+            description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+            },
+            
+            type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+            displayFile: '../assets/images/docs/Event: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+          },
           keyPress: {
             description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
