@@ -55,7 +55,6 @@ items.listItems = Object.keys(itemJSON.contents);
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
     cloneTemplate.querySelector('#explanationItems').id = i.innerHTML;
-    alert(cloneTemplate.id)
 
     viewPager.prepend(cloneTemplate);
     i.href = `#${cloneTemplate.id}`;
@@ -121,7 +120,7 @@ function loadDocItem(index) {
     alert(index)
     let i;
 
-    let itemName = Object.keys(itemJSON.contents)[index]
+    let itemName = Object.keys(itemJSON.contents)[index + 1];
     index = itemName; // get the item name from index
     let item = itemJSON.contents[index];
 

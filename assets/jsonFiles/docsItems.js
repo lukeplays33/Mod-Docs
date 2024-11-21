@@ -100,7 +100,7 @@ let docsItemsJson = {
           },
 
           keyDown: {
-            description: 'The key down event fires when a key is down on the keyboard.',
+            description: 'The key down event fires when a key is pressed down on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               keyName: {
