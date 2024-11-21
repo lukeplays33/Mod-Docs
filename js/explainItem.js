@@ -114,7 +114,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    loadDocItem(e.detail.index);
+    loadDocItem(e.detail.pageIndex);
 });
 
 function loadDocItem(index) {
