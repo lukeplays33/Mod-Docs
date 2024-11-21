@@ -25,7 +25,6 @@ let items = document.getElementById('docs');
 let demo = document.getElementById('demo');
 
 let viewPager = document.getElementById('explainTheItem');
-let variablesAndInfo = document.getElementById('variablesAndInfo');
 
 let docTemplate = document.getElementById('docTemplate');
 
@@ -127,6 +126,7 @@ function loadDocItem(index) {
 
     let description = itemHTML.getElementsByClassName('description')[0];
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
+    let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
 
     description.children[1].innerHTML = item.description;
 
@@ -134,7 +134,6 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    console.log(item.variables)
     for (i of Object.keys(item.variables)) {
         try {
             document.getElementById(`explainVariable ${i}`).remove();
