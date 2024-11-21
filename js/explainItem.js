@@ -28,7 +28,7 @@ let viewPager = document.getElementById('explainTheItem');
 let displayFile = document.getElementById('displayFile');
 let variablesAndInfo = document.getElementById('variablesAndInfo');
 
-let docItems = document.getElementById('explanationItems');
+let docTemplate = document.getElementById('docTemplate');
 
 let concatList = ['Information'];
 
@@ -54,7 +54,7 @@ language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 items.listItems = Object.keys(itemJSON.contents);
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
-    let cloneTemplate = docItems.content.cloneNode(true);
+    let cloneTemplate = docTemplate.content.cloneNode(true);
     cloneTemplate.id = i.innerHTML;
 
     viewPager.prepend(cloneTemplate);
