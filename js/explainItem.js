@@ -120,11 +120,12 @@ viewPager.addEventListener('pageChange', function (e) {
 function loadDocItem(index) {
     let i;
 
-    index = Object.keys(itemJSON.contents)[index]; // get the item name from index
+    let itemName = Object.keys(itemJSON.contents)[index]
+    index = itemName; // get the item name from index
     let item = itemJSON.contents[index];
 
-    let description = document.getElementById(item);
-    console.log(item)
+    let description = document.getElementById(itemName);
+    console.log(itemName)
     console.log(description)
     let displayFile = description.getElementsByTagName('IFRAME')[0];
 
