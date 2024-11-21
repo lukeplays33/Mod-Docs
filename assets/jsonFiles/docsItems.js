@@ -54,7 +54,7 @@ let docsItemsJson = {
             },
             
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: '../assets/images/docs/Method: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           keyPress: {
             description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
