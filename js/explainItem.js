@@ -25,7 +25,6 @@ let items = document.getElementById('docs');
 let demo = document.getElementById('demo');
 
 let viewPager = document.getElementById('explainTheItem');
-let displayFile = document.getElementById('displayFile');
 let variablesAndInfo = document.getElementById('variablesAndInfo');
 
 let docTemplate = document.getElementById('docTemplate');
@@ -124,7 +123,8 @@ function loadDocItem(index) {
     index = Object.keys(itemJSON.contents)[index]; // get the item name from index
     let item = itemJSON.contents[index];
 
-    let description = document.getElementById('description');
+    let description = ocument.getElementById(item);
+    let displayFile = description.getElementsByTagName('IFRAME')[0];
 
     description.children[1].innerHTML = item.description;
 
