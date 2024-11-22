@@ -64,7 +64,7 @@ for (i of items) {
 
 function nothingFound() {
   let p = document.createElement('p');
-  p.innerHTML = 'No items found';
+  p.innerHTML = 'No articles found :(';
 
   return p;
 }
