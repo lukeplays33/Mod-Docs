@@ -158,6 +158,9 @@ function loadDocItem(index) {
     }
 }
 
+loadDocItem(0);
+loadDocItem(0);
+
 function createVariableTable(variable, variables) { //creates a display table to read variable info
     let i;
 
