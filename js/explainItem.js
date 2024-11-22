@@ -153,11 +153,8 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    alert(variablesAndInfo.lastChild.tagName);
     if (Object.keys(item.variables).length == 0) {
-        if (!variablesAndInfo.lastChild.tagName == 'DIV') {
-            variablesAndInfo.lastChild.remove();
-        }
+            variablesAndInfo.lastChild.style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove
     }
 }
 
