@@ -154,12 +154,11 @@ function loadDocItem(index) {
     }
 
     if (Object.keys(item.variables).length == 0) {
-            variablesAndInfo.lastChild.style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
+            variablesAndInfo.children[1].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
     }
 }
 
 loadDocItem(0);
-loadDocItem(0); //heh? why t f do i need to call it 2 times for it to work??????????????????????????
 
 function createVariableTable(variable, variables) { //creates a display table to read variable info
     let i;
