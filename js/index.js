@@ -15,12 +15,12 @@ let i;
 
 document.getElementById('HomeButton').click();
 
-if(!tutorialsJson) {
+if(Object.keys(tutorialsJson).length == 0) {
   alert()
   tutorials.after(nothingFound());
 }
 
-if(!docsItemsJson) {
+if(Object.keys(docsItemsJson).length == 0) {
   tutorials.before(nothingFound());
 }
 
