@@ -154,7 +154,6 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    alert(Object.keys(item.variables).length)
     if(Object.keys(item.variables).length == 0 ) {
         variablesAndInfo.lastChild.remove();
     }
