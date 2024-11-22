@@ -154,12 +154,11 @@ function loadDocItem(index) {
     }
 
     if(Object.keys(item.variables).length == 0 ) {
-        console.log(variablesAndInfo)
         variablesAndInfo.lastChild.remove();
     }
 }
 
-loadDocItem(0);
+window.setTimeout(loadDocItem(0),1000);
 
 function createVariableTable(variable, variables) { //creates a display table to read variable info
     let i;
