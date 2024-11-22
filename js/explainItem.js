@@ -32,7 +32,7 @@ let concatList = ['Information'];
 
 let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
 
-let informationPage = docuemnt.getElementById('information');
+let informationPage = document.getElementById('information');
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
