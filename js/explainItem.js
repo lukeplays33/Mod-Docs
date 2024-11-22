@@ -116,10 +116,9 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    if(e.detail.pageIndex == 0 || e.detail.pageIndex == items.children.length) {
-        return;
-    }
-    loadDocItem(e.detail.pageIndex);
+    try {
+        loadDocItem(e.detail.pageIndex);
+    } catch (e) { }
 });
 
 function loadDocItem(index) {
@@ -156,7 +155,7 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    if(Object.keys(item.variables).length == 0 ) {
+    if (Object.keys(item.variables).length == 0) {
         variablesAndInfo.lastChild.remove();
     }
 }
