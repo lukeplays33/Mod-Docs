@@ -53,7 +53,7 @@ items.listItems = Object.keys(itemJSON.contents).reverse();
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
-    loneTemplate.querySelector('#explanationItems').style.display = 'none';
+    cloneTemplate.querySelector('#explanationItems').style.display = 'none';
     cloneTemplate.querySelector('#explanationItems').id = i.innerHTML;
 
     viewPager.prepend(cloneTemplate);
