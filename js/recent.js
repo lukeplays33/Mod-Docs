@@ -1,4 +1,5 @@
 let recentArticles = document.getElementById('recentArticles');
+let recentTutorials = document.getElementById('recentTutorials');
 
 localforage.getItem('recentDocItems').then(function(value) {
     // This code runs once the value has been loaded
@@ -13,6 +14,22 @@ localforage.getItem('recentDocItems').then(function(value) {
 }).catch(function(err) {
     // This code runs if there were any errors
     localforage.setItem('recentDocItems', JSON.stringify([])); // set storage item to key if not set
+    setRecents();
+});
+
+localforage.getItem('recentTutorials').then(function(value) {
+    // This code runs once the value has been loaded
+    // from the offline store.
+
+    value = JSON.parse(value);
+    recentArticles.listItems = value;
+
+    if(value.length == 0) {
+        recentTutorials.parentNode.innerHTML = 'There are no recent tutorials found :('
+    }
+}).catch(function(err) {
+    // This code runs if there were any errors
+    localforage.setItem('recentTutorials', JSON.stringify([])); // set storage item to key if not set
     setRecents();
 });
 
