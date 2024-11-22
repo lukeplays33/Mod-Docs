@@ -19,6 +19,11 @@ if(!tutorialsJson) {
   tutorials.after(nothingFound());
 }
 
+if(!docsItemsJson) {
+  tutorials.before(nothingFound());
+}
+
+
 for (i of Object.keys(docsItemsJson)) { // load all doc items
   let a = document.createElement('li');
   a.innerHTML = String(i).replaceAll('_', '');
