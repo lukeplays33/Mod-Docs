@@ -79,8 +79,7 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
 
-let information = document.getElementById('Information'); // needs to have a href after creation
-information.href = '#information';
+informationPage.href = '#information'; // needs to have a href after creation
 
 items.children[0].click();
 
