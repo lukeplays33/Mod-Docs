@@ -32,6 +32,8 @@ let concatList = ['Information'];
 
 let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')];
 
+let informationPage = docuemnt.getElementById('information');
+
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
 platform.children[1].innerHTML = itemJSON.about.platforms.join(', ');
@@ -53,12 +55,14 @@ items.listItems = Object.keys(itemJSON.contents).reverse();
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
-    cloneTemplate.querySelector('#explanationItems').style.display = 'none';
+    cloneTemplate.querySelector('#explanationItems').style.display = 'none'; //hide all pages to ensure proper viewpager working
     cloneTemplate.querySelector('#explanationItems').id = i.innerHTML;
 
     viewPager.prepend(cloneTemplate);
     i.href = `#${cloneTemplate.id}`;
 }
+
+informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
 
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     concatList.push('Demo');
