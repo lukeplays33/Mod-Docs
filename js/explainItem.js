@@ -153,8 +153,10 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    if (Object.keys(item.variables).length == 0 && variablesAndInfo.lastChild.tagName == 'HR') {
-        variablesAndInfo.lastChild.remove();
+    if (Object.keys(item.variables).length == 0) {
+        if (variablesAndInfo.lastChild.tagName == 'HR') {
+            variablesAndInfo.lastChild.remove();
+        }
     }
 }
 
