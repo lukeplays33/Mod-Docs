@@ -158,8 +158,6 @@ function loadDocItem(index) {
     }
 }
 
-items.firstChild.click();
-
 function createVariableTable(variable, variables) { //creates a display table to read variable info
     let i;
 
