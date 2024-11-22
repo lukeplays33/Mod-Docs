@@ -153,9 +153,9 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    alert(variablesAndInfo.lastChild.tagName)
+    alert(variablesAndInfo.lastChild.tagName);
     if (Object.keys(item.variables).length == 0) {
-        if (variablesAndInfo.lastChild.tagName == 'HR') {
+        if (!variablesAndInfo.lastChild.tagName == 'DIV') {
             variablesAndInfo.lastChild.remove();
         }
     }
