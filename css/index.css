@@ -476,3 +476,8 @@ widgetbot {
   background-color: var(--primaryContainer);
   color:var(--primaryContainerTextColor);
 }
+
+.nothingFound {
+  width:100% !important;
+  font-size: 13px;
+}
