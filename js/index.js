@@ -1,6 +1,7 @@
 
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
+import { tutorials } from '../assets/jsonFiles/tutorials.js';
 
 let pichai = new PichaiUX();
 pichai.initialize();
@@ -13,6 +14,9 @@ let tutorials = document.getElementById('tutorials');
 let i;
 
 document.getElementById('HomeButton').click();
+if(!tutorials) {
+  tutorials.after(nothingFound());
+}
 
 for (i of Object.keys(docsItemsJson)) { // load all doc items
   let a = document.createElement('li');
@@ -50,4 +54,11 @@ for (i of items) {
       }
     }
   });
+}
+
+function nothingFound() {
+  let p = document.createElement('p');
+  p.innerHTML = 'No items found';
+
+  return p;
 }
