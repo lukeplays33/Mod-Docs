@@ -23,7 +23,7 @@ function setRecents() {
         // from the offline store.
 
         value = JSON.parse(value);
-        recentArticles.listItems = value;
+        recentTutorials.listItems = value;
 
         if (value.length == 0) {
             recentTutorials.parentNode.innerHTML = 'There are no recent tutorials found :('
