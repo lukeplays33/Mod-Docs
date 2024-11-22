@@ -116,7 +116,9 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    console.log(e.detail.pageIndex)
+    if(e.detail.pageIndex == 0 || e.detail.pageIndex == items.children.length) {
+        return;
+    }
     loadDocItem(e.detail.pageIndex);
 });
 
