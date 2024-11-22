@@ -116,6 +116,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
+    console.log(e.detail.pageIndex)
     loadDocItem(e.detail.pageIndex);
 });
 
@@ -159,7 +160,7 @@ function loadDocItem(index) {
 }
 
 loadDocItem(0);
-loadDocItem(0);
+loadDocItem(0); //heh? why t f do i need to call it 2 times for it to work??????????????????????????
 
 function createVariableTable(variable, variables) { //creates a display table to read variable info
     let i;
