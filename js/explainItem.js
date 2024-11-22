@@ -154,6 +154,7 @@ function loadDocItem(index) {
     }
 
     if(Object.keys(item.variables).length == 0 ) {
+        console.log(variablesAndInfo.lastChild)
         variablesAndInfo.lastChild.remove();
     }
 }
