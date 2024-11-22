@@ -124,7 +124,7 @@ function loadDocItem(index) {
     let item = itemJSON.contents[index];
 
     let itemHTML = document.getElementById(itemName);
-    itemHTML.style.display = 'block';
+    itemHTML.style.display = 'flex';
 
     let description = itemHTML.getElementsByClassName('description')[0];
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
