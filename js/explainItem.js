@@ -133,6 +133,10 @@ function loadDocItem(index) {
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
     let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
 
+    if(!description) {
+        return;
+    }
+
     description.children[1].innerHTML = item.description;
 
     if (item.displayFile) {
