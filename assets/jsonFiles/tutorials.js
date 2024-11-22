@@ -1,7 +1,7 @@
-let tutorials = {
+let tutorialsJson = {
     "Thunkable": {
         
     }
 };
 
-export { tutorials };
+export { tutorialsJson };
