@@ -54,7 +54,6 @@ items.listItems = Object.keys(itemJSON.contents).reverse();
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
     cloneTemplate.querySelector('#explanationItems').id = i.innerHTML;
-    cloneTemplate.querySelector('#explanationItems').style.display = 'none';
 
     viewPager.prepend(cloneTemplate);
     i.href = `#${cloneTemplate.id}`;
@@ -148,6 +147,10 @@ function loadDocItem(index) {
         dropdown.appendChild(createVariableTable(i, item.variables));
 
         variablesAndInfo.appendChild(dropdown);
+    }
+
+    if(Object.keys(item.variables).length == 0 ) {
+        variablesAndInfo.lastChild.remove();
     }
 }
 
