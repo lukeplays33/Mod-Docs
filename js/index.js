@@ -16,7 +16,6 @@ let i;
 document.getElementById('HomeButton').click();
 
 if(Object.keys(tutorialsJson).length == 0) {
-  alert()
   tutorials.after(nothingFound());
 }
 
