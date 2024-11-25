@@ -1,4 +1,3 @@
-
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
@@ -10,6 +9,7 @@ let drawer = document.getElementById('draawer');
 pichai.createSimpleDrawer(drawer, 'auto');
 
 let tutorials = document.getElementById('tutorials');
+let iframe = document.getElementById('pages');
 
 let i;
 
@@ -51,7 +51,7 @@ for (i of items) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
-      document.getElementById('pages').src = this.href;
+      iframe.src = this.href;
       window.sessionStorage.setItem('docItem', this.innerHTML);
       document.title = `Mod Docs! - ${this.innerHTML}`;
 
@@ -68,4 +68,11 @@ function nothingFound() {
   p.classList.add('nothingFound');
 
   return p;
+}
+
+iframe.onmouseenter = function (e) {
+  window.onwheel = function (e) {
+    e.preventDefault();
+    
+  }
 }
