@@ -72,7 +72,7 @@ function nothingFound() {
 
 iframe.onmouseenter = function (e) {
   window.onwheel = function (e) {
-    document.body.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
 
   }
 }
