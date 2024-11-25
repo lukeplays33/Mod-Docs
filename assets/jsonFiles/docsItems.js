@@ -53,6 +53,7 @@ let docsItemsJson = {
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
             },
             
+            outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: '../assets/images/docs/Method: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -66,7 +67,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['string'],
+                outputTypes: ['string'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
                 description: 'The name of the key that is pressed.',
@@ -80,7 +81,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['number'],
+                outputTypes: ['number'],
                 inputTypes: [],
 
                 description: 'The code of the key that is pressed.',
@@ -94,7 +95,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['boolean'],
+                outputTypes: ['boolean'],
                 inputTypes: [],
 
                 description: 'Returns true if the key is held down for long periods of time.',
@@ -103,6 +104,7 @@ let docsItemsJson = {
               },
             },
             
+            outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: '../assets/images/docs/Event: keyPress.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -117,7 +119,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['string'],
+                outputTypes: ['string'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
                 description: 'The name of the key that is pressed.',
@@ -131,7 +133,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['number'],
+                outputTypes: ['number'],
                 inputTypes: [],
 
                 description: 'The code of the key that is pressed.',
@@ -145,7 +147,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['boolean'],
+                outputTypes: ['boolean'],
                 inputTypes: [],
 
                 description: 'Returns true if the key is held down for long periods of time.',
@@ -154,6 +156,7 @@ let docsItemsJson = {
               },
             },
             
+            outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: '../assets/images/docs/Event: keyDown.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -168,7 +171,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['string'],
+                outputTypes: ['string'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
                 description: 'The name of the key that is pressed.',
@@ -182,7 +185,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['number'],
+                outputTypes: ['number'],
                 inputTypes: [],
 
                 description: 'The code of the key that is pressed.',
@@ -196,7 +199,7 @@ let docsItemsJson = {
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                returnTypes: ['boolean'],
+                outputTypes: ['boolean'],
                 inputTypes: [],
 
                 description: 'Returns true if the key is held down for long periods of time.',
@@ -205,6 +208,7 @@ let docsItemsJson = {
               },
             },
             
+            outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: '../assets/images/docs/Event: keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },

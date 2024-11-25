@@ -153,8 +153,10 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
+    variablesAndInfo.children[1].innerHTML = createInfoTable(item);
+
     if (Object.keys(item.variables).length == 0) {
-            variablesAndInfo.children[1].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
+            variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
     }
 }
 
@@ -174,6 +176,33 @@ function createVariableTable(variable, variables) { //creates a display table to
 
             let value = document.createElement('td');
             value.innerHTML = variables[variable][i];
+
+            tr.appendChild(name);
+            tr.appendChild(value);
+        }
+
+        table.appendChild(tr);
+    }
+
+    return table;
+}
+
+function createInfoTable(item) { //creates a display table to read variable info
+    let i;
+
+    let items = ['outputTypes', 'type'];
+
+    let table = document.createElement('table');
+
+    for (i of Object.keys(items)) {
+        let tr = document.createElement('tr');
+
+        if (item[i]) {
+            let name = document.createElement('td');
+            name.innerHTML = i;
+
+            let value = document.createElement('td');
+            value.innerHTML = item[i];
 
             tr.appendChild(name);
             tr.appendChild(value);
