@@ -69,10 +69,3 @@ function nothingFound() {
 
   return p;
 }
-
-iframe.onmouseenter = function (e) {
-  window.onwheel = function (e) {
-    document.body.style.overflow = 'hidden';
-
-  }
-}
