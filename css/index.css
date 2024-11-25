@@ -216,9 +216,9 @@ list-viewer li {
 #useCases .chipIcon,
 #installDiv .chipIcon,
 #language .chipIcon {
-  max-height: 13px;
-  max-width: 13px;
-  line-height: 13px;
+  max-height: 15px;
+  max-width: 15px;
+  line-height: 16px;
   text-align: left;
   font-size: 15px;
 }
