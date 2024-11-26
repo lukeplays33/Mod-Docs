@@ -195,7 +195,6 @@ function createInfoTable(item, json) { //creates a display table to read variabl
     let table = document.createElement('table');
 
     for (i of items) {
-        alert(json[i])
         let tr = document.createElement('tr');
 
         if (json[i]) {
