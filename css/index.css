@@ -427,6 +427,10 @@ accordion-dropdown h5 i {
   width: calc(100% - 17px) !important;
 }
 
+#ItemInformation .accordionItems {
+  margin-bottom:0px;
+}
+
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction: column;
