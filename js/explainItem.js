@@ -153,7 +153,7 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
-    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(itemName));
+    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(itemName, item));
 
     if (Object.keys(item.variables).length == 0) {
             variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
@@ -187,7 +187,7 @@ function createVariableTable(variable, variables) { //creates a display table to
     return table;
 }
 
-function createInfoTable(item) { //creates a display table to read variable info
+function createInfoTable(item, json) { //creates a display table to read variable info
     let i;
 
     let items = ['outputTypes', 'type'];
@@ -195,15 +195,15 @@ function createInfoTable(item) { //creates a display table to read variable info
     let table = document.createElement('table');
 
     for (i of items) {
-        alert(i)
+        alert(json[i])
         let tr = document.createElement('tr');
 
-        if (item[i]) {
+        if (json[i]) {
             let name = document.createElement('td');
             name.innerHTML = i;
 
             let value = document.createElement('td');
-            value.innerHTML = item[i];
+            value.innerHTML = json[i];
 
             tr.appendChild(name);
             tr.appendChild(value);
