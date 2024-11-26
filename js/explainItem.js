@@ -153,6 +153,7 @@ function loadDocItem(index) {
         variablesAndInfo.appendChild(dropdown);
     }
 
+    variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(itemName, item));
 
     if (Object.keys(item.variables).length == 0) {
@@ -195,6 +196,7 @@ function createInfoTable(item, json) { //creates a display table to read variabl
     let table = document.createElement('table');
 
     for (i of items) {
+
         let tr = document.createElement('tr');
 
         if (json[i]) {
