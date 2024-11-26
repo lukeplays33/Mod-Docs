@@ -195,6 +195,7 @@ function createInfoTable(item) { //creates a display table to read variable info
     let table = document.createElement('table');
 
     for (i of items) {
+        alert(i)
         let tr = document.createElement('tr');
 
         if (item[i]) {
