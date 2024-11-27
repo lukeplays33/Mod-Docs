@@ -48,6 +48,6 @@ recentArticles.addEventListener('itemSelected', function (e) {
     parent.document.title = item;
 
     if(parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {
-        parent.document.getElementById(categoryName).click();
+        parent.document.getElementById(categoryName).parentNode.toggleDrawer();
     }
 });
