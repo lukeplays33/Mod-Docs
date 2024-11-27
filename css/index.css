@@ -403,7 +403,7 @@ accordion-dropdown h5 i {
   height: 200px;
 
   margin-top:0px;
-  margin-bottom:0px;
+  margin-bottom:-6px;
 }
 
 #variablesAndInfo * {
