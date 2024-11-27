@@ -47,7 +47,7 @@ recentArticles.addEventListener('itemSelected', function (e) {
 
     parent.document.title = item;
 
-    if(parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {
+    if(parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {//closes the drawer on mobiel isntead of opening it
         parent.document.getElementById(categoryName).parentNode.toggleDrawer();
     }
 });
