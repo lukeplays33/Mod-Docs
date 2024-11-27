@@ -47,7 +47,7 @@ recentArticles.addEventListener('itemSelected', function (e) {
 
     parent.document.title = item;
 
-    if(document.getElementById(categoryName).parentNode.platform == 'mobile') {
+    if(parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {
         parent.document.getElementById(categoryName).click();
     }
 });
