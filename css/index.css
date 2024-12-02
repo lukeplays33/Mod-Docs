@@ -500,8 +500,7 @@ widgetbot {
 
   margin-top: -5px;
 
-  padding: 0px;
-  padding-top: 4px;
+  padding: 4px;
 }
 
 .controls .chipIcon {
@@ -510,4 +509,8 @@ widgetbot {
   border-radius:200px;
 
   color:var(--primaryContainerTextColor);
+}
+
+.fullscreen iframe {
+  height:calc(100% -30px);
 }

@@ -145,9 +145,13 @@ function loadDocItem(index) {
     controls.addEventListener('click', function () {
         if (!document.fullscreenElement) {
             this.parentNode.requestFullscreen();
+            this.parentNode.classList.add('fullscreen');
+
             this.innerHTML = 'fullscreen_exit';
           } else if (document.exitFullscreen) {
             document.exitFullscreen();
+            this.parentNode.classList.remove('fullscreen');
+
             this.innerHTML = 'fullscreen';
           }
     });
