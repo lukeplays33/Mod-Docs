@@ -134,12 +134,21 @@ function loadDocItem(index) {
     let description = itemHTML.getElementsByClassName('description')[0];
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
     let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
+    let controls = itemHTML.getElementsByClassName('controls')[0];
 
     description.children[1].innerHTML = item.description;
 
     if (item.displayFile) {
         displayFile.src = item.displayFile;
     }
+
+    controls.addEventListener('click', function () {
+        if (!document.fullscreenElement) {
+            this.parentNode.requestFullscreen();
+          } else if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+    });
 
     for (i of Object.keys(item.variables)) {
         try {
@@ -217,11 +226,3 @@ function createInfoTable(item, json) { //creates a display table to read variabl
 
     return table;
 }
-
-controls.addEventListener('click', function () {
-    if (!document.fullscreenElement) {
-        this.parentNode.requestFullscreen();
-      } else if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-});

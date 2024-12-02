@@ -490,7 +490,7 @@ widgetbot {
   font-size: 13px;
 }
 
-#controls {
+.controls {
   height:30px;
 
   background-color:Var(--primary);
@@ -504,7 +504,7 @@ widgetbot {
   padding-top: 4px;
 }
 
-#controls .chipIcon {
+.controls .chipIcon {
   background-color:var(--primaryContainer);
 
   border-radius:200px;
