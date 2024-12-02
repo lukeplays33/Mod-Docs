@@ -403,7 +403,10 @@ accordion-dropdown h5 i {
   height: 200px;
 
   margin-top:0px;
-  margin-bottom:-6px;
+  margin-bottom:0px;
+  
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
 }
 
 #variablesAndInfo * {
@@ -485,4 +488,13 @@ widgetbot {
 .nothingFound {
   width:100% !important;
   font-size: 13px;
+}
+
+#controls {
+  height:20px;
+
+  background-color:Var(--primary);
+
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
 }
