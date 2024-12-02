@@ -34,6 +34,8 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 let informationPage = document.getElementById('information');
 
+let controls = document.getElementById('controls');
+
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
 platform.children[1].innerHTML = itemJSON.about.platforms.join(', ');
@@ -215,3 +217,11 @@ function createInfoTable(item, json) { //creates a display table to read variabl
 
     return table;
 }
+
+controls.addEventListener('click', function () {
+    if (!document.fullscreenElement) {
+        this.parentNode.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+});
