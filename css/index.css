@@ -500,3 +500,9 @@ widgetbot {
 
   margin-top: -5px;
 }
+
+#controls .chipIcon {
+  background-color:var(--primaryContainer);
+
+  border-radius:200px;
+}
