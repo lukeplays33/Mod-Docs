@@ -516,7 +516,7 @@ widgetbot {
 
   font-size: 20px;
 
-  margin-left:8px;
+  margin-left:4px;
 }
 
 .controls :nth-child(1) {
@@ -524,7 +524,7 @@ widgetbot {
 }
 
 .controls :last-child {
-  margin-right:8px;
+  margin-right:4px;
 }
  
 .fullscreen iframe {
