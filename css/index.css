@@ -501,6 +501,7 @@ widgetbot {
   margin-top: -5px;
 
   padding: 4px;
+  padding-left:0px
 
   display: flex;
 }
@@ -513,6 +514,8 @@ widgetbot {
   color:var(--primaryContainerTextColor);
 
   font-size: 20px;
+
+  margin-left:8px;
 }
 
 .controls :nth-child(1) {
