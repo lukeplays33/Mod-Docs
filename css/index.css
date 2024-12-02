@@ -499,10 +499,15 @@ widgetbot {
   border-top-right-radius:0px;
 
   margin-top: -5px;
+
+  padding: 0px;
+  padding-top: 4px;
 }
 
 #controls .chipIcon {
   background-color:var(--primaryContainer);
 
   border-radius:200px;
+
+  color:var(--primaryContainerTextColor);
 }
