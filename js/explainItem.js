@@ -147,7 +147,7 @@ function loadDocItem(index) {
             this.parentNode.requestFullscreen();
             this.parentNode.classList.add('fullscreen');
 
-            this.innerHTML = 'fullscreen_exit';
+            this.innerHTML = 'close_fullscreen';
           } else if (document.exitFullscreen) {
             document.exitFullscreen();
             this.parentNode.classList.remove('fullscreen');
