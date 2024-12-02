@@ -501,6 +501,8 @@ widgetbot {
   margin-top: -5px;
 
   padding: 4px;
+
+  display: flex;
 }
 
 .controls .chipIcon {
