@@ -404,7 +404,7 @@ accordion-dropdown h5 i {
 
   margin-top:0px;
   margin-bottom:0px;
-  
+
   border-bottom-left-radius:0px;
   border-bottom-right-radius:0px;
 }
@@ -491,10 +491,12 @@ widgetbot {
 }
 
 #controls {
-  height:20px;
+  height:30px;
 
   background-color:Var(--primary);
 
   border-top-left-radius:0px;
   border-top-right-radius:0px;
+
+  margin-top: -5px;
 }
