@@ -142,15 +142,15 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    controls.addEventListener('click', function () {
+    controls.children[0].addEventListener('click', function () {
         if (!document.fullscreenElement) {
-            this.parentNode.requestFullscreen();
-            this.parentNode.classList.add('fullscreen');
+            this.parentNode.parentNode.requestFullscreen();
+            this.parentNode.parentNode.classList.add('fullscreen');
 
             this.innerHTML = 'close_fullscreen';
           } else if (document.exitFullscreen) {
             document.exitFullscreen();
-            this.parentNode.classList.remove('fullscreen');
+            this.parentNode.parentNode.classList.remove('fullscreen');
 
             this.innerHTML = 'fullscreen';
           }
