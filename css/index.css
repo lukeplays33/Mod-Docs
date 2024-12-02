@@ -509,6 +509,8 @@ widgetbot {
   border-radius:200px;
 
   color:var(--primaryContainerTextColor);
+
+  font-size: 20px;
 }
 
 .fullscreen iframe {
