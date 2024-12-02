@@ -502,6 +502,7 @@ widgetbot {
 
   padding: 4px;
   padding-left:0px;
+  padding-right:8px;
 
   display: flex;
 }
@@ -520,6 +521,10 @@ widgetbot {
 
 .controls :nth-child(1) {
   margin-right:auto;
+}
+
+.controls :last-child {
+  margin-right:8px;
 }
  
 .fullscreen iframe {
