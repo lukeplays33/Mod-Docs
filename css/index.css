@@ -513,6 +513,10 @@ widgetbot {
   font-size: 20px;
 }
 
+.controls :nth-child(1) {
+  margin-right:auto;
+}
+ 
 .fullscreen iframe {
   height:calc(100% - 40px) !important;
 }
