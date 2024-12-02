@@ -512,9 +512,9 @@ widgetbot {
 }
 
 .fullscreen iframe {
-  height:calc(100% - 30px) !important;
+  height:calc(100% - 40px) !important;
 }
 
-.fullscreen .controls {
-  border-radius:0px;
+.fullscreen .controls, .fullscreen #displayFile {
+  border-radius:0px !important;
 }
