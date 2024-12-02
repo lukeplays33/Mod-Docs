@@ -493,7 +493,7 @@ widgetbot {
 .controls {
   height:30px;
 
-  background-color:Var(--primary);
+  background-color:var(--primary);
 
   border-top-left-radius:0px;
   border-top-right-radius:0px;
