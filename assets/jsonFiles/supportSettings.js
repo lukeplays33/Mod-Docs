@@ -18,7 +18,7 @@ let settings = {
         message: 'Donate to Mod Docs!'
     },
     blog: { // quick links for blog posts that can be either normal or for support (support guides, preverbally support blog posts)
-        url: 'https://buymeacoffee.com/sketchdonate',
+        url: 'https://lukeplays33.github.io/The-Magic-Garden/pages/blog.html',
         message: 'Blog'
     }
 }
