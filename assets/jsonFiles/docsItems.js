@@ -64,6 +64,7 @@ let docsItemsJson = {
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848760392220702/Method__requestFocus.png?ex=6751a082&is=67504f02&hm=141ce5034200de6284d02455e6879726d21f0093b241e5b1ab47ff9e02890e09&=&format=webp&quality=lossless&width=527&height=66', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
+
           keyPress: {
             description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
@@ -295,7 +296,7 @@ let docsItemsJson = {
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Method_%20requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAGCAYAAACij5zfAAADKklEQVR4AQCBAH7/AJuPug6bj7oQm4+6FJuPuhmbj7ofm4+6JZuPuiubj7ovm4+6MpuPujObj7oym4+6L5uPuiybj7oom4+6JJuPuiCbj7oem4+6HJuPuh2bj7ofm4+6IpuPuiabj7orm4+6MJuPujWbj7o6m4+6PpuPukGbj7pDm4+6RZuPukabj7pGAIEAfv8Am4+6xpuPusibj7rMm4+60puPutmbj7rgm4+655uPuuybj7rxm4+685uPuvSbj7rzm4+68ZuPuu+bj7rsm4+66puPuumbj7rom4+66ZuPuuubj7rum4+68puPuvabj7r5m4+6/ZuPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv8AgQB+/wCbj7rIm4+6y5uPus+bj7rVm4+63JuPuuSbj7rrm4+68ZuPuvebj7r6m4+6/JuPuv2bj7r8m4+6+5uPuvqbj7r4m4+6+JuPuvebj7r4m4+6+ZuPuvubj7r9m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv6bj7r9m4+6/ACBAH7/AJuPus+bj7rRm4+61ZuPutubj7rhm4+66JuPuu+bj7r0m4+6+ZuPuvybj7r+m4+6/5uPuv+bj7r+m4+6/ZuPuv2bj7r8m4+6/JuPuv2bj7r+m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r+m4+6+5uPuvibj7r2m4+685uPuvGbj7rwAIEAfv8Am4+62ZuPutubj7rem4+645uPuuibj7rum4+69JuPuvmbj7r9m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv+bj7r/m4+6/5uPuv8BgQB+/wCbj7oom4+6KpuPui2bj7oxm4+6N5uPujybj7pBm4+6RpuPukqbj7pOm4+6UJuPulKbj7pUm4+6VpuPulibj7pbm4+6X5uPumObj7pom4+6bZuPunKbj7p3m4+6epuPun2bj7p+m4+6fpuPun2bj7p7m4+6eZuPunabj7p1m4+6dPno9bNReVdOAAAAAElFTkSuQmCC', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           
           wheel: {
@@ -354,7 +355,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20wheel.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849826374586429/Event__wheel.png?ex=6751a180&is=67505000&hm=2b605197ffbf85de2b4618319b275e11422c7a711088a688c7e9c9b7d1726adc&=&format=webp&quality=lossless&width=540&height=243', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           mouseMove: {
@@ -399,7 +400,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20mouseMove.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825413828628/Event__mouseMove.png?ex=6751a180&is=67505000&hm=bb12c68344cb6ea4f6e25fd195e391c61b2bbcde090ac07320a7d36ec123870e&=&format=webp&quality=lossless&width=553&height=198', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           resize: {
@@ -416,7 +417,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20resize.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849826080854067/Event__resize.png?ex=6751a180&is=67505000&hm=fe05a31106ded5012b042cd3e0c11099b8b28eb69cf34eca88ecf5992353dc2c&=&format=webp&quality=lossless&width=437&height=120', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           orientationChange: {
@@ -447,7 +448,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20orientationChange.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825820934184/Event__orientationChange.png?ex=6751a180&is=67505000&hm=575c3453454a5517a4c934410f3c4b8879f760a854888f34373bd4faa6709862&=&format=webp&quality=lossless&width=775&height=157', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
