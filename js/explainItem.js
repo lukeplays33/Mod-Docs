@@ -142,24 +142,32 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    if(item.controls.fullscreen) {
-        controls.children[0].addEventListener('click', function () {
-            if (!document.fullscreenElement) {
-                this.parentNode.parentNode.requestFullscreen();
-                this.parentNode.parentNode.classList.add('fullscreen');
-    
-                this.innerHTML = 'close_fullscreen';
-              } else if (document.exitFullscreen) {
-                document.exitFullscreen();
-                this.parentNode.parentNode.classList.remove('fullscreen');
-    
-                this.innerHTML = 'fullscreen';
-              }
-        });
+    if(!item.controls.fullscreen) {
+        controls.children[0].classList.switch('disabled');
     }
-    if(item.controls.play) {}
-    if(item.controls.console) {}
-    if(item.controls.viewCode) {}
+    if(!item.controls.play) {
+        controls.children[1].classList.switch('disabled');
+    }
+    if(!item.controls.console) {
+        controls.children[2].classList.switch('disabled');
+    }
+    if(!item.controls.viewCode) {
+        controls.children[3].classList.switch('disabled');
+    }
+
+    controls.children[0].addEventListener('click', function () {
+        if (!document.fullscreenElement) {
+            this.parentNode.parentNode.requestFullscreen();
+            this.parentNode.parentNode.classList.add('fullscreen');
+
+            this.innerHTML = 'close_fullscreen';
+          } else if (document.exitFullscreen) {
+            document.exitFullscreen();
+            this.parentNode.parentNode.classList.remove('fullscreen');
+
+            this.innerHTML = 'fullscreen';
+          }
+    });
 
     for (i of Object.keys(item.variables)) {
         try {

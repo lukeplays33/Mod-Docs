@@ -534,3 +534,8 @@ widgetbot {
 .fullscreen .controls, .fullscreen #displayFile {
   border-radius:0px !important;
 }
+
+.disabled {
+  opacity:0.5;
+  pointer-events: none;
+}
