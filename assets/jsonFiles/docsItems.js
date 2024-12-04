@@ -416,7 +416,7 @@ let docsItemsJson = {
                 outputTypes: ['number'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-                description: 'The x coordinate of the mouse.',
+                description: 'The x coordinate on the screen.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
@@ -430,7 +430,7 @@ let docsItemsJson = {
                 outputTypes: ['number'],
                 inputTypes: [],
 
-                description: 'The y coordinate of the mouse.',
+                description: 'The y coordinate on the screen.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               }
