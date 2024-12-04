@@ -303,7 +303,7 @@ let docsItemsJson = {
             description: 'The wheel event firesthe user starts scrolling with the mouse wheel.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-              deltaX: {
+              deltaY: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
