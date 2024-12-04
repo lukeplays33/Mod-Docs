@@ -142,33 +142,24 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    if(item.controls.fullscreen) {} else {
-        alert()
-        controls.children[0].setAttribute('disabled','true');
+    if(item.controls.fullscreen) {
+        controls.children[0].addEventListener('click', function () {
+            if (!document.fullscreenElement) {
+                this.parentNode.parentNode.requestFullscreen();
+                this.parentNode.parentNode.classList.add('fullscreen');
+    
+                this.innerHTML = 'close_fullscreen';
+              } else if (document.exitFullscreen) {
+                document.exitFullscreen();
+                this.parentNode.parentNode.classList.remove('fullscreen');
+    
+                this.innerHTML = 'fullscreen';
+              }
+        });
     }
-    if(item.controls.play) {} else {
-        controls.children[1].disabled = true;
-    }
-    if(item.controls.console) {} else {
-        controls.children[2].disabled = true;
-    }
-    if(item.controls.viewCode) {} else {
-        controls.children[3].disabled = true;
-    }
-
-    controls.children[0].addEventListener('click', function () {
-        if (!document.fullscreenElement) {
-            this.parentNode.parentNode.requestFullscreen();
-            this.parentNode.parentNode.classList.add('fullscreen');
-
-            this.innerHTML = 'close_fullscreen';
-          } else if (document.exitFullscreen) {
-            document.exitFullscreen();
-            this.parentNode.parentNode.classList.remove('fullscreen');
-
-            this.innerHTML = 'fullscreen';
-          }
-    });
+    if(item.controls.play) {}
+    if(item.controls.console) {}
+    if(item.controls.viewCode) {}
 
     for (i of Object.keys(item.variables)) {
         try {
