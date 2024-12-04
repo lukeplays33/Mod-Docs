@@ -403,6 +403,51 @@ let docsItemsJson = {
             displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825413828628/Event__mouseMove.png?ex=6751a180&is=67505000&hm=bb12c68344cb6ea4f6e25fd195e391c61b2bbcde090ac07320a7d36ec123870e&=&format=webp&quality=lossless&width=553&height=198', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
+          touchMove: {
+            description: 'The touchMove event fires when the user starts moving around the screen using its finger.',
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+
+              X: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['number'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The x coordinate of the mouse.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+
+              Y: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['number'],
+                inputTypes: [],
+
+                description: 'The y coordinate of the mouse.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              }
+            },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
+            
+            outputValues:[], // none for events
+            type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313932812826578965/image.png?ex=6751eeca&is=67509d4a&hm=09bcef8342fc1454f2729b8f4e1c3983d775d65866e34e5edbe9c58ac5909eac&=&format=webp&quality=lossless', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+          },
+
           resize: {
             description: 'The resize event fires when the user resizes the screen.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
