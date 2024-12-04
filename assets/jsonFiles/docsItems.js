@@ -500,10 +500,7 @@ let docsItemsJson = {
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
-      },
-      "Theme_Swapper": {},
-      "ASD": {},
-      "Console": {}
+      }
     }
   }
 }
