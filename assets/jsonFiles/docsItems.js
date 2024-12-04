@@ -62,7 +62,7 @@ let docsItemsJson = {
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Method_%20requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848760392220702/Method__requestFocus.png?ex=6751a082&is=67504f02&hm=141ce5034200de6284d02455e6879726d21f0093b241e5b1ab47ff9e02890e09&=&format=webp&quality=lossless&width=527&height=66', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           keyPress: {
             description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
@@ -120,7 +120,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyPress.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848759628595242/Event__keyPress.png?ex=6751a082&is=67504f02&hm=ed3d6af909b0f6efdd0e088b1adfd696c79fe344583c6b458298852094e3d358&=&format=webp&quality=lossless&width=637&height=245', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyDown: {
@@ -238,7 +238,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848759981047879/Event__keyUp.png?ex=6751a082&is=67504f02&hm=99c42d8436d80f1a6d6b8df9667e8d2549f73087aff6228c1633a6e4bf327182&=&format=webp&quality=lossless&width=608&height=242', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
