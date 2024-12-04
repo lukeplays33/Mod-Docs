@@ -478,7 +478,7 @@ let docsItemsJson = {
                 outputTypes: ['number'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-                description: 'The angle the screen has rotated to..',
+                description: 'The angle the screen has rotated to.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
@@ -494,6 +494,77 @@ let docsItemsJson = {
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825820934184/Event__orientationChange.png?ex=6751a180&is=67505000&hm=575c3453454a5517a4c934410f3c4b8879f760a854888f34373bd4faa6709862&=&format=webp&quality=lossless&width=775&height=157', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+          },
+
+          fileDropped: {
+            description: 'The ofileDropped event fires when the user has siccesfully dropped a file onto the screen.',
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+
+              fileName: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['string'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The name of the file that has been dropped.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+
+              file: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['base64'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The dropped file in base64 format.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+              fileSize: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['number'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The size of the file that has been dropped in bytes.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+              fileLastModificationDate: {
+                readOnly: true, // default for events, cannot be false for events
+
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+                outputTypes: ['date'],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+                description: 'The last date the file has been modified.',
+
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+            },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
+            
+            outputValues:[], // none for events
+            type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313940856805261434/image.png?ex=6751f648&is=6750a4c8&hm=2e3e1680c123580b2931e35661c70988246edc9fd5498c2e078ab2e9a4416954&=&format=webp&quality=lossless', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
