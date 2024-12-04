@@ -497,7 +497,7 @@ let docsItemsJson = {
           },
 
           fileDropped: {
-            description: 'The ofileDropped event fires when the user has siccesfully dropped a file onto the screen.',
+            description: 'The fileDropped event fires when the user has siccesfully dropped a file onto the screen.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               fileName: {
@@ -527,6 +527,7 @@ let docsItemsJson = {
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
+
               fileSize: {
                 readOnly: true, // default for events, cannot be false for events
 
@@ -540,6 +541,7 @@ let docsItemsJson = {
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
+              
               fileLastModificationDate: {
                 readOnly: true, // default for events, cannot be false for events
 
