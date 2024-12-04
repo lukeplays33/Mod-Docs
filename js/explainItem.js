@@ -142,6 +142,19 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
+    if(item.controls.fullscreen) {} else {
+        controls.children[0].disabled = true;
+    }
+    if(item.controls.play) {} else {
+        controls.children[1].disabled = true;
+    }
+    if(item.controls.console) {} else {
+        controls.children[2].disabled = true;
+    }
+    if(item.controls.viewCode) {} else {
+        controls.children[3].disabled = true;
+    }
+
     controls.children[0].addEventListener('click', function () {
         if (!document.fullscreenElement) {
             this.parentNode.parentNode.requestFullscreen();

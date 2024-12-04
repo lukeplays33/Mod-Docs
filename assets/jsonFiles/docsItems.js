@@ -52,6 +52,13 @@ let docsItemsJson = {
             description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
             },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
@@ -102,6 +109,13 @@ let docsItemsJson = {
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
+            },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:true,
+              console:true,
+              viewCode:false,
             },
             
             outputValues:[], // none for events
@@ -155,6 +169,13 @@ let docsItemsJson = {
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
             },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:true,
+              console:true,
+              viewCode:false,
+            },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
@@ -206,6 +227,13 @@ let docsItemsJson = {
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
+            },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:true,
+              console:true,
+              viewCode:false,
             },
             
             outputValues:[], // none for events
