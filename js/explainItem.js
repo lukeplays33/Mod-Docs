@@ -142,7 +142,7 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    if(item.controls.fullscreen) {} else {
+    if(item.controls.fullscreen) {} else { // disables unnessecary control buttons
         controls.children[0].classList.add('disabled');
     }
     if(item.controls.play) {} else {
