@@ -142,16 +142,16 @@ function loadDocItem(index) {
         displayFile.src = item.displayFile;
     }
 
-    if(!item.controls.fullscreen) {
+    if(item.controls.fullscreen) {} else {
         controls.children[0].classList.switch('disabled');
     }
-    if(!item.controls.play) {
+    if(!item.controls.play) {} else {
         controls.children[1].classList.switch('disabled');
     }
-    if(!item.controls.console) {
+    if(!item.controls.console) {} else {
         controls.children[2].classList.switch('disabled');
     }
-    if(!item.controls.viewCode) {
+    if(!item.controls.viewCode) {} else {
         controls.children[3].classList.switch('disabled');
     }
 
