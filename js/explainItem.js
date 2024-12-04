@@ -143,6 +143,7 @@ function loadDocItem(index) {
     }
 
     if(item.controls.fullscreen) {} else {
+        alert()
         controls.children[0].disabled = true;
     }
     if(item.controls.play) {} else {
