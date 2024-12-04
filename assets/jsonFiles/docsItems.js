@@ -179,7 +179,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyDown.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://cdn.discordapp.com/attachments/1313848661788069930/1313848759226204200/Event__keyDown.png?ex=6751a082&is=67504f02&hm=f7c802fd6e30e3c6f902233e3c0784b9224aca5f6300d5f71badc89615b3004c&', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyUp: {
