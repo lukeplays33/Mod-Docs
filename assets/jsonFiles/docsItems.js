@@ -62,7 +62,7 @@ let docsItemsJson = {
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Method: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Method_%20requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           keyPress: {
             description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
@@ -113,14 +113,14 @@ let docsItemsJson = {
 
             controls: { // tells the docs page to display controls for displayFile
               fullscreen:true,
-              play:true,
-              console:true,
+              play:false,
+              console:false,
               viewCode:false,
             },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyPress.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyPress.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyDown: {
@@ -172,14 +172,14 @@ let docsItemsJson = {
 
             controls: { // tells the docs page to display controls for displayFile
               fullscreen:true,
-              play:true,
-              console:true,
+              play:false,
+              console:false,
               viewCode:false,
             },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyDown.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyDown.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyUp: {
@@ -231,14 +231,14 @@ let docsItemsJson = {
 
             controls: { // tells the docs page to display controls for displayFile
               fullscreen:true,
-              play:true,
-              console:true,
+              play:false,
+              console:false,
               viewCode:false,
             },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/keyboardEvents/Event_%20keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
@@ -285,31 +285,38 @@ let docsItemsJson = {
             description: 'The requestFocus function allows the developer to manually request listening to screen events, wich automatically stops when interacting with UI elements.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
             },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Method: requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Method_%20requestFocus.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           
           wheel: {
-            description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
+            description: 'The wheel event firesthe user starts scrolling with the mouse wheel.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-              keyName: {
+              deltaX: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                outputTypes: ['string'],
+                outputTypes: ['number'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-                description: 'The name of the key that is pressed.',
+                description: 'The delta value on the Y cordinate',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
 
-              keyCode: {
+              deltaX: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
@@ -318,12 +325,12 @@ let docsItemsJson = {
                 outputTypes: ['number'],
                 inputTypes: [],
 
-                description: 'The code of the key that is pressed.',
+                description: 'The delta value on the X cordinate.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
 
-              heldDown: {
+              deltaZ: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
@@ -332,36 +339,43 @@ let docsItemsJson = {
                 outputTypes: ['boolean'],
                 inputTypes: [],
 
-                description: 'Returns true if the key is held down for long periods of time.',
+                description: 'The delta value on the Z cordinate',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
             },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyPress.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20wheel.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           mouseMove: {
-            description: 'The keyDown event fires when a key is pressed down on the keyboard.',
+            description: 'The mouseMove event fires when the user moves the mouse around on the screen.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-              keyName: {
+              X: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-                outputTypes: ['string'],
+                outputTypes: ['number'],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-                description: 'The name of the key that is pressed.',
+                description: 'The x coordinate of the mouse.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
 
-              keyCode: {
+              Y: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
@@ -370,133 +384,70 @@ let docsItemsJson = {
                 outputTypes: ['number'],
                 inputTypes: [],
 
-                description: 'The code of the key that is pressed.',
+                description: 'The y coordinate of the mouse.',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
+              }
+            },
 
-              heldDown: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['boolean'],
-                inputTypes: [],
-
-                description: 'Returns true if the key is held down for long periods of time.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
             },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyDown.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20mouseMove.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           resize: {
-            description: 'The keyUp event fires when a key is released on the keyboard.',
+            description: 'The resize event fires when the user resizes the screen.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+            },
 
-              keyName: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['string'],
-                inputTypes: [],  // cannot have any value when in events since they cant accept input values
-
-                description: 'The name of the key that is pressed.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
-
-              keyCode: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['number'],
-                inputTypes: [],
-
-                description: 'The code of the key that is pressed.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
-
-              heldDown: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['boolean'],
-                inputTypes: [],
-
-                description: 'Returns true if the key is held down for long periods of time.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
             },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20resize.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           orientationChange: {
-            description: 'The keyUp event fires when a key is released on the keyboard.',
+            description: 'The orientationCHange event fires when the user changes the screen orientation',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-              keyName: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['string'],
-                inputTypes: [],  // cannot have any value when in events since they cant accept input values
-
-                description: 'The name of the key that is pressed.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
-
-              keyCode: {
+              orientationAngle: {
                 readOnly: true, // default for events, cannot be false for events
 
                 defaultValue: '',
                 valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
                 outputTypes: ['number'],
-                inputTypes: [],
+                inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-                description: 'The code of the key that is pressed.',
-
-                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-              },
-
-              heldDown: {
-                readOnly: true, // default for events, cannot be false for events
-
-                defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-                outputTypes: ['boolean'],
-                inputTypes: [],
-
-                description: 'Returns true if the key is held down for long periods of time.',
+                description: 'The angle the screen has rotated to..',
 
                 accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
               },
             },
+
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen:true,
+              play:false,
+              console:false,
+              viewCode:false,
+            },
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: '../assets/images/docs/Event: keyUp.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://raw.githubusercontent.com/lukeplays33/Thunkable-Modules/refs/heads/main/assets/screenEvents/Event_%20orientationChange.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
