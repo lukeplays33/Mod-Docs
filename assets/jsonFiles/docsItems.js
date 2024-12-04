@@ -54,7 +54,7 @@ let docsItemsJson = {
             },
 
             controls: { // tells the docs page to display controls for displayFile
-              fullscreen:false,
+              fullscreen:true,
               play:false,
               console:false,
               viewCode:false,
