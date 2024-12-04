@@ -144,7 +144,7 @@ function loadDocItem(index) {
 
     if(item.controls.fullscreen) {} else {
         alert()
-        controls.children[0].disabled = true;
+        controls.children[0].setAttribute('disabled','true');
     }
     if(item.controls.play) {} else {
         controls.children[1].disabled = true;
