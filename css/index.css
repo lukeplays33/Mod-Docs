@@ -539,3 +539,7 @@ widgetbot {
   opacity:0.5;
   pointer-events: none;
 }
+
+.recentAccordion .accordionItems {
+  margin-left: 4px;
+}
