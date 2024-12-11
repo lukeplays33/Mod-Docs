@@ -62,7 +62,7 @@ let docsItemsJson = {
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848760392220702/Method__requestFocus.png?ex=6751a082&is=67504f02&hm=141ce5034200de6284d02455e6879726d21f0093b241e5b1ab47ff9e02890e09&=&format=webp&quality=lossless&width=527&height=66', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/2q2WSLF/Screenshot-2024-10-04-104506.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyPress: {
@@ -121,7 +121,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848759628595242/Event__keyPress.png?ex=6751a082&is=67504f02&hm=ed3d6af909b0f6efdd0e088b1adfd696c79fe344583c6b458298852094e3d358&=&format=webp&quality=lossless&width=637&height=245', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/SK02jzD/Screenshot-2024-10-01-162908.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyDown: {
@@ -180,7 +180,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://cdn.discordapp.com/attachments/1313848661788069930/1313848759226204200/Event__keyDown.png?ex=6751a082&is=67504f02&hm=f7c802fd6e30e3c6f902233e3c0784b9224aca5f6300d5f71badc89615b3004c&', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/nB8R4sL/Screenshot-2024-10-01-162637.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           keyUp: {
@@ -239,7 +239,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313848759981047879/Event__keyUp.png?ex=6751a082&is=67504f02&hm=99c42d8436d80f1a6d6b8df9667e8d2549f73087aff6228c1633a6e4bf327182&=&format=webp&quality=lossless&width=608&height=242', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/ds9fwgS/Screenshot-2024-10-01-162706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
@@ -296,7 +296,7 @@ let docsItemsJson = {
             
             outputValues:[],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://cdn.discordapp.com/attachments/1313848661788069930/1313849826689155092/Method__requestFocus.png?ex=6751a180&is=67505000&hm=464de0749b1a43946868c4c56b4fa8a65541ef68f8a1650ff30568a4a814280c&', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/9NknGWt/Screenshot-2024-12-04-130414.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
           
           wheel: {
@@ -355,7 +355,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849826374586429/Event__wheel.png?ex=6751a180&is=67505000&hm=2b605197ffbf85de2b4618319b275e11422c7a711088a688c7e9c9b7d1726adc&=&format=webp&quality=lossless&width=540&height=243', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/6Y9mP6h/Screenshot-2024-10-01-162555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           mouseMove: {
@@ -400,7 +400,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825413828628/Event__mouseMove.png?ex=6751a180&is=67505000&hm=bb12c68344cb6ea4f6e25fd195e391c61b2bbcde090ac07320a7d36ec123870e&=&format=webp&quality=lossless&width=553&height=198', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/fnkV6GG/Screenshot-2024-10-01-162616.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           touchMove: {
@@ -445,7 +445,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313932812826578965/image.png?ex=6751eeca&is=67509d4a&hm=09bcef8342fc1454f2729b8f4e1c3983d775d65866e34e5edbe9c58ac5909eac&=&format=webp&quality=lossless', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/9vghL9y/Screenshot-2024-12-04-191927.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           resize: {
@@ -462,7 +462,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849826080854067/Event__resize.png?ex=6751a180&is=67505000&hm=fe05a31106ded5012b042cd3e0c11099b8b28eb69cf34eca88ecf5992353dc2c&=&format=webp&quality=lossless&width=437&height=120', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/zxwkmK4/Event-resize.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           orientationChange: {
@@ -493,7 +493,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313849825820934184/Event__orientationChange.png?ex=6751a180&is=67505000&hm=575c3453454a5517a4c934410f3c4b8879f760a854888f34373bd4faa6709862&=&format=webp&quality=lossless&width=775&height=157', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/SmmRrXt/Event-orientation-Change.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
           fileDropped: {
@@ -566,7 +566,7 @@ let docsItemsJson = {
             
             outputValues:[], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://media.discordapp.net/attachments/1313848661788069930/1313940856805261434/image.png?ex=6751f648&is=6750a4c8&hm=2e3e1680c123580b2931e35661c70988246edc9fd5498c2e078ab2e9a4416954&=&format=webp&quality=lossless', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/SrTWJws/Screenshot-2024-12-04-195144.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
         //quickLinks: [], //e.g. for quickly navigating to a tutorial
