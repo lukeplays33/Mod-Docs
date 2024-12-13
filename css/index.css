@@ -441,26 +441,6 @@ accordion-dropdown h5 i {
   margin-bottom:0px !important;
 }
 
-@media (pointer: coarse) {
-  .explainInfoItems {
-    flex-direction: column;
-  }
-
-  #installItems {
-    flex-direction: row;
-  }
-
-  #eDescription {
-    margin-bottom: 0px;
-  }
-
-  .explanationItems {
-    display: flex;
-
-    flex-direction: column;
-  }
-}
-
 table {
   width: 100% !important;
 }
@@ -559,4 +539,25 @@ widgetbot {
   grid-template-columns: 1fr 1fr;
 
   margin-bottom: 24px;
+}
+
+@media (pointer: coarse) {
+  .explainInfoItems {
+    flex-direction: column;
+  }
+
+  #installItems {
+    flex-direction: row;
+  }
+
+  #eDescription {
+    margin-bottom: 0px;
+  }
+
+  .grid {
+    display:grid;
+    grid-template-columns: 1fr;
+  
+    margin-bottom: 24px;
+  }
 }
