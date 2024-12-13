@@ -560,4 +560,8 @@ widgetbot {
   
     margin-bottom: 24px;
   }
+
+  .grid * {
+    margin-bottom:8px;
+  }
 }
