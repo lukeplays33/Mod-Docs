@@ -131,12 +131,12 @@ function loadDocItem(index) {
     let itemHTML = document.getElementById(itemName);
     itemHTML.style.display = 'flex';
 
-    let description = itemHTML.getElementsByClassName('description')[0];
+    //let description = itemHTML.getElementsByClassName('description')[0];
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
     let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
     let controls = itemHTML.getElementsByClassName('controls')[0];
 
-    description.children[1].innerHTML = item.description;
+    //description.children[1].innerHTML = item.description;
 
     if (item.displayFile) {
         displayFile.src = item.displayFile;
@@ -221,7 +221,7 @@ function createVariableTable(variable, variables) { //creates a display table to
 function createInfoTable(item, json) { //creates a display table to read variable info
     let i;
 
-    let items = ['outputTypes', 'type'];
+    let items = ['outputTypes', 'type', 'description'];
 
     let table = document.createElement('table');
 
