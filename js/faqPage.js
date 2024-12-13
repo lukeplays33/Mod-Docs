@@ -39,7 +39,13 @@ faqList.addEventListener('itemSelected', function (e) {
 
         des = document.createElement('li');
         des.classList.add('des');
-        des.innerHTML = json[e.detail.value];
+
+        if(String(window.parent.document.title).includes('Notes')) {
+            des.innerHTML = json[e.detail.value].description;
+        } else {
+            des.innerHTML = json[e.detail.value];
+        }
+        
 
         selectedItem.after(des);
     }
