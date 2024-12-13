@@ -539,6 +539,8 @@ widgetbot {
   grid-template-columns: 1fr 1fr;
 
   margin-bottom: 24px;
+
+  gap:8px;
 }
 
 @media (pointer: coarse) {
