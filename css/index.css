@@ -534,6 +534,10 @@ widgetbot {
   margin-top:0px;
 }
 
+.grid * {
+  height: calc(100% - 16px) !important;
+}
+
 .grid {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -541,10 +545,6 @@ widgetbot {
   margin-bottom: 8px;
 
   gap:8px;
-}
-
-.grid * {
-  height: calc(100% - 16px) !important;
 }
 
 @media (pointer: coarse) {
