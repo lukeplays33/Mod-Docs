@@ -543,6 +543,10 @@ widgetbot {
   gap:8px;
 }
 
+.grid * {
+  height: calc(100% - 16px) !important;
+}
+
 @media (pointer: coarse) {
   .explainInfoItems {
     flex-direction: column;
