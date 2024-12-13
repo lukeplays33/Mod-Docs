@@ -558,10 +558,8 @@ widgetbot {
     display:grid;
     grid-template-columns: 1fr;
   
-    margin-bottom: 24px;
-  }
+    margin-bottom: 16px;
 
-  .grid * {
-    margin-bottom:8px;
+    gap:8px;
   }
 }
