@@ -521,7 +521,7 @@ let docsItemsJson = {
           },
 
           fileDropped: {
-            description: 'The fileDropped event fires when the user has siccesfully dropped a file onto the screen.',
+            description: 'The fileDropped event fires when the user has succesfully dropped a file onto the screen.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               fileName: {
