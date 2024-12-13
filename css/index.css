@@ -543,3 +543,7 @@ widgetbot {
 .recentAccordion .accordionItems {
   margin-left: 4.5px;
 }
+
+.variablesAndInfo :first-child {
+  margin-top:0px;
+}
