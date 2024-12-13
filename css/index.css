@@ -234,6 +234,10 @@ list-viewer li {
   color: var(--secondairyTextColor);
 }
 
+#language {
+  margin-bottom:0px;
+}
+
 .text {
   width: 100%;
   text-align: left;
