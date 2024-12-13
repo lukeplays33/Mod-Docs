@@ -255,7 +255,7 @@ list-viewer li {
   color: var(--tertiaryTextColor);
 
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
 }
 
 .items,
