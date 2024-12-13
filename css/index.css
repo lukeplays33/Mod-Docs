@@ -549,3 +549,8 @@ widgetbot {
 .variablesAndInfo :first-child {
   margin-top:0px;
 }
+
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
