@@ -255,7 +255,7 @@ let docsItemsJson = {
           useCases: ['Capture screen swipes/scrolling ', 'Capture resizing', 'Capture orientation changes'],
 
           notes: { // allows the developer or ai to supply additional notes such as bugs
-            
+
             'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
           },
 
@@ -301,7 +301,7 @@ let docsItemsJson = {
           },
           
           wheel: {
-            description: 'The wheel event firesthe user starts scrolling with the mouse wheel.',
+            description: 'The wheel event fires when the user starts scrolling with the mouse wheel.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               deltaY: {
