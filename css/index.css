@@ -253,6 +253,9 @@ list-viewer li {
 .des {
   background-color: var(--tertiary);
   color: var(--tertiaryTextColor);
+
+  display:flex;
+  flex-direction:row;
 }
 
 .items,
