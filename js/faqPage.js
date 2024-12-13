@@ -44,7 +44,6 @@ faqList.addEventListener('itemSelected', function (e) {
         if(String(window.parent.document.title).includes('Notes')) {
             des.innerHTML = json[e.detail.value].description;
 
-            console.log(json[e.detail.value])
             des.appendChild(createInfoTable(Object.keys(json[e.detail.value])),json[e.detail.value])
         } else {
             des.innerHTML = json[e.detail.value];
