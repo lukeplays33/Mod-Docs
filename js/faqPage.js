@@ -1,6 +1,7 @@
 import { faqItems } from "../assets/jsonFiles/faq.js";
 import { troubleShooting } from "../assets/jsonFiles/troubleshootings.js";
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
+import { createInfoTable } from "./utils.js";
 
 let faqList = document.getElementById('faqs');
 
@@ -42,6 +43,8 @@ faqList.addEventListener('itemSelected', function (e) {
 
         if(String(window.parent.document.title).includes('Notes')) {
             des.innerHTML = json[e.detail.value].description;
+
+            des.appendChild(createInfoTable(Object.keys(json[e.detail.value])),json[e.detail.value])
         } else {
             des.innerHTML = json[e.detail.value];
         }
