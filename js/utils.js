@@ -16,7 +16,6 @@ function waitForElement(selector, callback) {
 
         let tr = document.createElement('tr');
 
-        console.log(json, json[i])
         if (json[i]) {
             let name = document.createElement('td');
             name.innerHTML = i;
