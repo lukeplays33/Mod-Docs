@@ -42,7 +42,7 @@ faqList.addEventListener('itemSelected', function (e) {
         des.classList.add('des');
 
         if(String(window.parent.document.title).includes('Notes')) {
-            des.innerHTML = json[e.detail.value].description;
+            //des.innerHTML = json[e.detail.value].description;
 
             des.appendChild(createInfoTable(Object.keys(json[e.detail.value]),json[e.detail.value]));
         } else {
