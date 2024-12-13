@@ -1,5 +1,7 @@
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
+import { createInfoTable } from './utils.js';
+
 let demoTabItem, i;
 
 let description = document.getElementById('eDescription');
@@ -175,13 +177,13 @@ function loadDocItem(index) {
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
 
-        dropdown.appendChild(createVariableTable(i, item.variables));
+        dropdown.appendChild(createInfoTable(i, item.variables));
 
         variablesAndInfo.appendChild(dropdown);
     }
 
     variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
-    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(itemName, item));
+    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputTypes', 'type'], item));
 
     if (Object.keys(item.variables).length == 0) {
             variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
@@ -204,34 +206,6 @@ function createVariableTable(variable, variables) { //creates a display table to
 
             let value = document.createElement('td');
             value.innerHTML = variables[variable][i];
-
-            tr.appendChild(name);
-            tr.appendChild(value);
-        }
-
-        table.appendChild(tr);
-    }
-
-    return table;
-}
-
-function createInfoTable(item, json) { //creates a display table to read variable info
-    let i;
-
-    let items = ['description', 'outputTypes', 'type'];
-
-    let table = document.createElement('table');
-
-    for (i of items) {
-
-        let tr = document.createElement('tr');
-
-        if (json[i]) {
-            let name = document.createElement('td');
-            name.innerHTML = i;
-
-            let value = document.createElement('td');
-            value.innerHTML = json[i];
 
             tr.appendChild(name);
             tr.appendChild(value);
