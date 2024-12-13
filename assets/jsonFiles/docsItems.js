@@ -30,7 +30,7 @@ let docsItemsJson = {
 
             'Module fails to capture events or unfocuses.': {
               description: "Due to the way JavaScript sandboxing works aswel as how Thunkable Modules work the module may not properly capture events to solve this you can use the requestFocus() function to recapture focus into the module. \n This is often used after a UI interaction since that stops the focus on the capturing.",
-              type: 'Bug',
+              type: 'CORS rule',
               for: 'requestFocus' // if tied to a specific function or important for that one, leave empty to be global.
             }
           },
@@ -275,7 +275,7 @@ let docsItemsJson = {
 
             'Module fails to capture events or unfocuses.': {
               description: "Due to the way JavaScript sandboxing works aswel as how Thunkable Modules work the module may not properly capture events to solve this you can use the requestFocus() function to recapture focus into the module. \n This is often used after a UI interaction since that stops the focus on the capturing.",
-              type: 'Bug',
+              type: 'CORS rule',
               for: 'requestFocus' // if tied to a specific function or important for that one, leave empty to be global.
             }
           },
