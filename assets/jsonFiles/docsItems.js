@@ -23,9 +23,9 @@ let docsItemsJson = {
           notes: { // allows the developer or ai to supply additional notes such as bugs
 
             'Module stays visible after setting visible to false': {
-              status: 'Passed on to Thunkable team',
               description: "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group.",
               type: 'Bug',
+              status: 'Passed on to Thunkable team',
               for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
             },
 
@@ -269,9 +269,9 @@ let docsItemsJson = {
           notes: { // allows the developer or ai to supply additional notes such as bugs
 
             'Module stays visible after setting visible to false': {
-              status: 'Passed on to Thunkable team',
               description: "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group.",
               type: 'Bug',
+              status: 'Passed on to Thunkable team',
               for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
             },
 
