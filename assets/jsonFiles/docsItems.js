@@ -21,7 +21,18 @@ let docsItemsJson = {
           useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
 
           notes: { // allows the developer or ai to supply additional notes such as bugs
-            'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
+
+            'Module stays visible after setting visible to false': {
+              description: "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group.",
+              type: 'Bug',
+              for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+            },
+
+            'Module fails to capture events or unfocuses.': {
+              description: "Due to the way JavaScript sandboxing works aswel as how Thunkable Modules work the module may not properly capture events to solve this you can use the requestFocus() function to recapture focus into the module. \n THis is often used after a UI interaction since that stops the focus on the capturing.",
+              type: 'Bug',
+              for: 'requestFocus' // if tied to a specific function or important for that one, leave empty to be global.
+            }
           },
 
           demoLinks: { // links to examples users can look at
@@ -256,7 +267,17 @@ let docsItemsJson = {
 
           notes: { // allows the developer or ai to supply additional notes such as bugs
 
-            'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
+            'Module stays visible after setting visible to false': {
+              description: "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group.",
+              type: 'Bug',
+              for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+            },
+
+            'Module fails to capture events or unfocuses.': {
+              description: "Due to the way JavaScript sandboxing works aswel as how Thunkable Modules work the module may not properly capture events to solve this you can use the requestFocus() function to recapture focus into the module. \n THis is often used after a UI interaction since that stops the focus on the capturing.",
+              type: 'Bug',
+              for: 'requestFocus' // if tied to a specific function or important for that one, leave empty to be global.
+            }
           },
 
           demoLinks: { // links to examples users can look at
