@@ -131,12 +131,9 @@ function loadDocItem(index) {
     let itemHTML = document.getElementById(itemName);
     itemHTML.style.display = 'flex';
 
-    //let description = itemHTML.getElementsByClassName('description')[0];
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
     let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
     let controls = itemHTML.getElementsByClassName('controls')[0];
-
-    //description.children[1].innerHTML = item.description;
 
     if (item.displayFile) {
         displayFile.src = item.displayFile;
@@ -187,7 +184,7 @@ function loadDocItem(index) {
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(itemName, item));
 
     if (Object.keys(item.variables).length == 0) {
-            variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
+            variablesAndInfo.children[1].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
     }
 }
 
