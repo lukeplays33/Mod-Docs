@@ -107,7 +107,7 @@ h1 {
 
   width: calc(100% - 16px) !important;
 
-  align-items:start;
+  align-items:start !important;
 }
 
 .transparent {
