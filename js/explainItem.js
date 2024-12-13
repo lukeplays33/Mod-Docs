@@ -218,7 +218,7 @@ function createVariableTable(variable, variables) { //creates a display table to
 function createInfoTable(item, json) { //creates a display table to read variable info
     let i;
 
-    let items = ['outputTypes', 'type', 'description'];
+    let items = ['description', 'outputTypes', 'type'];
 
     let table = document.createElement('table');
 

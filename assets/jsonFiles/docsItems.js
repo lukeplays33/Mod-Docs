@@ -255,6 +255,7 @@ let docsItemsJson = {
           useCases: ['Capture screen swipes/scrolling ', 'Capture resizing', 'Capture orientation changes'],
 
           notes: { // allows the developer or ai to supply additional notes such as bugs
+            
             'Bug - Module stays visible after setting visible to false': "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group."
           },
 
