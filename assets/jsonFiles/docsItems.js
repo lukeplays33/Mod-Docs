@@ -1,6 +1,7 @@
 let docsItemsJson = {
   "Pichai_UX": {
     description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale to use.',
+    items: {},
   },
   "Lucy": {},
   "Gryffindor": {},
@@ -9,6 +10,7 @@ let docsItemsJson = {
   "Debugger": {},
   "Mod_Docs!": {
     description: 'Mod Docs! is a library designed to let developers easilly write documentations for their products using either an AI for automation or themselves.',
+    items: {},
   },
   "Thunkable": {
     description: 'Modules are a way that allows Thunkable users to create more functions for their app. it allows them to develop easier and faster. <br> Below is a list of Modules we have developed for Thunkable.',
