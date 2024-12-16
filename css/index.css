@@ -534,7 +534,7 @@ widgetbot {
   margin-top:0px;
 }
 
-.grid * {
+.grid .content {
   height: calc(100% - 16px) !important;
 }
 
