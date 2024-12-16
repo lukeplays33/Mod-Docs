@@ -26,8 +26,8 @@ if(Object.keys(docsItemsJson).length == 0) {
 
 for (i of Object.keys(docsItemsJson)) { // load all doc items
   let a = document.createElement('li');
-  a.innerHTML = String(i).replaceAll('_', '');
-  a.id = String(i).replaceAll('_', '');
+  a.innerHTML = String(i).replaceAll('_', ' ');
+  a.id = i;
   a.href = '../Mod-Docs/docPages/docsItems.html';
 
   drawer.insertBefore(a, tutorials);
