@@ -534,7 +534,11 @@ widgetbot {
   margin-top:0px;
 }
 
-.grid .content {
+.grid #eDescription,
+#useCases,
+#language,
+#required,
+#platform {
   height: calc(100% - 16px) !important;
 }
 
