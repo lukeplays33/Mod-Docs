@@ -47,16 +47,16 @@ let docsItemsJson = {
         },
         contents: {
           generateDynamicIcon: {
-            description: 'generates a themed icon based on your projects theme..',
+            description: 'Generates a themed icon based on your projects theme..',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
               image: {
                 readOnly: false, // default for events, cannot be false for events
 
                 defaultValue: '',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+                valueOptions: ['Base 64'], // an array of options telling the developer wich choices are accepted by the input
 
-                outputTypes: ['string'],
+                outputTypes: [],
                 inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
                 description: 'The image file needing to be dynamically themed..',
@@ -68,9 +68,9 @@ let docsItemsJson = {
                 readOnly: false, // default for events, cannot be false for events
 
                 defaultValue: '360',
-                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+                valueOptions: ['number'], // an array of options telling the developer wich choices are accepted by the input
 
-                outputTypes: ['number'],
+                outputTypes: [],
                 inputTypes: [],
 
                 description: 'The radius attribute tells pichai-ux in what kind of shape the icon should be generated.',
@@ -92,9 +92,9 @@ let docsItemsJson = {
               viewCode: false,
             },
 
-            outputValues: ['Base64'], // none for events
+            outputValueOptions: ['Base64'], // none for events, tells what kind of value is outputted
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://i.ibb.co/SK02jzD/Screenshot-2024-10-01-162908.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'pichaiUx.generateDyanmicICon(img, radiues);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
         },
       },
@@ -178,7 +178,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [],
+          outputValueOptions: [],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/2q2WSLF/Screenshot-2024-10-04-104506.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -237,7 +237,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/SK02jzD/Screenshot-2024-10-01-162908.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -296,7 +296,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/nB8R4sL/Screenshot-2024-10-01-162637.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -355,7 +355,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/ds9fwgS/Screenshot-2024-10-01-162706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -424,7 +424,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [],
+          outputValueOptions: [],
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/SBCYPXw/Screenshot-2024-12-04-130414.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -483,7 +483,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/6Y9mP6h/Screenshot-2024-10-01-162555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -528,7 +528,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/fnkV6GG/Screenshot-2024-10-01-162616.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -573,7 +573,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/9vghL9y/Screenshot-2024-12-04-191927.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -590,7 +590,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/zxwkmK4/Event-resize.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -621,7 +621,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/SmmRrXt/Event-orientation-Change.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
@@ -694,7 +694,7 @@ let docsItemsJson = {
                   viewCode: false,
             },
 
-          outputValues: [], // none for events
+          outputValueOptions: [], // none for events
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
               displayFile: 'https://i.ibb.co/SrTWJws/Screenshot-2024-12-04-195144.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
