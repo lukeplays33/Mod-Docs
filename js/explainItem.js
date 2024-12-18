@@ -133,8 +133,7 @@ function generateCodeWithHighlight(file, format) {
   <title>Change_me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.1.9/js/rainbow.min.js"></script>
   <link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
 </head>
 
