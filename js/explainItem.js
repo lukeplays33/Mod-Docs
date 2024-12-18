@@ -145,7 +145,7 @@ ${file}
 
 <script src="/assets/js/rainbow.js"></script>
 <script src="/assets/js/language/generic.js"></script>
-<script src="/assets/js/language/python.js"></script>
+<script src="/assets/js/language/${format}.js"></script>
 
 </body>
 </html>`
@@ -166,7 +166,7 @@ function loadDocItem(index) {
     let controls = itemHTML.getElementsByClassName('controls')[0];
 
     if (item.displayFile) {
-        if (item.codeFormat == 'img' || !item.codeFormat) {
+        if (item.codeFormat == 'img' || !item.codeFormat) { // if set to img or empty display a image file or file in general
             displayFile.src = item.displayFile
         } else {
             displayFile.srcdoc = generateCodeWithHighlight(item.displayFile, item.codeFormat);
