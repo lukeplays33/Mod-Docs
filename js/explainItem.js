@@ -123,6 +123,34 @@ viewPager.addEventListener('pageChange', function (e) {
     loadDocItem(e.detail.pageIndex);
 });
 
+function generateCodeWithHighlight(file, format) {
+    return `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Change_me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  
+<pre><code data-language="${format}">
+${file}
+    </code></pre>
+
+<script src="/assets/js/rainbow.js"></script>
+<script src="/assets/js/language/generic.js"></script>
+<script src="/assets/js/language/python.js"></script>
+
+</body>
+</html>`
+}
+
 function loadDocItem(index) {
     let i;
 
@@ -138,19 +166,19 @@ function loadDocItem(index) {
     let controls = itemHTML.getElementsByClassName('controls')[0];
 
     if (item.displayFile) {
-        displayFile.src = item.displayFile;
+        displayFile.src = item.codeFormat == 'img' ? item.displayFile : generateCodeWithHighlight(item.displayFile, item.codeFormat);
     }
 
-    if(item.controls.fullscreen) {} else { // disables unnessecary control buttons
+    if (item.controls.fullscreen) { } else { // disables unnessecary control buttons
         controls.children[0].classList.add('disabled');
     }
-    if(item.controls.play) {} else {
+    if (item.controls.play) { } else {
         controls.children[1].classList.add('disabled');
     }
-    if(item.controls.console) {} else {
+    if (item.controls.console) { } else {
         controls.children[2].classList.add('disabled');
     }
-    if(item.controls.viewCode) {} else {
+    if (item.controls.viewCode) { } else {
         controls.children[3].classList.add('disabled');
     }
 
@@ -160,12 +188,12 @@ function loadDocItem(index) {
             this.parentNode.parentNode.classList.add('fullscreen');
 
             this.innerHTML = 'close_fullscreen';
-          } else if (document.exitFullscreen) {
+        } else if (document.exitFullscreen) {
             document.exitFullscreen();
             this.parentNode.parentNode.classList.remove('fullscreen');
 
             this.innerHTML = 'fullscreen';
-          }
+        }
     });
 
     for (i of Object.keys(item.variables)) {
@@ -186,7 +214,7 @@ function loadDocItem(index) {
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputValueOptions', 'type'], item));
 
     if (Object.keys(item.variables).length == 0) {
-            variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
+        variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
     }
 }
 

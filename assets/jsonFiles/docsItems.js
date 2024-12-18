@@ -94,7 +94,8 @@ let docsItemsJson = {
 
             outputValueOptions: ['Base64'], // none for events, tells what kind of value is outputted
             type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'pichaiUx.generateDyanmicICon(img, radiues);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            codeFormat:'javascript', // set to img to display a image
           },
         },
       },
@@ -109,7 +110,7 @@ let docsItemsJson = {
 "Debugger": { },
 "Mod_Docs!": {
   description: 'Mod Docs! is a library designed to let developers easilly write documentations for their products using either an AI for automation or themselves.',
-    items: { },
+    items: {},
 },
 
 "Thunkable": {
