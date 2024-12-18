@@ -135,6 +135,7 @@ function generateCodeWithHighlight(file, format) {
   <meta name="author" content="">
   <link rel="stylesheet" href="css/style.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
