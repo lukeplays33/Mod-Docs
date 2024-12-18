@@ -166,7 +166,7 @@ function loadDocItem(index) {
     let controls = itemHTML.getElementsByClassName('controls')[0];
 
     if (item.displayFile) {
-        if (item.codeFormat == 'img') {
+        if (item.codeFormat == 'img' || !item.codeFormat) {
             displayFile.src = item.displayFile
         } else {
             displayFile.srcdoc = generateCodeWithHighlight(item.displayFile, item.codeFormat);
