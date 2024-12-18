@@ -166,7 +166,11 @@ function loadDocItem(index) {
     let controls = itemHTML.getElementsByClassName('controls')[0];
 
     if (item.displayFile) {
-        displayFile.src = item.codeFormat == 'img' ? item.displayFile : generateCodeWithHighlight(item.displayFile, item.codeFormat);
+        if (item.codeFormat == 'img') {
+            displayFile.src = item.displayFile
+        } else {
+            displayFile.srcdoc = generateCodeWithHighlight(item.displayFile, item.codeFormat);
+        }
     }
 
     if (item.controls.fullscreen) { } else { // disables unnessecary control buttons
