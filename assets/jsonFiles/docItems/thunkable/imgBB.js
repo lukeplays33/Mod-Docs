@@ -38,13 +38,9 @@ let imgBB = {
     setup: {
       description: 'To use the imgBB module you need to get an API key from imgBB. PLease go to: https://imgbb.com/ then log-in or sign-up and from there you can go to: https://api.imgbb.com/ to get your api key.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-
-        variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-
           "Create a imgBB account": {
             description: 'Go to https://imgbb.com/ and click sign-in or create account. \nThen follow the instructions from there.'
           },
-        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
