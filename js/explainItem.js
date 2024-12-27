@@ -36,8 +36,6 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 let informationPage = document.getElementById('information');
 
-let controls = document.getElementById('controls');
-
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
 platform.children[1].innerHTML = itemJSON.about.platforms.join(', ');
@@ -79,6 +77,10 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
 } else {
     demo.remove();
     examples.remove();
+}
+
+if(Object.keys(itemJSON.about.notes).length == 0) {
+    notes.remove();
 }
 
 items.listItems = Object.keys(itemJSON.contents).concat(concatList);
