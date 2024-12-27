@@ -551,9 +551,13 @@ widgetbot {
   gap:8px;
 }
 
-@media screen and (max-width: 600px) {
+@media (pointer: coarse) {
   .explainInfoItems {
     flex-direction: column;
+  }
+
+  .explanationItems {
+    flex-direction:column;
   }
 
   #installItems {
