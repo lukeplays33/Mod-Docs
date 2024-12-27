@@ -52,25 +52,25 @@ let imgBB = {
       displayFile: 'https://i.ibb.co/gZc7q8M/setup.gif', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    wheel: {
-      description: 'The wheel event fires when the user starts scrolling with the mouse wheel.',
+    imageUploadedSuccesfully: {
+      description: 'The imageUploadedSuccesfully event fires when a file has succesfully been uploaded.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-        deltaY: {
+        image: {
           readOnly: true, // default for events, cannot be false for events
 
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['number'],
+          outputTypes: ['string'],
           inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-          description: 'The delta value on the Y cordinate',
+          description: 'The link to the uploaded image',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
 
-        deltaX: {
+        response: {
           readOnly: true, // default for events, cannot be false for events
 
           defaultValue: '',
@@ -79,21 +79,7 @@ let imgBB = {
           outputTypes: ['number'],
           inputTypes: [],
 
-          description: 'The delta value on the X cordinate.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        deltaZ: {
-          readOnly: true, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['boolean'],
-          inputTypes: [],
-
-          description: 'The delta value on the Z cordinate',
+          description: 'The full response from imgBB returned as JSON.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
@@ -108,29 +94,73 @@ let imgBB = {
 
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/6Y9mP6h/Screenshot-2024-10-01-162555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/HPFshMG/Screenshot-2024-12-27-111433.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    mouseMove: {
-      description: 'The mouseMove event fires when the user moves the mouse around on the screen.',
+    urlFromUploadedImage: {
+      description: 'The urlFromUploadedImage allows you to upload a image to imgBB.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-        X: {
-          readOnly: true, // default for events, cannot be false for events
+        Image: {
+          readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['number'],
+          outputTypes: ['BLOB'],
           inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-          description: 'The x coordinate of the mouse.',
+          description: 'The image that should be uploaded to imgBB.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['imgBB URL'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/8YmZfsF/Screenshot-2024-12-27-111900.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    urlFromAdvancedUploadedImage: {
+      description: 'The urlFromAdvancedUploadedImage allows you to upload a image to imgBB with some extra options.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+
+        Image: {
+          readOnly: false, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['BLOB'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+          description: 'The image that should be uploaded to imgBB.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
 
-        Y: {
-          readOnly: true, // default for events, cannot be false for events
+        name: {
+          readOnly: false, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['string'],
+          inputTypes: [],
+
+          description: 'The name the image should get once its uploaded.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+        expirityDateInSeconds: {
+          readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
@@ -138,7 +168,7 @@ let imgBB = {
           outputTypes: ['number'],
           inputTypes: [],
 
-          description: 'The y coordinate of the mouse.',
+          description: 'The expirityDateInSeconds allows you to tell imgBB to auto delete your image after x amount of seconds.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         }
@@ -151,53 +181,8 @@ let imgBB = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/fnkV6GG/Screenshot-2024-10-01-162616.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    touchMove: {
-      description: 'The touchMove event fires when the user starts moving around the screen using its finger.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        X: {
-          readOnly: true, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['number'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The x coordinate on the screen.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        Y: {
-          readOnly: true, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['number'],
-          inputTypes: [],
-
-          description: 'The y coordinate on the screen.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        }
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      outputValueOptions: ['imgBB URL'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/9vghL9y/Screenshot-2024-12-04-191927.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
@@ -213,9 +198,9 @@ let imgBB = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
+      outputValueOptions: ['imgBB URL'], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/zxwkmK4/Event-resize.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/RDT9K7q/Screenshot-2024-12-27-112152.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     orientationChange: {
