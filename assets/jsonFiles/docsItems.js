@@ -1,4 +1,4 @@
-import './pichaiUX/dynamicIconsDoc.js';
+import {dynamicIcons} from './pichaiUX/dynamicIconsDoc.js';
 
 let docsItemsJson = {
   "Pichai_UX": {
