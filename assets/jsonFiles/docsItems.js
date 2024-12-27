@@ -1,5 +1,6 @@
 import { dynamicIcons } from './docItems/pichaiUX/dynamicIconsDoc.js';
-import { keyboard, screen } from './docItems/thunkable/keyboardEvents.js';
+import { keyboard } from './docItems/thunkable/keyboardEvents.js';
+import { screen } from './docItems/thunkable/screenEvents.js';
 
 let docsItemsJson = {
   "Pichai_UX": {
