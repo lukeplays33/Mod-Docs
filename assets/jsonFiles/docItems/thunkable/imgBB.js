@@ -36,7 +36,7 @@ let imgBB = {
   },
   contents: {
     setup: {
-      description: 'The requestFocus function allows the developer to manually request listening to screen events, wich automatically stops when interacting with UI elements.',
+      description: 'To use the imgBB module you need to get an API key from imgBB. PLease go to: https://imgbb.com/ then log-in or sign-up and from there you can go to: https://api.imgbb.com/ to get your api key.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
