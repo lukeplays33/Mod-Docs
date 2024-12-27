@@ -36,14 +36,14 @@ let imgBB = {
   },
   contents: {
     setup: {
-      description: 'To use the imgBB module you need to get an API key from imgBB. PLease go to: https://imgbb.com/ then log-in or sign-up and from there you can go to: https://api.imgbb.com/ to get your api key.',
+      description: 'ImgBB is a simple API that you can easilly use and connect to your Thunkable project. <br> Below are the steps to connect to imgBB.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
           "Create a imgBB account": {
-            description: 'Go to https://imgbb.com/ and click sign-in or create account. <br>Then follow the instructions from there.'
+            description: '1. Go to https://imgbb.com/ and click sign-in or create account. <br>2.Then follow the instructions from there.'
           },
 
           "Get your API key.": {
-            description: 'Go to https://imgbb.com/ and click sign-in or create account. \nThen follow the instructions from there.'
+            description: '1. Go to https://api.imgbb.com/. <br>2. Click Get API key or Add API key. <br> 3. Copy and paste the link into the API Key property.'
           },
       },
 
