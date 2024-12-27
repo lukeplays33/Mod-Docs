@@ -5,7 +5,7 @@ let imgBB = {
       link: 'https://x.thunkable.com/module/676d0ceb05584dabb2c0728f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The imgBB module allows you to upload images and gif to the public imgBB service.',
+    description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
     useCases: ['Upload images or gifs to an public image service that is free to use.'],
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
@@ -19,8 +19,8 @@ let imgBB = {
     languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
-      repoName: 'Mod Docs',
-      link: 'https://github.com/lukeplays33/Mod-Docs',
+      repoName: 'Thunkable Modules',
+      link: 'https://github.com/lukeplays33/Thunkable-Modules',
       openSource: 'Open source',
       developerDocs: '',
       developer: 'dreamForge',
