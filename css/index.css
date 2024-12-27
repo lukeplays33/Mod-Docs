@@ -551,7 +551,7 @@ widgetbot {
   gap:8px;
 }
 
-@media (pointer: coarse) {
+@media screen and (max-width: 600px) {
   .explainInfoItems {
     flex-direction: column;
   }
