@@ -232,7 +232,7 @@ let imgBB = {
           readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+          valueOptions: ['ImgBB file URL'], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: [],
           inputTypes: ['string'],
