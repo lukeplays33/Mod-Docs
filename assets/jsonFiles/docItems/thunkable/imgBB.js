@@ -70,7 +70,7 @@ let imgBB = {
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: ['string'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
 
           description: 'The imgBB API key.',
 
@@ -101,7 +101,7 @@ let imgBB = {
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: ['string'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
 
           description: 'The link to the uploaded image',
 
@@ -115,7 +115,7 @@ let imgBB = {
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: ['number'],
-          inputTypes: [],
+          inputTypes: ['number'],
 
           description: 'The full response from imgBB returned as JSON.',
 
@@ -145,8 +145,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['BLOB'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          outputTypes: [],
+          inputTypes: ['BLOB'],  // cannot have any value when in events since they cant accept input values
 
           description: 'The image that should be uploaded to imgBB.',
 
@@ -176,8 +176,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['BLOB'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          outputTypes: [],
+          inputTypes: ['BLOB'],  // cannot have any value when in events since they cant accept input values
 
           description: 'The image that should be uploaded to imgBB.',
 
@@ -190,8 +190,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['string'],
-          inputTypes: [],
+          outputTypes: [],
+          inputTypes: ['string'],
 
           description: 'The name the image should get once its uploaded.',
 
@@ -203,8 +203,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['number'],
-          inputTypes: [],
+          outputTypes: [],
+          inputTypes: ['number'],
 
           description: 'The expirityDateInSeconds allows you to tell imgBB to auto delete your image after x amount of seconds.',
 
@@ -234,8 +234,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['string'],
-          inputTypes: [],
+          outputTypes: [],
+          inputTypes: ['string'],
 
           description: 'The imgBB url referring to the file you want to get the name of.',
 
