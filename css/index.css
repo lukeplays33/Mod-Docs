@@ -364,8 +364,6 @@ header a {
   grid-template-columns: 40% 60%;
 
   gap: 8px;
-
-  padding-bottom: 8px;
 }
 
 accordion-dropdown h5,
@@ -415,6 +413,10 @@ accordion-dropdown h5 i {
 
   border-bottom-left-radius:0px;
   border-bottom-right-radius:0px;
+}
+
+#variablesAndInfo {
+  margin-bottom: 50px;
 }
 
 #variablesAndInfo * {
