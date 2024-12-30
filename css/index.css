@@ -19,7 +19,7 @@ main {
 
 #bottom_nav,
 #docs {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
 
