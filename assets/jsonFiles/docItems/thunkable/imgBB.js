@@ -101,7 +101,7 @@ let imgBB = {
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: ['string'],
-          inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
           description: 'The link to the uploaded image',
 
@@ -114,8 +114,8 @@ let imgBB = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['number'],
-          inputTypes: ['number'],
+          outputTypes: ['JSON'],
+          inputTypes: [],
 
           description: 'The full response from imgBB returned as JSON.',
 
