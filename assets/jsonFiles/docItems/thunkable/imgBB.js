@@ -225,7 +225,7 @@ let imgBB = {
     },
 
     getImageNameFromImgBB: {
-      description: 'The getImageNameFromImgBB function allows you to get the name of an imgBB url..',
+      description: 'The getImageNameFromImgBB function allows you to get the name of an imgBB url.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         url: {
