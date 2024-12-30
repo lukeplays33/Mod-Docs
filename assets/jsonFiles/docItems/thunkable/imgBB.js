@@ -9,6 +9,12 @@ let imgBB = {
     useCases: ['Upload images or gifs to an public image service that is free to use.'],
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
+      'ImgBB privacy concerns': {
+        description: "ImgBB is a public service, although images upload through the imgBB site allows private images, the API does not so all your uploaded images will be public for everyone to see.",
+        type: 'Note',
+        status: '',
+        for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+      },
     },
 
     demoLinks: { // links to examples users can look at
