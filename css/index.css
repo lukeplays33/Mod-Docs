@@ -415,6 +415,10 @@ accordion-dropdown h5 i {
   border-bottom-right-radius:0px;
 }
 
+#variablesAndInfo {
+  margin-bottom: 42px;
+}
+
 #variablesAndInfo * {
   height: max-content !important;
 }
