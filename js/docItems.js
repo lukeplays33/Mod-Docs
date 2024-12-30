@@ -8,7 +8,7 @@ items.listItems = Object.keys(docsItemsJson[window.sessionStorage.getItem('docIt
 
 items.addEventListener('itemSelected', function (e) {
     let name = window.sessionStorage.getItem('docItem') + ' - ' + e.detail.value; // the new document.title
-    setRecents(name);
+    //setRecents(name);
 
     window.sessionStorage.setItem('explainItem', e.detail.value);
     

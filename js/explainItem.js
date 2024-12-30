@@ -250,3 +250,24 @@ function createVariableTable(variable, variables) { //creates a display table to
 
     return table;
 }
+
+function setRecents (name) {
+    localforage.getItem('recentDocItems').then(function(value) {
+        // This code runs once the value has been loaded
+        // from the offline store.
+
+        value = JSON.parse(value);
+        value.unshift(name);
+        console.log(value);
+
+        localforage.setItem('recentDocItems', JSON.stringify( [...new Set(value)] )); // removes all duplicated items and saves them as a recent page
+    }).catch(function(err) {
+        // This code runs if there were any errors
+        console.log(err);
+
+        localforage.setItem('recentDocItems', JSON.stringify([]));
+        setRecents();
+    });
+}
+
+setRecents(parent.document.title);
