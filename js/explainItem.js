@@ -258,7 +258,6 @@ function setRecents (name) {
 
         value = JSON.parse(value);
         value.unshift(name);
-        console.log(value);
 
         localforage.setItem('recentDocItems', JSON.stringify( [...new Set(value)] )); // removes all duplicated items and saves them as a recent page
     }).catch(function(err) {
