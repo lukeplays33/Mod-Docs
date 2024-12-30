@@ -42,7 +42,7 @@ let imgBB = {
   },
   contents: {
     setup: {
-      description: 'ImgBB is a simple API that you can easilly use and connect to your Thunkable project. <br> Below are the steps to connect to imgBB.',
+      description: 'ImgBB is a simple API that you can easilly use and connect to your Thunkable project. <br> Below are the steps to connect to imgBB after you installed the module.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
           "Create a imgBB account": {
             description: '1. Go to https://imgbb.com/ and click sign-in or create account. <br>2.Then follow the instructions from there.'
