@@ -42,7 +42,9 @@ for (i of items) {
   i.addEventListener('click', function (e) {
     if(this.classList.contains('current')) {
       this.parentNode.toggle.click();
-    } else if (this.id == 'promo') {
+    }
+    
+    if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
 
