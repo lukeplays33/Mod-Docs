@@ -48,6 +48,11 @@ for (i of items) {
     } else if(this.id == 'promoComp') {
       window.open('https://lukeplays33.github.io/The-Magic-Garden/');
 
+    } else if(this.classList.contains('header')) {
+      if (this.parentNode.platform == 'mobile') {
+        this.parentNode.toggle.click();
+      }
+      
     } else if(!this.classList.contains('header')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
