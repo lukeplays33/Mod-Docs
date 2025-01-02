@@ -44,9 +44,9 @@ for (i of items) {
       e.preventDefault();
       e.stopPropagation();
 
-      window.open('https://lukeplays33.github.io/The-Magic-Garden/pages/about/moddocs.html'); // open link to moddocs about page to inform and promote mod docs
+      window.open('https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/pages/about/moddocs.html'); // open link to moddocs about page to inform and promote mod docs
     } else if(this.id == 'promoComp') {
-      window.open('https://lukeplays33.github.io/The-Magic-Garden/');
+      window.open('https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/');
 
     } else if(this.classList.contains('header')) {
       if (this.parentNode.platform == 'mobile') {
