@@ -40,10 +40,6 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    if(this.classList.contains('current')) {
-      this.parentNode.toggle.click();
-    }
-    
     if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
