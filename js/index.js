@@ -41,7 +41,9 @@ for (i of items) {
 
   i.addEventListener('click', function (e) {
     console.log(this.classList.contains('current'))
-    if(this.classList.contains('current') && !this.classList.contains('header')) {} else if (this.id == 'promo') {
+    if(this.classList.contains('current') && !this.classList.contains('header')) {}
+    
+    if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
 
