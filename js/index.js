@@ -52,7 +52,10 @@ for (i of items) {
       if (this.parentNode.platform == 'mobile') {
         this.parentNode.toggle.click();
       }
-      
+
+      this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      this.nextSibling.classList.add('current');
+
     } else if(!this.classList.contains('header')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
