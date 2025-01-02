@@ -13,7 +13,9 @@ let iframe = document.getElementById('pages');
 
 let i;
 
-document.getElementById('HomeButton').click();
+let previusDrawerItem = document.getElementById('HomeButton');
+
+previusDrawerItem.click(); // use previusDrawerItem because it's the same and dpesn't change here yet.
 
 if(Object.keys(tutorialsJson).length == 0) {
   tutorials.after(nothingFound());
@@ -54,10 +56,13 @@ for (i of items) {
       }
 
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      previusDrawerItem.classList.add('current');
 
     } else if(!this.classList.contains('header')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
+
+      previusDrawerItem = this;
 
       iframe.src = this.href;
       window.sessionStorage.setItem('docItem', this.id);
