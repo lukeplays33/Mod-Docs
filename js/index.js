@@ -56,17 +56,13 @@ for (i of items) {
       }
 
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
-      this.parentNode.getElementsByClassName('selected')[0].classList.remove('selected');
       previusDrawerItem.classList.add('current');
-      previusDrawerItem.classList.add('selected');
 
     } else if(!this.classList.contains('header')) {
-      previusDrawerItem = this;
+      this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      this.classList.add('current');
 
-            this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
-      this.parentNode.getElementsByClassName('selected')[0].classList.remove('selected');
-      previusDrawerItem.classList.add('current');
-      previusDrawerItem.classList.add('selected');
+      previusDrawerItem = this;
 
       iframe.src = this.href;
       window.sessionStorage.setItem('docItem', this.id);
