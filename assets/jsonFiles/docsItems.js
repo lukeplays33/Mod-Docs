@@ -28,8 +28,11 @@ let docsItemsJson = {
     description: 'Modules are a way that allows Thunkable users to create more functions for their app. it allows them to develop easier and faster. <br> Below is a list of Modules we have developed for Thunkable.',
 
     items: {
+      "Device Modules": 'Type: divider', // tells the list to display this item as a divider
       "Keyboard_Events": keyboard,
       "Screen_Events": screen,
+
+      "HomeHub Modules": 'Type: divider', // tells the list to display this item as a divider
       "ImgBB": imgBB
     }
   }
