@@ -58,7 +58,7 @@ for (i of items) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       previusDrawerItem.classList.add('current');
 
-    } else if(!this.classList.contains('header') && !this.classList.contains('current')) {
+    } else if(!this.classList.contains('header')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
