@@ -42,7 +42,7 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    if (this.classList.contains('current')) {} else if (this.id == 'promo') {
+    if (this.classList.contains('selected')) {} else if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
 
@@ -56,13 +56,17 @@ for (i of items) {
       }
 
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      this.parentNode.getElementsByClassName('selected')[0].classList.remove('selected');
       previusDrawerItem.classList.add('current');
+      previusDrawerItem.classList.add('selected');
 
     } else if(!this.classList.contains('header')) {
-      this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
-      this.classList.add('current');
-
       previusDrawerItem = this;
+
+            this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
+      this.parentNode.getElementsByClassName('selected')[0].classList.remove('selected');
+      previusDrawerItem.classList.add('current');
+      previusDrawerItem.classList.add('selected');
 
       iframe.src = this.href;
       window.sessionStorage.setItem('docItem', this.id);
