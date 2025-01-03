@@ -42,8 +42,6 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    console.log(this)
-    console.log(!this.classList.contains('current'))
     if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
@@ -60,7 +58,7 @@ for (i of items) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       previusDrawerItem.classList.add('current');
 
-    } else if(!this.classList.contains('header') && !this.classList.contains('current')) {
+    } else if(!this.classList.contains('header') && this == previusDrawerItem) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
