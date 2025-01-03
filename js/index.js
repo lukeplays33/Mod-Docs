@@ -42,7 +42,7 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
-    if (this.classList.contains('selected')) {} else if (this.id == 'promo') {
+    if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
 
@@ -58,7 +58,7 @@ for (i of items) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       previusDrawerItem.classList.add('current');
 
-    } else if(!this.classList.contains('header')) {
+    } else if(!this.classList.contains('header') && !this.classList.contains('current')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
