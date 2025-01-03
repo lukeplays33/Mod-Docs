@@ -42,6 +42,7 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
+    console.log(this)
     console.log(!this.classList.contains('current'))
     if (this.id == 'promo') {
       e.preventDefault();
