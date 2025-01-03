@@ -42,6 +42,7 @@ for (i of items) {
   i.class = '';
 
   i.addEventListener('click', function (e) {
+    console.log(this, previusDrawerItem)
     if (this.id == 'promo') {
       e.preventDefault();
       e.stopPropagation();
