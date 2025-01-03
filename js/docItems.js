@@ -12,7 +12,7 @@ items.listItems = Object.keys(jsonObject);
 for(i of Object.keys(docsItemsJson[window.sessionStorage.getItem('docItem')].items)) {
     if(docsItemsJson[window.sessionStorage.getItem('docItem')].items[i] == 'Type: divider') {
         let hr = document.createElement('hr');
-        hr.setAAttribute('titleText', i);
+        hr.setAttribute('titleText', i);
 
         document.getElementById(i).replaceWith(hr);
     }
