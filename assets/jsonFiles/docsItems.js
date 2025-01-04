@@ -2,6 +2,7 @@ import { dynamicIcons } from './docItems/pichaiUX/dynamicIconsDoc.js';
 import { keyboard } from './docItems/thunkable/keyboardEvents.js';
 import { screen } from './docItems/thunkable/screenEvents.js';
 import { imgBB } from './docItems/thunkable/imgBB.js';
+import { deviceInfo } from './docItems/thunkable/deviceInfo.js';
 
 let docsItemsJson = {
   /*
@@ -31,9 +32,10 @@ let docsItemsJson = {
       "Device Modules": 'Type: divider', // tells the list to display this item as a divider
       "Keyboard_Events": keyboard,
       "Screen_Events": screen,
+      "deviceInfo": deviceInfo,
 
       "HomeHub Modules": 'Type: divider', // tells the list to display this item as a divider
-      "ImgBB": imgBB
+      "ImgBB": imgBB,
     }
   }
 }
