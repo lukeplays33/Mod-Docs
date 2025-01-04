@@ -2,13 +2,19 @@ let deviceInfo = {
   about: {
 
     installation: {
-      link: 'https://x.thunkable.com/module/676d0ceb05584dabb2c0728f/',
+      link: 'https://x.thunkable.com/module/67790cf89ebf3d690c7d363f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
     description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
     useCases: ['Upload images or gifs to an public image service that is free to use.'],
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
+      'inaccurate info': {
+        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements.",
+        type: 'Compatability issue of browser/webviewer services',
+        status: '',
+        for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+      },
     },
 
     demoLinks: { // links to examples users can look at
