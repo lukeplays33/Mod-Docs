@@ -36,7 +36,7 @@ let deviceInfo = {
   },
   contents: {
     getDeviceInfo: {
-      description: 'The getDeviceInfo() functions gathers all available info about the device wich you can then access using the get blocks.',
+      description: 'The getDeviceInfo() function gathers all available info about the device wich you can then access using the get blocks.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -69,157 +69,9 @@ let deviceInfo = {
       displayFile: 'https://i.ibb.co/ggPvD5V/Screenshot-2025-01-04-154652.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    imageUploadedSuccesfully: {
-      description: 'The imageUploadedSuccesfully event fires when a file has succesfully been uploaded.',
+    getDeviceLanguage: {
+      description: 'The getDeviceLanguage function allows you to see the main language the user has set for its device',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        image: {
-          readOnly: true, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['string'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The link to the uploaded image',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        response: {
-          readOnly: true, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['JSON'],
-          inputTypes: [],
-
-          description: 'The full response from imgBB returned as JSON.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/HPFshMG/Screenshot-2024-12-27-111433.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    urlFromUploadedImage: {
-      description: 'The urlFromUploadedImage allows you to upload a image to imgBB.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        Image: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: ['BLOB', 'URL', 'Base64'], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: [],
-          inputTypes: ['BLOB'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The image that should be uploaded to imgBB.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: ['imgBB URL'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/8YmZfsF/Screenshot-2024-12-27-111900.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    urlFromAdvancedUploadedImage: {
-      description: 'The urlFromAdvancedUploadedImage allows you to upload a image to imgBB with some extra options.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        Image: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: ['BLOB', 'URL', 'Base64'], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: [],
-          inputTypes: ['BLOB'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The image that should be uploaded to imgBB.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        name: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: [],
-          inputTypes: ['string'],
-
-          description: 'The name the image should get once its uploaded.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-        expirityDateInSeconds: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: [],
-          inputTypes: ['number'],
-
-          description: 'The expirityDateInSeconds allows you to tell imgBB to auto delete your image after x amount of seconds.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        }
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: ['imgBB URL'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/RDT9K7q/Screenshot-2024-12-27-112152.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    getImageNameFromImgBB: {
-      description: 'The getImageNameFromImgBB function allows you to get the name of an imgBB url.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        url: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: ['ImgBB file URL'], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: [],
-          inputTypes: ['string'],
-
-          description: 'The imgBB url referring to the file you want to get the name of.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        }
       },
 
       controls: { // tells the docs page to display controls for displayFile
@@ -231,11 +83,11 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ZcpMDHP/Screenshot-2024-12-27-113315.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/93MYwMr/Screenshot-2025-01-04-155148.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    fullJsonResponse: {
-      description: 'The fullJsonResponse function returns the whole response from imgBB as a JSON string.',
+    getBrowserVersion: {
+      description: 'The getBrowserVersion function allows you to see information about the browser, if you run your app as a mobile device it will return info about the device its webviewer services.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -246,9 +98,60 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['JSON'], // none for events
+      outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/bBB87wm/Screenshot-2024-12-27-113721.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/5BSBV0P/Screenshot-2025-01-04-155349.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "cookiesEnabled?": {
+      description: 'The cookiesEnabled? function allows you to see if the browser has cookies enabled.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/tPzN6DC/Screenshot-2025-01-04-155710.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getDeviceCoreOS: {
+      description: 'The getDeviceCoreOS function allows you to see what the core OS of the device is (e.g. linux for android)',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/q5LHs1s/Screenshot-2025-01-04-155913.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getUserAgent: {
+      description: 'The getUserAgent function returns a string with browser info.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/tHpr7FZ/Screenshot-2025-01-04-160041.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
