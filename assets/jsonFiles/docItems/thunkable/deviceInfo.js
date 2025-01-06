@@ -312,6 +312,74 @@ let deviceInfo = {
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/jLm9xqz/Screenshot-2025-01-06-100812.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
+
+    "getDeviceArchitecture": {
+      description: 'The getDeviceArchitecture function returns the architecture of the device, however if its android it will return null.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/xj617n5/Screenshot-2025-01-06-111536.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "getOSVersion": {
+      description: 'The getOSVersion function returns the version of the OS.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/4Ws5xXW/Screenshot-2025-01-06-111706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "getArchitectureBits": {
+      description: 'The getArchitectureBits function returns the bits of the architecture.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/X2GbcNR/Screenshot-2025-01-06-111758.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "getDeviceModel": {
+      description: 'The getDeviceModel function returns the name of the device its model.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/WnGNqBV/Screenshot-2025-01-06-111852.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
