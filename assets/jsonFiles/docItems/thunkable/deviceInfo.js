@@ -295,6 +295,23 @@ let deviceInfo = {
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/94PkhcL/Screenshot-2025-01-04-161220.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
+
+    "getBrowserName": {
+      description: 'The getBrowserName function returns the name of the current browser the page is run in.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/jLm9xqz/Screenshot-2025-01-06-100812.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
