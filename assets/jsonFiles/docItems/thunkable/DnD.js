@@ -1,4 +1,4 @@
-let Dnd = {
+let DnD = {
   about: {
 
     installation: {
@@ -385,4 +385,4 @@ let Dnd = {
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
 
-export { Dnd };
+export { DnD };
