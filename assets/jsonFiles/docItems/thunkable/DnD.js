@@ -21,7 +21,7 @@ let DnD = {
     },
 
     platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-    required: [''],
+    required: ['Something to drag around :)'],
     languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
