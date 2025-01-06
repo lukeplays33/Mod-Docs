@@ -15,6 +15,13 @@ let DnD = {
         status: 'Chrome ignorance',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
       },
+
+      'Unable to change position or size using inputs': {
+        description: "This is a issue very similar to the invisible bug on thunkable, sadly there are no work arounds found yet.",
+        type: 'Bug',
+        status: 'Passed on to Thunkable',
+        for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+      },
     },
 
     demoLinks: { // links to examples users can look at
