@@ -1,18 +1,18 @@
-let deviceInfo = {
+let Dnd = {
   about: {
 
     installation: {
-      link: 'https://x.thunkable.com/module/67790cf89ebf3d690c7d363f/',
+      link: 'https://x.thunkable.com/module/677bc62a45f85729a560a19e/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The devicInfo module allows you to gather information about the users device.',
-    useCases: ['Gather device info.'],
+    description: 'The DnD module allows you drag and drop images.',
+    useCases: ['Drag and drop Images.'],
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
-      'inaccurate info': {
-        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements.",
-        type: 'Compatability issue of browser/webviewer services',
-        status: '',
+      'DragOver and leave events not firing properly': {
+        description: "This is a issue on Chrome that has sadly not been fixed yet.",
+        type: 'Bug',
+        status: 'Chrome ignorance',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
       },
     },
@@ -41,8 +41,8 @@ let deviceInfo = {
 
   },
   contents: {
-    getDeviceInfo: {
-      description: 'The getDeviceInfo() function gathers all available info about the device wich you can then access using the get blocks.',
+    picture: {
+      description: 'The draggable iamge its picture.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -53,13 +53,13 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/JqZbk7Z/Screenshot-2025-01-04-154706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      outputValueOptions: ['string'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/0XnqBCv/Screenshot-2025-01-06-163032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    gotDeviceInfo: {
-      description: 'The gotDeviceInfo event fires when information about the device has been succesfully gathered.',
+    pictureResizeMode: {
+      description: 'Sets the size of the image its picture.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -70,9 +70,10 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ggPvD5V/Screenshot-2025-01-04-154652.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      inputValueOptions: ['cover', 'contain', 'fill'],
+      outputValueOptions: ['cover', 'contain', 'fill'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/5Fp7dSX/Screenshot-2025-01-06-163226.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDeviceLanguage: {
@@ -384,4 +385,4 @@ let deviceInfo = {
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
 
-export { deviceInfo };
+export { Dnd };
