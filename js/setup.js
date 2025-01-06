@@ -1,8 +1,6 @@
 import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
 
-let options = {Homelink: window.location.href}
-
-let pichai = new PichaiUX(options);
+let pichai = new PichaiUX();
 pichai.initialize();
 
 document.body.style.backgroundImage = 'none';
