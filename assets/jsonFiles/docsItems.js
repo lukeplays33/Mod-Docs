@@ -34,7 +34,7 @@ let docsItemsJson = {
       "Screen_Events": screen,
       "deviceInfo": deviceInfo,
 
-      "HomeHub Modules": 'Type: divider', // tells the list to display this item as a divider
+      "Web Services": 'Type: divider', // tells the list to display this item as a divider
       "ImgBB": imgBB,
     }
   }
