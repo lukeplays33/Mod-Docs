@@ -20,7 +20,7 @@ let deviceInfo = {
     demoLinks: { // links to examples users can look at
     },
 
-    platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+    platforms: ['Android (partially)', 'Ios (partially)', 'ChromeOS', 'Web'],
     required: [''],
     languages: ['Javascript', 'Thunkable Blockly'],
 
