@@ -84,5 +84,5 @@ function nothingFound() {
 }
 
 iframe.onload = function () {
-  console.log(iframe.src);
+  console.log(iframe.contentWindow.location.href);
 }
