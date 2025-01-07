@@ -83,6 +83,6 @@ function nothingFound() {
   return p;
 }
 
-window.addEventListener('popstate', (e) => {
-  console.log(e.state, history);
-});
+iframe.onload = function () {
+  console.log(iframe.src);
+}

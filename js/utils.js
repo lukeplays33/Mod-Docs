@@ -32,5 +32,4 @@ function waitForElement(selector, callback) {
 
     return table;
 }
-
   export { waitForElement, createInfoTable };
