@@ -108,6 +108,74 @@ let batteryInfo = {
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/wQQxj7b/Screenshot-2025-01-07-163505.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
+
+    getBatteryLevel: {
+      description: 'The getBatteryLevel functions returns the current percentage of the battery.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/kSmDG8m/Screenshot-2025-01-07-163754.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getChargingTime: {
+      description: 'The getChargingTime functions returns the time it takes to fully charge the battery in seconds.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/K0MSm01/Screenshot-2025-01-07-163923.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getDischargingTime: {
+      description: 'The getdisChargingTime functions returns the time it takes to fully drain the battery to 0% in seconds.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/KwffKkD/Screenshot-2025-01-07-164043.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "isCharging?": {
+      description: 'The isCharging? functions returns if the battery is conencted to a charger or not.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'],
+      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/f4t4pxk/Screenshot-2025-01-07-164148.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
