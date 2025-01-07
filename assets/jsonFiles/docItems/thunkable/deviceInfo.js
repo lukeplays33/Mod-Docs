@@ -21,7 +21,7 @@ let deviceInfo = {
     },
 
     platforms: ['Android (partially)', 'Ios (partially)', 'ChromeOS', 'Web'],
-    required: [''],
+    required: ['A device to use this Thunkable module with 🤯'],
     languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {

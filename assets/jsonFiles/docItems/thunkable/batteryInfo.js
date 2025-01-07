@@ -21,7 +21,7 @@ let batteryInfo = {
     },
 
     platforms: ['Android (partially)', 'ChromeOS', 'Web'],
-    required: [''],
+    required: ['A battery :)'],
     languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
