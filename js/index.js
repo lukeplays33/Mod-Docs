@@ -82,3 +82,7 @@ function nothingFound() {
 
   return p;
 }
+
+window.addEventListener('popstate', (e) => {
+  console.log(e.state, history);
+});
