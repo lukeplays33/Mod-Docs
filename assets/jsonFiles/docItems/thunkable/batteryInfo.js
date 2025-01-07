@@ -110,7 +110,7 @@ let batteryInfo = {
     },
 
     getBatteryLevel: {
-      description: 'The getBatteryLevel functions returns the current percentage of the battery.',
+      description: 'The getBatteryLevel function returns the current percentage of the battery.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -127,7 +127,7 @@ let batteryInfo = {
     },
 
     getChargingTime: {
-      description: 'The getChargingTime functions returns the time it takes to fully charge the battery in seconds.',
+      description: 'The getChargingTime function returns the time it takes to fully charge the battery in seconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -144,7 +144,7 @@ let batteryInfo = {
     },
 
     getDischargingTime: {
-      description: 'The getdisChargingTime functions returns the time it takes to fully drain the battery to 0% in seconds.',
+      description: 'The getDischargingTime function returns the time it takes to fully drain the battery to 0% in seconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -161,7 +161,7 @@ let batteryInfo = {
     },
 
     "isCharging?": {
-      description: 'The isCharging? functions returns if the battery is conencted to a charger or not.',
+      description: 'The isCharging? function returns if the battery is connencted to a charger or not.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
