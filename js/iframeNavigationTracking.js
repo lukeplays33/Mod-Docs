@@ -19,6 +19,7 @@ function goBackward() {
     }
 
     let newTitle = backwardStack.slice(-1)[0];
+
     forwardStack.push(newTitle);
     currentTitle = backwardStack.pop();
 
@@ -38,6 +39,6 @@ iframe.onload = function () {
     addNewTitle();
 
     iframe.contentWindow.onpagehide = function () {
-        goBackward();
+        window.setTimeout(goBackward, 500);
     }
 }
