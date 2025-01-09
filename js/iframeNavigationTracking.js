@@ -38,7 +38,7 @@ function goForward() {
 iframe.onload = function () {
     addNewTitle()
 
-    iframe.contentWindow..addEventListener('popstate', (event) => {
+    iframe.contentWindow.addEventListener('popstate', (event) => {
         console.log('popstate event fired!', event.state);
     });
 }
