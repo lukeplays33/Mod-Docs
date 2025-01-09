@@ -14,6 +14,7 @@ let iframe = document.getElementById('pages');
 let i;
 
 let previusDrawerItem = document.getElementById('HomeButton');
+document.title = 'Mod Docs! - Recent';
 
 previusDrawerItem.click(); // use previusDrawerItem because it's the same and dpesn't change here yet.
 
