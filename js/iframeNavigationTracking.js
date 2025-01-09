@@ -10,7 +10,6 @@ function addNewTitle() {
         backwardStack = [... new Set(backwardStack)];
     }
     currentTitle = document.title;
-    console.log(backwardStack)
 }
 
 function goBackward() {
@@ -18,7 +17,7 @@ function goBackward() {
         return;
     }
 
-    console.log(currentTitle)
+    console.log(backwardStack[backwardStack.length - 1]);
     forwardStack.push(currentTitle);
     currentTitle = backwardStack.pop();
 }
