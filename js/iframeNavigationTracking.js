@@ -17,7 +17,7 @@ function goBackward() {
         return;
     }
 
-    let newTitle = backwardStack[backwardStack.length.slice(-1)[0]];
+    let newTitle = backwardStack[backwardStack.slice(-1)[0]];
     console.log(newTitle);
     forwardStack.push(newTitle);
     currentTitle = backwardStack.pop();
