@@ -1,44 +1,55 @@
 let iframe = document.getElementById('pages');
 
 let forwardStack = [];
+let forwardStackURL = [];
+
 let backwardStack = [];
+let backwardStackURL = [];
+
 let currentTitle = '';
+let currentURL = '';
 
 function addNewTitle() {
     currentTitle = document.title;
-    console.log(currentTitle)
+    backwardStack.push(currentTitle);
+}
 
-    if (currentTitle) {
-        backwardStack.push(currentTitle);
-    }
+function addNewURL() {
+    currentURL = iframe.src;
+    forwardStackURL.push(currentURL);
 }
 
 function goBackward() {
-    if (!backwardStack.length) {
-        return;
-    }
-
-    let newTitle = backwardStack.slice(-1)[0];
+    let newTitle = currentTitle; //backwardStack.slice(-1)[0];
 
     forwardStack.push(newTitle);
+    backwardStackURL.push(currentURL)
+
     currentTitle = backwardStack.pop();
+    currentURL = backwardStackURL.pop();
+}
 
     document.title = newTitle;
 }
 
 function goForward() {
-    if (!forwardStack.length) {
-        return;
-    }
-
     backwardStack.push(currentTitle);
+    backwardStackURL.push(currentURL);
+
     currentTitle = forwardStack.pop();
+    currentURL = forwardStackURL.pop();
+}
+
+function checkState() {
+    // checks if the iframe has gone forward or backwards
 }
 
 iframe.onload = function () {
-    addNewTitle()
 
-    iframe.contentWindow.addEventListener('popstate', (event) => {
-        console.log('popstate event fired!', event.state);
-    });
+    if (checkState() == 'forward') {
+        addNewTitle();
+        addNewURL();
+    } else {
+        goBackward();
+    }
 }
