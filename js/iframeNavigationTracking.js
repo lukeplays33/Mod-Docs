@@ -36,10 +36,9 @@ function goForward() {
 }
 
 iframe.onload = function () {
-    window.setTimeout(addNewTitle, 300);
+    addNewTitle()
 
-    iframe.contentWindow.onpopstate = function (e) {
-        console.log(e.state);
-        window.setTimeout(goBackward, 300);
-    }
+    iframe.contentWindow..addEventListener('popstate', (event) => {
+        console.log('popstate event fired!', event.state);
+    });
 }
