@@ -1,8 +1,8 @@
 let iframe = document.getElementById('pages');
 
-forwardStack = [];
-backwardStack = [];
-currentTitle = '';
+let forwardStack = [];
+let backwardStack = [];
+let currentTitle = '';
 
 function addNewTitle() {
     if (currentTitle) {
