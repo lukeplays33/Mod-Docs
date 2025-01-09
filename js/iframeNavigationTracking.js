@@ -36,7 +36,7 @@ function goForward() {
 }
 
 iframe.onload = function () {
-    addNewTitle();
+    window.setTimeout(addNewTitle, 300);
 
     iframe.contentWindow.onpagehide = function () {
         window.setTimeout(goBackward, 300);
