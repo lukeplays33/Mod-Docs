@@ -38,6 +38,7 @@ iframe.onload = function () {
     addNewTitle();
 
     iframe.contentWindow.onpagehide = function () {
+        console.log(backwardStack)
         goBackward();
     }
 }
