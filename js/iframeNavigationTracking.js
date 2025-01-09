@@ -7,6 +7,7 @@ let currentTitle = '';
 function addNewTitle() {
     if (currentTitle) {
         backwardStack.push(currentTitle);
+        backwardStack = [... new Set(backwardStack)];
     }
     currentTitle = document.title;
     console.log(currentTitle)
