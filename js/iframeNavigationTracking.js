@@ -27,7 +27,6 @@ function goBackward() {
 
     currentTitle = backwardStack.pop();
     currentURL = backwardStackURL.pop();
-}
 
     document.title = newTitle;
 }
