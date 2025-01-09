@@ -6,10 +6,10 @@ let currentTitle = '';
 
 function addNewTitle() {
     currentTitle = document.title;
+    console.log(currentTitle)
 
     if (currentTitle) {
         backwardStack.push(currentTitle);
-        //backwardStack = [... new Set(backwardStack)];
     }
 }
 
@@ -19,7 +19,6 @@ function goBackward() {
     }
 
     let newTitle = backwardStack.slice(-1)[0];
-    console.log(newTitle);
     forwardStack.push(newTitle);
     currentTitle = backwardStack.pop();
 
@@ -39,7 +38,6 @@ iframe.onload = function () {
     addNewTitle();
 
     iframe.contentWindow.onpagehide = function () {
-        console.log(backwardStack)
         goBackward();
     }
 }
