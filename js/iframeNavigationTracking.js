@@ -22,7 +22,7 @@ function goBackward() {
     forwardStack.push(newTitle);
     currentTitle = backwardStack.pop();
 
-    document.title = backwardStack[backwardStack.length - 1];
+    document.title = newTitle;
 }
 
 function goForward() {
