@@ -6,10 +6,10 @@ let currentTitle = '';
 
 function addNewTitle() {
     currentTitle = document.title;
-    
+
     if (currentTitle) {
         backwardStack.push(currentTitle);
-        backwardStack = [... new Set(backwardStack)];
+        //backwardStack = [... new Set(backwardStack)];
     }
 }
 
