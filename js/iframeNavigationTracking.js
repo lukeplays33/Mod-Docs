@@ -5,11 +5,12 @@ let backwardStack = [];
 let currentTitle = '';
 
 function addNewTitle() {
+    currentTitle = document.title;
+    
     if (currentTitle) {
         backwardStack.push(currentTitle);
         backwardStack = [... new Set(backwardStack)];
     }
-    currentTitle = document.title;
 }
 
 function goBackward() {
