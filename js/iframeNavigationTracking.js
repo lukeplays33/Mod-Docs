@@ -38,7 +38,8 @@ function goForward() {
 iframe.onload = function () {
     window.setTimeout(addNewTitle, 300);
 
-    iframe.contentWindow.onpagehide = function () {
+    iframe.contentWindow.onpopstate = function (e) {
+        console.log(e.state);
         window.setTimeout(goBackward, 300);
     }
 }
