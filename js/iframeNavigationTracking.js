@@ -20,7 +20,7 @@ function addNewURL() {
 }
 
 function goBackward() {
-    let newTitle = currentTitle; //backwardStack.slice(-1)[0];
+    let newTitle = backwardStack.slice(-1)[0];
 
     forwardStack.push(newTitle);
     backwardStackURL.push(currentURL)
@@ -42,7 +42,7 @@ function goForward() {
 function checkState() {
     // checks if the iframe has gone forward or backwards
     return backwardStackURL.slice(-1)[0] == currentURL ? 'backward' : 
-    backwardStackURL.includes(iframe.src) ? 'forward' : 'new';
+    forwardStackURL.includes(iframe.src) ? 'forward' : 'new';
 }
 
 iframe.onload = function () {
