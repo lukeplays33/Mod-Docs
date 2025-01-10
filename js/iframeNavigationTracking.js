@@ -1,14 +1,14 @@
 let iframe = document.getElementById('pages');
 let drawer = document.getElementById('draawer');
 
+let currentTitle = '';
+let currentURL = '';
+
 let forwardStack = [];
 let forwardStackURL = [];
 
 let backwardStack = [document.title];
 let backwardStackURL = [currentURL];
-
-let currentTitle = '';
-let currentURL = '';
 
 function addNewTitle() {
     currentTitle = document.title;
