@@ -29,7 +29,7 @@ function goBackward() {
 
     currentTitle = backwardStack.pop();
     currentURL = backwardStackURL.pop();
-    previousURL = iframe.src;
+    previousURL = backwardStackURL.pop();
 
     document.title = newTitle;
 }
@@ -42,7 +42,7 @@ function goForward() {
 
     currentTitle = forwardStack.pop();
     currentURL = forwardStackURL.pop();
-    previousURL = iframe.src;
+    previousURL = forwardStackURL.pop();
 
     document.title = newTitle;
 }
