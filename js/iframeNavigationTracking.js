@@ -49,10 +49,14 @@ function goForward() {
 
 function checkState() {
     // checks if the iframe has gone forward or backwards
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const currentUrl = iframeDoc.location.href; // Same-origin only
+    console.log(currentUrl);
+
     console.log(iframe.src)
     console.log(forwardStackURL)
-    return forwardStackURL.includes(iframe.src) ? 'forward' : 
-    iframe.src == currentURL ? 'backward' : 'new';
+    return forwardStackURL.includes(currentUrl) ? 'forward' :
+        iframe.src == currentURL ? 'backward' : 'new';
 }
 
 iframe.onload = function () {
@@ -61,7 +65,7 @@ iframe.onload = function () {
     if (checkState() == 'new') {
         addNewTitle();
         addNewURL();
-    } else if(checkState() == 'backward') {
+    } else if (checkState() == 'backward') {
         goBackward();
     } else {
         goForward();
