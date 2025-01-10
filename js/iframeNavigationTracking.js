@@ -35,13 +35,17 @@ function goBackward() {
 }
 
 function goForward() {
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const currentUrl = iframeDoc.location.href; // Same-origin only
+    console.log(currentUrl);
+
     let newTitle = forwardStack[forwardStack.length - 1];
 
     document.title = newTitle;
     //drawer.getElementsByClassName('current')[0].classList.remove('current');
 
     backwardStack.push(currentTitle);
-    backwardStackURL.push(currentURL);
+    backwardStackURL.push(currentUrl);
 
     currentTitle = forwardStack.pop();
     currentURL = forwardStackURL.pop();
