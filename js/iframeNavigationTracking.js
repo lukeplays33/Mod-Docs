@@ -2,7 +2,7 @@ let iframe = document.getElementById('pages');
 let drawer = document.getElementById('draawer');
 
 const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-let src = iframeDoc.src;
+let src = iframeDoc..location.href;
 
 let currentTitle = '';
 let currentURL = '';
