@@ -3,7 +3,7 @@ let iframe = document.getElementById('pages');
 let forwardStack = [];
 let forwardStackURL = [];
 
-let backwardStack = [currentURL];
+let backwardStack = [currentURL, currentURL];
 let backwardStackURL = [];
 
 let currentTitle = '';
