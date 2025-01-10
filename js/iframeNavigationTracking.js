@@ -16,7 +16,7 @@ function addNewTitle() {
 
 function addNewURL() {
     currentURL = iframe.src;
-    forwardStackURL.push(currentURL);
+    backwardStackURL.push(currentURL);
 }
 
 function goBackward() {
@@ -46,7 +46,7 @@ function goForward() {
 
 function checkState() {
     // checks if the iframe has gone forward or backwards
-    console.log(currentURL, iframe.src, backwardStackURL, backwardStackURL[backwardStackURL.length - 1], forwardStackURL.includes(currentURL))
+
     return backwardStackURL[backwardStackURL.length - 1] == currentURL ? 'backward' : 
     forwardStackURL.includes(currentURL) ? 'forward' : 'new';
 }
