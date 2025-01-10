@@ -54,7 +54,7 @@ function checkState() {
     console.log(src, currentURL)
     console.log(forwardStackURL)
     return forwardStackURL.includes(src) ? 'forward' :  
-    src == currentURL ? 'backward' : 'new';
+    src != currentURL ? 'backward' : 'new';
 }
 
 iframe.onload = function () {
