@@ -20,7 +20,7 @@ function addNewURL() {
 }
 
 function goBackward() {
-    let newTitle = backwardStack.slice(0)[1];
+    let newTitle = backwardStackURL[backwardStackURL.length - 2];
     console.log(newTitle)
 
     forwardStack.push(newTitle);
