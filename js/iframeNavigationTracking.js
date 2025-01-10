@@ -51,7 +51,7 @@ function goForward() {
 
 function checkState() {
     // checks if the iframe has gone forward or backwards
-    console.log(src)
+    console.log(src, currentURL)
     console.log(forwardStackURL)
     return src == currentURL ? 'backward' : 
     forwardStackURL.includes(src) ? 'forward' : 'new';
