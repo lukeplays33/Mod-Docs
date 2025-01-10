@@ -1,6 +1,10 @@
 let iframe = document.getElementById('pages');
 let drawer = document.getElementById('draawer');
 
+const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+const currentUrl = iframeDoc.location.href; // Same-origin only
+console.log(currentUrl);
+
 let currentTitle = '';
 let currentURL = '';
 
@@ -16,7 +20,7 @@ function addNewTitle() {
 }
 
 function addNewURL() {
-    currentURL = iframe.src;
+    currentURL = currentUrl;
     backwardStackURL.push(currentURL);
 }
 
@@ -48,10 +52,11 @@ function goForward() {
 
 function checkState() {
     // checks if the iframe has gone forward or backwards
-    console.log(iframe.src)
+
+    console.log(currentUrl);
     console.log(forwardStackURL)
-    return forwardStackURL.includes(iframe.src) ? 'forward' : 
-    iframe.src == currentURL ? 'backward' : 'new';
+    return forwardStackURL.includes(currentUrl) ? 'forward' :
+        currentUrl == currentURL ? 'backward' : 'new';
 }
 
 iframe.onload = function () {
@@ -60,7 +65,7 @@ iframe.onload = function () {
     if (checkState() == 'new') {
         addNewTitle();
         addNewURL();
-    } else if(checkState() == 'backward') {
+    } else if (checkState() == 'backward') {
         goBackward();
     } else {
         goForward();
