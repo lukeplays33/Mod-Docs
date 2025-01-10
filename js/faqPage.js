@@ -36,7 +36,7 @@ faqList.addEventListener('itemSelected', function (e) {
 
     if (String(window.parent.document.title).includes('Examples')) {
         window.open(json[e.detail.value]);
-    } else {
+    } else if(!selectedItem.classList.contains('selectedItem')){
 
         des = document.createElement('li');
         des.classList.add('des');
@@ -51,5 +51,7 @@ faqList.addEventListener('itemSelected', function (e) {
         
 
         selectedItem.after(des);
+    } else {
+        selectedItem.classList.remove('selectedItem'); // allows the user to collapse the item again
     }
 });
