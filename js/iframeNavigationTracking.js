@@ -4,8 +4,8 @@ let drawer = document.getElementById('draawer');
 let currentTitle = '';
 let currentURL = '';
 
-let forwardStack = [];
-let forwardStackURL = [];
+let forwardStack = ['aa'];
+let forwardStackURL = ['https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/'];
 
 let backwardStack = [document.title];
 let backwardStackURL = [currentURL];
