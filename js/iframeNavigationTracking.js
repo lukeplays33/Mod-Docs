@@ -1,7 +1,7 @@
 let iframe = document.getElementById('pages');
 
-let forwardStack = [];
-let forwardStackURL = [];
+let forwardStack = ['The magic garden'];
+let forwardStackURL = ['https://lukeplays33.github.io/The-Magic-Garden/pages/about/moddocs.html'];
 
 let backwardStack = [document.title];
 let backwardStackURL = [currentURL];
