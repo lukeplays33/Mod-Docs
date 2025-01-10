@@ -83,7 +83,3 @@ function nothingFound() {
 
   return p;
 }
-
-iframe.onload = (event) => {
-  history.pushState(null, null, window.location.href); // Reset state
-};
