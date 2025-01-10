@@ -21,7 +21,7 @@ function addNewURL() {
 }
 
 function goBackward() {
-    let newTitle = backwardStack[backwardStack.length - 1];
+    let newTitle = backwardStack[backwardStack.length - 2];
     console.log(newTitle)
     document.title = newTitle;
     drawer.getElementsByClassName('current')[0].classList.remove('current');
