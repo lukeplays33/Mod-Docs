@@ -52,7 +52,7 @@ function checkState() {
     const currentUrl = iframeDoc.location.href; // Same-origin only
     console.log(currentUrl);
 
-    console.log(iframe.src)
+    console.log(currentUrl, iframe.src)
     console.log(forwardStackURL)
     return forwardStackURL.includes(currentUrl) ? 'forward' :
         iframe.src == currentURL ? 'backward' : 'new';
