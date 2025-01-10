@@ -19,7 +19,7 @@ function addNewTitle() {
 }
 
 function addNewURL() {
-    currentURL = src;
+    currentURL = iframe.src;
     backwardStackURL.push(currentURL);
 }
 
