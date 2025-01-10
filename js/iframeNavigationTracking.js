@@ -23,28 +23,27 @@ function addNewURL() {
 function goBackward() {
     let newTitle = backwardStack[backwardStack.length - 2];
     console.log(newTitle)
+    document.title = newTitle;
+    drawer.getElementsByClassName('current')[0].classList.remove('current');
 
     forwardStack.push(newTitle);
     forwardStackURL.push(currentURL)
 
     currentTitle = backwardStack.pop();
     currentURL = backwardStackURL.pop();
-
-    document.title = newTitle;
-    drawer.getElementsByClassName('current')[0].classList.remove('current');
 }
 
 function goForward() {
     let newTitle = forwardStack[forwardStack.length - 1];
+
+    document.title = newTitle;
+    drawer.getElementsByClassName('current')[0].classList.remove('current');
 
     backwardStack.push(currentTitle);
     backwardStackURL.push(currentURL);
 
     currentTitle = forwardStack.pop();
     currentURL = forwardStackURL.pop();
-
-    document.title = newTitle;
-    drawer.getElementsByClassName('current')[0].classList.remove('current');
 }
 
 function checkState() {
