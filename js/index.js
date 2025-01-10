@@ -85,6 +85,5 @@ function nothingFound() {
 }
 
 iframe.onload = (event) => {
-  console.log('History navigation detected!');
   history.pushState(null, null, window.location.href); // Reset state
 };
