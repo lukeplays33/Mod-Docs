@@ -48,6 +48,7 @@ function checkState() {
 
 iframe.onload = function () {
 
+    console.log(checkState())
     if (checkState() == 'new') {
         addNewTitle();
         addNewURL();
