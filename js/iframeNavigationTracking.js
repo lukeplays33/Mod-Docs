@@ -1,4 +1,5 @@
 let iframe = document.getElementById('pages');
+let drawer = document.getElementById('draawer');
 
 let forwardStack = [];
 let forwardStackURL = [];
@@ -30,6 +31,7 @@ function goBackward() {
     currentURL = backwardStackURL.pop();
 
     document.title = newTitle;
+    drawer.getElementsByClassName('current')[0].classList.remove('current');
 }
 
 function goForward() {
@@ -42,6 +44,7 @@ function goForward() {
     currentURL = forwardStackURL.pop();
 
     document.title = newTitle;
+    drawer.getElementsByClassName('current')[0].classList.remove('current');
 }
 
 function checkState() {
