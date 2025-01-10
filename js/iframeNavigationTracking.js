@@ -1,7 +1,7 @@
 let iframe = document.getElementById('pages');
 
-let forwardStack = ['The magic garden'];
-let forwardStackURL = ['https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/'];
+let forwardStack = [];
+let forwardStackURL = [];
 
 let backwardStack = [document.title];
 let backwardStackURL = [currentURL];
