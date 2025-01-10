@@ -20,7 +20,7 @@ function addNewURL() {
 }
 
 function goBackward() {
-    let newTitle = backwardStack.slice(-1)[0];
+    let newTitle = backwardStack.slice(0)[1];
     console.log(newTitle)
 
     forwardStack.push(newTitle);
@@ -33,7 +33,7 @@ function goBackward() {
 }
 
 function goForward() {
-    let newTitle = forwardStack.slice(-1)[0];
+    let newTitle = forwardStack.slice(0)[1];
 
     backwardStack.push(currentTitle);
     backwardStackURL.push(currentURL);
