@@ -4,7 +4,7 @@ let forwardStack = [];
 let forwardStackURL = [];
 
 let backwardStack = [document.title];
-let backwardStackURL = [];
+let backwardStackURL = [currentURL];
 
 let currentTitle = '';
 let currentURL = '';
