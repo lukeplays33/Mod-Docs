@@ -33,11 +33,15 @@ function goBackward() {
 }
 
 function goForward() {
+    let newTitle = forwardStack.slice(-1)[0];
+
     backwardStack.push(currentTitle);
     backwardStackURL.push(currentURL);
 
     currentTitle = forwardStack.pop();
     currentURL = forwardStackURL.pop();
+
+    document.title = newTitle;
 }
 
 function checkState() {
