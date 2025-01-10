@@ -83,3 +83,8 @@ function nothingFound() {
 
   return p;
 }
+
+window.onpopstate = (event) => {
+  console.log('History navigation detected!');
+  history.pushState(null, null, window.location.href); // Reset state
+};
