@@ -1,9 +1,6 @@
 let iframe = document.getElementById('pages');
 let drawer = document.getElementById('draawer');
 
-const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-let src = iframeDoc.location.href;
-
 let currentTitle = '';
 let currentURL = '';
 
@@ -19,7 +16,7 @@ function addNewTitle() {
 }
 
 function addNewURL() {
-    currentURL = src;
+    currentURL = iframe.src;
     backwardStackURL.push(currentURL);
 }
 
@@ -37,7 +34,7 @@ function goBackward() {
 }
 
 function goForward() {
-    let newTitle = forwardStack[forwardStack.length - 2];
+    let newTitle = forwardStack[forwardStack.length - 1];
 
     document.title = newTitle;
     //drawer.getElementsByClassName('current')[0].classList.remove('current');
@@ -51,10 +48,14 @@ function goForward() {
 
 function checkState() {
     // checks if the iframe has gone forward or backwards
-    console.log(src, currentURL)
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const currentUrl = iframeDoc.location.href; // Same-origin only
+    console.log(currentUrl);
+
+    console.log(iframe.src)
     console.log(forwardStackURL)
-    return forwardStackURL.includes(src) ? 'forward' :  
-    src != currentURL ? 'backward' : 'new';
+    return forwardStackURL.includes(currentUrl) ? 'forward' :
+        iframe.src == currentURL ? 'backward' : 'new';
 }
 
 iframe.onload = function () {
@@ -63,7 +64,7 @@ iframe.onload = function () {
     if (checkState() == 'new') {
         addNewTitle();
         addNewURL();
-    } else if(checkState() == 'backward') {
+    } else if (checkState() == 'backward') {
         goBackward();
     } else {
         goForward();
