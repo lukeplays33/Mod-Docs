@@ -50,6 +50,7 @@ faqList.addEventListener('itemSelected', function (e) {
         }
         
 
+        selectedItem.classList.add('selectedItem')
         selectedItem.after(des);
     } else {
         selectedItem.classList.remove('selectedItem'); // allows the user to collapse the item again
