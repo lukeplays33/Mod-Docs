@@ -35,7 +35,7 @@ function goBackward() {
 }
 
 function goForward() {
-    let newTitle = forwardStack[forwardStack.length - 2];
+    let newTitle = forwardStack[forwardStack.length - 1];
 
     backwardStack.push(currentTitle);
     backwardStackURL.push(currentURL);
