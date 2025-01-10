@@ -42,7 +42,7 @@ function goForward() {
 function checkState() {
     // checks if the iframe has gone forward or backwards
     return backwardStackURL.slice(-1)[0] == currentURL ? 'backward' : 
-    backwardStackURL.contains(iframe.src) ? 'forward' : 'new';
+    backwardStackURL.includes(iframe.src) ? 'forward' : 'new';
 }
 
 iframe.onload = function () {
