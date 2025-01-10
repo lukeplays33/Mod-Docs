@@ -37,7 +37,7 @@ function goBackward() {
 }
 
 function goForward() {
-    let newTitle = forwardStack[forwardStack.length - 1];
+    let newTitle = forwardStack[forwardStack.length - 2];
 
     document.title = newTitle;
     //drawer.getElementsByClassName('current')[0].classList.remove('current');
