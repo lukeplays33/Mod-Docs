@@ -8,6 +8,7 @@ let backwardStackURL = [];
 
 let currentTitle = '';
 let currentURL = '';
+let previousURL = '';
 
 function addNewTitle() {
     currentTitle = document.title;
@@ -28,6 +29,7 @@ function goBackward() {
 
     currentTitle = backwardStack.pop();
     currentURL = backwardStackURL.pop();
+    previousURL = iframe.src;
 
     document.title = newTitle;
 }
@@ -40,6 +42,7 @@ function goForward() {
 
     currentTitle = forwardStack.pop();
     currentURL = forwardStackURL.pop();
+    previousURL = iframe.src;
 
     document.title = newTitle;
 }
@@ -47,8 +50,8 @@ function goForward() {
 function checkState() {
     // checks if the iframe has gone forward or backwards
 
-    return backwardStackURL[backwardStackURL.length - 1] == currentURL ? 'backward' : 
-    forwardStackURL.includes(currentURL) ? 'forward' : 'new';
+    return backwardStackURL[backwardStackURL.length - 1] == previousURL ? 'backward' : 
+    forwardStackURL.includes(previousURL) ? 'forward' : 'new';
 }
 
 iframe.onload = function () {
