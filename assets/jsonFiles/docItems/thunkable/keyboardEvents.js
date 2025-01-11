@@ -242,7 +242,9 @@ let keyboard = {
       displayFile: 'https://i.ibb.co/ds9fwgS/Screenshot-2024-10-01-162706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
-  //quickLinks: [], //e.g. for quickly navigating to a tutorial
+  quickLinks: {
+    'Standard Thunkable docs': 'https://docs.thunkable.com/app-design/ui-components/basic-components/button#button-blocks'
+  }, //e.g. for quickly navigating to a tutorial
 }
 
 export { keyboard };
