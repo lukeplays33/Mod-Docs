@@ -37,6 +37,7 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 let informationPage = document.getElementById('information');
 
 let additionalLinksAndGuides = document.getElementById('additionalLinksAndGuides');
+let quickLinksList = document.getElementById('quickLinksList');
 
 description.children[1].innerHTML = itemJSON.about.description;
 useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
@@ -69,9 +70,10 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
 informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
 
 if(itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
-
+    quickLinksList.listItems = Object.keys(itemJSON.quickLinks);
 } else {
     additionalLinksAndGuides.remove();
+    quickLinksList.remove();
 }
 
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
