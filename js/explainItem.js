@@ -71,6 +71,10 @@ informationPage.style.display = 'none'; //hide all pages to ensure proper viewpa
 
 if(itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     quickLinksList.listItems = Object.keys(itemJSON.quickLinks);
+
+    quickLinksList.addEventListener('itemSelected', function (e) {
+        window.open(Object.values(itemJSON.quickLinks)[e.detail.index]);
+    });
 } else {
     additionalLinksAndGuides.remove();
     quickLinksList.remove();
