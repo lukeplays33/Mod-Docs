@@ -186,7 +186,9 @@ let DnD = {
     },
 
   },
-  //quickLinks: [], //e.g. for quickly navigating to a tutorial
+  quickLinks: {
+    'Standard Thunkable docs': 'https://docs.thunkable.com/app-design/ui-components/basic-components/button#button-blocks'
+  }, //e.g. for quickly navigating to a tutorial
 }
 
 export { DnD };
