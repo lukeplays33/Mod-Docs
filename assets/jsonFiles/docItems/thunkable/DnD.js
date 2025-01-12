@@ -77,8 +77,8 @@ let DnD = {
         viewCode: false,
       },
 
-      inputValueOptions: ['cover', 'contain'],
-      outputValueOptions: ['cover', 'contain'],
+      inputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
+      outputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
       type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/5Fp7dSX/Screenshot-2025-01-06-163226.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
