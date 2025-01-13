@@ -48,23 +48,6 @@ let keyboard = {
 
   },
   contents: {
-    requestFocus: {
-      description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/2q2WSLF/Screenshot-2024-10-04-104506.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
     keyPress: {
       description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
@@ -240,6 +223,23 @@ let keyboard = {
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/ds9fwgS/Screenshot-2024-10-01-162706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    requestFocus: {
+      description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/2q2WSLF/Screenshot-2024-10-04-104506.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   quickLinks: {

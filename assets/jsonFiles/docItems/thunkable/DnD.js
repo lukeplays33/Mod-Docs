@@ -48,75 +48,6 @@ let DnD = {
 
   },
   contents: {
-    picture: {
-      description: 'The draggable image its picture.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: ['string'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/0XnqBCv/Screenshot-2025-01-06-163032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    pictureResizeMode: {
-      description: 'Sets the size of the image its picture.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      inputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
-      outputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/5Fp7dSX/Screenshot-2025-01-06-163226.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    allowDragging: {
-      description: 'Whether its allowed for the image to be draggable or not.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/xzjN55t/Screenshot-2025-01-06-164050.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    altText: {
-      description: 'The altText property allows you to set the text that is displayed over the image.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/chfts55/Screenshot-2025-01-12-184433.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
     doubleClicked: {
       description: 'The doubleClicked event fires when the user double clicks the draggable image.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
@@ -200,6 +131,75 @@ let DnD = {
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/WxZxfK8/Screenshot-2025-01-06-164815.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+    
+    picture: {
+      description: 'The draggable image its picture.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/0XnqBCv/Screenshot-2025-01-06-163032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    pictureResizeMode: {
+      description: 'Sets the size of the image its picture.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      inputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
+      outputValueOptions: ['cover', 'contain', 'repeat', 'stretch', ' center'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/5Fp7dSX/Screenshot-2025-01-06-163226.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    allowDragging: {
+      description: 'Whether its allowed for the image to be draggable or not.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/xzjN55t/Screenshot-2025-01-06-164050.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    altText: {
+      description: 'The altText property allows you to set the text that is displayed over the image.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/chfts55/Screenshot-2025-01-12-184433.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
   },
