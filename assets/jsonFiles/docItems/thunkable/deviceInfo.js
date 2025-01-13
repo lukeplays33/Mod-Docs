@@ -41,6 +41,23 @@ let deviceInfo = {
 
   },
   contents: {
+    gotDeviceInfo: {
+      description: 'The gotDeviceInfo event fires when information about the device has been succesfully gathered.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/ggPvD5V/Screenshot-2025-01-04-154652.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+    
     getDeviceInfo: {
       description: 'The getDeviceInfo() function gathers all available info about the device wich you can then access using the get blocks.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
@@ -362,23 +379,6 @@ let deviceInfo = {
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/WnGNqBV/Screenshot-2025-01-06-111852.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    },
-
-    gotDeviceInfo: {
-      description: 'The gotDeviceInfo event fires when information about the device has been succesfully gathered.',
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ggPvD5V/Screenshot-2025-01-04-154652.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
