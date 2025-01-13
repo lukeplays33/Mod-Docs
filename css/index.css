@@ -415,7 +415,7 @@ accordion-dropdown h5 i {
   border-bottom-right-radius:0px;
 }
 
-#variablesAndInfo {
+#variablesAndInfo, #quickLinksList {
   margin-bottom: 50px;
 }
 
