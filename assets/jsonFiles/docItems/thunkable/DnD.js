@@ -22,6 +22,13 @@ let DnD = {
         status: 'Passed on to Thunkable',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
       },
+
+      'Module stays visible after setting visible to false': {
+        description: "This is a Thunkable bug, a temporary workaround is to place the module in a group and then hide or show that group.",
+        type: 'Bug',
+        status: 'Passed on to Thunkable team',
+        for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
+      },
     },
 
     demoLinks: { // links to examples users can look at
