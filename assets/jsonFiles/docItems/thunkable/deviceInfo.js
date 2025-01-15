@@ -55,7 +55,7 @@ let deviceInfo = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ggPvD5V/Screenshot-2025-01-04-154652.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/099hStx/Screenshot-2025-01-15-083848.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
     
     getDeviceInfo: {
@@ -72,7 +72,7 @@ let deviceInfo = {
 
       outputValueOptions: [],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/JqZbk7Z/Screenshot-2025-01-04-154706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/DptB2B9/Screenshot-2025-01-15-083801.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDeviceLanguage: {
@@ -89,7 +89,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/93MYwMr/Screenshot-2025-01-04-155148.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/099hStx/Screenshot-2025-01-15-083848.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getBrowserVersion: {
@@ -106,7 +106,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/5BSBV0P/Screenshot-2025-01-04-155349.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/D4WGVGx/Screenshot-2025-01-15-083945.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "cookiesEnabled?": {
@@ -123,7 +123,7 @@ let deviceInfo = {
 
       outputValueOptions: ['boolean'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/tPzN6DC/Screenshot-2025-01-04-155710.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/QJZKDRf/Screenshot-2025-01-15-084022.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDeviceCoreOS: {
@@ -140,7 +140,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/q5LHs1s/Screenshot-2025-01-04-155913.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/RHhK12y/Screenshot-2025-01-15-084735.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getUserAgent: {
@@ -157,7 +157,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/tHpr7FZ/Screenshot-2025-01-04-160041.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/1sSJ8Zp/Screenshot-2025-01-15-085836.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getLogicalProssecorCores: {
@@ -174,7 +174,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/VST3jJC/Screenshot-2025-01-04-160206.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/2jZN2NN/Screenshot-2025-01-15-085910.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDeviceMemory: {
@@ -191,7 +191,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/2qqWb0t/Screenshot-2025-01-04-160318.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/ysnrJZ3/Screenshot-2025-01-15-090029.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDeviceLanguages: {
@@ -208,7 +208,7 @@ let deviceInfo = {
 
       outputValueOptions: ['array'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/FK9dNZK/Screenshot-2025-01-04-160509.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/4pWpQwV/Screenshot-2025-01-15-090211.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "isMobile?": {
@@ -225,7 +225,7 @@ let deviceInfo = {
 
       outputValueOptions: ['boolean'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/fQqf5hy/Screenshot-2025-01-04-160614.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/ssbVghB/Screenshot-2025-01-15-090415.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getBrands": {
@@ -242,7 +242,7 @@ let deviceInfo = {
 
       outputValueOptions: ['JSON'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/kKCxsN8/Screenshot-2025-01-04-160746.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/s2NzZpv/Screenshot-2025-01-15-090610.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getFullDeviceInfoJSON": {
@@ -259,7 +259,7 @@ let deviceInfo = {
 
       outputValueOptions: ['JSON'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/WfWhPCN/Screenshot-2025-01-04-160907.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/s2NzZpv/Screenshot-2025-01-15-090610.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getScreenColorDepth": {
@@ -276,7 +276,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/chN25HH/Screenshot-2025-01-04-161015.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/2Y9K7Xc/Screenshot-2025-01-15-090738.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getScreenPixelDepth": {
@@ -293,7 +293,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/94PkhcL/Screenshot-2025-01-04-161220.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://ibb.co/B6frTYm', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getBrowserName": {
@@ -310,7 +310,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/jLm9xqz/Screenshot-2025-01-06-100812.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/rcfWTN6/Screenshot-2025-01-15-091028.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getDeviceArchitecture": {
@@ -327,7 +327,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/xj617n5/Screenshot-2025-01-06-111536.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/gRrfCwb/Screenshot-2025-01-15-091205.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getOSVersion": {
@@ -344,7 +344,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4Ws5xXW/Screenshot-2025-01-06-111706.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/XyXCWQX/Screenshot-2025-01-15-091331.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getArchitectureBits": {
@@ -361,7 +361,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/X2GbcNR/Screenshot-2025-01-06-111758.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/fXRD3c6/Screenshot-2025-01-15-091508.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getDeviceModel": {
@@ -378,7 +378,7 @@ let deviceInfo = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/WnGNqBV/Screenshot-2025-01-06-111852.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/yfQFBzd/Screenshot-2025-01-15-091555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
