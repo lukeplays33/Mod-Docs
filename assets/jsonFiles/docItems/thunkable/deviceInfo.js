@@ -242,7 +242,7 @@ let deviceInfo = {
 
       outputValueOptions: ['JSON'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/s2NzZpv/Screenshot-2025-01-15-090610.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/d4JWk2X/Screenshot-2025-01-15-090523.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getFullDeviceInfoJSON": {
@@ -293,7 +293,7 @@ let deviceInfo = {
 
       outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://ibb.co/B6frTYm', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/HPKxG90/Screenshot-2025-01-15-090927.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "getBrowserName": {
