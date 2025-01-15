@@ -55,7 +55,7 @@ let batteryInfo = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/bvrVbqH/Screenshot-2025-01-07-163042.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     chargingTimeChanged: {
@@ -72,7 +72,7 @@ let batteryInfo = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/Fsv7Msy/Screenshot-2025-01-07-163300.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     dischargingTimeChanged: {
@@ -89,7 +89,7 @@ let batteryInfo = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/NNPkNpJ/Screenshot-2025-01-07-163410.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     batteryLevelChanged: {
@@ -106,7 +106,7 @@ let batteryInfo = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/wQQxj7b/Screenshot-2025-01-07-163505.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getBatteryLevel: {
@@ -123,7 +123,7 @@ let batteryInfo = {
 
       outputValueOptions: ['number'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/kSmDG8m/Screenshot-2025-01-07-163754.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getChargingTime: {
@@ -140,7 +140,7 @@ let batteryInfo = {
 
       outputValueOptions: ['number'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/K0MSm01/Screenshot-2025-01-07-163923.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getDischargingTime: {
@@ -157,7 +157,7 @@ let batteryInfo = {
 
       outputValueOptions: ['number'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/KwffKkD/Screenshot-2025-01-07-164043.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     "isCharging?": {
@@ -174,7 +174,7 @@ let batteryInfo = {
 
       outputValueOptions: ['boolean'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/f4t4pxk/Screenshot-2025-01-07-164148.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
