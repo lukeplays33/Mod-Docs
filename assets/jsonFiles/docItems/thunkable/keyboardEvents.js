@@ -25,6 +25,7 @@ let keyboard = {
     },
 
     demoLinks: { // links to examples users can look at
+      'Playground': 'https://x.thunkable.com/projectPage/675034b7267bc8dd4bc33f6c',
     },
 
     platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
