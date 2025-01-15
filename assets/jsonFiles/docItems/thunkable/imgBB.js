@@ -92,7 +92,7 @@ let imgBB = {
           outputTypes: ['JSON'],
           inputTypes: [],
 
-          description: 'The full response from imgBB returned as JSON.',
+          description: 'The full response from imgBB returned as a JSON.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
@@ -107,7 +107,7 @@ let imgBB = {
 
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/HPFshMG/Screenshot-2024-12-27-111433.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/r7yRKgp/Screenshot-2025-01-15-093553.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     urlFromUploadedImage: {
@@ -138,7 +138,7 @@ let imgBB = {
 
       outputValueOptions: ['imgBB URL'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/8YmZfsF/Screenshot-2024-12-27-111900.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/mbzHb71/Screenshot-2025-01-15-093645.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     urlFromAdvancedUploadedImage: {
@@ -196,7 +196,7 @@ let imgBB = {
 
       outputValueOptions: ['imgBB URL'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/RDT9K7q/Screenshot-2024-12-27-112152.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/PxZMmDz/Screenshot-2025-01-15-093747.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     getImageNameFromImgBB: {
@@ -227,7 +227,7 @@ let imgBB = {
 
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ZcpMDHP/Screenshot-2024-12-27-113315.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/HN3BhjS/Screenshot-2025-01-15-093904.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     fullJsonResponse: {
@@ -244,7 +244,7 @@ let imgBB = {
 
       outputValueOptions: ['JSON'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/bBB87wm/Screenshot-2024-12-27-113721.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/g3x8DsV/Screenshot-2025-01-15-094009.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     apiKey: {
@@ -275,7 +275,7 @@ let imgBB = {
 
       outputValueOptions: ['string'],
       type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/dMC2Pc6/Screenshot-2024-12-27-114127.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/nm1HbYh/Screenshot-2025-01-15-094052.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
