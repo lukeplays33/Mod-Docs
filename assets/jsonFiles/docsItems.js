@@ -32,10 +32,10 @@ let docsItemsJson = {
 
     items: {
       "Device Modules": 'Type: divider', // tells the list to display this item as a divider
-      "Keyboard_Events": keyboard,
-      "Screen_Events": screen,
-      "deviceInfo": deviceInfo,
-      "batteryInfo": batteryInfo,
+      "Keyboard Events": keyboard,
+      "Screen Events": screen,
+      "Device Info": deviceInfo,
+      "Battery Info": batteryInfo,
 
       "Web Services": 'Type: divider', // tells the list to display this item as a divider
       "ImgBB": imgBB,
