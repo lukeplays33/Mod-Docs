@@ -139,7 +139,7 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number', '0 (Means its fully charged or an error occured getting the status)', 'Infinity (means it is discharging'],
+      outputValueOptions: ['number', '\n0 (Means its fully charged or an error occured getting the status)', '\nInfinity (means it is discharging'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
@@ -156,7 +156,7 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number', 'Infinity (means it is charging'],
+      outputValueOptions: ['number', '\nInfinity (means it is charging'],
       type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
