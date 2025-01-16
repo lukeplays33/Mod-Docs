@@ -111,6 +111,37 @@ let imgBB = {
       displayFile: 'https://i.ibb.co/r7yRKgp/Screenshot-2025-01-15-093553.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    failedUploading: {
+      description: 'The failedUploading event fires when the API upload call has failed to upload the image.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+
+        error: {
+          readOnly: true, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['string'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+          description: 'The error that caused the failed upload.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [], // none for events
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/r7yRKgp/Screenshot-2025-01-15-093553.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     startedUploading: {
       description: 'The startedUploading event fires when a file upload started.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
