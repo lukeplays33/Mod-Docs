@@ -18,7 +18,7 @@ let batteryInfo = {
     },
 
     demoLinks: { // links to examples users can look at
-      'Playground': 'https://x.thunkable.com/projectPage/675034b7267bc8dd4bc33f6c',
+      'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
 
     platforms: ['Android (partially)', 'ChromeOS', 'Web'],
