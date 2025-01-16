@@ -105,7 +105,7 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
+      outputValueOptions: ['number'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/D4WGVGx/Screenshot-2025-01-15-083945.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
