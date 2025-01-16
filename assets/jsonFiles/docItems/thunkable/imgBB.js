@@ -139,7 +139,7 @@ let imgBB = {
 
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/r7yRKgp/Screenshot-2025-01-15-093553.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/cbn5GJK/Screenshot-2025-01-16-164526.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     startedUploading: {
