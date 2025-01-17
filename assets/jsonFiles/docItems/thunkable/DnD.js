@@ -5,8 +5,14 @@ let DnD = {
       link: 'https://x.thunkable.com/module/677bc62a45f85729a560a19e/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The DnD module allows you drag and drop images.',
-    useCases: ['Drag and drop Images.'],
+
+    moduleInformation: {
+      description: 'The DnD module allows you drag and drop images.',
+      useCases: ['Drag and drop Images.'],
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      required: ['Something to drag around :)'],
+      languages: ['Javascript', 'Thunkable Blockly'],
+    },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'DragOver and leave events not firing properly': {
@@ -34,10 +40,6 @@ let DnD = {
     demoLinks: { // links to examples users can look at
       'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
-
-    platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-    required: ['Something to drag around :)'],
-    languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
       repoName: 'Thunkable Modules',
@@ -140,7 +142,7 @@ let DnD = {
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/WxZxfK8/Screenshot-2025-01-06-164815.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
-    
+
     picture: {
       description: 'The draggable image its picture.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,

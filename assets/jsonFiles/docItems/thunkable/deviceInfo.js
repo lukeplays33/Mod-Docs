@@ -5,8 +5,14 @@ let deviceInfo = {
       link: 'https://x.thunkable.com/module/67790cf89ebf3d690c7d363f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The devicInfo module allows you to gather information about the users device.',
-    useCases: ['Gather device info.'],
+
+    moduleInformation: {
+      description: 'The devicInfo module allows you to gather information about the users device.',
+      useCases: ['Gather device info.'],
+      platforms: ['Android (partially)', 'Ios (partially)', 'ChromeOS', 'Web'],
+      required: ['A device to use this Thunkable module with 🤯'],
+      languages: ['Javascript', 'Thunkable Blockly'],
+    },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'inaccurate info': {
@@ -20,10 +26,6 @@ let deviceInfo = {
     demoLinks: { // links to examples users can look at
       'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
-
-    platforms: ['Android (partially)', 'Ios (partially)', 'ChromeOS', 'Web'],
-    required: ['A device to use this Thunkable module with 🤯'],
-    languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
       repoName: 'Thunkable Modules',
@@ -58,7 +60,7 @@ let deviceInfo = {
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/099hStx/Screenshot-2025-01-15-083848.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
-    
+
     getDeviceInfo: {
       description: 'The getDeviceInfo() function gathers all available info about the device wich you can then access using the get blocks.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,

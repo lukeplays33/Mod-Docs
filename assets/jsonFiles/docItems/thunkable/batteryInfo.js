@@ -7,10 +7,12 @@ let batteryInfo = {
     },
 
     moduleInformation: {
+      description: 'The batteryInfo module allows you to gather information about the users device its battery.',
       useCases: ['Gather battery info.'],
+      platforms: ['Android (partially)', 'ChromeOS', 'Web'],
+      required: ['A battery :)'],
+      languages: ['Javascript', 'Thunkable Blockly'],
     },
-    description: 'The batteryInfo module allows you to gather information about the users device its battery.',
-    useCases: ['Gather battery info.'],
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'inaccurate info': {
@@ -24,10 +26,6 @@ let batteryInfo = {
     demoLinks: { // links to examples users can look at
       'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
-
-    platforms: ['Android (partially)', 'ChromeOS', 'Web'],
-    required: ['A battery :)'],
-    languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
       repoName: 'Thunkable Modules',

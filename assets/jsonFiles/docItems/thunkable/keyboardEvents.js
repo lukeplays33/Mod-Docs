@@ -5,8 +5,14 @@ let keyboard = {
       link: 'https://x.thunkable.com/module/66bcb8c35969ac7509eca98f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
-    useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
+
+    moduleInformation: {
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      required: ['Physical keyboard'],
+      languages: ['Javascript', 'Thunkable Blockly'],
+      description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
+      useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
+    },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
 
@@ -27,10 +33,6 @@ let keyboard = {
     demoLinks: { // links to examples users can look at
       'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
-
-    platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-    required: ['Physical keyboard'],
-    languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
       repoName: 'Thunkable Modules',

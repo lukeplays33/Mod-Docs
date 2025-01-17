@@ -37,10 +37,11 @@ let informationPage = document.getElementById('information');
 let additionalLinksAndGuides = document.getElementById('additionalLinksAndGuides');
 let quickLinksList = document.getElementById('quickLinksList');
 
-description.children[1].innerHTML = itemJSON.about.description;
-useCase.children[1].innerHTML = itemJSON.about.useCases.join(', ');
-platform.children[1].innerHTML = itemJSON.about.platforms.join(', ');
-required.children[1].innerHTML = itemJSON.about.required.join(', ');
+description.children[1].innerHTML = itemJSON.about.moduleInformation.description;
+useCase.children[1].innerHTML = itemJSON.about.moduleInformation.useCases.join(', ');
+platform.children[1].innerHTML = itemJSON.about.moduleInformation.platforms.join(', ');
+required.children[1].innerHTML = itemJSON.about.moduleInformation.required.join(', ');
+language.children[1].innerHTML = itemJSON.about.moduleInformation.languages.join(', ');
 
 install.innerHTML = itemJSON.about.installation.link;
 install.href = itemJSON.about.installation.link;
@@ -53,9 +54,6 @@ developer.innerHTML = itemJSON.about.repo.developer;
 version.innerHTML = itemJSON.about.repo.version;
 status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
-language.children[1].innerHTML = itemJSON.about.languages.join(', ');
-
-moduleInformationTab.listItems = Object.values(itemJSON.about.moduleInformation);
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 

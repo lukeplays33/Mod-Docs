@@ -5,8 +5,14 @@ let imgBB = {
       link: 'https://x.thunkable.com/module/676d0ceb05584dabb2c0728f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
-    description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
-    useCases: ['Upload images or gifs to an public image service that is free to use.'],
+
+    moduleInformation: {
+      description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
+      useCases: ['Upload images or gifs to an public image service that is free to use.'],
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      required: ['imgBB API key'],
+      languages: ['Javascript', 'Thunkable Blockly'],
+    },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'ImgBB privacy concerns': {
@@ -20,10 +26,6 @@ let imgBB = {
     demoLinks: { // links to examples users can look at
       'Playground': 'https://x.thunkable.com/web-build/index.html?projectId=675034b7267bc8dd4bc33f6c&noframe=1&responsive=1&screenId=undefined',
     },
-
-    platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-    required: ['imgBB API key'],
-    languages: ['Javascript', 'Thunkable Blockly'],
 
     repo: {
       repoName: 'Thunkable Modules',
@@ -45,13 +47,13 @@ let imgBB = {
     setup: {
       description: 'ImgBB is a simple API that you can easilly use and connect to your Thunkable project. <br> Below are the steps to connect to imgBB after you installed the module.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
-          "Create a imgBB account": {
-            description: '1. Go to https://imgbb.com/ and click sign-in or create account. <br>2.Then follow the instructions from there.'
-          },
+        "Create a imgBB account": {
+          description: '1. Go to https://imgbb.com/ and click sign-in or create account. <br>2.Then follow the instructions from there.'
+        },
 
-          "Get your API key.": {
-            description: '1. Go to https://api.imgbb.com/. <br>2. Click Get API key or Add API key. <br> 3. Copy and paste the link into the API Key property.'
-          },
+        "Get your API key.": {
+          description: '1. Go to https://api.imgbb.com/. <br>2. Click Get API key or Add API key. <br> 3. Copy and paste the link into the API Key property.'
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
