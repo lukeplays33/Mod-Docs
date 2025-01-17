@@ -41,7 +41,7 @@ let docsItemsJson = {
       "ImgBB": imgBB,
 
       "Other": 'Type: divider', // tells the list to display this item as a divider
-      "Drag & Drop": DnD,
+      "Advanced Custom Element": DnD,
     }
   }
 }
