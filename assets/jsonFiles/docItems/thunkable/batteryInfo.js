@@ -7,7 +7,7 @@ let batteryInfo = {
     },
 
     moduleInformation: {
-      
+      useCases: ['Gather battery info.'],
     },
     description: 'The batteryInfo module allows you to gather information about the users device its battery.',
     useCases: ['Gather battery info.'],
