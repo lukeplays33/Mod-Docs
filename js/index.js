@@ -80,7 +80,7 @@ for (i of items) {
 function nothingFound() {
   let p = document.createElement('p');
   p.innerHTML = 'No articles found :(';
-  p.classList.add('nothingFound');
+  p.classList.add('nothingFound', 'header');
 
   return p;
 }
