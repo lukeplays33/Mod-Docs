@@ -5,6 +5,10 @@ let batteryInfo = {
       link: 'https://x.thunkable.com/module/677d0b77e93f07eb86033d36/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
+
+    moduleInformation: {
+      
+    },
     description: 'The batteryInfo module allows you to gather information about the users device its battery.',
     useCases: ['Gather battery info.'],
 

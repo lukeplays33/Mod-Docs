@@ -55,7 +55,7 @@ status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
 language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 
-moduleInformationTab.listItems = Object.keys(itemJSON.about);
+moduleInformationTab.listItems = Object.values(itemJSON.about.moduleInformation);
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
