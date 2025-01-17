@@ -60,7 +60,7 @@ for (i of items) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       previusDrawerItem.classList.add('current');
 
-    } else if (!this.classList.contains('header')) {
+    } else if (!this.classList.contains('header') || this.classList.contains('nothingFound')) {
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       this.classList.add('current');
 
@@ -80,7 +80,7 @@ for (i of items) {
 function nothingFound() {
   let p = document.createElement('p');
   p.innerHTML = 'No articles found :(';
-  p.classList.add('nothingFound', 'header');
+  p.classList.add('nothingFound');
 
   return p;
 }
