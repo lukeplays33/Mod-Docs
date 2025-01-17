@@ -366,7 +366,7 @@ let deviceInfo = {
     },
 
     "getDeviceModel": {
-      description: 'The getDeviceModel function returns the name of the device its model.',
+      description: 'The getDeviceModel function returns the name of the mobile device its model.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
