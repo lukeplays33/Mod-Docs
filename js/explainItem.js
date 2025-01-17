@@ -24,8 +24,6 @@ let examples = document.getElementById('examples');
 
 let items = document.getElementById('docs');
 
-let demo = document.getElementById('demo');
-
 let viewPager = document.getElementById('explainTheItem');
 
 let docTemplate = document.getElementById('docTemplate');
@@ -81,15 +79,8 @@ if(itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
 }
 
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
-    concatList.push('Demo');
     items.listItems = Object.keys(itemJSON.contents).concat(concatList);
-
-    demo.src = Object.values(itemJSON.about.demoLinks)[0];
-
-    demoTabItem = document.getElementById('Demo'); // needs to have a href after creation
-    demoTabItem.href = '#demo';
 } else {
-    demo.remove();
     examples.remove();
 }
 
