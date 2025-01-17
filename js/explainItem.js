@@ -45,6 +45,8 @@ required.children[1].innerHTML = itemJSON.about.required.join(', ');
 install.innerHTML = itemJSON.about.installation.link;
 install.href = itemJSON.about.installation.link;
 
+let moduleInformationTab = document.getElementById('moduleInformationTab');
+
 repoName.innerHTML = itemJSON.about.repo.repoName;
 openSource.innerHTML = itemJSON.about.repo.openSource;
 developer.innerHTML = itemJSON.about.repo.developer;
@@ -53,6 +55,7 @@ status.innerHTML = itemJSON.about.repo.status;
 license.innerHTML = itemJSON.about.repo.license.name;
 language.children[1].innerHTML = itemJSON.about.languages.join(', ');
 
+moduleInformationTab.listItems = Object.keys(itemJSON.about);
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
