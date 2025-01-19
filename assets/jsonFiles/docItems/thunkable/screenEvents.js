@@ -406,6 +406,40 @@ let screen = {
       displayFile: 'https://i.ibb.co/Jn0FdT9/Screenshot-2025-01-14-135656.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    getScreenOrientationType: {
+      description: 'The getScreenOrientationType function returns the current orientation of the screen the website is in.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/jRrpfNN/Screenshot-2025-01-19-111147.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getScreenOrientationAngle: {
+      description: 'The getScreenOrientationAngle function returns the current angle of the screen the website is in.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/hdWFDxG/Screenshot-2025-01-19-111404.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     visible: {
       description: 'The visible property allows you to set the visibility of the module.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
