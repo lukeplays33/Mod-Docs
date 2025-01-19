@@ -266,7 +266,7 @@ let deviceInfo = {
     },
 
     "getScreenColorDepth": {
-      description: 'The getScreenColorDepth function returns the color depth of the screen.',
+      description: 'The getScreenColorDepth function returns the color depth of the screen the website is in open.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -283,7 +283,7 @@ let deviceInfo = {
     },
 
     "getScreenPixelDepth": {
-      description: 'The getScreenPixelDepth function returns the pixel depth of the screen.',
+      description: 'The getScreenPixelDepth function returns the pixel depth of the screen the website is in open.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
