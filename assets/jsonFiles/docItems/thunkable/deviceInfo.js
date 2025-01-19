@@ -383,6 +383,23 @@ let deviceInfo = {
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/yfQFBzd/Screenshot-2025-01-15-091555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
+
+    "getMaxTouchPoints": {
+      description: 'The getMaxTouchPoints function returns the maximum amount of simultanius touch points the browser supports.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/ZKcZRv8/Screenshot-2025-01-19-115013.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
