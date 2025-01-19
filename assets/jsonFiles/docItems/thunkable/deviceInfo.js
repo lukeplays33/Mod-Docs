@@ -385,7 +385,7 @@ let deviceInfo = {
     },
 
     "getMaxTouchPoints": {
-      description: 'The getMaxTouchPoints function returns the maximum amount of simultanius touch points the browser supports.',
+      description: 'The getMaxTouchPoints function returns the maximum amount of simultaneous touch points the browser supports.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
