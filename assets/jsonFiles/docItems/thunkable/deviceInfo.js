@@ -402,7 +402,7 @@ let deviceInfo = {
     },
 
     "isTablet?": {
-      description: 'The isTablet? function allows yopu to see if the device is a tablet or not. <br>Note: some browsers may see tablets as desktop devices and thus say false when it is a tablet.',
+      description: 'The isTablet? function allows you to see if the device is a tablet or not. <br>Note: some browsers may see tablets as desktop devices and thus say false when it is a tablet.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
