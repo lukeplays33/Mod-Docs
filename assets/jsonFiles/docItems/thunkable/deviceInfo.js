@@ -130,7 +130,7 @@ let deviceInfo = {
     },
 
     getDeviceCoreOS: {
-      description: 'The getDeviceCoreOS function allows you to see what the core OS of the device is (e.g. linux for android)',
+      description: 'The getDeviceCoreOS function allows you to see what the core OS of the device is (e.g. linux for android because android is build ontop of linux.)',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
