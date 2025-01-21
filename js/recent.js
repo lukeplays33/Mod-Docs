@@ -43,6 +43,10 @@ recentArticles.addEventListener('itemSelected', function (e) {
 });
 
 function openPage(item) {
+    const params = new URLSearchParams(window.location.search);
+    params.set('page', item);
+    parent.history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
+
     let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
 
@@ -57,7 +61,7 @@ function openPage(item) {
 }
 
 if(parent.window.location.href.includes('page=')) {
-    let item = new URLSearchParams(window.location.search)['page'];
+    let item = new URLSearchParams(window.location.search).get('page');
     alert(item)
     openPage(item);
 }
