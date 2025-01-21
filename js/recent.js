@@ -39,6 +39,12 @@ setRecents();
 recentArticles.addEventListener('itemSelected', function (e) {
     let item = e.detail.value;
 
+    openPage(item);
+});
+
+function openPage(item) {
+    let item = e.detail.value;
+
     let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
 
@@ -47,7 +53,7 @@ recentArticles.addEventListener('itemSelected', function (e) {
 
     parent.document.title = item;
 
-    if(parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {//closes the drawer on mobiel isntead of opening it
+    if (parent.document.getElementById(categoryName).parentNode.platform == 'mobile') {//closes the drawer on mobiel isntead of opening it
         parent.document.getElementById(categoryName).parentNode.toggleDrawer();
     }
-});
+}
