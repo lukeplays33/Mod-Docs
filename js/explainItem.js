@@ -269,10 +269,11 @@ function setRecents(name) {
         value = JSON.parse(value);
         value.unshift(name);
 
+        value = [...new Set(value)]; // removes all duplicated items
         value = value.slice(0, 3);
         console.log(value)
 
-        localforage.setItem('recentDocItems', JSON.stringify([...new Set(value)])); // removes all duplicated items and saves them as a recent page
+        localforage.setItem('recentDocItems', JSON.stringify(value)); // removes all duplicated items and saves them as a recent page
     }).catch(function (err) {
         // This code runs if there were any errors
         console.log(err);
