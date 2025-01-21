@@ -61,7 +61,10 @@ function openPage(item) {
 }
 
 if(parent.window.location.href.includes('page=')) {
-    let item = new URLSearchParams(window.location.search).get('page');
-    alert(item)
-    openPage(item);
+    const params = new URLSearchParams(window.location.search);
+
+    // Get the value of a specific parameter
+    const inputValue = params.get('page');
+    alert(inputValue)
+    openPage(inputValue);
 }
