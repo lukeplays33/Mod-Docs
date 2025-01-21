@@ -67,5 +67,5 @@ if(parent.window.location.href.includes('page=')) {
     // Get the value of a specific parameter
     const inputValue = params.get('page');
     alert(inputValue)
-    openPage(inputValue);
+    //openPage(inputValue);
 }
