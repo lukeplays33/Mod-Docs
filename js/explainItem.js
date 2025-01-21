@@ -260,8 +260,8 @@ function createVariableTable(variable, variables) { //creates a display table to
 function setRecents(name) {
     const params = new URLSearchParams(window.location.search);
     params.set('page', name);
-    history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
-    
+    parent.history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
+
     localforage.getItem('recentDocItems').then(function (value) {
         // This code runs once the value has been loaded
         // from the offline store.
