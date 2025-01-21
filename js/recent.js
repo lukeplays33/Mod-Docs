@@ -43,8 +43,6 @@ recentArticles.addEventListener('itemSelected', function (e) {
 });
 
 function openPage(item) {
-    let item = e.detail.value;
-
     let categoryName = item.substring(0, item.indexOf(' '));
     parent.document.getElementById(categoryName).click();
 
