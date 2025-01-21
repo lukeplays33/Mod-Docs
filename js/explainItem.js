@@ -270,6 +270,7 @@ function setRecents(name) {
         value.unshift(name);
 
         value = value.slice(0, 3);
+        console.log(value)
 
         localforage.setItem('recentDocItems', JSON.stringify([...new Set(value)])); // removes all duplicated items and saves them as a recent page
     }).catch(function (err) {
@@ -283,7 +284,7 @@ function setRecents(name) {
 
 setRecents(parent.document.title);
 
-window.addEventListener('pagehide', function () {
+window.addEventListener('pagehide', function () { // deletes the params after leaving the page
     const params = new URLSearchParams(window.location.search);
     params.delete('page');
     parent.history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
