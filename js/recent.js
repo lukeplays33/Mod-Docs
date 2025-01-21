@@ -57,3 +57,8 @@ function openPage(item) {
         parent.document.getElementById(categoryName).parentNode.toggleDrawer();
     }
 }
+
+if(parent.window.location.href.includes('page=')) {
+    let item = new URLSearchParams(window.location.search)['page']
+    openPage(item);
+}
