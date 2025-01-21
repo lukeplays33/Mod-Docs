@@ -68,7 +68,7 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
 
 informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
 
-if(itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
+if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     quickLinksList.listItems = Object.keys(itemJSON.quickLinks);
 
     quickLinksList.addEventListener('itemSelected', function (e) {
@@ -85,7 +85,7 @@ if (Object.keys(itemJSON.about.demoLinks).length != 0) {
     examples.remove();
 }
 
-if(Object.keys(itemJSON.about.notes).length == 0) {
+if (Object.keys(itemJSON.about.notes).length == 0) {
     notes.remove();
 }
 
@@ -257,9 +257,12 @@ function createVariableTable(variable, variables) { //creates a display table to
     return table;
 }
 
-function setRecents (name) {
-    window.parent.location.href = 'https://lukeplays33.github.io/Mod-Docs/?page=' + name; // allows deeplinking to pages.
-    localforage.getItem('recentDocItems').then(function(value) {
+function setRecents(name) {
+    const params = new URLSearchParams(window.location.search);
+    params.set('page', name);
+    history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
+    
+    localforage.getItem('recentDocItems').then(function (value) {
         // This code runs once the value has been loaded
         // from the offline store.
 
@@ -268,8 +271,8 @@ function setRecents (name) {
 
         value = value.slice(0, 3);
 
-        localforage.setItem('recentDocItems', JSON.stringify( [...new Set(value)] )); // removes all duplicated items and saves them as a recent page
-    }).catch(function(err) {
+        localforage.setItem('recentDocItems', JSON.stringify([...new Set(value)])); // removes all duplicated items and saves them as a recent page
+    }).catch(function (err) {
         // This code runs if there were any errors
         console.log(err);
 
