@@ -282,3 +282,9 @@ function setRecents(name) {
 }
 
 setRecents(parent.document.title);
+
+window.addEventListener('pagehide', function () {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('page');
+    parent.history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
+});
