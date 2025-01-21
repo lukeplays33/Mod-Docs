@@ -436,7 +436,7 @@ let deviceInfo = {
     },
 
     "getCountryCode": {
-      description: 'The getCountryCode function returns the clcountry code of the device this is based on the system language the user or manufacturer has set.',
+      description: 'The getCountryCode function returns the country code of the device this is based on the system language the user or manufacturer has set.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -453,7 +453,7 @@ let deviceInfo = {
     }, 
 
     "getCountryName": {
-      description: 'The getCountryName function returns the clcountry name of the device this is based on the system language the user or manufacturer has set.',
+      description: 'The getCountryName function returns the country name of the device this is based on the system language the user or manufacturer has set.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
