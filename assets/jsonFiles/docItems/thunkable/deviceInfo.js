@@ -16,7 +16,7 @@ let deviceInfo = {
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'inaccurate info': {
-        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements.",
+        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements. <br> But this can also be because there are workarounds uses for example checking the 12 hour clock is based of the users device timezone and not if it prefers the 12 hour clock.",
         type: 'Compatability issue of browser/webviewer services',
         status: '',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
@@ -484,6 +484,23 @@ let deviceInfo = {
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/sb8mGTh/Screenshot-2025-01-21-155012.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "usesMetricSystem?": {
+      description: 'The usesMetricSystem? checks wheter the users is most likely to use the metric system or not. <br>It does this by checking the country code of the device and comparing it to a list of countries that use the metric system.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/6WPvN2g/Screenshot-2025-01-22-104614.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
