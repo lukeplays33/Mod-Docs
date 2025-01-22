@@ -487,7 +487,7 @@ let deviceInfo = {
     },
 
     "usesMetricSystem?": {
-      description: 'The usesMetricSystem? checks wheter the users is most likely to use the metric system or not. <br>It does this by checking the country code of the device and comparing it to a list of countries that use the metric system.',
+      description: 'The usesMetricSystem? checks wheter the users is most likely to use the metric system or not. <br>It does this based on your languagee settings.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
