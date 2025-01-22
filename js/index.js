@@ -1,4 +1,4 @@
-import { PichaiUX } from 'https://lukeplays33.github.io/Pichai-UX/imports.js';
+import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
