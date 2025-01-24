@@ -38,7 +38,7 @@
                 <view-pager id="explainTheItem">
                     <div id="information">
                         <div class="row gap explainInfoItems" id="installItems">
-                            <button class='chipIcon' id="guide">Installation guide</button>
+                            <button class='chipIcon' id="gguide">Installation guide</button>
                             <button class='chipIcon' id="examples">Examples</button>
                             <!-- displays a list of extra examples of code instead of only a interactive demo-->
                             <button class='chipIcon' id="notes">Additional Notes</button>
@@ -92,8 +92,10 @@
                             </div>
                         </article>
 
-                        <hr titleText="Additional Links and guides" id="additionalLinksAndGuides">
-                        <list-viewer id="quickLinksList" actionButton="open_in_new"></list-viewer>
+                        <hr titleText="Additional Information, links and guides" id="additionalLinksAndGuides">
+                        <list-viewer id="quickLinksList" actionButton="open_in_new">
+                            <li id="guide">Installation Guide</li>
+                        </list-viewer>
                     </div>
                 </view-pager>
             </article>
