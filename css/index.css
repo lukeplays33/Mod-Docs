@@ -565,3 +565,7 @@ widgetbot {
 #quickLinksList {
   width: calc(100% - 16px);
 }
+
+#InstallationHR {
+  margin-top:0px;
+}
