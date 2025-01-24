@@ -186,7 +186,7 @@ list-viewer li {
   display: flex;
   flex-direction: row;
 
-  align-items: center;
+  align-items: center !important;
 
   height: 100% !important;
 
