@@ -283,13 +283,7 @@ list-viewer li {
 #guide,
 #notes,
 #examples {
-  height: max-content;
-  flex: 1;
-  line-height: 26px;
-  font-size: 15px;
-  background-color: var(--secondairyContainer);
-  color: var(--secondairyContainerTextColor);
-  padding: 0px;
+  color: var(--primaryContainerTextColor);
 }
 
 .drawerToggle {
