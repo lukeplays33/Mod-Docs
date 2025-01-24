@@ -80,7 +80,7 @@ if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
 
     quickLinksList.addEventListener('itemSelected', function (e) {
         alert(e.detail.index)
-        window.open(Object.values(itemJSON.quickLinks)[e.detail.index]);
+        window.open(itemJSON.quickLinks[e.detail.value]);
     });
 }
 
