@@ -2,12 +2,7 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 
 import { createInfoTable } from './utils.js';
 
-let demoTabItem, i;
-
-let description = document.getElementById('eDescription');
-let useCase = document.getElementById('useCases');
-let required = document.getElementById('required');
-let platform = document.getElementById('platform');
+let i;
 
 let repoName = document.getElementById('repoName');
 let developer = document.getElementById('developer');
@@ -15,7 +10,6 @@ let version = document.getElementById('version');
 let status = document.getElementById('status');
 let openSource = document.getElementById('openSource');
 let license = document.getElementById('license');
-let language = document.getElementById('language');
 
 let install = document.getElementById('install');
 let guide = document.getElementById('guide');
@@ -36,12 +30,6 @@ let informationPage = document.getElementById('information');
 
 let additionalLinksAndGuides = document.getElementById('additionalLinksAndGuides');
 let quickLinksList = document.getElementById('quickLinksList');
-
-description.children[1].innerHTML = itemJSON.about.moduleInformation.description;
-useCase.children[1].innerHTML = itemJSON.about.moduleInformation.useCases.join(', ');
-platform.children[1].innerHTML = itemJSON.about.moduleInformation.platforms.join(', ');
-required.children[1].innerHTML = itemJSON.about.moduleInformation.required.join(', ');
-language.children[1].innerHTML = itemJSON.about.moduleInformation.languages.join(', ');
 
 install.innerHTML = itemJSON.about.installation.link;
 install.href = itemJSON.about.installation.link;
