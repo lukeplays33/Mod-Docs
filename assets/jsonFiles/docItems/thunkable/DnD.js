@@ -7,11 +7,11 @@ let DnD = {
     },
 
     moduleInformation: {
-      description: 'The DnD module allows you drag and drop images.',
-      useCases: ['Drag and drop Images.'],
-      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-      required: ['Something to drag around :)'],
-      languages: ['Javascript', 'Thunkable Blockly'],
+      Description: 'The DnD module allows you drag and drop images.',
+      UseCases: ['Drag and drop Images.'],
+      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      Required: ['Something to drag around :)'],
+      Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
     },
 

@@ -7,11 +7,11 @@ let deviceInfo = {
     },
 
     moduleInformation: {
-      description: 'The devicInfo module allows you to gather information about the users device.',
-      useCases: ['Gather device info.'],
-      platforms: ['Android (partially)', 'ChromeOS', 'Web'],
-      required: ['A device to use this Thunkable module with 🤯'],
-      languages: ['Javascript', 'Thunkable Blockly'],
+      Description: 'The devicInfo module allows you to gather information about the users device.',
+      UseCases: ['Gather device info.'],
+      Platforms: ['Android (partially)', 'ChromeOS', 'Web'],
+      Required: ['A device to use this Thunkable module with 🤯'],
+      Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
     },
 

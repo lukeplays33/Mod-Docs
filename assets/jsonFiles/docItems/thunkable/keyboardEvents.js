@@ -7,11 +7,11 @@ let keyboard = {
     },
 
     moduleInformation: {
-      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-      required: ['Physical keyboard'],
-      languages: ['Javascript', 'Thunkable Blockly'],
-      description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
-      useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
+      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      Required: ['Physical keyboard'],
+      Languages: ['Javascript', 'Thunkable Blockly'],
+      Description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
+      UseCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
       Connection: 'Required',
     },
 

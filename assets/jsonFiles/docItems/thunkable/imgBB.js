@@ -7,11 +7,11 @@ let imgBB = {
     },
 
     moduleInformation: {
-      description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
-      useCases: ['Upload images or gifs to an public image service that is free to use.'],
-      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-      required: ['imgBB API key'],
-      languages: ['Javascript', 'Thunkable Blockly'],
+      Description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
+      UseCases: ['Upload images or gifs to an public image service that is free to use.'],
+      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      Required: ['imgBB API key'],
+      Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
     },
 

@@ -7,11 +7,11 @@ let screen = {
     },
 
     moduleInformation: {
-      description: 'The screen events module allows user to acces various event regarding the device its screen inside of their Thunkable project.',
-      useCases: ['Capture screen swipes/scrolling ', 'Capture resizing', 'Capture orientation changes'],
-      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
-      required: ['Physical Mouse/Touchpad or touchscreen, Physical Screen (duh;)'],
-      languages: ['Javascript', 'Thunkable Blockly'],
+      Description: 'The screen events module allows user to acces various event regarding the device its screen inside of their Thunkable project.',
+      UseCases: ['Capture screen swipes/scrolling ', 'Capture resizing', 'Capture orientation changes'],
+      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
+      Required: ['Physical Mouse/Touchpad or touchscreen, Physical Screen (duh;)'],
+      Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
     },
 
