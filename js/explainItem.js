@@ -76,9 +76,6 @@ if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     quickLinksList.addEventListener('itemSelected', function (e) {
         window.open(Object.values(itemJSON.quickLinks)[e.detail.index]);
     });
-} else {
-    additionalLinksAndGuides.remove();
-    quickLinksList.remove();
 }
 
 if (Object.keys(itemJSON.about.demoLinks).length != 0) {
