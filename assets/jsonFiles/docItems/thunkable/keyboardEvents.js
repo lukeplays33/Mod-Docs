@@ -12,6 +12,7 @@ let keyboard = {
       languages: ['Javascript', 'Thunkable Blockly'],
       description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
       useCases: ['Capture key presses', 'Capture key releases', 'Capture heldDown events'],
+      Connection: 'Required',
     },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs

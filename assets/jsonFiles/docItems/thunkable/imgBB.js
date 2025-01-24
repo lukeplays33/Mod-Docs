@@ -12,7 +12,7 @@ let imgBB = {
       platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       required: ['imgBB API key'],
       languages: ['Javascript', 'Thunkable Blockly'],
-      wifiRequired: true,
+      Connection: 'Required',
     },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs

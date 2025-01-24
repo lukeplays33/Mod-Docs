@@ -12,6 +12,7 @@ let DnD = {
       platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       required: ['Something to drag around :)'],
       languages: ['Javascript', 'Thunkable Blockly'],
+      Connection: 'Required',
     },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
