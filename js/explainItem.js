@@ -57,6 +57,20 @@ license.innerHTML = itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
+for(i of Object.keys(itemJSON.about.moduleInformation)) {
+    if (itemJSON.about.moduleInformation[i].length == 0) {
+        moduleInformationTab.remove();
+        break;
+    } else {
+        let item = document.createElement('article');
+        item.class = 'content';
+
+        item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i].join(', ')}`;
+
+        moduleInformationTab.appendChild(item);
+    }
+}
+
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
     cloneTemplate.querySelector('#explanationItems').style.display = 'none'; //hide all pages to ensure proper viewpager working
