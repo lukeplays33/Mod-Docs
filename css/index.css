@@ -102,6 +102,7 @@ h1 {
 
 .content {
   background-color: var(--secondairy);
+  color:var(--secondairyTextColor);
 
   padding: 8px;
 
