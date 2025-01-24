@@ -10,7 +10,7 @@ let batteryInfo = {
       Description: 'The batteryInfo module allows you to gather information about the users device its battery.',
       UseCases: ['Gather battery info.'],
       Platforms: ['Android (partially)', 'ChromeOS', 'Web'],
-      Tequired: ['A battery :)'],
+      Required: ['A battery :)'],
       Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
     },
