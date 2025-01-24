@@ -112,6 +112,7 @@ install.addEventListener('click', function (e) {
 });
 
 guide.addEventListener('click', function () {
+    e.stopPropagation();
     window.open(itemJSON.about.installation.guide);
 });
 
@@ -120,11 +121,13 @@ repoName.addEventListener('click', function () {
 });
 
 notes.addEventListener('click', function (e) {
+    e.stopPropagation();
     parent.document.title = parent.document.title + ' Notes';
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
 });
 
 examples.addEventListener('click', function (e) {
+    e.stopPropagation();
     parent.document.title = parent.document.title + ' Examples';
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
 });
