@@ -542,7 +542,7 @@ widgetbot {
 #useCases,
 #language,
 #required,
-#platform {
+#platform, .infoDocs{
   height: calc(100% - 16px) !important;
 }
 
