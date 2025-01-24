@@ -182,18 +182,11 @@ list-viewer li {
   color: var(--secondairyTextColor);
 }
 
-#description, .description,
-#eDescription,
-#useCases,
-#language,
-#required,
-#platform,
-#installDiv, .infoDocs {
+#description, .description, #installDiv, .infoDocs {
   display: flex;
   flex-direction: row;
 
   align-items: center;
-  justify-content: center;
 
   height: 100% !important;
 
@@ -208,12 +201,7 @@ list-viewer li {
   margin-bottom: 0px;
 }
 
-#required .chipIcon,
-#platform .chipIcon,
-#eDescription .chipIcon,
-#useCases .chipIcon,
-#installDiv .chipIcon,
-#language .chipIcon {
+#installDiv .chipIcon, .infoDocs .chipIcon {
   max-height: 15px;
   max-width: 15px;
   line-height: 16px;
@@ -539,11 +527,7 @@ widgetbot {
   margin-top:0px;
 }
 
-.grid #eDescription,
-#useCases,
-#language,
-#required,
-#platform, .infoDocs{
+.grid, .infoDocs{
   height: calc(100% - 16px) !important;
 }
 
