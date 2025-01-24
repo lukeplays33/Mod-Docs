@@ -79,6 +79,7 @@ if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     }
 
     quickLinksList.addEventListener('itemSelected', function (e) {
+        alert(e.detail.value)
         alert(itemJSON.quickLinks[e.detail.value])
         window.open(itemJSON.quickLinks[e.detail.value]);
     });
