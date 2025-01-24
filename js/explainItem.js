@@ -108,7 +108,7 @@ install.addEventListener('click', function (e) {
 
 });
 
-guide.addEventListener('click', function () {
+guide.addEventListener('click', function (e) {
     e.stopPropagation();
     window.open(itemJSON.about.installation.guide);
 });
