@@ -65,7 +65,7 @@ for(i of Object.keys(itemJSON.about.moduleInformation)) {
         let item = document.createElement('article');
         item.class = 'content';
 
-        item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i].join(', ')}`;
+        item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
 
         moduleInformationTab.appendChild(item);
     }
