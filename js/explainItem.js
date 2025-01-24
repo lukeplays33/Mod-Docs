@@ -45,7 +45,7 @@ license.innerHTML = itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
-for(i of Object.keys(itemJSON.about.moduleInformation)) {
+for(i of Object.keys(itemJSON.about.moduleInformation).sort()) {
     if (itemJSON.about.moduleInformation[i].length == 0) {
         moduleInformationTab.remove();
         break;
