@@ -74,12 +74,12 @@ if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     for(i of Object.keys(itemJSON.quickLinks)) {
         let item = document.createElement('li');
         item.innerHTML = i;
+        item.id = i;
 
         quickLinksList.appendChild(item);
     }
 
     quickLinksList.addEventListener('itemSelected', function (e) {
-        alert(e.detail.value)
         alert(itemJSON.quickLinks[e.detail.value])
         window.open(itemJSON.quickLinks[e.detail.value]);
     });
