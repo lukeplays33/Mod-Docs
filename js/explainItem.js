@@ -63,7 +63,7 @@ for(i of Object.keys(itemJSON.about.moduleInformation)) {
         break;
     } else {
         let item = document.createElement('article');
-        item.class = 'content';
+        item.class = 'content', 'infoDocs';
 
         item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
 
