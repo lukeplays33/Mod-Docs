@@ -71,8 +71,12 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
 informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
 
 if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
-    alert(Object.keys(itemJSON.quickLinks))
-    quickLinksList.listItems = Object.keys(itemJSON.quickLinks);
+    for(i of Object.keys(itemJSON.quickLinks)) {
+        let item = document.createElement('li');
+        item.innerHTML = i;
+
+        quickLinksList.appendChild(item);
+    }
 
     quickLinksList.addEventListener('itemSelected', function (e) {
         window.open(Object.values(itemJSON.quickLinks)[e.detail.index]);
