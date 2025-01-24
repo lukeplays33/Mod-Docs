@@ -17,7 +17,7 @@ let deviceInfo = {
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'inaccurate info': {
-        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements. <br> But this can also be because there are workarounds uses for example checking the 12 hour clock is based of the users device timezone and not if it prefers the 12 hour clock.",
+        description: "Some properties may return inaccurate information this is because some browsers have different implementations, safety reasons or compatability requirements. <br> But this can also be because there are workarounds used, for example checking the 12 hour clock is based of the users device timezone and not if it prefers the 12 hour clock.",
         type: 'Compatability issue of browser/webviewer services',
         status: '',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
