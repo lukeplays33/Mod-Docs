@@ -7,7 +7,6 @@ let keyboard = {
     },
 
     moduleInformation: {
-      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       Required: ['Physical keyboard'],
       Languages: ['Javascript', 'Thunkable Blockly'],
       Description: 'The keyboard events module allows users to capture key presses and releases inside of their Thunkable project.',
@@ -106,6 +105,7 @@ let keyboard = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/28Z1DCG/Screenshot-2025-01-14-133534.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -165,6 +165,7 @@ let keyboard = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/GV2smhc/Screenshot-2025-01-14-133730.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -224,6 +225,7 @@ let keyboard = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/GnpcWL6/Screenshot-2025-01-14-133835.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -241,6 +243,7 @@ let keyboard = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/BtvWLdC/Screenshot-2025-01-14-133918.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -271,6 +274,7 @@ let keyboard = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['boolean'],
       type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/S0R4q76/Screenshot-2025-01-14-133958.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.

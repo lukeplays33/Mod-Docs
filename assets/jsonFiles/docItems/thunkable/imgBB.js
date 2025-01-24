@@ -9,7 +9,6 @@ let imgBB = {
     moduleInformation: {
       Description: 'The imgBB module allows you to upload images and gifs to the public imgBB service.',
       UseCases: ['Upload images or gifs to an public image service that is free to use.'],
-      Platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       Required: ['imgBB API key'],
       Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Required',
@@ -64,6 +63,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [],
       type: 'Guide', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/MDb0kX7/setup.gif', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -109,6 +109,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/r7yRKgp/Screenshot-2025-01-15-093553.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -140,6 +141,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/cbn5GJK/Screenshot-2025-01-16-164526.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -157,6 +159,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: [], // none for events
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/SRcnsYs/Screenshot-2025-01-16-141153.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -188,6 +191,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['imgBB URL'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/mbzHb71/Screenshot-2025-01-15-093645.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -246,6 +250,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['imgBB URL'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/PxZMmDz/Screenshot-2025-01-15-093747.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -277,6 +282,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/HN3BhjS/Screenshot-2025-01-15-093904.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -294,6 +300,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['JSON'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/g3x8DsV/Screenshot-2025-01-15-094009.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -325,6 +332,7 @@ let imgBB = {
         viewCode: false,
       },
 
+      platforms: ['Android', 'Ios', 'ChromeOS', 'Web'],
       outputValueOptions: ['string'],
       type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/nm1HbYh/Screenshot-2025-01-15-094052.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
