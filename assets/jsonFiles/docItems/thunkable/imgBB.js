@@ -17,7 +17,7 @@ let imgBB = {
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
       'ImgBB privacy concerns': {
-        description: "ImgBB is a public service, although images upload through the imgBB site allows private images, the API does not so all your uploaded images will be public for everyone to see.",
+        description: "ImgBB is a public service, although images uploaded through the imgBB site allows private images, the API does not so all your uploaded images will be public for everyone to see.",
         type: 'Note',
         status: '',
         for: '' // if tied to a specific function or importqant for that one, leave empty to be global.
