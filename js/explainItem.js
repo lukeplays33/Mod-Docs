@@ -1,4 +1,5 @@
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
+import { settings } from "../assets/jsonFiles/supportSettings.js";
 
 import { createInfoTable } from './utils.js';
 
@@ -36,6 +37,8 @@ install.href = itemJSON.about.installation.link;
 
 let moduleInformationTab = document.getElementById('moduleInformationTab');
 
+let globalDonateMessage = document.getElementById('globalDonateMessage');
+
 repoName.innerHTML = itemJSON.about.repo.repoName;
 openSource.innerHTML = itemJSON.about.repo.openSource;
 developer.innerHTML = itemJSON.about.repo.developer;
@@ -69,6 +72,12 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
 }
 
 informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
+
+if (settings.donations.globalMessage.enabled) {
+    globalDonateMessage.innerHTML = settings.donations.globalMessage.message;
+} else {
+    globalDonateMessage.remove();
+}
 
 if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
     for(i of Object.keys(itemJSON.quickLinks)) {

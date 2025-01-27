@@ -15,7 +15,12 @@ let settings = {
     },
     donations: { // daonations or subscription links
         url: 'https://buymeacoffee.com/sketchdonate',
-        message: 'Donate to Mod Docs!'
+        message: 'Donate to Mod Docs!',
+        
+        gloabalMessage: { // allows the developer to set global support messages thatll appear above the download link.
+            enabled: true,
+            message: 'Support Mod Docs by donating to us on Buy Me A Coffee!',
+        }
     },
     blog: { // quick links for blog posts that can be either normal or for support (support guides, preverbally support blog posts)
         url: 'https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/pages/blog.html',
