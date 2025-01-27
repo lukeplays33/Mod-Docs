@@ -75,6 +75,10 @@ informationPage.style.display = 'none'; //hide all pages to ensure proper viewpa
 
 if (settings.donations.globalMessage.enabled) {
     globalDonateMessage.children[1].innerHTML = settings.donations.globalMessage.message;
+
+    globalDonateMessage.addEventListener('click', function () {
+        window.open(settings.donations.url);
+    });
 } else {
     globalDonateMessage.remove();
 }
