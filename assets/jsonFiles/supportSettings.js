@@ -18,7 +18,7 @@ let settings = {
         message: 'Donate to Mod Docs!',
 
         globalMessage: { // allows the developer to set global support messages thatll appear above the download link.
-            enabled: true,
+            enabled: false,
             message: 'Support Mod Docs by donating to us on Buy Me A Coffee!',
         }
     },
