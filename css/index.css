@@ -182,7 +182,7 @@ list-viewer li {
   color: var(--secondairyTextColor);
 }
 
-#description, .description, #installDiv, .infoDocs {
+#description, .description, #installDiv, .infoDocs, #globalDonateMessage {
   display: flex;
   flex-direction: row;
 
@@ -191,6 +191,10 @@ list-viewer li {
   height: 100% !important;
 
   margin-bottom: 8px;
+}
+
+#globalDonateMessage {
+  margin-bottom:8px;
 }
 
 .explainInfoItems {
