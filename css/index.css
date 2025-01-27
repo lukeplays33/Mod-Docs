@@ -213,7 +213,7 @@ list-viewer li {
   font-size: 15px;
 }
 
-#install {
+#install, #donateP {
   text-align: left;
 
   width: 100%;
