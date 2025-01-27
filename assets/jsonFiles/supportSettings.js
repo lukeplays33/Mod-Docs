@@ -18,7 +18,7 @@ let settings = {
         message: 'Donate to Mod Docs!',
 
         globalMessage: { // allows the developer to set global support messages thatll appear above the download link.
-            enabled: false,
+            enabled: true,
             message: "Hey there! <br> Thank you so much for taking a look at my module I hope you like it. <br> To keep me motivated for developing these modules, please consider donating something to me. <br> You'll support the whole Thunkable community by doing so!",
         }
     },
