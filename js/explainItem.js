@@ -74,7 +74,7 @@ for (i of items.children) { // give all tabbar elements a href so we can connect
 informationPage.style.display = 'none'; //hide all pages to ensure proper viewpager working
 
 if (settings.donations.globalMessage.enabled) {
-    globalDonateMessage.innerHTML = settings.donations.globalMessage.message;
+    globalDonateMessage.children[1].innerHTML = settings.donations.globalMessage.message;
 } else {
     globalDonateMessage.remove();
 }
