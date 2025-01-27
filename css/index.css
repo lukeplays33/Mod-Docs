@@ -205,7 +205,7 @@ list-viewer li {
   margin-bottom: 0px;
 }
 
-#installDiv .chipIcon, .infoDocs .chipIcon {
+#installDiv .chipIcon, #globalDonateMessage .chipIcon, .infoDocs .chipIcon {
   max-height: 15px;
   max-width: 15px;
   line-height: 16px;
