@@ -45,6 +45,36 @@ let netowrkInfo = {
 
   },
   contents: {
+    connectionChanged: {
+      description: 'The connectionChanged event fires when the user disconnects or connects to a network.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+        connectionState: {
+          readOnly: true, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['boolean'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+          description: 'If the device is connected to a network or not.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/fV4Kjsp8/Screenshot-2025-01-29-200112.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     getNetworkInfo: {
       description: 'The getNetworkInfo function gathers all available information about the network..',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
