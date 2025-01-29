@@ -554,6 +554,108 @@ let deviceInfo = {
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/S7GjW79/Screenshot-2025-01-24-100016.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
+
+    "getScreenResolution": {
+      description: 'The getScreenResolution function returns the resolution of the screen.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/JRF3QzR6/Screenshot-2025-01-29-103249.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "usesMonoschromeDisplay?": {
+      description: 'The usesMonoschromeDisplay? function returns wheter the display is a monoschrome (black and white) display or not.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/Q31wGGNt/Screenshot-2025-01-29-103707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "getScreenColorGamut": {
+      description: 'The getScreenColorGamut function returns the range of colors the screen can produce or record.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/4ZJ7Z18Q/Screenshot-2025-01-29-104032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "getPixeRatio": {
+      description: 'The getPixeRatio function returns the pixel ratio of the screen.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/4np3Y1JF/Screenshot-2025-01-29-104627.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "isTouchScreenDisplay?": {
+      description: 'The isTouchScreenDisplay? function checkd if the display used on the device is a touchscreen display or not.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/HfgX5dTS/Screenshot-2025-01-29-104917.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    "isScreenRetina?": {
+      description: 'The isScreenRetina? function checks if the display used on the device is a retina display or not.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['boolean'], // none for events
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/01M5tqM/Screenshot-2025-01-29-105229.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
 }
