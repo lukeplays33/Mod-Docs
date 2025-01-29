@@ -2,7 +2,7 @@ let netowrkInfo = {
   about: {
 
     installation: {
-      link: 'https://x.thunkable.com/module/677d0b77e93f07eb86033d36/',
+      link: 'https://x.thunkable.com/module/679a09f836673652a8a3393f/',
       guide: 'https://docs.thunkable.com/app-design/ui-components/modules#import-a-module'
     },
 
@@ -46,7 +46,7 @@ let netowrkInfo = {
   },
   contents: {
     getNetworkInfo: {
-      description: 'The getNetworkInfo functions gathers all available information about the network..',
+      description: 'The getNetworkInfo function gathers all available information about the network..',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -128,6 +128,57 @@ let netowrkInfo = {
       outputValueOptions: ['string'],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/5g5TstGD/Screenshot-2025-01-29-144341.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getDownlinkSpeed: {
+      description: 'The getDownlinkSpeed function returns the speed of wich files or messages arrive on your device in Mbps.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/r1F5Nxn/Screenshot-2025-01-29-145049.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getRoundTripTime: {
+      description: 'The getRoundTripTime function returns the estimated effective round-trip time of the current connection, rounded to the nearest multiple of 25 milliseconds.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/Xf2NJXB3/Screenshot-2025-01-29-145321.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getNetworkType: {
+      description: 'The getNetworkType function returns what type of network is used on the device.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/4g7pWYFm/Screenshot-2025-01-29-151844.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
