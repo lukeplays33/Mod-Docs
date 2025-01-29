@@ -5,6 +5,7 @@ import { imgBB } from './docItems/thunkable/imgBB.js';
 import { deviceInfo } from './docItems/thunkable/deviceInfo.js';
 import { DnD } from './docItems/thunkable/DnD.js';
 import { batteryInfo } from './docItems/thunkable/batteryInfo.js';
+import { netowrkInfo } from './docItems/thunkable/netowrkInfo.js';
 
 let docsItemsJson = {
   /*
@@ -39,6 +40,7 @@ let docsItemsJson = {
 
       "Web Services": 'Type: divider', // tells the list to display this item as a divider
       "ImgBB": imgBB,
+      "Network Info": netowrkInfo,
 
       //"Other": 'Type: divider', // tells the list to display this item as a divider
       //"Advanced Custom Element": DnD,
