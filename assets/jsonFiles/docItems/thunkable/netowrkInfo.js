@@ -246,7 +246,7 @@ let netowrkInfo = {
     },
 
     getEstimatedLoadingTime: {
-      description: 'The getEstimatedLoadingTime returns the estimated time itll take to load files <br> THis is done by tracking the loading speed of 1 image, 2 videos and 2 websites.',
+      description: 'The getEstimatedLoadingTime returns the estimated tim in ms itll take to load files <br> THis is done by tracking the loading speed of 1 image, 2 videos and 2 websites.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
