@@ -75,6 +75,23 @@ let netowrkInfo = {
       displayFile: 'https://i.ibb.co/fV4Kjsp8/Screenshot-2025-01-29-200112.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    networkInformationChanged: {
+      description: 'The networkInformationChanged event fires when a change in information about the network has changed.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/qFsgFhCB/Screenshot-2025-01-30-095110.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     getNetworkInfo: {
       description: 'The getNetworkInfo function gathers all available information about the network..',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
@@ -209,6 +226,23 @@ let netowrkInfo = {
       outputValueOptions: ['string'],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/4g7pWYFm/Screenshot-2025-01-29-151844.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getNetworkQuality: {
+      description: 'The getNetworkQuality function returns the quality of the network where slow-2g is slowest and 4g is fastest.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/dqWw5qX/Screenshot-2025-01-30-094909.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
