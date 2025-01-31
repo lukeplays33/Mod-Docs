@@ -92,6 +92,23 @@ let netowrkInfo = {
       displayFile: 'https://i.ibb.co/qFsgFhCB/Screenshot-2025-01-30-095110.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    latencyChanged: {
+      description: 'The latencyChanged event fires when a latency test has completed and latency,jitter and packetloss values hava been calculated.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/SX7jNv5S/Screenshot-2025-01-31-112657.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     getNetworkInfo: {
       description: 'The getNetworkInfo function gathers all available information about the network..',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
@@ -313,6 +330,40 @@ let netowrkInfo = {
       displayFile: 'https://i.ibb.co/Kcr8HCgV/Screenshot-2025-01-31-104150.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    startLatencyCheck: {
+      description: 'The startLatencyCheck function starts checking the network its latency, jitter and packetloss every x amount of seconds.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/WJjk0fZ/Screenshot-2025-01-31-113046.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    stopLatencyCheck: {
+      description: 'The stopLatencyCheck function stops any current running latency checks.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/KjmrnxJQ/Screenshot-2025-01-31-113154.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     latencyTestURL: {
       description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency. <br> Each site may have a different latency or a server that is further away so custom urls may provide more accuracy.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
@@ -328,6 +379,23 @@ let netowrkInfo = {
       outputValueOptions: ['string'],
       type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/t7FZSqK/Screenshot-2025-01-31-094558.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    latencyCHeckInterval: {
+      description: 'The latencyCHeckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/mVD1WCtg/Screenshot-2025-01-31-113710.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
