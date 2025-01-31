@@ -263,7 +263,7 @@ let netowrkInfo = {
     },
 
     getNetworkLatency: {
-      description: 'The getNetworkLatency returns the time it takes from data to pass from one point on a network to another in ms.',
+      description: 'The getNetworkLatency function returns the time it takes from data to pass from one point on a network to another in ms.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -277,6 +277,40 @@ let netowrkInfo = {
       outputValueOptions: ['number'],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/6JrhFJgR/Screenshot-2025-01-31-092254.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getNetworkJitter: {
+      description: 'The getNetworkJitter function returns the variation in time delay between when a signal is transmitted and when its received over a network connection, measuring the variability in ping and returned in ms.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/TqDLtgmN/Screenshot-2025-01-31-103607.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getNetworkPacketloss: {
+      description: 'The getNetworkPacketloss function returns the how much pieces of data got lost when traveling through the network in percentage.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/Kcr8HCgV/Screenshot-2025-01-31-104150.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     latencyTestURL: {
