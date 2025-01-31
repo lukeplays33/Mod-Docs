@@ -245,8 +245,8 @@ let netowrkInfo = {
       displayFile: 'https://i.ibb.co/dqWw5qX/Screenshot-2025-01-30-094909.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    getEstimatedLoadingTime: {
-      description: 'The getEstimatedLoadingTime returns the estimated tim in ms itll take to load files <br> THis is done by tracking the loading speed of 1 image, 2 videos and 2 websites.',
+    getMaxDownlinkSpeed: {
+      description: 'The getMaxDownlinkSpeed returns the max speed of wich files or messages arrive on your device in Mbps.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -259,7 +259,41 @@ let netowrkInfo = {
 
       outputValueOptions: ['number'],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/jkpbYqhh/Screenshot-2025-01-30-160316.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/C5yvmssd/Screenshot-2025-01-31-092011.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    getNetworkLatency: {
+      description: 'The getNetworkLatency returns the time it takes from data to pass from one point on a network to another in ms.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['number'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/6JrhFJgR/Screenshot-2025-01-31-092254.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    latencyTestURL: {
+      description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency. <br> Each site may have a different latency or a server that is further away so custom urls may provide more accuracy.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['string'],
+      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/t7FZSqK/Screenshot-2025-01-31-094558.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
