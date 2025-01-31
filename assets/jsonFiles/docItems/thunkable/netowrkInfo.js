@@ -395,7 +395,7 @@ let netowrkInfo = {
     },
 
     latencyCHeckInterval: {
-      description: 'The latencyCHeckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers or a BSOD, slower networks or even a ban from the server.',
+      description: 'The latencyCHeckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server for 10 minutes.<br> If banned you cannot use the module for those 10 minutes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
