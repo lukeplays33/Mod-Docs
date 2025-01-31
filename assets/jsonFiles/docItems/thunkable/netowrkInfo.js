@@ -394,8 +394,8 @@ let netowrkInfo = {
       displayFile: 'https://i.ibb.co/t7FZSqK/Screenshot-2025-01-31-094558.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    latencyCHeckInterval: {
-      description: 'The latencyCHeckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server for 10 minutes.<br> If banned you cannot use the module for those 10 minutes.',
+    latencyCheckInterval: {
+      description: 'The latencyCheckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server for 10 minutes.<br> If banned you cannot use the module for those 10 minutes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
