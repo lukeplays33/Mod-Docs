@@ -250,6 +250,8 @@ list-viewer li {
   background-color: var(--tertiary);
   color: var(--tertiaryTextColor);
 
+  max-width: calc(100% - 16px);
+
   display:flex;
   flex-direction:column;
 
