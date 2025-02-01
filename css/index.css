@@ -596,6 +596,6 @@ widgetbot {
 
   border-radius:200px;
 
-  background-color:var(--primary);
-  color: var(--primaryTextColor);
+  background-color:var(--secondairy);
+  color: var(--secondairyTextColor);
 }

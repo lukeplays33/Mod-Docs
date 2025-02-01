@@ -24,7 +24,7 @@ if (String(window.parent.document.title).includes('Examples')) {
 }
 
 if (String(window.parent.document.title).includes('Compatibility')) {
-    for (i of json.platforms) {
+    for (i of ['Platform Compatability'].concat(json.platforms)) {
         let item = document.createElement('p');
         item.innerHTML = i;
 
