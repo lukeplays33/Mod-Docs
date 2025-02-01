@@ -7,12 +7,11 @@ let netowrkInfo = {
     },
 
     moduleInformation: {
-      Description: 'The batteryInfo module allows you to gather information about the users device its battery.',
-      UseCases: ['Gather battery info.'],
+      Description: 'The networkInfo module allows you to gather information about the users network.',
+      UseCases: ['Gather network info.'],
       Platforms: ['Android (partially)', 'ChromeOS', 'Web'],
-      Required: ['A battery :)'],
+      Required: ['A network connection'],
       Languages: ['Javascript', 'Thunkable Blockly'],
-      Connection: 'Required',
     },
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
