@@ -581,3 +581,8 @@ widgetbot {
 #InstallationHR {
   margin-top:0px;
 }
+
+#platformsCompChart {
+  display:flex;
+  flex-direction:row;
+}

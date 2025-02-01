@@ -5,8 +5,10 @@ import { createInfoTable } from "./utils.js";
 
 let faqList = document.getElementById('faqs');
 
-let des;
+let des, i;
 let docAboutInfo;
+
+let platformsCompChart = document.getElementById('platformsCompChart');
 
 try {
     docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
@@ -14,11 +16,22 @@ try {
 
 let json = String(window.parent.document.title).includes('FAQ') ? faqItems ://page is used for multiple times
     String(window.parent.document.title).includes('Notes') ? docAboutInfo.notes :
-        String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks : 
-        String(window.parent.document.title).includes('Compatibility') ? docAboutInfo.compatabilityChart : troubleShooting;
+        String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks :
+            String(window.parent.document.title).includes('Compatibility') ? docAboutInfo.compatabilityChart : troubleShooting;
 
 if (String(window.parent.document.title).includes('Examples')) {
     faqList.setAttribute('actionbutton', 'open_in_new');
+}
+
+if (String(window.parent.document.title).includes('Compatibility')) {
+    for (i of Object.keys(json.platforms)) {
+        let item = document.createElement('p');
+        item.innerHTML = i;
+
+        platformsCompChart.appendChild(item);
+    }
+} else {
+    platformsCompChart.remove();
 }
 
 faqList.listItems = Object.keys(json);
