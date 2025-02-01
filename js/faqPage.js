@@ -38,7 +38,7 @@ faqList.addEventListener('itemSelected', function (e) {
             this.parentNode.getElementsByClassName('selectedItem')[0].classList.remove('selectedItem'); // removes the selectedItem class from the other unclosed item
         } catch (e) { }
 
-        des = document.createElement('li');
+        des = document.createElement('p');
         des.classList.add('des');
 
         if (String(window.parent.document.title).includes('Notes')) {
