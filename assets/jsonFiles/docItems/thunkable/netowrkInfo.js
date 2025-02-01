@@ -43,6 +43,29 @@ let netowrkInfo = {
       },
     },
 
+    compatabilityChart: { // allows the developer to introduce a more advanced compatability chart
+      connectionChanged: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      networkInformationChanged: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      latencyChanged: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkInfo: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getRandomizedmDNS: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getListeningPort: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getProtocol: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkType: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getDownlinkSpeed: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getRoundTripTime: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkType: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkQuality: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getMaxDownlinkSpeed: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkLatency: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkJitter: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      getNetworkPacketloss: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      startLatencyCheck: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      stopLatencyCheck: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      latencyTestURL: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+      latencyCheckInterval: ['Android 4.4+', 'ChromeOS 4.4+', 'X', 'X', 'Chrome 4.4+', 'X', 'X', 'Edge 4.4+', 'Opera 4.4+'],
+    }
+
   },
   contents: {
     connectionChanged: {

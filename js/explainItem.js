@@ -16,6 +16,7 @@ let install = document.getElementById('install');
 let guide = document.getElementById('guide');
 let notes = document.getElementById('notes');
 let examples = document.getElementById('examples');
+let platformsChart = document.getElementById('platformsChart');
 
 let items = document.getElementById('docs');
 
@@ -29,7 +30,6 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 
 let informationPage = document.getElementById('information');
 
-let additionalLinksAndGuides = document.getElementById('additionalLinksAndGuides');
 let quickLinksList = document.getElementById('quickLinksList');
 
 install.innerHTML = itemJSON.about.installation.link;
@@ -139,6 +139,12 @@ repoName.addEventListener('click', function () {
 notes.addEventListener('click', function (e) {
     e.stopPropagation();
     parent.document.title = parent.document.title + ' Notes';
+    parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
+});
+
+platformsChart.addEventListener('click', function (e) {
+    e.stopPropagation();
+    parent.document.title = parent.document.title + ' Compatibility';
     parent.document.getElementById('pages').src = '../Mod-Docs/docPages/faq.html';
 });
 

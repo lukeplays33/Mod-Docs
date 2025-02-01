@@ -5,24 +5,21 @@ import { createInfoTable } from "./utils.js";
 
 let faqList = document.getElementById('faqs');
 
-
+let des;
 let docAboutInfo;
 
 try {
-
     docAboutInfo = docsItemsJson[window.sessionStorage.getItem('docItem')].items[window.sessionStorage.getItem('explainItem')].about;
-
 } catch (e) { }
 
 let json = String(window.parent.document.title).includes('FAQ') ? faqItems ://page is used for multiple times
     String(window.parent.document.title).includes('Notes') ? docAboutInfo.notes :
-        String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks : troubleShooting;
+        String(window.parent.document.title).includes('Examples') ? docAboutInfo.demoLinks : 
+        String(window.parent.document.title).includes('Compatibility') ? docAboutInfo.compatabilityChart : troubleShooting;
 
 if (String(window.parent.document.title).includes('Examples')) {
     faqList.setAttribute('actionbutton', 'open_in_new');
 }
-
-let des;
 
 faqList.listItems = Object.keys(json);
 
@@ -36,22 +33,22 @@ faqList.addEventListener('itemSelected', function (e) {
 
     if (String(window.parent.document.title).includes('Examples')) {
         window.open(json[e.detail.value]);
-    } else if(!selectedItem.classList.contains('selectedItem')){
+    } else if (!selectedItem.classList.contains('selectedItem')) {
         try {
-        this.parentNode.getElementsByClassName('selectedItem')[0].classList.remove('selectedItem'); // removes the selectedItem class from the other unclosed item
-        } catch (e) {}
+            this.parentNode.getElementsByClassName('selectedItem')[0].classList.remove('selectedItem'); // removes the selectedItem class from the other unclosed item
+        } catch (e) { }
 
         des = document.createElement('li');
         des.classList.add('des');
 
-        if(String(window.parent.document.title).includes('Notes')) {
+        if (String(window.parent.document.title).includes('Notes')) {
             //des.innerHTML = json[e.detail.value].description;
 
-            des.appendChild(createInfoTable(Object.keys(json[e.detail.value]),json[e.detail.value]));
+            des.appendChild(createInfoTable(Object.keys(json[e.detail.value]), json[e.detail.value]));
         } else {
             des.innerHTML = json[e.detail.value];
         }
-        
+
 
         selectedItem.classList.add('selectedItem');
         selectedItem.after(des);
