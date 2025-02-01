@@ -585,4 +585,17 @@ widgetbot {
 #platformsCompChart {
   display:flex;
   flex-direction:row;
+
+  gap:8px;
+
+  margin-bottom:8px;
+}
+
+#platformsCompChart p {
+  padding: 8px;
+
+  border-radius:200px;
+
+  background-color:var(--primary);
+  color: var(--primaryTextColor);
 }
