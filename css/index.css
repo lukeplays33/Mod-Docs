@@ -599,3 +599,7 @@ widgetbot {
   background-color:var(--secondairy);
   color: var(--secondairyTextColor);
 }
+
+#platformsCompChart p:nth-child(1) {
+  min-width: 150px;
+}
