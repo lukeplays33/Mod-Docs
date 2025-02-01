@@ -77,7 +77,7 @@ let netowrkInfo = {
     },
 
     networkInformationChanged: {
-      description: 'The networkInformationChanged event fires when a change in information about the network has changed.',
+      description: 'The networkInformationChanged event fires when a change in information about the network has been detected.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -94,7 +94,7 @@ let netowrkInfo = {
     },
 
     latencyChanged: {
-      description: 'The latencyChanged event fires when a latency test has completed and latency,jitter and packetloss values hava been calculated.',
+      description: 'The latencyChanged event fires when a latency test has completed and latency, jitter and packetloss values hava been calculated.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
