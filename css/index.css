@@ -602,4 +602,7 @@ widgetbot {
 
 #platformsCompChart p:nth-child(1) {
   min-width: 200px;
+
+  background-color:var(--tertiary);
+  color: var(--tertiaryTextColor);
 }
