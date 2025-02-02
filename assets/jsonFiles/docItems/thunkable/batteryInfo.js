@@ -114,6 +114,23 @@ let batteryInfo = {
       displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    getBatteryInfo: {
+      description: 'The getBatteryInfo function gathers all available information about the battery. <br> Note: When any change event is fired this block needs to be called again to get the updated information.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/wh3GH038/Screenshot-2025-02-02-142039.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     getBatteryLevel: {
       description: 'The getBatteryLevel function returns the current percentage of the battery.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
