@@ -389,7 +389,7 @@ let netowrkInfo = {
     },
 
     latencyTestURL: {
-      description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency. <br> Each site may have a different latency or a server that is further away so custom urls may provide more accuracy.',
+      description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency, jitter and packetloss. <br> Each site may have a different latency, jitter and packetloss or has a server that is further away so custom urls may provide more accuracy.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
