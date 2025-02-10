@@ -1,4 +1,4 @@
-let dynamicIcons = {
+let initPichaiUX = {
   about: {
 
     installation: {
@@ -10,11 +10,11 @@ let dynamicIcons = {
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
 
-      'DynamicIcons are in Beta': {
-        description: "The Dynamic Icons future is a highly experimental future and may not work properly.",
+      'Pichai-UX is in Beta': {
+        description: "Pixhai-UX is a highly experimental design language and may not work properly or look properly. <br> If you have any feedback, please do not hesitate to share!",
         type: 'Beta',
         status: 'Beta Development',
-        for: 'DynamicIcon' // if tied to a specific function or importqant for that one, leave empty to be global.
+        for: 'Pichai-UX' // if tied to a specific function or importqant for that one, leave empty to be global.
       },
     },
 
@@ -42,42 +42,36 @@ let dynamicIcons = {
 
   },
   contents: {
-    generateDynamicIcon: {
-      description: 'Generates a themed icon based on your projects theme..',
+    initialize: {
+      description: 'The initialize function tells Pichai-UX to start loading the design language and apply it to the website.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
-        image: {
+        options: {
           readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '',
-          valueOptions: ['Base 64'], // an array of options telling the developer wich choices are accepted by the input
+          valueOptions: ['contrast'], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: ['Base 64'],
-          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          outputTypes: ['Object'],
+          inputTypes: ['Object'],  // cannot have any value when in events since they cant accept input values
 
-          description: 'The image file needing to be dynamically themed..',
+          description: 'The options property tells Pichai-UX with what options you want to initialize the design language.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
 
-        radius: {
+        "options.contrast": {
           readOnly: false, // default for events, cannot be false for events
 
-          defaultValue: '360',
-          valueOptions: ['number'], // an array of options telling the developer wich choices are accepted by the input
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: [],
-          inputTypes: [],
+          outputTypes: ['number'],
+          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
 
-          description: 'The radius attribute tells pichai-ux in what kind of shape the icon should be generated.',
+          description: 'The options.contrast property allows you to set the contrast of the generated theme.',
 
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        "Things to keep in mind": {
-          'Recommended image size': '224px by 224px', // default for events, cannot be false for events
-
-
+          accessCode: "options.contrast", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
       },
 
@@ -96,4 +90,4 @@ let dynamicIcons = {
   },
 }
 
-export { dynamicIcons };
+export { initPichaiUX };

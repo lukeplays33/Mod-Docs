@@ -7,11 +7,15 @@ import { DnD } from './docItems/thunkable/DnD.js';
 import { batteryInfo } from './docItems/thunkable/batteryInfo.js';
 import { netowrkInfo } from './docItems/thunkable/netowrkInfo.js';
 
+import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
+
 let docsItemsJson = {
   /*
   "Pichai_UX": {
     description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale to use.',
     items: {
+    'Initlializing Pichai-UX': initPichaiUX,
+    "Icons and Images": 'Type: divider', // tells the list to display this item as a divider
       "DynamicIcons" : dynamicIcons,
 
     }
