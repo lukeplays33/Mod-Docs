@@ -73,6 +73,20 @@ let initPichaiUX = {
 
           accessCode: "options.contrast", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
+
+        "options.wallpaperBlur": {
+          readOnly: false, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['number'],
+          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
+
+          description: 'The options.wallpaperBlur property allows you to set the wallpaper blur of the site.',
+
+          accessCode: "options.wallpaperBlur", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
