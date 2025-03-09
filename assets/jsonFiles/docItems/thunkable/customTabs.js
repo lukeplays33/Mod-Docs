@@ -52,7 +52,7 @@ let customTabs = {
                     outputTypes: ['number'],
                     inputTypes: [],  // cannot have any value when in events since they cant accept input values
           
-                    description: 'The id of the window that has been opened.',
+                    description: 'The id of the window that has been opened. <br> This is a number that is unique to each window that is opened and is required to edit windows or tabs',
           
                     accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
                   },
