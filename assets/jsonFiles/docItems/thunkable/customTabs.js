@@ -52,7 +52,7 @@ let customTabs = {
                     outputTypes: ['number'],
                     inputTypes: [],  // cannot have any value when in events since they cant accept input values
           
-                    description: 'The id of the window that has been opened. <br> This is a number that is unique to each window that is opened and is required to edit windows or tabs',
+                    description: 'The id of the window that has been opened. <br> This is a number that is unique to each window that is opened and is required to edit windows or tabs.',
           
                     accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
                   },
@@ -69,6 +69,37 @@ let customTabs = {
             outputValueOptions: [],
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
             displayFile: 'https://i.ibb.co/YBBJ8shW/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+          },
+
+          windowClosed: {
+            description: 'The windowClosed event fires when the window has been closed programmatically.',
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+                windowID: {
+                    readOnly: true, // default for events, cannot be false for events
+          
+                    defaultValue: '',
+                    valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+          
+                    outputTypes: ['number'],
+                    inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          
+                    description: 'The id of the window that has been closed.',
+          
+                    accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+                  },
+
+            },
+      
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen: true,
+              play: false,
+              console: false,
+              viewCode: false,
+            },
+      
+            outputValueOptions: [],
+            type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+            displayFile: 'https://ibb.co/G3c8mrS9https://ibb.co/YTNn8YQD', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
       openWindow: {
