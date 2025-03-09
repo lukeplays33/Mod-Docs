@@ -40,6 +40,37 @@ let customTabs = {
   
     },
     contents: {
+        windowOpened: {
+            description: 'The windowOpened event fires when a new window or tab has been opened.',
+            variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+                window: {
+                    readOnly: true, // default for events, cannot be false for events
+          
+                    defaultValue: '',
+                    valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+          
+                    outputTypes: ['number'],
+                    inputTypes: [],  // cannot have any value when in events since they cant accept input values
+          
+                    description: 'The id of the window that has been opened.',
+          
+                    accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+                  },
+
+            },
+      
+            controls: { // tells the docs page to display controls for displayFile
+              fullscreen: true,
+              play: false,
+              console: false,
+              viewCode: false,
+            },
+      
+            outputValueOptions: [],
+            type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+            displayFile: 'https://i.ibb.co/YBBJ8shW/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+          },
+
       openWindow: {
         description: 'The openWindow function opens a new url in a new tab or window.',
         variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
