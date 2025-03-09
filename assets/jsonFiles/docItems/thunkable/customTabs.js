@@ -128,6 +128,36 @@ let customTabs = {
         type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: 'https://i.ibb.co/mCVHzDr1/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
+
+      closeWindow: {
+        description: 'The closeWindow function closes the window with the given ID.',
+        variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+            windowID: {
+                readOnly: false, // default for events, cannot be false for events
+      
+                defaultValue: '',
+                valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+      
+                outputTypes: [],
+                inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
+      
+                description: 'The ID of the window to close.',
+      
+                accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+              },
+        },
+  
+        controls: { // tells the docs page to display controls for displayFile
+          fullscreen: true,
+          play: false,
+          console: false,
+          viewCode: false,
+        },
+  
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/846fkQZb/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
     //quickLinks: [], //e.g. for quickly navigating to a tutorial
   }
