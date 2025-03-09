@@ -6,6 +6,7 @@ import { deviceInfo } from './docItems/thunkable/deviceInfo.js';
 import { DnD } from './docItems/thunkable/DnD.js';
 import { batteryInfo } from './docItems/thunkable/batteryInfo.js';
 import { netowrkInfo } from './docItems/thunkable/netowrkInfo.js';
+import { customTabs } from './docItems/thunkable/customTabs.js';
 
 import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
 
@@ -41,10 +42,13 @@ let docsItemsJson = {
       "Screen Events": screen,
       "Device Info": deviceInfo,
       "Battery Info": batteryInfo,
+      "Network Info": netowrkInfo,
 
       "Web Services": 'Type: divider', // tells the list to display this item as a divider
       "ImgBB": imgBB,
-      "Network Info": netowrkInfo,
+
+      "Browser Services": 'Type: divider', // tells the list to display this item as a divider
+      "Custom Tabs": customTabs,
 
       //"Other": 'Type: divider', // tells the list to display this item as a divider
       //"Advanced Custom Element": DnD,
