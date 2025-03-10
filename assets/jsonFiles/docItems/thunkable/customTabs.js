@@ -99,7 +99,7 @@ let customTabs = {
       
             outputValueOptions: [],
             type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-            displayFile: 'https://ibb.co/G3c8mrS9https://ibb.co/YTNn8YQD', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+            displayFile: 'https://i.ibb.co/k6Gb0kB3/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
           },
 
       openWindow: {
@@ -217,7 +217,7 @@ let customTabs = {
   
         outputValueOptions: [],
         type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-        displayFile: 'https://ibb.co/1tQR4X8H', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        displayFile: 'https://i.ibb.co/RkbQJ6zL/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
     },
     //quickLinks: [], //e.g. for quickly navigating to a tutorial
