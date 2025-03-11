@@ -17,7 +17,7 @@ main {
   width: 100%;
 }
 
-#draawer, #calculator {
+#draawer, #calculator, main {
   height: calc(100% - 57px);
 }
 
@@ -48,9 +48,6 @@ main {
 
 #calculator {
   width: 100%;
-  height: calc(100% - 74px);
-
-  display: flex;
 }
 
 view-pager {
