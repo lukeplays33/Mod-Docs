@@ -72,7 +72,7 @@ let customTabs = {
           },
 
           windowClosed: {
-            description: 'The windowClosed event fires when the window has been closed programmatically.',
+            description: 'The windowClosed event fires when the window has been closed programmatically or by the user.',
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
                 windowID: {
                     readOnly: true, // default for events, cannot be false for events
