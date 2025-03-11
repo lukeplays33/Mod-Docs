@@ -13,8 +13,12 @@ body,
 html,
 main {
 
-  height: calc(100% - 57px);
+  height: 100%;
   width: 100%;
+}
+
+body {
+  height: calc(100% - 57px);
 }
 
 #bottom_nav,
