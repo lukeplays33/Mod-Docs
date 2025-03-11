@@ -237,8 +237,8 @@ let customTabs = {
       displayFile: 'https://i.ibb.co/39mfCn5Q/Screenshot-2025-03-11-110528.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    'isWindowCLosed?': {
-      description: 'The isWindowCLosed? function checks if a certain window has been closed or not.',
+    'isWindowClosed?': {
+      description: 'The isWindowClosed? function checks if a certain window has been closed or not.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         windowID: {
           readOnly: false, // default for events, cannot be false for events
