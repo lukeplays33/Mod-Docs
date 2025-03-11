@@ -17,6 +17,10 @@ main {
   width: 100%;
 }
 
+main {
+  overflow-y:auto;
+}
+
 #bottom_nav,
 #docs {
   position: fixed;
