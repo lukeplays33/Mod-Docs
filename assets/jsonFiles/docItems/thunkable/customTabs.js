@@ -219,6 +219,23 @@ let customTabs = {
         type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: 'https://i.ibb.co/RkbQJ6zL/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
+
+      allOpenWindows: {
+        description: 'The allOpenWindows function returns an array containing all IDs of all open windows.',
+        variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+        },
+  
+        controls: { // tells the docs page to display controls for displayFile
+          fullscreen: true,
+          play: false,
+          console: false,
+          viewCode: false,
+        },
+  
+        outputValueOptions: ['array'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/39mfCn5Q/Screenshot-2025-03-11-110528.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
     //quickLinks: [], //e.g. for quickly navigating to a tutorial
   }
