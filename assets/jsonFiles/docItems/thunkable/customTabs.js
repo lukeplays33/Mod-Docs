@@ -246,8 +246,8 @@ let customTabs = {
           defaultValue: '',
           valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
 
-          outputTypes: [],
-          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
+          outputTypes: ['number'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
           description: 'The ID of the window to close.',
 
