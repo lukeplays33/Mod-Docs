@@ -137,7 +137,7 @@ let customTabs = {
           readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '',
-          valueOptions: ['width', 'height', 'left', 'top', 'noopener', 'popup'], // an array of options telling the developer wich choices are accepted by the input
+          valueOptions: ['width', 'height', 'left', 'top', 'noopener', 'popup', 'resizable', 'scrollbars', 'toolbar', 'location', 'status', 'menubar', 'directories'], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: [],
           inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
