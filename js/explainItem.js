@@ -155,7 +155,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    loadDocItem(e.detail.pageIndex);
+    //loadDocItem(e.detail.pageIndex);
 });
 
 function generateCodeWithHighlight(file, format) {
