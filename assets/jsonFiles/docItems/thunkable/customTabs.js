@@ -128,7 +128,7 @@ let customTabs = {
           outputTypes: ['JSON'],
           inputTypes: [],  // cannot have any value when in events since they cant accept input values
 
-          description: 'A refrence to the destroyed window ontaining the window url, target and window features.',
+          description: 'A refrence to the destroyed window containing the window url, target and window features.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
