@@ -68,7 +68,7 @@ let customTabs = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/YBBJ8shW/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/h1Ttv9rb/Screenshot-2025-03-13-100230.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     windowClosed: {
@@ -99,7 +99,7 @@ let customTabs = {
 
       outputValueOptions: [],
       type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/k6Gb0kB3/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/ccSMN9nZ/Screenshot-2025-03-13-100316.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     openWindow: {
@@ -157,7 +157,7 @@ let customTabs = {
 
       outputValueOptions: [],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/mCVHzDr1/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/sd2K0RFQ/Screenshot-2025-03-13-100414.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     closeWindow: {
@@ -187,7 +187,7 @@ let customTabs = {
 
       outputValueOptions: [],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/846fkQZb/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/bg2RrKv6/Screenshot-2025-03-13-100548.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     reopenWindow: {
@@ -217,7 +217,7 @@ let customTabs = {
 
       outputValueOptions: [],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/RkbQJ6zL/download.jpg', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      displayFile: 'https://i.ibb.co/nqLGqTyp/Screenshot-2025-03-13-100451.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     allOpenWindows: {
