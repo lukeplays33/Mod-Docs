@@ -191,7 +191,7 @@ let customTabs = {
     },
 
     reopenWindow: {
-      description: 'The reopenWindow function allows you to re-open a window that has been closed previously.',
+      description: 'The reopenWindow function allows you to re-open a window that has been closed previously. <br> Please note: that this does not reopen the window on where the user has been on when they closed the window but rather re-opens the window that was previously opened progrmmatically.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         windowID: {
           readOnly: false, // default for events, cannot be false for events
