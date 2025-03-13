@@ -123,7 +123,7 @@ let customTabs = {
           readOnly: false, // default for events, cannot be false for events
 
           defaultValue: '_blank',
-          valueOptions: ['_blank', '_self', '_parent', '_top'], // an array of options telling the developer wich choices are accepted by the input
+          valueOptions: ['_blank', '_parent', '_top'], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: [],
           inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
