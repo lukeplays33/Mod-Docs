@@ -102,6 +102,51 @@ let customTabs = {
       displayFile: 'https://i.ibb.co/ccSMN9nZ/Screenshot-2025-03-13-100316.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
+    windowDestroyed: {
+      description: 'The windowDestroyed event fires when the window has been destroyed programmatically.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+        windowID: {
+          readOnly: true, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['number'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+          description: 'The id of the window that has been destroyed.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+
+        refrence: {
+          readOnly: true, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: ['JSON'],
+          inputTypes: [],  // cannot have any value when in events since they cant accept input values
+
+          description: 'A refrence to the destroyed window ontaining the window url, target and window features.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/3mmN4HN9/Screenshot-2025-03-13-104942.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
     openWindow: {
       description: 'The openWindow function opens a new url in a new tab or window.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
@@ -190,8 +235,8 @@ let customTabs = {
       displayFile: 'https://i.ibb.co/bg2RrKv6/Screenshot-2025-03-13-100548.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
-    reopenWindow: {
-      description: 'The reopenWindow function allows you to re-open a window that has been closed previously. <br> Please note: that this does not reopen the window on where the user has been on when they closed the window but rather re-opens the window that was previously opened progrmmatically.',
+    destroyWindowRefrence: {
+      description: 'The destroyWindowRefrence function destroys and closes the window, after the window is destroyed it can no longer be opened using the "reopenWindow" function.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         windowID: {
           readOnly: false, // default for events, cannot be false for events
@@ -202,7 +247,37 @@ let customTabs = {
           outputTypes: [],
           inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
 
-          description: 'The ID of the window to close.',
+          description: 'The ID of the window to destroy.',
+
+          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: [],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/W4MzLfjX/Screenshot-2025-03-13-103034.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    reopenWindow: {
+      description: 'The reopenWindow function allows you to re-open a window that has been closed previously. <br> Please note: that this does not re-open the window on where the user has been on when they closed the window but rather re-opens the window that was previously opened progrmmatically.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+        windowID: {
+          readOnly: false, // default for events, cannot be false for events
+
+          defaultValue: '',
+          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
+
+          outputTypes: [],
+          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
+
+          description: 'The ID of the window to re-open.',
 
           accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
@@ -235,6 +310,23 @@ let customTabs = {
       outputValueOptions: ['array'],
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/39mfCn5Q/Screenshot-2025-03-11-110528.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+    },
+
+    closedWindows: {
+      description: 'The closedWindows function returns an array containing all IDs of all closed windows.',
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      outputValueOptions: ['array'],
+      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+      displayFile: 'https://i.ibb.co/KzFDqM2m/Screenshot-2025-03-13-101857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
     },
 
     'isWindowClosed?': {
