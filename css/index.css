@@ -63,6 +63,10 @@ view-pager * :not(.items, .chipIcon) {
 
 #explainTheItem {
   height: 100%;
+
+  display:flex;
+
+  justify-content: center;
 }
 
 iframe {
@@ -362,6 +366,8 @@ header a {
   grid-template-columns: 40% 60%;
 
   gap: 8px;
+
+  margin-right:8px;
 }
 
 accordion-dropdown h5,
