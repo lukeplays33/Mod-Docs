@@ -19,7 +19,7 @@ let settings = {
 
         globalMessage: { // allows the developer to set global support messages thatll appear above the download link.
             enabled: true,
-            message: "Hey there, Thank you so much for taking a look at my projects I hope you like them! <br> If you like what I'm doing you can donate something to me to help keep me motivated and keep the projects going! - dreamForge",
+            message: "Hey there, Thank you so much for taking a look at our projects I hope you like them! <br> If you like what where doing you can donate something to us to help keep us motivated and the projects going! - dreamForge",
         }
     },
     blog: { // quick links for blog posts that can be either normal or for support (support guides, preverbally support blog posts)
