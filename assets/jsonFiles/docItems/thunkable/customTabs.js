@@ -10,7 +10,7 @@ let customTabs = {
       Description: 'The Custom Tabs module gives you some extra control on opening windows on desktop. It allows you to open custom browser tabs or windows with custom sizes or positions.',
       UseCases: ['Open custom browser tabs or windows.'],
       Platforms: ['Web'],
-      Required: ['A URL to open'],
+      Required: ['A URL to open', 'A dekstop device'],
       Languages: ['Javascript', 'Thunkable Blockly'],
       Connection: 'Not-Required',
     },
