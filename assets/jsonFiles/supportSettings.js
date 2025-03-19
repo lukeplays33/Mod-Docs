@@ -19,7 +19,7 @@ let settings = {
 
         globalMessage: { // allows the developer to set global support messages thatll appear above the download link.
             enabled: true,
-            message: "Hey there, Thank you so much for taking a look at my module I hope you like it! <br> If you like what I'm doing you can donate something to me to help keep me motivated you'll help the whole Thunkable community by doing so!",
+            message: "Hey there, Thank you so much for taking a look at my projects I hope you like them! <br> If you like what I'm doing you can donate something to me to help keep me motivated and keep the projects going! <br> Thank you so much for your support! <br> - dreamForge",
         }
     },
     blog: { // quick links for blog posts that can be either normal or for support (support guides, preverbally support blog posts)
