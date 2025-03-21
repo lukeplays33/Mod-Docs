@@ -35,7 +35,7 @@ let quickLinksList = document.getElementById('quickLinksList');
 //install.innerHTML = itemJSON.about.installation.link;
 //install.href = itemJSON.about.installation.link;
 
-let moduleInformationTab = document.getElementById('moduleInformationTab');
+//let moduleInformationTab = document.getElementById('moduleInformationTab');
 
 let globalDonateMessage = document.getElementById('globalDonateMessage');
 
@@ -48,19 +48,19 @@ let globalDonateMessage = document.getElementById('globalDonateMessage');
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
-for(i of Object.keys(itemJSON.about.moduleInformation).sort()) {
-    if (itemJSON.about.moduleInformation[i].length == 0) {
-        moduleInformationTab.remove();
-        break;
-    } else {
-        let item = document.createElement('article');
-        item.classList.add('content', 'infoDocs');
-
-        item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
-
-        moduleInformationTab.appendChild(item);
-    }
-}
+//for(i of Object.keys(itemJSON.about.moduleInformation).sort()) {
+//    if (itemJSON.about.moduleInformation[i].length == 0) {
+//        moduleInformationTab.remove();
+//        break;
+//    } else {
+//        let item = document.createElement('article');
+//        item.classList.add('content', 'infoDocs');
+//
+ //       item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
+//
+//        moduleInformationTab.appendChild(item);
+//    }
+//}
 
 for (i of items.children) { // give all tabbar elements a href so we can connect to the viewpager
     let cloneTemplate = docTemplate.content.cloneNode(true);
