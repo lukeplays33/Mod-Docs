@@ -335,6 +335,7 @@ informationList.addEventListener('itemSelected', function (e) {
         des = document.createElement('p');
         des.classList.add('des');
 
+        alert(e.detail.value)
         if (String(e.detail.value) == 'View general information') {
             //des.innerHTML = json[e.detail.value].description;
 
