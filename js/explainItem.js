@@ -5,14 +5,14 @@ import { createInfoTable } from './utils.js';
 
 let i;
 
-let repoName = document.getElementById('repoName');
-let developer = document.getElementById('developer');
-let version = document.getElementById('version');
-let status = document.getElementById('status');
-let openSource = document.getElementById('openSource');
-let license = document.getElementById('license');
+//let repoName = document.getElementById('repoName');
+//let developer = document.getElementById('developer');
+//let version = document.getElementById('version');
+//let status = document.getElementById('status');
+//let openSource = document.getElementById('openSource');
+//let license = document.getElementById('license');
 
-let install = document.getElementById('install');
+//let install = document.getElementById('install');
 let guide = document.getElementById('guide');
 let notes = document.getElementById('notes');
 let examples = document.getElementById('examples');
@@ -39,12 +39,12 @@ let moduleInformationTab = document.getElementById('moduleInformationTab');
 
 let globalDonateMessage = document.getElementById('globalDonateMessage');
 
-repoName.innerHTML = itemJSON.about.repo.repoName;
-openSource.innerHTML = itemJSON.about.repo.openSource;
-developer.innerHTML = itemJSON.about.repo.developer;
-version.innerHTML = itemJSON.about.repo.version;
-status.innerHTML = itemJSON.about.repo.status;
-license.innerHTML = itemJSON.about.repo.license.name;
+//repoName.innerHTML = itemJSON.about.repo.repoName;
+//openSource.innerHTML = itemJSON.about.repo.openSource;
+//developer.innerHTML = itemJSON.about.repo.developer;
+//version.innerHTML = itemJSON.about.repo.version;
+//status.innerHTML = itemJSON.about.repo.status;
+//license.innerHTML = itemJSON.about.repo.license.name;
 
 items.listItems = Object.keys(itemJSON.contents).reverse();
 
@@ -113,28 +113,28 @@ informationPage.href = '#information'; // needs to have a href after creation
 
 items.children[0].click();
 
-license.addEventListener('click', function () {
-    window.open(itemJSON.about.repo.license.link)
-});
+//license.addEventListener('click', function () {
+//    window.open(itemJSON.about.repo.license.link)
+//});
 
-install.addEventListener('click', function (e) {
-    navigator.clipboard.writeText(install.innerHTML);
-    install.innerHTML = 'Copied';
-
-    window.setTimeout(() => {
-        install.innerHTML = itemJSON.about.installation.link;
-    }, 1000)
-
-});
+//install.addEventListener('click', function (e) {
+//    navigator.clipboard.writeText(install.innerHTML);
+//    install.innerHTML = 'Copied';
+//
+//    window.setTimeout(() => {
+//        install.innerHTML = itemJSON.about.installation.link;
+//    }, 1000)
+//
+//});
 
 guide.addEventListener('click', function (e) {
     e.stopPropagation();
     window.open(itemJSON.about.installation.guide);
 });
 
-repoName.addEventListener('click', function () {
-    window.open(itemJSON.about.repo.link);
-});
+//repoName.addEventListener('click', function () {
+//    window.open(itemJSON.about.repo.link);
+//});
 
 notes.addEventListener('click', function (e) {
     e.stopPropagation();
