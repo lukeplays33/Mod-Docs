@@ -334,6 +334,7 @@ informationList.addEventListener('itemSelected', function (e) {
         des = document.createElement('p');
         des.classList.add('des');
 
+        alert(e.detail.value)
         if (String(e.detail.value) == 'infoLI') {
             //des.innerHTML = json[e.detail.value].description;
 
