@@ -336,7 +336,7 @@ informationList.addEventListener('itemSelected', function (e) {
         des.classList.add('des');
 
         alert(e.detail.value)
-        if (String(e.detail.value) == 'View general information') {
+        if (String(e.detail.value) == 'infoLI') {
             //des.innerHTML = json[e.detail.value].description;
 
             des.appendChild(createInfoTable(Object.keys(itemJSON.about.moduleInformation).sort(), itemJSON.about.moduleInformation));
