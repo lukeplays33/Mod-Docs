@@ -31,6 +31,7 @@ let itemJSON = docsItemsJson[window.sessionStorage.getItem('docItem')].items[win
 let informationPage = document.getElementById('information');
 
 let quickLinksList = document.getElementById('quickLinksList');
+let informationList = document.getElementById('informationList');
 
 //install.innerHTML = itemJSON.about.installation.link;
 //install.href = itemJSON.about.installation.link;
@@ -56,7 +57,7 @@ items.listItems = Object.keys(itemJSON.contents).reverse();
 //        let item = document.createElement('article');
 //        item.classList.add('content', 'infoDocs');
 //
- //       item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
+//       item.innerHTML = `${i}: ${itemJSON.about.moduleInformation[i]}`;
 //
 //        moduleInformationTab.appendChild(item);
 //    }
@@ -84,7 +85,7 @@ if (settings.donations.globalMessage.enabled) {
 }
 
 if (itemJSON.hasOwnProperty('quickLinks') || itemJSON.quickLinks) {
-    for(i of Object.keys(itemJSON.quickLinks)) {
+    for (i of Object.keys(itemJSON.quickLinks)) {
         let item = document.createElement('li');
         item.innerHTML = i;
         item.id = i;
@@ -315,4 +316,37 @@ window.addEventListener('pagehide', function () { // deletes the params after le
     const params = new URLSearchParams(window.location.search);
     params.delete('page');
     parent.history.pushState(null, '', '?' + params.toString()); // allows deeplinking to pages.
+});
+
+informationList.addEventListener('itemSelected', function (e) {
+    let des;
+
+    let selectedItem = document.getElementById(e.detail.value);
+
+    try {
+        des.remove();
+    } catch (e) { }
+
+    if (!selectedItem.classList.contains('selectedItem')) {
+        try {
+            this.parentNode.getElementsByClassName('selectedItem')[0].classList.remove('selectedItem'); // removes the selectedItem class from the other unclosed item
+        } catch (e) { }
+
+        des = document.createElement('p');
+        des.classList.add('des');
+
+        if (String(e.detaiol.value == 'View general information') {
+            //des.innerHTML = json[e.detail.value].description;
+
+            des.appendChild(createInfoTable(Object.keys(itemJSON.about.moduleInformation).sort(), itemJSON.about.moduleInformation));
+        } else {
+            des.innerHTML = json[e.detail.value];
+        }
+
+
+        selectedItem.classList.add('selectedItem');
+        selectedItem.after(des);
+    } else {
+        selectedItem.classList.remove('selectedItem'); // allows the user to collapse the item again
+    }
 });
