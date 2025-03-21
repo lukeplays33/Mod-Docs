@@ -3,7 +3,7 @@ import { settings } from "../assets/jsonFiles/supportSettings.js";
 
 import { createInfoTable } from './utils.js';
 
-let i;
+let i, des;
 
 //let repoName = document.getElementById('repoName');
 //let developer = document.getElementById('developer');
@@ -319,7 +319,6 @@ window.addEventListener('pagehide', function () { // deletes the params after le
 });
 
 informationList.addEventListener('itemSelected', function (e) {
-    let des;
 
     let selectedItem = document.getElementById(e.detail.value);
 
