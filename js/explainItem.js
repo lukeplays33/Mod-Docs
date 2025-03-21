@@ -338,7 +338,11 @@ informationList.addEventListener('itemSelected', function (e) {
             //des.innerHTML = json[e.detail.value].description;
 
             des.appendChild(createInfoTable(Object.keys(itemJSON.about.moduleInformation).sort(), itemJSON.about.moduleInformation));
-        } else {
+        } else if (String(e.detail.value) == 'repoLI') {
+            //des.innerHTML = json[e.detail.value].description;
+
+            des.appendChild(createInfoTable(Object.keys(itemJSON.about.repo).sort(), itemJSON.about.repo));
+        } {
             des.innerHTML = json[e.detail.value];
         }
 
