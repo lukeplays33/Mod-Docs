@@ -32,8 +32,8 @@ let informationPage = document.getElementById('information');
 
 let quickLinksList = document.getElementById('quickLinksList');
 
-install.innerHTML = itemJSON.about.installation.link;
-install.href = itemJSON.about.installation.link;
+//install.innerHTML = itemJSON.about.installation.link;
+//install.href = itemJSON.about.installation.link;
 
 let moduleInformationTab = document.getElementById('moduleInformationTab');
 
