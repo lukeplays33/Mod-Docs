@@ -267,7 +267,8 @@ informationList.addEventListener('itemSelected', function (e) {
     let selectedItem = document.getElementById(e.detail.value);
 
     let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' : 
-    String(e.detail.value) == 'repoLI' ? 'repo' : 'installation'
+    String(e.detail.value) == 'repoLI' ? 'repo' : 
+    String(e.detail.value) == 'requlatoryInfo' ? 'repo.license' : 'installation'
 
     try {
         des.remove();
