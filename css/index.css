@@ -588,6 +588,10 @@ widgetbot {
   width: calc(100% - 16px);
 }
 
+#informationList li {
+  width:100%;
+}
+
 #InstallationHR {
   margin-top:0px;
 }
