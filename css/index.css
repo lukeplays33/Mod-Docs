@@ -588,7 +588,7 @@ widgetbot {
   width: calc(100% - 16px);
 }
 
-#informationList li {
+#informationList .des {
   width:100%;
 }
 
