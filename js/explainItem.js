@@ -322,6 +322,9 @@ informationList.addEventListener('itemSelected', function (e) {
 
     let selectedItem = document.getElementById(e.detail.value);
 
+    let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' : 
+    String(e.detail.value) == 'repoLI' ? 'repo' : 'installation'
+
     try {
         des.remove();
     } catch (e) { }
@@ -334,15 +337,7 @@ informationList.addEventListener('itemSelected', function (e) {
         des = document.createElement('p');
         des.classList.add('des');
 
-        if (String(e.detail.value) == 'infoLI') {
-            //des.innerHTML = json[e.detail.value].description;
-
-            des.appendChild(createInfoTable(Object.keys(itemJSON.about.moduleInformation).sort(), itemJSON.about.moduleInformation));
-        } else if (String(e.detail.value) == 'repoLI') {
-            //des.innerHTML = json[e.detail.value].description;
-
-            des.appendChild(createInfoTable(Object.keys(itemJSON.about.repo).sort(), itemJSON.about.repo));
-        }
+        des.appendChild(createInfoTable(Object.keys(itemJSON.about[jsonItem]).sort(), itemJSON.about[jsonItem]));
 
 
         selectedItem.classList.add('selectedItem');
