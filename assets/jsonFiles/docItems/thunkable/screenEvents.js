@@ -46,7 +46,7 @@ let screen = {
       status: "Alive", // deperecated/ no-longer maintained or alive or custom
     },
 
-    licensing: {
+    licensing: { // allows developers to write about the repo it's license and legal information
       license: 'Apache 2.0',
       licenseLink: 'https://httpd.apache.org/docs/2.4/license.html'
 },
