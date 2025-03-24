@@ -31,14 +31,15 @@ let customTabs = {
       developer: 'dreamForge',
       version: '0.0.1',
       status: "Alive", // deperecated/ no-longer maintained or alive or custom
+    },
 
-      license: {
-        name: 'Apache 2.0',
-        link: 'https://httpd.apache.org/docs/2.4/license.html'
-      },
+    licensing: {
+      license: 'Apache 2.0',
+      licenseLink: 'https://httpd.apache.org/docs/2.4/license.html'
     },
 
   },
+
   contents: {
     windowOpened: {
       description: 'The windowOpened event fires when a new window or tab has been opened.',

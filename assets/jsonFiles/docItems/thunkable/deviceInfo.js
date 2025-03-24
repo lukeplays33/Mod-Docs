@@ -37,11 +37,11 @@ let deviceInfo = {
       developer: 'dreamForge',
       version: '0.0.1',
       status: "Alive", // deperecated/ no-longer maintained or alive or custom
+    },
 
-      license: {
-        name: 'Apache 2.0',
-        link: 'https://httpd.apache.org/docs/2.4/license.html'
-      },
+    licensing: {
+      license: 'Apache 2.0',
+      licenseLink: 'https://httpd.apache.org/docs/2.4/license.html'
     },
 
   },
@@ -452,7 +452,7 @@ let deviceInfo = {
       outputValueOptions: ['string'], // none for events
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'https://i.ibb.co/PDTh0Xy/Screenshot-2025-01-21-143605.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-    }, 
+    },
 
     "getCountryName": {
       description: 'The getCountryName function returns the country name of the device this is based on the system language the user or manufacturer has set.',
