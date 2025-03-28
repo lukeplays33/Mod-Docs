@@ -100,11 +100,11 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
-    parent.document.body.scrollTo(0,0); // scroll to top when changing page to avoid a weird bug only found in od Docs
     loadDocItem(e.detail.pageIndex);
 });
 
 function generateCodeWithHighlight(file, format) {
+
     return `<!DOCTYPE html>
 <html lang="en">
 
@@ -133,6 +133,8 @@ ${file}
 }
 
 function loadDocItem(index) {
+    parent.document.body.scrollTo(0,0); // scroll to top when changing page to avoid a weird bug only found in od Docs
+    
     let i;
 
     let itemName = Object.keys(itemJSON.contents)[index];
