@@ -73,7 +73,7 @@ iframe {
   border-width: 0px;
 
   height: 100%;
-  width: 100%;
+  width: calc(100% - 8px);
 
   margin: 8px;
   margin-left: 0px;
@@ -368,8 +368,6 @@ header a {
   grid-template-columns: 40% 60%;
 
   gap: 8px;
-
-  margin-right:8px;
 }
 
 accordion-dropdown h5,
