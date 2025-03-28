@@ -100,6 +100,7 @@ examples.addEventListener('click', function (e) {
 });
 
 viewPager.addEventListener('pageChange', function (e) {
+    parent.document.scrollTo(0,0); // scroll to top when changing page to avoid a weird bug only found in od Docs
     loadDocItem(e.detail.pageIndex);
 });
 
