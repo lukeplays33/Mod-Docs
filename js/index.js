@@ -2,7 +2,60 @@ import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.i
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
-let pichai = new PichaiUX();
+let pichai = new PichaiUX({
+  source: [
+    [
+      221,
+      163,
+      110
+    ],
+    [
+      39,
+      45,
+      33
+    ],
+    [
+      137,
+      99,
+      66
+    ],
+    [
+      94,
+      71,
+      48
+    ],
+    [
+      134,
+      152,
+      142
+    ],
+    [
+      95,
+      116,
+      80
+    ],
+    [
+      150,
+      167,
+      107
+    ],
+    [
+      78,
+      96,
+      94
+    ],
+    [
+      179,
+      71,
+      40
+    ],
+    [
+      247,
+      242,
+      199
+    ]
+  ]
+});
 pichai.initialize();
 
 let drawer = document.getElementById('draawer');
