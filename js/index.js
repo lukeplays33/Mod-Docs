@@ -54,7 +54,7 @@ let options = {
       242,
       199
     ]
-  ].join(',')
+  ]
 }
 
 let pichai = new PichaiUX(options);
