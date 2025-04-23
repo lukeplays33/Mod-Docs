@@ -3,7 +3,7 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
 let options = {
-  source: 'https://images.alphacoders.com/136/1369821.png';
+  source: 'https://images.alphacoders.com/136/1369821.png'
 }
 
 let pichai = new PichaiUX(options);
