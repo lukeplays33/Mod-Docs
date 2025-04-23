@@ -3,58 +3,7 @@ import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
 let options = {
-  source: [
-    [
-      221,
-      163,
-      110
-    ],
-    [
-      39,
-      45,
-      33
-    ],
-    [
-      137,
-      99,
-      66
-    ],
-    [
-      94,
-      71,
-      48
-    ],
-    [
-      134,
-      152,
-      142
-    ],
-    [
-      95,
-      116,
-      80
-    ],
-    [
-      150,
-      167,
-      107
-    ],
-    [
-      78,
-      96,
-      94
-    ],
-    [
-      179,
-      71,
-      40
-    ],
-    [
-      247,
-      242,
-      199
-    ]
-  ]
+  source: 'https://images.alphacoders.com/136/1369821.png';
 }
 
 let pichai = new PichaiUX(options);
