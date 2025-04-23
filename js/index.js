@@ -2,11 +2,7 @@ import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.i
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
-let options = {
-  source: 'https://i.ibb.co/rfFSZgnT/test.png'
-}
-
-let pichai = new PichaiUX(options);
+let pichai = new PichaiUX();
 pichai.initialize();
 
 let drawer = document.getElementById('draawer');
