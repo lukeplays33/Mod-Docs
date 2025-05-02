@@ -5,4 +5,8 @@ let options = { homeLink: 'https://lukeplays33.github.io/Mod-Docs/', }
 let pichai = new PichaiUX(options);
 pichai.initialize();
 
+window.addEventListener("pichaiUXLoaded", function () {
+    alert()
+});
+
 document.body.style.backgroundImage = 'none';
