@@ -6,11 +6,5 @@ let pichai = new PichaiUX(options);
 pichai.initialize();
 
 window.addEventListener("pichaiUXLoaded", function () {
-    console.log('piachi')
+    document.body.style.backgroundImage = 'none';
 });
-
-window.addEventListener("load", function () {
-    console.log('loaded')
-});
-
-document.body.style.backgroundImage = 'none';
