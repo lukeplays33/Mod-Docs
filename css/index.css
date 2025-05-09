@@ -18,8 +18,8 @@ main {
 }
 
 main {
-  overflow-y:auto;
-  overflow-x:hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #bottom_nav,
@@ -64,7 +64,7 @@ view-pager * :not(.items, .chipIcon) {
 #explainTheItem {
   height: 100%;
 
-  display:flex;
+  display: flex;
 
   justify-content: center;
 }
@@ -108,13 +108,13 @@ h1 {
 
 .content {
   background-color: var(--secondairy);
-  color:var(--secondairyTextColor);
+  color: var(--secondairyTextColor);
 
   padding: 8px;
 
   width: calc(100% - 16px) !important;
 
-  align-items:start !important;
+  align-items: start !important;
 }
 
 .transparent {
@@ -188,7 +188,11 @@ list-viewer li {
   color: var(--secondairyTextColor);
 }
 
-#description, .description, #installDiv, .infoDocs, #globalDonateMessage {
+#description,
+.description,
+#installDiv,
+.infoDocs,
+#globalDonateMessage {
   display: flex;
   flex-direction: row;
 
@@ -200,7 +204,7 @@ list-viewer li {
 }
 
 #globalDonateMessage {
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 
 .explainInfoItems {
@@ -211,7 +215,9 @@ list-viewer li {
   margin-bottom: 0px;
 }
 
-#installDiv .chipIcon, #globalDonateMessage .chipIcon, .infoDocs .chipIcon {
+#installDiv .chipIcon,
+#globalDonateMessage .chipIcon,
+.infoDocs .chipIcon {
   max-height: 15px;
   max-width: 15px;
   line-height: 16px;
@@ -219,7 +225,8 @@ list-viewer li {
   font-size: 15px;
 }
 
-#install, #donateP {
+#install,
+#donateP {
   text-align: left;
 
   width: 100%;
@@ -231,7 +238,7 @@ list-viewer li {
 }
 
 #language {
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .text {
@@ -258,14 +265,14 @@ list-viewer li {
 
   max-width: calc(100% - 16px);
 
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 
-  margin-bottom:8px;
+  margin-bottom: 8px;
 
-  padding:8px;
+  padding: 8px;
 
-  text-align:left;
+  text-align: left;
 }
 
 .items,
@@ -291,7 +298,7 @@ list-viewer li {
 
 #information {
   margin-top: 0px;
-  margin-right:8px;
+  margin-right: 8px;
 
   padding-bottom: 10px;
 }
@@ -371,7 +378,7 @@ header a {
 }
 
 accordion-dropdown h5,
-.accordionItems *  {
+.accordionItems * {
   width: calc(100% - 24px);
 }
 
@@ -412,14 +419,15 @@ accordion-dropdown h5 i {
   background-color: white;
   height: 200px;
 
-  margin-top:0px;
-  margin-bottom:0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
-  border-bottom-left-radius:0px;
-  border-bottom-right-radius:0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-#variablesAndInfo, #quickLinksList {
+#variablesAndInfo,
+#quickLinksList {
   margin-bottom: 50px;
 }
 
@@ -446,7 +454,7 @@ accordion-dropdown h5 i {
 }
 
 #ItemInformation .accordionItems {
-  margin-bottom:0px !important;
+  margin-bottom: 0px !important;
 }
 
 table {
@@ -459,78 +467,79 @@ widgetbot {
 }
 
 #recentArticles {
-  width:calc(100% - 16px) !important;
+  width: calc(100% - 16px) !important;
 }
 
 #recentArticles :last-child {
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 #recentArticles * {
-  width:100% !important;
+  width: 100% !important;
 
   background-color: var(--secondairy);
-  color:var(--secondairyTextColor)
+  color: var(--secondairyTextColor)
 }
 
 #recentArticles * .actionButton {
 
   background-color: var(--primaryContainer);
-  color:var(--primaryContainerTextColor);
+  color: var(--primaryContainerTextColor);
 }
 
 .nothingFound {
-  width:100% !important;
+  width: 100% !important;
   font-size: 13px;
 }
 
 .controls {
-  height:30px;
+  height: 30px;
 
-  background-color:var(--primary);
+  background-color: var(--primary);
 
-  border-top-left-radius:0px;
-  border-top-right-radius:0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 
   margin-top: -5px;
 
   padding: 4px;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 
   display: flex;
 }
 
 .controls .chipIcon {
-  background-color:var(--primaryContainer);
+  background-color: var(--primaryContainer);
 
-  border-radius:200px;
+  border-radius: 200px;
 
-  color:var(--primaryContainerTextColor);
+  color: var(--primaryContainerTextColor);
 
   font-size: 20px;
 
-  margin-left:4px;
+  margin-left: 4px;
 }
 
 .controls :nth-child(1) {
-  margin-right:auto;
+  margin-right: auto;
 }
 
 .controls :last-child {
-  margin-right:4px;
-}
- 
-.fullscreen iframe {
-  height:calc(100% - 40px) !important;
+  margin-right: 4px;
 }
 
-.fullscreen .controls, .fullscreen #displayFile {
-  border-radius:0px !important;
+.fullscreen iframe {
+  height: calc(100% - 40px) !important;
+}
+
+.fullscreen .controls,
+.fullscreen #displayFile {
+  border-radius: 0px !important;
 }
 
 .disabled {
-  opacity:0.5;
+  opacity: 0.5;
   pointer-events: none;
 }
 
@@ -539,20 +548,21 @@ widgetbot {
 }
 
 .variablesAndInfo :first-child {
-  margin-top:0px;
+  margin-top: 0px;
 }
 
-.grid, .infoDocs{
+.grid,
+.infoDocs {
   height: calc(100% - 16px) !important;
 }
 
 .grid {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 
   margin-bottom: 8px;
 
-  gap:8px;
+  gap: 8px;
 }
 
 @media (pointer: coarse) {
@@ -561,7 +571,7 @@ widgetbot {
   }
 
   .explanationItems {
-    flex-direction:column;
+    flex-direction: column;
   }
 
   #installItems {
@@ -573,52 +583,58 @@ widgetbot {
   }
 
   .grid {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
-  
+
     margin-bottom: 8px;
 
-    gap:8px;
+    gap: 8px;
   }
 }
 
-#quickLinksList, #informationList {
+#quickLinksList,
+#informationList {
   width: calc(100% - 16px);
 }
 
 #informationList .des {
-  max-width:100%;
+  max-width: 100%;
 }
 
 #InstallationHR {
-  margin-top:0px;
+  margin-top: 0px;
 }
 
 #platformsCompChart {
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
 
-  gap:8px;
+  gap: 8px;
 
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 
 #platformsCompChart p {
   padding: 8px;
 
-  border-radius:200px;
+  border-radius: 200px;
 
-  background-color:var(--secondairy);
+  background-color: var(--secondairy);
   color: var(--secondairyTextColor);
 }
 
 #platformsCompChart p:nth-child(1) {
   min-width: 200px;
 
-  background-color:var(--tertiary);
+  background-color: var(--tertiary);
   color: var(--tertiaryTextColor);
 }
 
+.draawer li {
+  list-style-type: none;
+  /* Remove bullets */
+}
+
 .draawer li::marker {
-   display: none;
+  display: none;
 }
