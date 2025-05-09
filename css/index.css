@@ -618,3 +618,7 @@ widgetbot {
   background-color:var(--tertiary);
   color: var(--tertiaryTextColor);
 }
+
+.draawer li::marker {
+   display: none;
+}
