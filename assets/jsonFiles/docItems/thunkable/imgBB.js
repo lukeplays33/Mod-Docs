@@ -53,7 +53,7 @@ let imgBB = {
           content: `<ol>
           <li> Go to https://imgbb.com/ and click sign-in or create account.</li>
           <li> Then follow the instructions from there.</li>
-          </ol>`, // use the contents item to tell mod docs to display html strings rather than the default table view.
+          </ol>`, // use the contents item to tell mod docs to display html strings rather than the default table view, can be for variables or general use
         },
 
         "Get your API key.": {

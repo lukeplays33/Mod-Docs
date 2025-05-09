@@ -133,8 +133,8 @@ ${file}
 }
 
 function loadDocItem(index) {
-    parent.document.body.scrollTo(0,0); // scroll to top when changing page to avoid a weird bug only found in od Docs
-    
+    parent.document.body.scrollTo(0, 0); // scroll to top when changing page to avoid a weird bug only found in od Docs
+
     let i;
 
     let itemName = Object.keys(itemJSON.contents)[index];
@@ -192,17 +192,17 @@ function loadDocItem(index) {
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
 
+        console.log(item.variables)
+        if (item.variables[i].hasOwnProperty('content')) {
+            alert('test')
+        }
+
         dropdown.appendChild(createVariableTable(i, item.variables));
 
         variablesAndInfo.appendChild(dropdown);
     }
 
     variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
-
-    console.log(item)
-    if(item.hasOwnProperty('content')) {
-        alert('test')
-    }
 
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputValueOptions', 'inputValueOptions', 'type', 'platforms'], item));
 
@@ -275,9 +275,9 @@ informationList.addEventListener('itemSelected', function (e) {
 
     let selectedItem = document.getElementById(e.detail.value);
 
-    let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' : 
-    String(e.detail.value) == 'repoLI' ? 'repo' : 
-    String(e.detail.value) == 'requlatoryInfo' ? 'licensing' : 'installation'
+    let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' :
+        String(e.detail.value) == 'repoLI' ? 'repo' :
+            String(e.detail.value) == 'requlatoryInfo' ? 'licensing' : 'installation'
 
     try {
         des.remove();
