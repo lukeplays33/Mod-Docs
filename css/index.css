@@ -630,11 +630,11 @@ widgetbot {
   color: var(--tertiaryTextColor);
 }
 
-.draawer li {
+#draawer li {
   list-style-type: none;
   /* Remove bullets */
 }
 
-.draawer li::marker {
+#draawer li::marker {
   display: none;
 }
