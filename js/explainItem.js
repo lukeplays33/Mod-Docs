@@ -214,21 +214,24 @@ function createVariableTable(variable, variables) { //creates a display table to
     let table = document.createElement('table');
 
     for (i of Object.keys(variables[variable])) {
-        console.log(i)
-        let tr = document.createElement('tr');
+        if (i == 'content') {
+            table = variables[variable].content
+        } else {
+            let tr = document.createElement('tr');
 
-        if (variables[variable][i]) {
-            let name = document.createElement('td');
-            name.innerHTML = i;
+            if (variables[variable][i]) {
+                let name = document.createElement('td');
+                name.innerHTML = i;
 
-            let value = document.createElement('td');
-            value.innerHTML = variables[variable][i];
+                let value = document.createElement('td');
+                value.innerHTML = variables[variable][i];
 
-            tr.appendChild(name);
-            tr.appendChild(value);
+                tr.appendChild(name);
+                tr.appendChild(value);
+            }
+
+            table.appendChild(tr);
         }
-
-        table.appendChild(tr);
     }
 
     return table;
