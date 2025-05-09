@@ -215,7 +215,8 @@ function createVariableTable(variable, variables) { //creates a display table to
 
     for (i of Object.keys(variables[variable])) {
         if (i == 'content') {
-            table = variables[variable].content
+            table = document.createElement('div');
+            table.innerHTML = variables[variable].content;
         } else {
             let tr = document.createElement('tr');
 

@@ -57,7 +57,12 @@ let imgBB = {
         },
 
         "Get your API key.": {
-          description: '1. Go to https://api.imgbb.com/. <br>2. Click Get API key or Add API key. <br> 3. Copy and paste the link into the API Key property.'
+          content: `<ol>
+          <li> Go to https://api.imgbb.com/.</li>
+          <li> Click Get API key or Add API key.</li>
+          <li> Copy and paste the link into the API Key property.</li>
+          </ol
+          `,
         },
       },
 
