@@ -199,10 +199,11 @@ function loadDocItem(index) {
 
     variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
 
+    console.log(item)
     if(item.hasOwnProperty('content')) {
         alert('test')
     }
-    
+
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputValueOptions', 'inputValueOptions', 'type', 'platforms'], item));
 
     if (Object.keys(item.variables).length == 0) {
