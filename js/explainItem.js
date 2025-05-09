@@ -192,11 +192,6 @@ function loadDocItem(index) {
         dropdown.setAttribute('titleText', i);
         dropdown.id = `explainVariable ${i}`;
 
-        console.log(item.variables)
-        if (item.variables[i].hasOwnProperty('content')) {
-            alert('test')
-        }
-
         dropdown.appendChild(createVariableTable(i, item.variables));
 
         variablesAndInfo.appendChild(dropdown);
@@ -219,6 +214,7 @@ function createVariableTable(variable, variables) { //creates a display table to
     let table = document.createElement('table');
 
     for (i of Object.keys(variables[variable])) {
+        console.log(i)
         let tr = document.createElement('tr');
 
         if (variables[variable][i]) {
