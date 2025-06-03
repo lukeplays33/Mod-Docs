@@ -7,4 +7,5 @@ pichai.initialize();
 
 window.addEventListener("pichaiUXLoaded", function () {
     document.body.style.backgroundImage = 'none';
+    document.body.style.backgroundColor = 'TRANSPARENT';
 });
