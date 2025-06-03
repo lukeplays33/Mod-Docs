@@ -133,8 +133,8 @@ ${file}
 }
 
 function loadDocItem(index) {
-    parent.document.body.scrollTo(0,0); // scroll to top when changing page to avoid a weird bug only found in od Docs
-    
+    parent.document.body.scrollTo(0, 0); // scroll to top when changing page to avoid a weird bug only found in od Docs
+
     let i;
 
     let itemName = Object.keys(itemJSON.contents)[index];
@@ -198,6 +198,7 @@ function loadDocItem(index) {
     }
 
     variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
+
     variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputValueOptions', 'inputValueOptions', 'type', 'platforms'], item));
 
     if (Object.keys(item.variables).length == 0) {
@@ -213,20 +214,25 @@ function createVariableTable(variable, variables) { //creates a display table to
     let table = document.createElement('table');
 
     for (i of Object.keys(variables[variable])) {
-        let tr = document.createElement('tr');
+        if (i == 'content') {
+            table = document.createElement('div');
+            table.innerHTML = variables[variable].content;
+        } else {
+            let tr = document.createElement('tr');
 
-        if (variables[variable][i]) {
-            let name = document.createElement('td');
-            name.innerHTML = i;
+            if (variables[variable][i]) {
+                let name = document.createElement('td');
+                name.innerHTML = i;
 
-            let value = document.createElement('td');
-            value.innerHTML = variables[variable][i];
+                let value = document.createElement('td');
+                value.innerHTML = variables[variable][i];
 
-            tr.appendChild(name);
-            tr.appendChild(value);
+                tr.appendChild(name);
+                tr.appendChild(value);
+            }
+
+            table.appendChild(tr);
         }
-
-        table.appendChild(tr);
     }
 
     return table;
@@ -269,9 +275,9 @@ informationList.addEventListener('itemSelected', function (e) {
 
     let selectedItem = document.getElementById(e.detail.value);
 
-    let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' : 
-    String(e.detail.value) == 'repoLI' ? 'repo' : 
-    String(e.detail.value) == 'requlatoryInfo' ? 'licensing' : 'installation'
+    let jsonItem = String(e.detail.value) == 'infoLI' ? 'moduleInformation' :
+        String(e.detail.value) == 'repoLI' ? 'repo' :
+            String(e.detail.value) == 'requlatoryInfo' ? 'licensing' : 'installation'
 
     try {
         des.remove();
