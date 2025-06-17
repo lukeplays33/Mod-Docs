@@ -2,7 +2,7 @@ import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.i
 import { docsItemsJson } from '../assets/jsonFiles/docsItems.js';
 import { tutorialsJson } from '../assets/jsonFiles/tutorials.js';
 
-let pichai = new PichaiUX();
+let pichai = new PichaiUX({ homeLink: 'https://lukeplays33.github.io/Mod-Docs/', blur:'0px', transparency:'1.0' });
 pichai.initialize();
 
 let drawer = document.getElementById('draawer');
