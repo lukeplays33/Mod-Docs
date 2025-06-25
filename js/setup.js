@@ -10,5 +10,5 @@ window.addEventListener("pichaiUXLoaded", function () {
     document.documentElement.style.backgroundColor = 'TRANSPARENT';
     document.querySelector(':root').style.setProperty('--hueRotation', '0deg');
 
-    document.getElementById('pages').contentWindow.location.reload();
+    document.getElementById('pages').src = document.getElementById('pages').src;
 });
