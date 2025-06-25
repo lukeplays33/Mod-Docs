@@ -8,5 +8,5 @@ pichai.initialize();
 window.addEventListener("pichaiUXLoaded", function () {
     document.body.style.backgroundImage = 'none';
     document.documentElement.style.backgroundColor = 'TRANSPARENT';
-    document.documentElement.style.backdropFilter = 'hue-rotate(0deg) !important';
+    document.querySelector(':root').style.setProperty('--hueRotation', '0deg');
 });
