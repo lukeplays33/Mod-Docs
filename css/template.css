@@ -4,3 +4,7 @@
     flex-direction: column;
     max-width:90%;
 }
+
+.columnDirection #displayFile {
+    height:300px;
+}
