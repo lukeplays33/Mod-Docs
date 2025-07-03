@@ -144,7 +144,7 @@ function loadDocItem(index) {
     let itemHTML = document.getElementById(itemName);
     itemHTML.style.display = 'flex';
 
-    if(item.hasOwnPropertys('layoutClass')) { // if the item has a layout class, apply it
+    if(item.hasOwnProperty('layoutClass')) { // if the item has a layout class, apply it
         itemHTML.classList.add(item.layoutClass);
     }
 
