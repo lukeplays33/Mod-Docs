@@ -42,51 +42,9 @@ let aboutPichaiUX = {
 
   },
   contents: {
-    initialize: {
-      description: 'The initialize function tells Pichai-UX to start loading the design language and apply it to the website.',
+    Introduction: {
+      description: '<p>test</p>',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        options: {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: ['contrast'], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['Object'],
-          inputTypes: ['Object'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The options property tells Pichai-UX with what options you want to initialize the design language.',
-
-          accessCode: "", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        "options.contrast": {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['number'],
-          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The options.contrast property allows you to set the contrast of the generated theme.',
-
-          accessCode: "options.contrast", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        "options.wallpaperBlur": {
-          readOnly: false, // default for events, cannot be false for events
-
-          defaultValue: '',
-          valueOptions: [], // an array of options telling the developer wich choices are accepted by the input
-
-          outputTypes: ['number'],
-          inputTypes: ['number'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The options.wallpaperBlur property allows you to set the wallpaper blur of the site.',
-
-          accessCode: "options.wallpaperBlur", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
