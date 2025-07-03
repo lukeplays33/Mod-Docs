@@ -2,4 +2,5 @@
 
 .columnDirection {
     flex-direction: column;
+    max-width:90%;
 }

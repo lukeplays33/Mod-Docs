@@ -48,6 +48,8 @@ let aboutPichaiUX = {
       },
 
       controls: { // tells the docs page to display controls for displayFile
+        hideControls: true, // if true, the controls will not be displayed
+        
         fullscreen: false,
         play: false,
         console: false,

@@ -144,7 +144,7 @@ function loadDocItem(index) {
     let itemHTML = document.getElementById(itemName);
     itemHTML.style.display = 'flex';
 
-    if(item.hasOwnProperty('layoutClass')) { // if the item has a layout class, apply it
+    if (item.hasOwnProperty('layoutClass')) { // if the item has a layout class, apply it
         itemHTML.classList.add(item.layoutClass);
     }
 
@@ -158,6 +158,11 @@ function loadDocItem(index) {
         } else {
             displayFile.srcdoc = generateCodeWithHighlight(item.displayFile, item.codeFormat);
         }
+    }
+
+    if (item.controls.hideControls) { // hides the controls if set to true
+        controls.style.display = 'none';
+        displayFile.style.borderRadius = '10px';
     }
 
     if (item.controls.fullscreen) { } else { // disables unnessecary control buttons
