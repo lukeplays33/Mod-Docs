@@ -43,7 +43,7 @@ let aboutPichaiUX = {
   },
   contents: {
     Introduction: {
-      description: '<p>test</p>',
+      description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
