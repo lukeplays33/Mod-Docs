@@ -9,19 +9,26 @@ import { netowrkInfo } from './docItems/thunkable/netowrkInfo.js';
 import { customTabs } from './docItems/thunkable/customTabs.js';
 
 import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
+import { aboutPichaiUX } from './docItems/pichaiUX/aboutPichaiUX.js';
 
 let docsItemsJson = {
-  /*
   "Pichai_UX": {
-    description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale to use.',
+    description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale and increadibily fun to use.',
     items: {
-    'Initlializing Pichai-UX': initPichaiUX,
-    "Icons and Images": 'Type: divider', // tells the list to display this item as a divider
-      "DynamicIcons" : dynamicIcons,
+      "An introduction to Pichai UX": 'Type: divider',
+      'What is Pichai UX?': aboutPichaiUX,
+      'Initlializing Pichai UX': initPichaiUX,
+
+      "Design principles": 'Type: divider',
+
+      "Library usage": 'Type: divider',
+      "Icons and Images": 'Type: divider', // tells the list to display this item as a divider
+      "DynamicIcons": dynamicIcons,
 
     }
   },
 
+  /*
 "Lucy": { },
 "Gryffindor": { },
 "NexOS": { },
