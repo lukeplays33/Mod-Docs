@@ -9,6 +9,4 @@ window.addEventListener("pichaiUXLoaded", function () {
     document.body.style.backgroundImage = 'none';
     document.documentElement.style.backgroundColor = 'TRANSPARENT';
     document.querySelector(':root').style.setProperty('--hueRotation', '0deg');
-
-    document.getElementById('pages').src = document.getElementById('pages').src;
 });
