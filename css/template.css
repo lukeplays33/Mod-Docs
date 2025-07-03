@@ -1,0 +1,5 @@
+/* css file for classes users can use by default in mod docs */
+
+.columnDirection {
+    flex-direction: column;
+}

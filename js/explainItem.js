@@ -144,6 +144,10 @@ function loadDocItem(index) {
     let itemHTML = document.getElementById(itemName);
     itemHTML.style.display = 'flex';
 
+    if(Object.hasOwnPropertys(item, 'layoutClass')) { // if the item has a layout class, apply it
+        itemHTML.classList.add(item.layoutClass);
+    }
+
     let displayFile = itemHTML.getElementsByTagName('IFRAME')[0];
     let variablesAndInfo = itemHTML.getElementsByClassName('variablesAndInfo')[0];
     let controls = itemHTML.getElementsByClassName('controls')[0];

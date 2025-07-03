@@ -54,6 +54,8 @@ let aboutPichaiUX = {
         viewCode: false,
       },
 
+      layoutClass: 'columnDirection', // the layout class that is used to display the item, this class allows you to apply a custom styling to items per page, allowing you to make different designs per page.
+
       outputValueOptions: [], // none for events, tells what kind of value is outputted
       type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
       displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
