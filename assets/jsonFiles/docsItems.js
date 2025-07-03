@@ -17,7 +17,7 @@ let docsItemsJson = {
     items: {
       "An introduction to Pichai UX": 'Type: divider',
       'What is Pichai UX?': aboutPichaiUX,
-      'Initlializing Pichai UX': initPichaiUX,
+      'Initializing Pichai UX': initPichaiUX,
 
       "Design principles": 'Type: divider',
 
