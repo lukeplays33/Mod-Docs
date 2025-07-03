@@ -43,7 +43,14 @@ let dynamicIcons = {
   },
   contents: {
     generateDynamicIcon: {
-      description: 'Generates a themed icon based on your projects theme..',
+      generalInformation: {
+        description: 'Generates a themed icon based on your projects theme..',
+        outputValueOptions: ['Base64'], // none for events, tells what kind of value is outputted
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        codeFormat: 'javascript', // set to img to display a image
+      },
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         image: {
@@ -88,10 +95,6 @@ let dynamicIcons = {
         viewCode: false,
       },
 
-      outputValueOptions: ['Base64'], // none for events, tells what kind of value is outputted
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-      codeFormat: 'javascript', // set to img to display a image
     },
   },
 }

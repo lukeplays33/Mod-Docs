@@ -43,7 +43,14 @@ let initPichaiUX = {
   },
   contents: {
     initialize: {
-      description: 'The initialize function tells Pichai-UX to start loading the design language and apply it to the website.',
+      generalInformation: {
+        description: 'The initialize function tells Pichai-UX to start loading the design language and apply it to the website.',
+        outputValueOptions: [], // none for events, tells what kind of value is outputted
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        codeFormat: 'javascript', // set to img to display a image
+      },
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         options: {
@@ -95,11 +102,6 @@ let initPichaiUX = {
         console: false,
         viewCode: false,
       },
-
-      outputValueOptions: [], // none for events, tells what kind of value is outputted
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-      codeFormat: 'javascript', // set to img to display a image
     },
   },
 }
