@@ -70,7 +70,6 @@ let netowrkInfo = {
   },
   contents: {
     connectionChanged: {
-      description: 'The connectionChanged event fires when the user disconnects or connects to a network.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         connectionState: {
           readOnly: true, // default for events, cannot be false for events
@@ -94,13 +93,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/fV4Kjsp8/Screenshot-2025-01-29-200112.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The connectionChanged event fires when the connection state of the device has changed.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/fV4Kjsp8/Screenshot-2025-01-29-200112.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     networkInformationChanged: {
-      description: 'The networkInformationChanged event fires when a change in information about the network has been detected.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -111,13 +112,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/qFsgFhCB/Screenshot-2025-01-30-095110.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The networkInformationChanged event fires when a change in information about the network has been detected.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/qFsgFhCB/Screenshot-2025-01-30-095110.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     latencyChanged: {
-      description: 'The latencyChanged event fires when a latency test has completed and latency, jitter and packetloss values hava been calculated.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -128,13 +131,16 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/SX7jNv5S/Screenshot-2025-01-31-112657.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The latencyChanged event fires when a latency test has completed and latency, jitter and packetloss values hava been calculated.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/SX7jNv5S/Screenshot-2025-01-31-112657.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkInfo: {
-      description: 'The getNetworkInfo function gathers all available information about the network..',
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -145,13 +151,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/wZMKpVBm/Screenshot-2025-01-29-142252.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkInfo function gathers all available information about the network..',
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/wZMKpVBm/Screenshot-2025-01-29-142252.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getRandomizedmDNS: {
-      description: 'The getRandomizedmDNS function returns a random mDNS encrypted ip address this value will always change with each getNetworkInfo call.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -162,13 +170,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string or large integer number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/C5WHpMvn/Screenshot-2025-01-29-142419.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getRandomizedmDNS function returns a random mDNS encrypted ip address this value will always change with each getNetworkInfo call.',
+        outputValueOptions: ['string or large integer number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/C5WHpMvn/Screenshot-2025-01-29-142419.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getListeningPort: {
-      description: 'The getListeningPort function returns the listening port of the webRTC api, this port is used to gather various network information.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -179,13 +189,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/hRB1F53b/Screenshot-2025-01-29-142711.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getListeningPort function returns the listening port of the webRTC api, this port is used to gather various network information.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/hRB1F53b/Screenshot-2025-01-29-142711.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getProtocol: {
-      description: 'The getProtocol function returns the network protocol.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -196,13 +208,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/zHRq56Jj/Screenshot-2025-01-29-142743.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getProtocol function returns the network protocol.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/zHRq56Jj/Screenshot-2025-01-29-142743.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkType: {
-      description: 'The getNetworkType function returns the network type.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -213,13 +227,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/5g5TstGD/Screenshot-2025-01-29-144341.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkType function returns the network type.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/5g5TstGD/Screenshot-2025-01-29-144341.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getDownlinkSpeed: {
-      description: 'The getDownlinkSpeed function returns the speed of wich files or messages arrive on your device in Mbps.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -230,13 +246,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/r1F5Nxn/Screenshot-2025-01-29-145049.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getDownlinkSpeed function returns the speed of wich files or messages arrive on your device in Mbps.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/r1F5Nxn/Screenshot-2025-01-29-145049.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getRoundTripTime: {
-      description: 'The getRoundTripTime function returns the estimated effective round-trip time of the current connection, rounded to the nearest multiple of 25 milliseconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -247,13 +265,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/Xf2NJXB3/Screenshot-2025-01-29-145321.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getRoundTripTime function returns the estimated effective round-trip time of the current connection, rounded to the nearest multiple of 25 milliseconds.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/Xf2NJXB3/Screenshot-2025-01-29-145321.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkType: {
-      description: 'The getNetworkType function returns what type of network is used on the device.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -264,13 +284,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4g7pWYFm/Screenshot-2025-01-29-151844.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkType function returns what type of network is used on the device.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/4g7pWYFm/Screenshot-2025-01-29-151844.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkQuality: {
-      description: 'The getNetworkQuality function returns the quality of the network where slow-2g is slowest and 4g is fastest.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -281,13 +303,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/dqWw5qX/Screenshot-2025-01-30-094909.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkQuality function returns the quality of the network where slow-2g is slowest and 4g is fastest.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/dqWw5qX/Screenshot-2025-01-30-094909.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getMaxDownlinkSpeed: {
-      description: 'The getMaxDownlinkSpeed returns the max speed of wich files or messages arrive on your device in Mbps.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -298,13 +322,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/C5yvmssd/Screenshot-2025-01-31-092011.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getMaxDownlinkSpeed returns the max speed of wich files or messages arrive on your device in Mbps.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/C5yvmssd/Screenshot-2025-01-31-092011.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkLatency: {
-      description: 'The getNetworkLatency function returns the time it takes from data to pass from one point on a network to another in ms.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -315,13 +341,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/6JrhFJgR/Screenshot-2025-01-31-092254.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkLatency function returns the time it takes from data to pass from one point on a network to another in ms.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/6JrhFJgR/Screenshot-2025-01-31-092254.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkJitter: {
-      description: 'The getNetworkJitter function returns the variation in time delay between when a signal is transmitted and when its received over a network connection, measuring the variability in ping and returned in ms.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -332,13 +360,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/TqDLtgmN/Screenshot-2025-01-31-103607.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkJitter function returns the variation in time delay between when a signal is transmitted and when its received over a network connection, measuring the variability in ping and returned in ms.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/TqDLtgmN/Screenshot-2025-01-31-103607.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getNetworkPacketloss: {
-      description: 'The getNetworkPacketloss function returns the how much pieces of data got lost when traveling through the network in percentage.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -349,13 +379,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/Kcr8HCgV/Screenshot-2025-01-31-104150.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getNetworkPacketloss function returns the how much pieces of data got lost when traveling through the network in percentage.',
+        outputValueOptions: ['number'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/Kcr8HCgV/Screenshot-2025-01-31-104150.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     startLatencyCheck: {
-      description: 'The startLatencyCheck function starts checking the network its latency, jitter and packetloss every x amount of seconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -366,13 +398,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/WJjk0fZ/Screenshot-2025-01-31-113046.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The startLatencyCheck function starts checking the network its latency, jitter and packetloss every x amount of seconds.',
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/WJjk0fZ/Screenshot-2025-01-31-113046.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     stopLatencyCheck: {
-      description: 'The stopLatencyCheck function stops any current running latency checks.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -383,13 +417,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/KjmrnxJQ/Screenshot-2025-01-31-113154.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The stopLatencyCheck function stops any current running latency checks.',
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/KjmrnxJQ/Screenshot-2025-01-31-113154.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     latencyTestURL: {
-      description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency, jitter and packetloss. <br> Each site may have a different latency, jitter and packetloss or has a server that is further away so custom urls may provide more accuracy.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
@@ -413,13 +449,15 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/t7FZSqK/Screenshot-2025-01-31-094558.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The latencyTestURL property is the API URL that should be used to detect the network its latency, jitter and packetloss. <br> Each site may have a different latency, jitter and packetloss or has a server that is further away so custom urls may provide more accuracy.',
+        outputValueOptions: ['string'],
+        type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/t7FZSqK/Screenshot-2025-01-31-094558.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     latencyCheckInterval: {
-      description: 'The latencyCheckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server for 10 minutes.<br> If banned you cannot use the module for those 10 minutes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
@@ -443,9 +481,12 @@ let netowrkInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/mVD1WCtg/Screenshot-2025-01-31-113710.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The latencyCheckInterval property specifies how much time in seconds is between each latency check used by startLatencyCheck and stopLatencyCheck. <br> Be warned tho, the shorter the time the more request will be made resulting in slower computers, slower networks or even a ban from the server for 10 minutes.<br> If banned you cannot use the module for those 10 minutes.',
+        outputValueOptions: ['number'],
+        type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/mVD1WCtg/Screenshot-2025-01-31-113710.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial

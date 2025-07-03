@@ -49,12 +49,11 @@ let keyboard = {
     licensing: {
       license: 'Apache 2.0',
       licenseLink: 'https://httpd.apache.org/docs/2.4/license.html'
-},
+    },
 
   },
   contents: {
     keyPress: {
-      description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         keyName: {
@@ -107,13 +106,15 @@ let keyboard = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/28Z1DCG/Screenshot-2025-01-14-133534.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The keyPress event fires when a key is pressed and released on the keyboard.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/28Z1DCG/Screenshot-2025-01-14-133534.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     keyDown: {
-      description: 'The keyDown event fires when a key is pressed down on the keyboard.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         keyName: {
@@ -166,13 +167,15 @@ let keyboard = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/GV2smhc/Screenshot-2025-01-14-133730.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The keyDown event fires when a key is pressed down on the keyboard.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/GV2smhc/Screenshot-2025-01-14-133730.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     keyUp: {
-      description: 'The keyUp event fires when a key is released on the keyboard.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         keyName: {
@@ -225,13 +228,15 @@ let keyboard = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/GnpcWL6/Screenshot-2025-01-14-133835.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The keyUp event fires when a key is released on the keyboard.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/GnpcWL6/Screenshot-2025-01-14-133835.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     requestFocus: {
-      description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -242,13 +247,15 @@ let keyboard = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/BtvWLdC/Screenshot-2025-01-14-133918.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The requestFocus function allows the developer to manually request listening to keyboard events, wich automatically stops when interacting with UI elements.',
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/BtvWLdC/Screenshot-2025-01-14-133918.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     visible: {
-      description: 'The visible property allows you to set the visibility of the module.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
@@ -272,9 +279,12 @@ let keyboard = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/S0R4q76/Screenshot-2025-01-14-133958.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The visible property allows you to set the visibility of the module.',
+        outputValueOptions: ['boolean'],
+        type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/S0R4q76/Screenshot-2025-01-14-133958.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
   },
   quickLinks: {

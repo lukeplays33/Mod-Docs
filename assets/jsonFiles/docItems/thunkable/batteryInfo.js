@@ -47,7 +47,6 @@ let batteryInfo = {
   },
   contents: {
     chargingStateChanged: {
-      description: 'The chargingStateChanged event fires when the charging state changes, if the user for example starts charging the device this event will fire.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -58,13 +57,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The chargingStateChanged event fires when the charging state changes, if the user for example starts charging the device this event will fire.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     chargingTimeChanged: {
-      description: 'The chargingTimeChanged event fires when the time required to charge the device fully changes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -75,13 +76,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The chargingTimeChanged event fires when the time required to charge the device fully changes.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     dischargingTimeChanged: {
-      description: 'The dischargingTimeChanged event fires when the time to discharge the device to 0% changes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -92,13 +95,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The dischargingTimeChanged event fires when the time to discharge the device to 0% changes.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     batteryLevelChanged: {
-      description: 'The batteryLevelChanged event fires when the level of the battery changes.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -109,13 +114,16 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The batteryLevelChanged event fires when the level of the battery changes.',
+        outputValueOptions: [],
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getBatteryInfo: {
-      description: 'The getBatteryInfo function gathers all available information about the battery. <br> Note: When any change event is fired this block needs to be called again to get the updated information.',
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -126,13 +134,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/wh3GH038/Screenshot-2025-02-02-142039.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getBatteryInfo function gathers all available information about the battery. <br> Note: When any change event is fired this block needs to be called again to get the updated information.',
+        outputValueOptions: [],
+        type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/wh3GH038/Screenshot-2025-02-02-142039.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getBatteryLevel: {
-      description: 'The getBatteryLevel function returns the current percentage of the battery.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -143,13 +153,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'],
-      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getBatteryLevel function returns the current percentage of the battery.',
+        outputValueOptions: ['number'],
+        type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/4gy91kw/Screenshot-2025-01-15-092857.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getChargingTime: {
-      description: 'The getChargingTime function returns the time it takes to fully charge the battery in seconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -160,13 +172,15 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number', '<br>0 (Means its fully charged or an error occured getting the status)', '<br>Infinity (means it is discharging)'],
-      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getChargingTime function returns the time it takes to fully charge the battery in seconds.',
+        outputValueOptions: ['number', '<br>0 (Means its fully charged or an error occured getting the status)', '<br>Infinity (means it is discharging)'],
+        type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/rfnyLGV/Screenshot-2025-01-15-092707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getDischargingTime: {
-      description: 'The getDischargingTime function returns the time it takes to fully drain the battery to 0% in seconds.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -177,13 +191,16 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number', '<br>Infinity (means it is charging)'],
-      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getDischargingTime function returns the time it takes to fully drain the battery to 0% in seconds.',
+        outputValueOptions: ['number', '<br>Infinity (means it is charging)'],
+        type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/BCkcGkw/Screenshot-2025-01-15-092805.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "isCharging?": {
-      description: 'The isCharging? function returns if the battery is connencted to a charger or not.',
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -194,9 +211,12 @@ let batteryInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'],
-      type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The isCharging? function returns if the battery is connencted to a charger or not.',
+        outputValueOptions: ['boolean'],
+        type: 'Funtion', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/BycZ6bD/Screenshot-2025-01-15-092530.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial

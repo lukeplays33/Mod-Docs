@@ -49,12 +49,11 @@ let screen = {
     licensing: { // allows developers to write about the repo it's license and legal information
       license: 'Apache 2.0',
       licenseLink: 'https://httpd.apache.org/docs/2.4/license.html'
-},
+    },
 
   },
   contents: {
     wheel: {
-      description: 'The wheel event fires when the user starts scrolling with the mouse wheel.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         deltaY: {
@@ -107,13 +106,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ykCtbRZ/Screenshot-2025-01-14-134543.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The wheel event fires when the user starts scrolling with the mouse wheel.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/ykCtbRZ/Screenshot-2025-01-14-134543.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     mouseMove: {
-      description: 'The mouseMove event fires when the user moves the mouse around on the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         X: {
@@ -152,13 +153,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/9Gs04T1/Screenshot-2025-01-14-135022.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The mouseMove event fires when the user moves the mouse around on the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/9Gs04T1/Screenshot-2025-01-14-135022.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     touchMove: {
-      description: 'The touchMove event fires when the user starts moving around the screen using its finger.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         X: {
@@ -197,13 +200,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/h99JXDt/Screenshot-2025-01-14-135059.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      geneeralInformation: {
+        description: 'The touchMove event fires when the user starts moving around the screen using its finger.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/h99JXDt/Screenshot-2025-01-14-135059.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     resize: {
-      description: 'The resize event fires when the user resizes the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -214,13 +219,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/MgF8Y7Q/Screenshot-2025-01-14-135146.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The resize event fires when the user resizes the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/MgF8Y7Q/Screenshot-2025-01-14-135146.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     orientationChange: {
-      description: 'The orientationCHange event fires when the user changes the screen orientation',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         orientationAngle: {
@@ -245,13 +252,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/9nttkgt/Screenshot-2025-01-14-135248.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The orientationCHange event fires when the user changes the screen orientation',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/9nttkgt/Screenshot-2025-01-14-135248.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     fileDropped: {
-      description: 'The fileDropped event fires when the user has succesfully dropped a file onto the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
 
         fileName: {
@@ -318,13 +327,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/R6m4Kx8/Screenshot-2025-01-14-135341.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The fileDropped event fires when the user has succesfully dropped a file onto the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/R6m4Kx8/Screenshot-2025-01-14-135341.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     mouseUp: {
-      description: 'The mouseUp event fires when the user stops clicking the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -335,13 +346,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/R6nQKzT/Screenshot-2025-01-14-135422.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The mouseUp event fires when the user stops clicking the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/R6nQKzT/Screenshot-2025-01-14-135422.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     mouseDown: {
-      description: 'The mouseDown event fires when the user starts clicking the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -352,13 +365,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/5rQH1QJ/Screenshot-2025-01-14-135504.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The mouseDown event fires when the user starts clicking the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/5rQH1QJ/Screenshot-2025-01-14-135504.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     touchStart: {
-      description: 'The touchStart event fires when the user starts pressing the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -369,13 +384,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/FJ2Z1CK/Screenshot-2025-01-14-135541.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The touchStart event fires when the user starts pressing the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/FJ2Z1CK/Screenshot-2025-01-14-135541.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     touchEnd: {
-      description: 'The touchEnd event fires when the user stops pressing the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -386,13 +403,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [], // none for events
-      type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/MfdbHm2/Screenshot-2025-01-14-135624.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The touchEnd event fires when the user stops pressing the screen.',
+        outputValueOptions: [], // none for events
+        type: 'Event', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/MfdbHm2/Screenshot-2025-01-14-135624.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     requestFocus: {
-      description: 'The requestFocus function allows the developer to manually request listening to screen events, wich automatically stops when interacting with UI elements.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -403,13 +422,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: [],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/Jn0FdT9/Screenshot-2025-01-14-135656.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The requestFocus function allows the developer to manually request listening to screen events, wich automatically stops when interacting with UI elements.',
+        outputValueOptions: [],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/Jn0FdT9/Screenshot-2025-01-14-135656.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getScreenOrientationType: {
-      description: 'The getScreenOrientationType function returns the current orientation of the screen the website is in.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -420,13 +441,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/jRrpfNN/Screenshot-2025-01-19-111147.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getScreenOrientationType function returns the current orientation of the screen the website is in.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/jRrpfNN/Screenshot-2025-01-19-111147.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     getScreenOrientationAngle: {
-      description: 'The getScreenOrientationAngle function returns the current angle of the screen the website is in.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
       },
 
@@ -437,13 +460,15 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'],
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/hdWFDxG/Screenshot-2025-01-19-111404.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getScreenOrientationAngle function returns the current angle of the screen the website is in.',
+        outputValueOptions: ['string'],
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/hdWFDxG/Screenshot-2025-01-19-111404.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     visible: {
-      description: 'The visible property allows you to set the visibility of the module.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number,
         input: {
           readOnly: false, // default for events, cannot be false for events
@@ -467,9 +492,12 @@ let screen = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'],
-      type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/zZ8FDKw/Screenshot-2025-01-14-135738.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The visible property allows you to set the visibility of the module.',
+        outputValueOptions: ['boolean'],
+        type: 'Property', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/zZ8FDKw/Screenshot-2025-01-14-135738.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
   },
   quickLinks: {
