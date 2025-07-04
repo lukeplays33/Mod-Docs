@@ -7,7 +7,7 @@ let buttons = {
     },
 
     moduleInformation: {
-      description: 'An button is an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
+      description: 'Buttons are an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
       useCases: ['Submit forms', 'Trigger scripts', 'Navigate to other pages', 'Open dialogs'],
       platforms: ['Web'],
       required: ['Pichai-UX'],
@@ -37,9 +37,9 @@ let buttons = {
 
   },
   contents: {
-    "Button Variants": {
+    "Button": {
       generalInformation: {
-        description: 'The initialize function starts initializing all required packages for pichai UX to work, based on the options you provide.',
+        description: 'An button is an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
         outputValueOptions: [], // none for events, tells what kind of value is outputted
         type: 'Element', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
