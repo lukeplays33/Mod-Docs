@@ -22,7 +22,7 @@ let initPichaiUX = {
     notes: { // allows the developer or ai to supply additional notes such as bugs
 
       'Pichai-UX is in Beta': {
-        description: "Pixhai-UX is a highly experimental design language and may not work properly or look properly. <br> If you have any feedback, please do not hesitate to share!",
+        description: "Pixhai-UX is a highly experimental design language and may not work properly or look prop If you have any feedback, please do not hesitate to share!",
         type: 'Beta',
         status: 'Beta Development',
         for: 'Pichai-UX' // if tied to a specific function or importqant for that one, leave empty to be global.
@@ -79,7 +79,7 @@ let initPichaiUX = {
           readOnly: false, // default for events, cannot be false for events
 
           defaultValue: 'https://fonts.googleapis.com/icon?family=Material+Icons',
-          valueOptions: ['An link reffering to the icon pack Pichai UX should use. <br> The icon pack should be based and act similar as to how Google Icon import links work and follow the same naming scheme for icons.'], // an array of options telling the developer wich choices are accepted by the input
+          valueOptions: ['An link reffering to the icon pack Pichai UX should The icon pack should be based and act similar as to how Google Icon import links work and follow the same naming scheme for icons.'], // an array of options telling the developer wich choices are accepted by the input
 
           outputTypes: ['string'],
           inputTypes: ['string'],  // cannot have any value when in events since they cant accept input values
