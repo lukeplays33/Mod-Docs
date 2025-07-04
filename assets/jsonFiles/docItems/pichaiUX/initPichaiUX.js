@@ -7,7 +7,7 @@ let initPichaiUX = {
     },
 
     moduleInformation: {
-      description: 'Pichai  Ux is the go to design language for you, if you want to use a design that is created by you, interactive, fun and versatille. \n Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull.',
+      description: 'Pichai UX is the go to design language for you, if you want to use a design that is created by you, interactive, fun and versatille. \n Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull.',
       useCases: ['Make colorful, playfull, interactive, and customizable themes for your website or web app.'],
       platforms: ['Web'],
       required: ['Pichai-UX'],
@@ -21,8 +21,8 @@ let initPichaiUX = {
 
     notes: { // allows the developer or ai to supply additional notes such as bugs
 
-      'Pichai-UX is in Beta': {
-        description: "Pixhai-UX is a highly experimental design language and may not work properly or look prop If you have any feedback, please do not hesitate to share!",
+      'Pichai UX is in Beta': {
+        description: "Pixhai UX is a highly experimental design language and may not work properly or look properly If you have any feedback, please do not hesitate to share them with us on our discord server!",
         type: 'Beta',
         status: 'Beta Development',
         for: 'Pichai-UX' // if tied to a specific function or importqant for that one, leave empty to be global.
@@ -38,7 +38,7 @@ let initPichaiUX = {
       openSource: 'Open source',
       developerDocs: '',
       developer: 'dreamForge',
-      version: '0.0.1',
+      version: 'Beta 0.5',
       status: "Alive", // deperecated/ no-longer maintained or alive or custom
     },
 
