@@ -50,12 +50,12 @@ let initPichaiUX = {
         outputValueOptions: [], // none for events, tells what kind of value is outputted
         type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `
-        import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
+ import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
         
-        let options = {}; // A object with al the options you want to initialize Pichai UX with.
+ let options = {}; // A object with al the options you want to initialize Pichai UX with.
         
-        let pichai = new PichaiUX(options);
-        pichai.initialize();`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+ let pichai = new PichaiUX(options);
+ pichai.initialize();`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
         codeFormat: 'javascript', // set to img to display a image
       },
 
