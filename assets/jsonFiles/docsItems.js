@@ -10,6 +10,7 @@ import { customTabs } from './docItems/thunkable/customTabs.js';
 
 import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
 import { aboutPichaiUX } from './docItems/pichaiUX/aboutPichaiUx.js';
+import { buttons } from './docItems/pichaiUX/buttons.js';
 
 let docsItemsJson = {
   "Pichai_UX": {
@@ -20,6 +21,7 @@ let docsItemsJson = {
       'Initializing Pichai UX': initPichaiUX,
 
       "Elements": 'Type: divider',
+      'Buttons': buttons,
       "Functions": 'Type: divider',
       "CSS": 'Type: divider',
       "Templates": 'Type: divider',
