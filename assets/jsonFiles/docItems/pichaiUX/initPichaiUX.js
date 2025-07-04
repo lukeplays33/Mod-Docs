@@ -7,7 +7,7 @@ let initPichaiUX = {
     },
 
     moduleInformation: {
-      description: 'Pichai  Ux is the go to design language for you, if you want to use a design that is created by you, interactive, fun and versatille. \n Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull.,
+      description: 'Pichai  Ux is the go to design language for you, if you want to use a design that is created by you, interactive, fun and versatille. \n Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull.',
       useCases: ['Make colorful, playfull, interactive, and customizable themes for your website or web app.'],
       platforms: ['Web'],
       required: ['Pichai-UX'],
