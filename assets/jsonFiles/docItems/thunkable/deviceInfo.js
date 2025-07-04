@@ -371,7 +371,6 @@ let deviceInfo = {
     },
 
     "getOSVersion": {
-      description: 'The getOSVersion function returns the version of the OS.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -382,13 +381,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/XyXCWQX/Screenshot-2025-01-15-091331.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getOSVersion function returns the version of the OS.',
+        outputValueOptions: ['number'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/XyXCWQX/Screenshot-2025-01-15-091331.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getArchitectureBits": {
-      description: 'The getArchitectureBits function returns the bits of the architecture.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -399,13 +400,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/fXRD3c6/Screenshot-2025-01-15-091508.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getArchitectureBits function returns the bits of the architecture.',
+        outputValueOptions: ['number'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/fXRD3c6/Screenshot-2025-01-15-091508.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getDeviceModel": {
-      description: 'The getDeviceModel function returns the name of the mobile device its model.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -416,13 +419,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/yfQFBzd/Screenshot-2025-01-15-091555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getDeviceModel function returns the name of the mobile device its model.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/yfQFBzd/Screenshot-2025-01-15-091555.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getMaxTouchPoints": {
-      description: 'The getMaxTouchPoints function returns the maximum amount of simultaneous touch points the browser supports.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -433,13 +438,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/ZKcZRv8/Screenshot-2025-01-19-115013.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getMaxTouchPoints function returns the maximum amount of simultaneous touch points the browser supports.',
+        outputValueOptions: ['number'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/ZKcZRv8/Screenshot-2025-01-19-115013.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "isTablet?": {
-      description: 'The isTablet? function allows you to see if the device is a tablet or not. <br>Note: some browsers may see tablets as desktop devices and thus say false when it is a tablet.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -450,13 +457,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/p2H0nLW/Screenshot-2025-01-20-190407.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The isTablet? function allows you to see if the device is a tablet or not. <br>Note: some browsers may see tablets as desktop devices and thus say false when it is a tablet.',
+        outputValueOptions: ['boolean'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/p2H0nLW/Screenshot-2025-01-20-190407.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getDeviceOS": {
-      description: 'The getDeviceOS function returns the actual name of the OS your device is running on. <br>This is not to be confused with the getDeviceCoreOS function wich returns the name on wich the OS is build/based on.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -467,13 +476,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/h2wwMHW/Screenshot-2025-01-20-190702.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getDeviceOS function returns the actual name of the OS your device is running on. <br>This is not to be confused with the getDeviceCoreOS function wich returns the name on wich the OS is build/based on.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/h2wwMHW/Screenshot-2025-01-20-190702.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getCountryCode": {
-      description: 'The getCountryCode function returns the country code of the device this is based on the system language the user or manufacturer has set.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -484,13 +495,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/PDTh0Xy/Screenshot-2025-01-21-143605.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getCountryCode function returns the country code of the device this is based on the system language the user or manufacturer has set.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/PDTh0Xy/Screenshot-2025-01-21-143605.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getCountryName": {
-      description: 'The getCountryName function returns the country name of the device this is based on the system language the user or manufacturer has set.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -501,13 +514,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/6FDJNbF/Screenshot-2025-01-21-145213.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getCountryName function returns the country name of the device this is based on the system language the user or manufacturer has set.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/6FDJNbF/Screenshot-2025-01-21-145213.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "uses12HourClock?": {
-      description: 'The uses12HourClock? function returns true if the device uses the 12 hour clock rather than 24 hour clock(military time).',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -518,13 +533,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/sb8mGTh/Screenshot-2025-01-21-155012.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The uses12HourClock? function returns true if the device uses the 12 hour clock rather than 24 hour clock(military time).',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/sb8mGTh/Screenshot-2025-01-21-155012.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "usesMetricSystem?": {
-      description: 'The usesMetricSystem? checks wheter the user is most likely to use the metric system or not. <br>It does this based on your languagee settings.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -535,13 +552,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/6WPvN2g/Screenshot-2025-01-22-104614.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The usesMetricSystem? checks wheter the user is most likely to use the metric system or not. <br>It does this based on your languagee settings.',
+        outputValueOptions: ['boolean'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/6WPvN2g/Screenshot-2025-01-22-104614.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getTemperatureUnit": {
-      description: 'The getTemperatureUnit function returns what temperature unit the user most likely wants to use.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -552,13 +571,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/852S1wT/Screenshot-2025-01-23-092522.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getTemperatureUnit function returns what temperature unit the user most likely wants to use.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/852S1wT/Screenshot-2025-01-23-092522.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getDateFormat": {
-      description: 'The getDateFormat function returns what date format the user most likely wants to use.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -569,13 +590,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/M8W68RD/Screenshot-2025-01-23-093335.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getDateFormat function returns what date format the user most likely wants to use.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/M8W68RD/Screenshot-2025-01-23-093335.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getTimezone": {
-      description: 'The getTimezone function returns the timezone of the device.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -586,13 +609,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/S7GjW79/Screenshot-2025-01-24-100016.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getTimezone function returns the timezone of the device.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/S7GjW79/Screenshot-2025-01-24-100016.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getScreenResolution": {
-      description: 'The getScreenResolution function returns the resolution of the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -603,13 +628,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/JRF3QzR6/Screenshot-2025-01-29-103249.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getScreenResolution function returns the resolution of the screen.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/JRF3QzR6/Screenshot-2025-01-29-103249.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "usesMonoschromeDisplay?": {
-      description: 'The usesMonoschromeDisplay? function returns wheter the display is a monoschrome (black and white) display or not.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -620,13 +647,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/Q31wGGNt/Screenshot-2025-01-29-103707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The usesMonoschromeDisplay? function returns wheter the display is a monoschrome (black and white) display or not.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/Q31wGGNt/Screenshot-2025-01-29-103707.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getScreenColorGamut": {
-      description: 'The getScreenColorGamut function returns the range of colors the screen can produce or record.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -637,13 +666,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['string'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4ZJ7Z18Q/Screenshot-2025-01-29-104032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getScreenColorGamut function returns the range of colors the screen can produce or record.',
+        outputValueOptions: ['string'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/4ZJ7Z18Q/Screenshot-2025-01-29-104032.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "getPixeRatio": {
-      description: 'The getPixeRatio function returns the pixel ratio of the screen.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -654,13 +685,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['number'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/4np3Y1JF/Screenshot-2025-01-29-104627.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The getPixeRatio function returns the pixel ratio of the screen.',
+        outputValueOptions: ['number'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/4np3Y1JF/Screenshot-2025-01-29-104627.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "isTouchScreenDisplay?": {
-      description: 'The isTouchScreenDisplay? function checkd if the display used on the device is a touchscreen display or not.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -671,13 +704,15 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/HfgX5dTS/Screenshot-2025-01-29-104917.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The isTouchScreenDisplay? function checkd if the display used on the device is a touchscreen display or not.',
+        outputValueOptions: ['boolean'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/HfgX5dTS/Screenshot-2025-01-29-104917.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
 
     "isScreenRetina?": {
-      description: 'The isScreenRetina? function checks if the display used on the device is a retina display or not.',
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -688,9 +723,12 @@ let deviceInfo = {
         viewCode: false,
       },
 
-      outputValueOptions: ['boolean'], // none for events
-      type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-      displayFile: 'https://i.ibb.co/01M5tqM/Screenshot-2025-01-29-105229.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      generalInformation: {
+        description: 'The isScreenRetina? function checks if the display used on the device is a retina display or not.',
+        outputValueOptions: ['boolean'], // none for events
+        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'https://i.ibb.co/01M5tqM/Screenshot-2025-01-29-105229.png', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
     },
   },
   //quickLinks: [], //e.g. for quickly navigating to a tutorial
