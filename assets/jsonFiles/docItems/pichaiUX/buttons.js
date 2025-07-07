@@ -65,6 +65,9 @@ let buttons = {
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+        "Type classes": {
+          description: 'fab: The fab class allows you to turn your buttons (or any other element) into a floating action button',
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
