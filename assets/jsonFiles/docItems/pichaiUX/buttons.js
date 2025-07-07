@@ -58,7 +58,7 @@ let buttons = {
 
     "Specifications": {
       generalInformation: {
-        description: 'An button is an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
+        description: 'In the specifications section you can find the specifications of the button element, such as the classes/forms it has, the states it can have and more. <br> Mose specifications are automatically handled by Pichai UX and  thus only specifications that you may need to apply manually is documented here.',
         outputValueOptions: [], // none for events, tells what kind of value is outputted
         type: 'Element', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
@@ -68,6 +68,11 @@ let buttons = {
         "Type classes": {
           fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button',
         },
+
+        "States": {
+          disabled: 'The disabled state allows you to disable the button, preventing users from clicking it, this state displays the button in a 0.7 opacity.',
+          enabled: 'The enabled state allows you to enable the button, allowing users to click it, this state displays the button in a 1 opacity.',
+        }
       },
 
       controls: { // tells the docs page to display controls for displayFile
