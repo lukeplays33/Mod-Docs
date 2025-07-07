@@ -70,8 +70,12 @@ let buttons = {
         },
 
         "States": {
-          disabled: 'The disabled state allows you to disable the button, preventing users from clicking it, this state displays the button in a 0.7 opacity.',
-          enabled: 'The enabled state allows you to enable the button, allowing users to click it, this state displays the button in a 1 opacity.',
+          disabled: 'The disabled state allows you to disable the element, preventing users from clicking it, this state displays the element in a 0.7 opacity.',
+          enabled: 'The enabled state allows you to enable the element, allowing users to click it, this state displays the element in a 1 opacity.',
+        },
+
+        "Attributes": {
+          placeholder: 'The placeholder attribute allows you to set the placeholder for a element.',
         }
       },
 
