@@ -44,13 +44,13 @@ let aboutPichaiUX = {
   contents: {
     Introduction: {
       generalInformation: {
-        description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull. \n Want to learn more about Pichai UX? Read on!',
+        description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and easy to use. \n Want to learn more about Pichai UX? Read on!',
         outputValueOptions: ['Alot of cuteness UwU'], // none for events, tells what kind of value is outputted
         type: 'Introduction', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
         codeFormat: 'javascript', // set to img to display a image
       },
-      
+
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
       },
 
@@ -69,6 +69,30 @@ let aboutPichaiUX = {
     Customizable: {
       generalInformation: {
         description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and joyfull. \n Want to learn more about Pichai UX? Read on!',
+        outputValueOptions: ['Alot of cuteness UwU'], // none for events, tells what kind of value is outputted
+        type: 'Introduction', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        codeFormat: 'javascript', // set to img to display a image
+      },
+
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        hideControls: true, // if true, the controls will not be displayed
+
+        fullscreen: false,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+
+      layoutClass: 'columnDirection', // the layout class that is used to display the item, this class allows you to apply a custom styling to items per page, allowing you to make different designs per page.
+    },
+
+    "Easy to use": {
+      generalInformation: {
+        description: 'Pichai UX is designed to be easy to use, to do this Pichai Ux handles most of the styling for you, allowing you to focus on the functionality of your app.',
         outputValueOptions: ['Alot of cuteness UwU'], // none for events, tells what kind of value is outputted
         type: 'Introduction', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
