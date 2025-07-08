@@ -38,7 +38,7 @@ let globalItemsPichaiUX = {
   contents: {
     "Classes": {
       generalInformation: {
-        fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button',
+        fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button. <br> More information: https://lukeplays33.github.io/Mod-Docs/?page=Pichai_UX+-+Buttons',
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
