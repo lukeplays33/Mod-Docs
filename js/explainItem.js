@@ -208,7 +208,7 @@ function loadDocItem(index) {
 
     variablesAndInfo.children[1].children[1].children[0].innerHTML = '';
 
-    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(['description', 'outputValueOptions', 'inputValueOptions', 'type', 'platforms'], item.generalInformation));
+    variablesAndInfo.children[1].children[1].children[0].appendChild(createInfoTable(Object.keys(item.generalInformation), item.generalInformation));
 
     if (Object.keys(item.variables).length == 0) {
         variablesAndInfo.children[2].style.display = 'none'; // use style instead of remove beceasue logic not working in if statement, when using remove + removes all last children when it's only supposed to remove the hr
