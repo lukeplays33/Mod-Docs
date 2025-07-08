@@ -11,14 +11,16 @@ import { customTabs } from './docItems/thunkable/customTabs.js';
 import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
 import { aboutPichaiUX } from './docItems/pichaiUX/aboutPichaiUx.js';
 import { buttons } from './docItems/pichaiUX/buttons.js';
+import { globalItemsPichaiUX } from './docItems/pichaiUX/global.js';
 
 let docsItemsJson = {
   "Pichai_UX": {
     description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale and increadibily fun to use.',
     items: {
-      "An introduction to Pichai UX": 'Type: divider',
+      "General": 'Type: divider',
       'What is Pichai UX?': aboutPichaiUX,
       'Initializing Pichai UX': initPichaiUX,
+      'Global items': globalItemsPichaiUX,
 
       "Elements": 'Type: divider',
       'Buttons': buttons,
