@@ -65,18 +65,14 @@ let buttons = {
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-        "Type classes": {
+        "Related classes": {
           fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button',
         },
 
-        "States": {
+        "Related States": {
           disabled: 'The disabled state allows you to disable the element, preventing users from clicking it, this state displays the element in a 0.7 opacity.',
           enabled: 'The enabled state allows you to enable the element, allowing users to click it, this state displays the element in a 1 opacity.',
         },
-
-        "Attributes": {
-          placeholder: 'The placeholder attribute allows you to set the placeholder for a element.',
-        }
       },
 
       controls: { // tells the docs page to display controls for displayFile
