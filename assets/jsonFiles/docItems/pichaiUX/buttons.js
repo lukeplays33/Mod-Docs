@@ -60,8 +60,6 @@ let buttons = {
     "Specifications": {
       generalInformation: {
         description: 'In the specifications section you can find the specifications of the button element, such as related classes/forms, states and more. <br> Most specifications are automatically handled by Pichai UX and thus only specifications that you may need to apply manually is documented here.',
-        outputValueOptions: [], // none for events, tells what kind of value is outputted
-        type: 'Element', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
