@@ -64,6 +64,12 @@ let buttons = {
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+        "Types": {
+          text: 'A text button is a button that only displays text.',
+          icon: 'A icon button is a button that displays a icon and a tooltip instead of text.',
+          "text and icon": 'A text and icon button is a button that displays a icon along side its text.',
+        },
+
         "Related classes": {
           fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button',
         },
