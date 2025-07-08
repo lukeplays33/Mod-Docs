@@ -109,6 +109,10 @@ let buttons = {
           text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
           icon: 'A button its icon should always match the text and action that the button has.',
         },
+
+        "Accessibility": {
+          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
