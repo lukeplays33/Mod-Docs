@@ -59,7 +59,7 @@ let buttons = {
 
     "Specifications": {
       generalInformation: {
-        description: 'In the specifications section you can find the specifications of the button element, such as related classes/forms, states and more. <br> Most specifications are automatically handled by Pichai UX and thus only specifications that you may need to apply manually is documented here.',
+        description: 'Specifications for the button or fab element/class.',
         displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
@@ -84,9 +84,7 @@ let buttons = {
 
     "Guidelines": {
       generalInformation: {
-        description: 'An button is an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
-        outputValueOptions: [], // none for events, tells what kind of value is outputted
-        type: 'Element', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+        description: 'Guidelines on how to use and style a button or fab.',
         displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
@@ -98,7 +96,7 @@ let buttons = {
 
         "Styling": {
           width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
-          textalign: 'A button its text should always be centered to keep a visual and responsive design.',
+          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
         },
 
         "Text and Icons": {
