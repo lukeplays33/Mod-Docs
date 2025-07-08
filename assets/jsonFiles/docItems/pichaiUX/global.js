@@ -84,22 +84,6 @@ let globalItemsPichaiUX = {
         viewCode: false,
       },
     },
-
-    "Accesibility": {
-      generalInformation: {
-        "Labels and Icons": 'The icons attatched to a element should always match the functionality and the descirbed text of the element.',
-      },
-
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-    },
   },
 }
 
