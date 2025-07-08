@@ -91,6 +91,20 @@ let buttons = {
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+        "Amounts": {
+          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
+          fabs: 'Only place a maximum of two fabs above each other, preferrably the biggest should be on the bottom to keep a visual hierachy.',
+        },
+
+        "Styling": {
+          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
+          textalign: 'A button its text should always be centered to keep a visual and responsive design.',
+        },
+
+        "Text and Icons": {
+          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
+          icon: 'A button its icon should always match the text and action that the button has.',
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
