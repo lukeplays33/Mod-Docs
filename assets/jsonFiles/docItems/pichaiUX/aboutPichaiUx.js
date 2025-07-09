@@ -44,7 +44,7 @@ let aboutPichaiUX = {
   contents: {
     Introduction: {
       generalInformation: {
-        description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: customizable, attractive, playfull and easy to use. \n Want to learn more about Pichai UX? Read on!',
+        description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: personalizable, interactive, playfull and easy to use. \n Want to learn more about Pichai UX? Read on!',
         outputValueOptions: ['Alot of cuteness UwU'], // none for events, tells what kind of value is outputted
         type: 'Introduction', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
