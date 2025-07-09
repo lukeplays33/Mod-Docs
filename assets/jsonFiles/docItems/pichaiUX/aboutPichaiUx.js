@@ -52,10 +52,18 @@ let aboutPichaiUX = {
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-        Personalizable: 'In its core Pichai UX has been designed and build to be incredibily customizable and expresive, per user. <br> Users can decide how the site looks for them without companies having to set a design that is set in stone, users can change the font, colors, wallpapers, shapes, icons and many more allowing them to express themselves!',
-        Interactive: 'The second principle of Pichai Ux is Interacrtive, with fun animations, interactive elements and interactive designs Pichai UX achieves this.',
-        Playfull: 'The third principle of Pichai Ux is playfullness, with fun shapes, playfull aniamtions and fun animals or figures incorporated into the design we make the design more playfull.',
-        "Easy to use": 'The fourth principle of Pichai Ux is easy to use, Pichai UX aims at making designs easy, fun and quick, with tempaltes, extra functions and new elements we hope to increase productivity and speed of making new designs and building websites.',
+        Personalizable: {
+          descirption: 'In its core Pichai UX has been designed and build to be incredibily customizable and expresive, per user. <br> Users can decide how the site looks for them without companies having to set a design that is set in stone, users can change the font, colors, wallpapers, shapes, icons and many more allowing them to express themselves!',
+        },
+        Interactive: {
+          description: 'The second principle of Pichai Ux is Interacrtive, with fun animations, interactive elements and interactive designs Pichai UX achieves this.',
+        },
+        Playfull: {
+          description: 'The third principle of Pichai Ux is playfullness, with fun shapes, playfull aniamtions and fun animals or figures incorporated into the design we make the design more playfull.',
+        },
+        "Easy to use": {
+          description: 'The fourth principle of Pichai Ux is easy to use, Pichai UX aims at making designs easy, fun and quick, with tempaltes, extra functions and new elements we hope to increase productivity and speed of making new designs and building websites.',
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
