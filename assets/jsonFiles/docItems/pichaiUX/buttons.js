@@ -43,7 +43,7 @@ let buttons = {
         added: "0.5",
         upadted: "0.5",
         changes: "Added the Button and fab styling and classes",
-        displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
@@ -60,7 +60,7 @@ let buttons = {
     "Specifications": {
       generalInformation: {
         description: 'Specifications for the button or fab element/class.',
-        displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
@@ -91,7 +91,7 @@ let buttons = {
     "Guidelines": {
       generalInformation: {
         description: 'Guidelines on how to use and style a button or fab.',
-        displayFile: `https://i.ibb.co/4gKnfcZT/Screenshot-From-2025-07-04-13-12-31.png`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
