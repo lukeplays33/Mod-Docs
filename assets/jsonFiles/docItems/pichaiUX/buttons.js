@@ -88,7 +88,77 @@ let buttons = {
       },
     },
 
-    "Guidelines": {
+    "Markup Guidelines": {
+      generalInformation: {
+        description: 'Guidelines on how to use buttons or floating action buttons in your HTML code.',
+        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
+
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+        "Placements": {
+          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
+          fabs: 'Floating Action Buttons are buttons that float above the content of the site and are typically used to allow certain actions to be quickly initialized from anywhere of the page, there fore we recommend that you only use Floating action buttons when actions need to be taken frequently and quickly from anywhere on the page.',
+        },
+
+        "Styling": {
+          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
+          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
+        },
+
+        "Text and Icons": {
+          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
+          icon: 'A button its icon should always match the text and action that the button has.',
+        },
+
+        "Accessibility": {
+          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+    },
+
+    "Styling Guidelines": {
+      generalInformation: {
+        description: 'Guidelines on how to use and style a button or fab.',
+        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
+      },
+
+      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
+        "Amounts": {
+          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
+          fabs: 'Only place a maximum of two fabs above each other, preferrably the biggest should be on the bottom to keep a visual hierachy.',
+        },
+
+        "Styling": {
+          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
+          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
+        },
+
+        "Text and Icons": {
+          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
+          icon: 'A button its icon should always match the text and action that the button has.',
+        },
+
+        "Accessibility": {
+          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
+        },
+      },
+
+      controls: { // tells the docs page to display controls for displayFile
+        fullscreen: true,
+        play: false,
+        console: false,
+        viewCode: false,
+      },
+    },
+    
+    "Accessibility Guidelines": {
       generalInformation: {
         description: 'Guidelines on how to use and style a button or fab.',
         displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
