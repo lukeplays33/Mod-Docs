@@ -42,7 +42,7 @@ let buttons = {
         description: 'An button is an interactive element that users can click to perform actions such as submitting forms or triggering scripts.',
         added: "0.5",
         upadted: "0.5",
-        changes: "Added the Button and fab styling and classes",
+        changes: "Added text and icon buttons.",
         displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
@@ -68,10 +68,6 @@ let buttons = {
           text: 'A text button is a button that only displays text.',
           icon: 'A icon button is a button that displays a icon and a tooltip instead of text.',
           "text and icon": 'A text and icon button is a button that displays a icon along side its text.',
-        },
-
-        "Related classes": {
-          fab: 'The fab class allows you to turn your buttons (or any other element) into a floating action button',
         },
 
         "Related States": {
