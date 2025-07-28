@@ -98,8 +98,8 @@ let buttons = {
         "Placements": {
           content: `
           <div style="width: calc(100% - 16px); justify-content:start;" >
-          <h4 style="margin-left:0px">Buttons</h4>
-          <h4 style="margin-left:0px">Floating Action Buttons</h4>
+          <h6 style="margin-left:0px">Buttons</h6>
+          <h6 style="margin-left:0px">Floating Action Buttons</h6>
           <p style="text-align:left; margin-left:8px;" >Floating Action Buttons are buttons that float above the content of the site and are typically used to allow certain actions to be quickly initialized from anywhere of the page. <br><br> We use Floating Action Buttons when we: </p>
           <ul>
           <li style="text-align:left; margin-left:8px;">Need to do a certain action multiple times</li>
