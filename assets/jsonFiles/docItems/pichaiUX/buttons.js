@@ -97,8 +97,8 @@ let buttons = {
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
         "Placements": {
           content: `
-          <h1>Buttons</h1>
-          <h1>Floating Action Buttons</h1>`
+          <h3>Buttons</h3>
+          <h3>Floating Action Buttons</h3>`
         },
 
         "Styling": {
