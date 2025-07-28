@@ -103,19 +103,10 @@ let buttons = {
         "Text": {
           content: `
           <ul>
-          <li style="text-align:left; margin-left:8px;">Do: A button it's text should use simple and short words to describe the button it's action.</li>
+          <li style="text-align:left; margin-left:8px;">Do: A button it's text should use simple and short words to describe the button it's action or theme.</li>
           <li style="text-align:left; margin-left:8px;">Don't: A button it's text shouldn't be long, hard to read and going too much into detail.</li>
           </ul>
           `
-        },
-
-        "Text and Icons": {
-          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
-          icon: 'A button its icon should always match the text and action that the button has.',
-        },
-
-        "Accessibility": {
-          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
         },
       },
 
