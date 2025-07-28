@@ -97,8 +97,10 @@ let buttons = {
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
         "Placements": {
           content: `
-          <h3>Buttons</h3>
-          <h3>Floating Action Buttons</h3>`
+          <div styling="width: calc(100% - 16px)" >
+          <h2>Buttons</h2>
+          <h2>Floating Action Buttons</h2>
+          </div>`
         },
 
         "Styling": {
@@ -158,7 +160,7 @@ let buttons = {
         viewCode: false,
       },
     },
-    
+
     "Accessibility Guidelines": {
       generalInformation: {
         description: 'Guidelines on how to use and style a button or fab.',
