@@ -97,14 +97,14 @@ let buttons = {
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
         "Placements": {
           content: `
-          <div style="width: calc(100% - 16px)" >
+          <div style="width: calc(100% - 16px); justify-content:start;" >
           <h5 style="margin-left:0px">Buttons</h5>
           <h5 style="margin-left:0px">Floating Action Buttons</h5>
           <p>Floating Action Buttons are buttons that float above the content of the site and are typically used to allow certain actions to be quickly initialized from anywhere of the page. <br> We use Floating Action Buttons when we: </p>
-          <ol>
-          <li>Need to do a certain action multiple times<li>
-          <li>Need to do a certain action quickly<li>
-          </ol>
+          <ul>
+          <li>Need to do a certain action multiple times</li>
+          <li>Need to do a certain action quickly</li>
+          </ul>
           </div>`
         },
 
