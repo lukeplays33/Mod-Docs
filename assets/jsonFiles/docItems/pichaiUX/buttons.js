@@ -84,102 +84,19 @@ let buttons = {
       },
     },
 
-    "Markup Guidelines": {
+    "Guidelines": {
       generalInformation: {
-        description: 'Guidelines on how to use buttons or floating action buttons in your HTML code.',
+        description: 'Guidelines on how to use buttons throughout your website or app.',
         displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-        "Placements": {
+        "Size": {
           content: `
-          <div style="width: calc(100% - 16px); justify-content:start;" >
-
-          <h4 style="font-size: 0.9em; margin-left:0px">Buttons</h4>
-          <p style="text-align:left; margin-left:8px;" >Buttons are alements that once clicked execute a certain action. <br><br> We use Buttons when we: </p>
-          <ul>
-          <li style="text-align:left; margin-left:8px;">Need to do a certain action multiple times.</li>
-          <li style="text-align:left; margin-left:8px;">Need to do a certain action.</li>
+          <li style="text-align:left; margin-left:8px;">Do: A button it's width/height is responsive to it's text content and wraps around it with even spacing.</li>
+          <li style="text-align:left; margin-left:8px;">Don't:A button it's width/height is narrower than it's text.</li>
           </ul>
-
-          <h4 style="font-size: 0.9em; margin-left:0px">Floating Action Buttons</h4>
-          <p style="text-align:left; margin-left:8px;" >Floating Action Buttons are buttons that float above the content of the site. <br><br> We use Floating Action Buttons when we: </p>
-
-          <ul>
-          <li style="text-align:left; margin-left:8px;">Need to do a certain action multiple times.</li>
-          <li style="text-align:left; margin-left:8px;">Need to do a certain action quickly.</li>
-          </ul>
-          </div>`
-        },
-
-        "Styling": {
-          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
-          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
-        },
-
-        "Text and Icons": {
-          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
-          icon: 'A button its icon should always match the text and action that the button has.',
-        },
-
-        "Accessibility": {
-          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
-        },
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-    },
-
-    "Styling Guidelines": {
-      generalInformation: {
-        description: 'Guidelines on how to use and style a button or fab.',
-        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-      },
-
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-        "Amounts": {
-          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
-          fabs: 'Only place a maximum of two fabs above each other, preferrably the biggest should be on the bottom to keep a visual hierachy.',
-        },
-
-        "Styling": {
-          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
-          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
-        },
-
-        "Text and Icons": {
-          text: 'A button its text should always describe what the button it action does in a short and easy to understand way.',
-          icon: 'A button its icon should always match the text and action that the button has.',
-        },
-
-        "Accessibility": {
-          tooltips: 'Display a tooltip when a button only displays a icon, this ensures that users can still understand what a button does even when they dont understand the meaning of the icon.',
-        },
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-    },
-
-    "Accessibility Guidelines": {
-      generalInformation: {
-        description: 'Guidelines on how to use and style a button or fab.',
-        displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-      },
-
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-        "Amounts": {
-          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
-          fabs: 'Only place a maximum of two fabs above each other, preferrably the biggest should be on the bottom to keep a visual hierachy.',
+          `
         },
 
         "Styling": {
