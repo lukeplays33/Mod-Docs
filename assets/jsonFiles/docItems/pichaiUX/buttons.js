@@ -59,7 +59,7 @@ let buttons = {
 
     "Specifications": {
       generalInformation: {
-        description: 'Specifications for the button or fab element/class.',
+        description: 'Specifications buttons.',
         displayFile: `https://lukeplays33.github.io/Mod-Docs-Pichai-UX-Examples/pages/buttons.html`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
       },
 
