@@ -108,6 +108,15 @@ let buttons = {
           </ul>
           `
         },
+
+        "Icon": {
+          content: `
+          <ul>
+          <li style="text-align:left; margin-left:8px;">Do: A button it's icon matches the text or functionality the button has.</li>
+          <li style="text-align:left; margin-left:8px;">Don't: A button has more than one icon.</li>
+          </ul>
+          `
+        },
       },
 
       controls: { // tells the docs page to display controls for displayFile
