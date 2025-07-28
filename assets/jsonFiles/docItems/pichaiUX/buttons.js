@@ -98,8 +98,8 @@ let buttons = {
         "Placements": {
           content: `
           <div style="width: calc(100% - 16px)" >
-          <h4 style="margin-left:0px">Buttons</h4>
-          <h4 style="margin-left:0px">Floating Action Buttons</h4>
+          <h5 style="margin-left:0px">Buttons</h5>
+          <h5 style="margin-left:0px">Floating Action Buttons</h5>
           </div>`
         },
 
