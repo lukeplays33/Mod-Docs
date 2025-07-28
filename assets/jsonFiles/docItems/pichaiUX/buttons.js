@@ -100,6 +100,11 @@ let buttons = {
           <div style="width: calc(100% - 16px)" >
           <h5 style="margin-left:0px">Buttons</h5>
           <h5 style="margin-left:0px">Floating Action Buttons</h5>
+          <p>Floating Action Buttons are buttons that float above the content of the site and are typically used to allow certain actions to be quickly initialized from anywhere of the page. <br> We use Floating Action Buttons when we: </p>
+          <ol>
+          <li>Need to do a certain action multiple times<li>
+          <li>Need to do a certain action quickly<li>
+          </ol>
           </div>`
         },
 
