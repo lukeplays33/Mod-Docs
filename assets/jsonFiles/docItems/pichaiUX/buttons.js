@@ -98,9 +98,17 @@ let buttons = {
         "Placements": {
           content: `
           <div style="width: calc(100% - 16px); justify-content:start;" >
-          <h4 style="font-size: 0.8em; margin-left:0px">Buttons</h4>
-          <h4 style="font-size: 0.8em; margin-left:0px">Floating Action Buttons</h4>
+
+          <h4 style="font-size: 0.9em; margin-left:0px">Buttons</h4>
+          <p style="text-align:left; margin-left:8px;" >Buttons are alements that once clicked execute a certain action. <br><br> We use Buttons when we: </p>
+          <ul>
+          <li style="text-align:left; margin-left:8px;">Need to do a certain action multiple times.</li>
+          <li style="text-align:left; margin-left:8px;">Need to do a certain action.</li>
+          </ul>
+
+          <h4 style="font-size: 0.9em; margin-left:0px">Floating Action Buttons</h4>
           <p style="text-align:left; margin-left:8px;" >Floating Action Buttons are buttons that float above the content of the site. <br><br> We use Floating Action Buttons when we: </p>
+
           <ul>
           <li style="text-align:left; margin-left:8px;">Need to do a certain action multiple times.</li>
           <li style="text-align:left; margin-left:8px;">Need to do a certain action quickly.</li>
