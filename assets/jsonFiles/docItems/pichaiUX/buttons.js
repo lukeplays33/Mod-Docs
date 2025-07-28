@@ -100,9 +100,13 @@ let buttons = {
           `
         },
 
-        "Styling": {
-          width: 'A button its width shouldnt be narrower than the buttons text and should keep a minimum of 8px free on both sides.',
-          textAlign: 'A button its text should always be centered to keep a visual and responsive design.',
+        "Text": {
+          content: `
+          <ul>
+          <li style="text-align:left; margin-left:8px;">Do: A button it's text should use simple and short words to describe the button it's action.</li>
+          <li style="text-align:left; margin-left:8px;">Don't: A button it's text shouldn't be long, hard to read and going too much into detail.</li>
+          </ul>
+          `
         },
 
         "Text and Icons": {
