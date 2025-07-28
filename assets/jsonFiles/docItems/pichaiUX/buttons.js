@@ -96,8 +96,9 @@ let buttons = {
 
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
         "Placements": {
-          buttons: 'Avoid using too many buttons, buttons are often used to indicate a important action and using too many can lead to confusion or ruin visual heirachy.',
-          fabs: 'Floating Action Buttons are buttons that float above the content of the site and are typically used to allow certain actions to be quickly initialized from anywhere of the page, there fore we recommend that you only use Floating action buttons when actions need to be taken frequently and quickly from anywhere on the page.',
+          content: `
+          <h1>Buttons</h1>
+          <h1>Floating Action Buttons</h1>`
         },
 
         "Styling": {

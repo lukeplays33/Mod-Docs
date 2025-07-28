@@ -47,7 +47,6 @@ let initPichaiUX = {
     'Simple Initialization': {
       generalInformation: {
         description: 'The initialize function starts initializing all required packages for pichai UX to work, based on the options you provide.',
-        outputValueOptions: [], // none for events, tells what kind of value is outputted
         type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `
  import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
