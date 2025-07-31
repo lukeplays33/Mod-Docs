@@ -13,6 +13,8 @@ import { aboutPichaiUX } from './docItems/pichaiUX/aboutPichaiUx.js';
 import { buttons } from './docItems/pichaiUX/buttons.js';
 import { globalItemsPichaiUX } from './docItems/pichaiUX/global.js';
 
+import { cssVars } from './docItems/pichaiUX/css/cssVariables.js';
+
 let docsItemsJson = {
   "Pichai_UX": {
     description: 'Pichai-UX is a design language developed by dreamForge aiming at creating a design that is customizable yet versittale and increadibily fun to use.',
@@ -25,6 +27,7 @@ let docsItemsJson = {
       "Elements": 'Type: divider',
       'Buttons': buttons,
       "CSS": 'Type: divider',
+      "CSS Varoab;es": cssVars,
       "Templates": 'Type: divider',
       "Icons and Images": 'Type: divider', // tells the list to display this item as a divider
       "DynamicIcons": dynamicIcons,
