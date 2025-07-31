@@ -39,17 +39,12 @@ let cssVars = {
     contents: {
         Variables: {
             generalInformation: {
-                description: 'Pichai UX is the design language for you, if you want to use a design that is created by you, Interactive, fun and versatille.<br> Pichai UX follows the four core principles of dreamForge their design language: personalizable, interactive, playfull and easy to use. \n Want to learn more about Pichai UX? Read on!',
-                outputValueOptions: ['Alot of cuteness UwU'], // none for events, tells what kind of value is outputted
-                type: 'Introduction', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
+                description: 'Here all variables that Pichai UX generates are described, you can use these in your own css files as well.',
                 displayFile: 'pichaiUx.generateDyanmicIcon(img, radius);', // the file that is displayed all together with the info, it can be an image, video, a code file or a I demo that let's user see what happens when a variable it's value is changed for example.
                 codeFormat: 'javascript', // set to img to display a image
             },
 
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-                backgroundImage: {
-                    description: "The URL or path for a background image. 'none' indicates no image is used.",
-                },
                 contrast: {
                     description: "A numerical value representing the contrast level of an element. 1 is the default.",
                 },
@@ -82,90 +77,119 @@ let cssVars = {
                 },
                 primary: {
                     description: "The primary color, specified as an RGBA value.",
+                    readOnly: true,
                 },
                 secondairy: {
                     description: "The secondary color, specified as an RGBA value.",
+                    readOnly: true,
                 },
                 tertiary: {
                     description: "The tertiary color, specified as an RGBA value.",
+                    readOnly: true,
                 },
                 primaryTextColor: {
-                    description: "The text color for primary elements, which is 'white' in this case.",
+                    description: "The text color for primary elements.",
+                    readOnly: true,
                 },
                 secondairyTextColor: {
-                    description: "The text color for secondary elements, which is 'white' in this case.",
+                    description: "The text color for secondary elements.",
+                    readOnly: true,
                 },
                 tertiaryTextColor: {
-                    description: "The text color for tertiary elements, which is 'white' in this case.",
+                    description: "The text color for tertiary elements.",
+                    readOnly: true,
                 },
                 backgroundColor: {
                     description: "The background color of a main container, specified as an RGBA value.",
+                    readOnly: true,
                 },
                 primaryContainer: {
                     description: "The background color for a primary container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 secondairyContainer: {
                     description: "The background color for a secondary container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 tertiaryContainer: {
                     description: "The background color for a tertiary container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 primaryContainerTextColor: {
-                    description: "The text color for a primary container, which is 'black'.",
+                    description: "The text color for a primary container.",
+                    readOnly: true,
                 },
                 secondairyContainerTextColor: {
-                    description: "The text color for a secondary container, which is 'black'.",
+                    description: "The text color for a secondary container.",
+                    readOnly: true,
                 },
                 tertiaryContainerTextColor: {
-                    description: "The text color for a tertiary container, which is 'white'.",
+                    description: "The text color for a tertiary container.",
+                    readOnly: true,
                 },
                 error: {
                     description: "The color used to represent an error, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 warning: {
                     description: "The color used to represent a warning, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 note: {
                     description: "The color used to represent a note or informational message, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 check: {
                     description: "The color used to represent a successful check, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 errorTextColor: {
-                    description: "The text color for error messages, which is 'white'.",
+                    description: "The text color for error messages.",
+                    readOnly: true,
                 },
                 warningTextColor: {
-                    description: "The text color for warning messages, which is 'black'.",
+                    description: "The text color for warning messages.",
+                    readOnly: true,
                 },
                 noteTextColor: {
-                    description: "The text color for notes, which is 'white'.",
+                    description: "The text color for notes.",
+                    readOnly: true,
                 },
                 checkTextColor: {
-                    description: "The text color for successful checks, which is 'black'.",
+                    description: "The text color for successful checks.",
+                    readOnly: true,
                 },
                 errorContainer: {
                     description: "The background color for an error container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 warningContainer: {
                     description: "The background color for a warning container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 noteContainer: {
                     description: "The background color for a note container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 checkContainer: {
                     description: "The background color for a check container, specified as an HSLA value.",
+                    readOnly: true,
                 },
                 errorContainerTextColor: {
-                    description: "The text color for an error container, which is 'black'.",
+                    description: "The text color for an error container.",
+                    readOnly: true,
                 },
                 warningContainerTextColor: {
-                    description: "The text color for a warning container, which is 'black'.",
+                    description: "The text color for a warning container.",
+                    readOnly: true,
                 },
                 noteContainerTextColor: {
-                    description: "The text color for a note container, which is 'black'.",
+                    description: "The text color for a note container.",
+                    readOnly: true,
                 },
                 checkContainerTextColor: {
-                    description: "The text color for a check container, which is 'black'.",
+                    description: "The text color for a check container.",
+                    readOnly: true,
                 },
             },
 
