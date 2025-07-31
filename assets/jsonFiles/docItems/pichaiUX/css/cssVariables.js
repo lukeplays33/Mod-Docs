@@ -46,7 +46,8 @@ let cssVars = {
 
             variables: { //the input or outputs it can have, the types they return or accept such as a string or number
                 contrast: {
-                    description: "A numerical value representing the contrast level of an element. 1 is the default.",
+                    description: "A numerical value representing the contrast level of an element.",
+                    defaultValue: '1',
                 },
                 wallpaperBlur: {
                     description: "The blur level applied to the wallpaper, specified in pixels (e.g., '0px').",
@@ -56,6 +57,7 @@ let cssVars = {
                 },
                 wallpaperBrightness: {
                     description: "The brightness level of the wallpaper, where 1 is the default.",
+                    defaultValue: '0.9',
                 },
                 hueRotation: {
                     description: "The hue rotation applied to an element, specified in degrees (e.g., '0deg').",
