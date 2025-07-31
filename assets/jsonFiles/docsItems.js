@@ -27,7 +27,7 @@ let docsItemsJson = {
       "Elements": 'Type: divider',
       'Buttons': buttons,
       "CSS": 'Type: divider',
-      "CSS Varoab;es": cssVars,
+      "CSS Variables": cssVars,
       "Templates": 'Type: divider',
       "Icons and Images": 'Type: divider', // tells the list to display this item as a divider
       "DynamicIcons": dynamicIcons,
