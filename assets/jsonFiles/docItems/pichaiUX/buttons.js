@@ -134,7 +134,7 @@ let buttons = {
           <li style="text-align:left; margin-left:8px;">A button it's icon matches the text or functionality the button has.</li>
 
           <div class='exampleFrame error'>
-          <i class="material-symbols-outlined">settings minimize</i>
+          <button class="material-symbols-outlined">settings minimize</button>
           </div>
           <li style="text-align:left; margin-left:8px;">A button has more than one icon.</li>
           <li style="text-align:left; margin-left:8px;">A button it's icon is the complete opposite of what the button does.</li>
