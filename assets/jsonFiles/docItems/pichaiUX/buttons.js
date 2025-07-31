@@ -110,8 +110,15 @@ let buttons = {
         "Text": {
           content: `
           <ul>
-          <li style="text-align:left; margin-left:8px;">Do: A button it's text should use simple and short words to describe the button it's action or theme.</li>
-          <li style="text-align:left; margin-left:8px;">Do: A button it's first letter of it's text is capitalized.</li>
+          <div class='exampleFrame correct'>
+          <button>Simple action</button>
+          </div>
+          <li style="text-align:left; margin-left:8px;">A button it's text should use simple and short words to describe the button it's action or theme.</li>
+          <li style="text-align:left; margin-left:8px;">A button it's first letter of it's text is capitalized.</li>
+
+           <div class='exampleFrame error'>
+          <button style="width:60px; max-height:60px">This is a very complicated paragraph.</button>
+          </div>
           <li style="text-align:left; margin-left:8px;">Don't: A button it's text shouldn't be long, hard to read and going too much into detail.</li>
           <li style="text-align:left; margin-left:8px;">Don't: A button it's text is the complete opposite of what the button does.</li>
           </ul>
