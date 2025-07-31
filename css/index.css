@@ -638,9 +638,3 @@ widgetbot {
 #draawer li::marker {
   display: none;
 }
-
-.exampleFrame {
-  background-color: var(--secondairyContainer);
-
-  padding:30px;
-}

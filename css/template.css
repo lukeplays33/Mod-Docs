@@ -8,3 +8,14 @@
 .columnDirection #displayFile {
     height:300px;
 }
+
+/* class for frames where images can be put in inside of accordions */
+.exampleFrame {
+  background-color: var(--secondairyContainer);
+
+  padding:30px;
+
+  width:calc( 100% - 60px);
+
+  margin-bottom:8px;
+}
