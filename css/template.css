@@ -25,3 +25,12 @@
   justify-content: center;
   align-items: center;
 }
+
+/* classes to indicate do's and donts */
+.error {
+    background-color:var(--error)
+}
+
+.correct {
+    background-color:var(--error)
+}

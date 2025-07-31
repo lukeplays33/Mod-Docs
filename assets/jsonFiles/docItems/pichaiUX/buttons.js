@@ -94,14 +94,12 @@ let buttons = {
         "Size": {
           content: `
           <ul>
-          <hr titletext="Do's">
-          <div class='exampleFrame'>
+          <div class='exampleFrame correct'>
           <button> This button has a correct sizing!</button>
           </div>
           <li style="text-align:left; margin-left:8px;">A button it's width/height is responsive to it's text content and wraps around it with even spacing.</li>
 
-          <hr titletext="Dont's">
-           <div class='exampleFrame'>
+          <div class='exampleFrame error'>
           <button style="width:60px; max-height:60px"> This button has a incorrect sizing!</button>
           </div>
           <li style="text-align:left; margin-left:8px;">A button it's width/height is narrower than it's text.</li>
