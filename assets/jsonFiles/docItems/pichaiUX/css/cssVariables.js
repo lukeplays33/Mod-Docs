@@ -51,9 +51,11 @@ let cssVars = {
                 },
                 wallpaperBlur: {
                     description: "The blur level applied to the wallpaper, specified in pixels (e.g., '0px').",
+                    defaultValue: '0',
                 },
                 inversion: {
                     description: "The inversion level of an element. 0 means no inversion.",
+                    defaultValue: '0',
                 },
                 wallpaperBrightness: {
                     description: "The brightness level of the wallpaper, where 1 is the default.",
@@ -61,21 +63,27 @@ let cssVars = {
                 },
                 hueRotation: {
                     description: "The hue rotation applied to an element, specified in degrees (e.g., '0deg').",
+                    defaultValue: '0deg',
                 },
                 wallpaperInversion: {
                     description: "The inversion level of the wallpaper. 0 means no inversion.",
+                    defaultValue: '0',
                 },
                 wallpaperSize: {
                     description: "Controls how the background image is sized. 'cover' scales the image to cover the entire container.",
+                    defaultValue: 'cover',
                 },
                 wallpaperPosition: {
                     description: "The position of the wallpaper within its container. 'center' centers the image.",
+                    defaultValue: 'center',
                 },
                 wallpaperRepeat: {
                     description: "Determines if and how the wallpaper image is repeated. 'no-repeat' means the image is displayed once.",
+                    defaultValue: 'no-repeat',
                 },
                 elementBlur: {
                     description: "The blur level applied to a general element, specified in pixels (e.g., '0px').",
+                    defaultValue: '15px',
                 },
                 primary: {
                     description: "The primary color, specified as an RGBA value.",
