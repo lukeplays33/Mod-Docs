@@ -158,8 +158,10 @@ let buttons = {
         "Responsiveness": {
           content: `
                     <div class='exampleFrame correct'>
+                    <div class="columnDirection">
           <template-settings></template-settings>
           <button>Centered</button>
+          </div>
 
           <ul>
           <li style="text-align:left; margin-left:8px;">A button it's icon and text are always centered no matter the width or height.</li>
