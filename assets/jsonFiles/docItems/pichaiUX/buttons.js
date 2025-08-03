@@ -113,48 +113,58 @@ let buttons = {
 
         "Text": {
           content: `
-          <ul>
-          <div class='exampleFrame correct'>
+                    <div class='exampleFrame correct'>
           <button>Simple action</button>
-          </div>
+
+                    <ul>
           <li style="text-align:left; margin-left:8px;">A button it's text should use simple and short words to describe the button it's action or theme.</li>
           <li style="text-align:left; margin-left:8px;">A button it's first letter of it's text is capitalized.</li>
+          </ul>
+          </div>
 
            <div class='exampleFrame error'>
           <button>This is a very complicated paragraph.</button>
-          </div>
+
+          <ul>
           <li style="text-align:left; margin-left:8px;">A button it's text shouldn't be long, hard to read and going too much into detail.</li>
           <li style="text-align:left; margin-left:8px;">A button it's text is the complete opposite of what the button does.</li>
           </ul>
+          </div>
           `
         },
 
         "Icon": {
           content: `
-          <ul>
-          <div class='exampleFrame correct'>
+                    <div class='exampleFrame correct'>
           <template-settings></template-settings>
-          </div>
+
+          <ul>
           <li style="text-align:left; margin-left:8px;">A button it's icon matches the text or functionality the button has.</li>
+          </ul>
+          </div>
 
           <div class='exampleFrame error'>
           <button class="material-symbols-outlined">settings minimize</button>
-          </div>
+
+          <ul>
           <li style="text-align:left; margin-left:8px;">A button has more than one icon.</li>
           <li style="text-align:left; margin-left:8px;">A button it's icon is the complete opposite of what the button does.</li>
           </ul>
+          </div>
+
           `
         },
 
         "Responsiveness": {
           content: `
-          <ul>
-          <div class='exampleFrame correct'>
+                    <div class='exampleFrame correct'>
           <template-settings></template-settings>
           <button>Centered</button>
-          </div>
+
+          <ul>
           <li style="text-align:left; margin-left:8px;">A button it's icon and text are always centered no matter the width or height.</li>
           </ul>
+          </div>
           `
         },
       },
