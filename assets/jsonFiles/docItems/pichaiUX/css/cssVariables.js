@@ -59,7 +59,7 @@ let cssVars = {
                 },
                 wallpaperBrightness: {
                     description: "The brightness level of the wallpaper, where 1 is the default.",
-                    defaultValue: '0.9',
+                    defaultValue: '0.83',
                 },
                 hueRotation: {
                     description: "The hue rotation applied to an element, specified in degrees (e.g., '0deg').",
