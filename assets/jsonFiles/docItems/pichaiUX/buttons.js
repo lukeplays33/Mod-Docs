@@ -158,7 +158,7 @@ let buttons = {
         "Responsiveness": {
           content: `
                     <div class='exampleFrame correct'>
-                    <div class="columnDirection">
+                    <div class="exampleFrame columnDirection">
           <template-settings></template-settings>
           <button>Centered</button>
           </div>

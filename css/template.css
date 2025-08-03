@@ -3,6 +3,8 @@
 .columnDirection {
     flex-direction: column;
     max-width:90%;
+
+    background-color:transparent;
 }
 
 .columnDirection #displayFile {
