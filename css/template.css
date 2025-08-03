@@ -1,16 +1,3 @@
-/* css file for classes users can use by default in mod docs */
-
-.columnDirection {
-    flex-direction: column;
-    max-width:90%;
-
-    background-color:transparent;
-}
-
-.columnDirection #displayFile {
-    height:300px;
-}
-
 /* class for frames where images can be put in inside of accordions */
 .exampleFrame {
   background-color: var(--secondairyContainer);
@@ -42,4 +29,17 @@
 
 .correct {
     background-color:var(--check)
+}
+
+/* css file for classes users can use by default in mod docs */
+
+.columnDirection {
+    flex-direction: column;
+    max-width:90%;
+
+    background-color:transparent;
+}
+
+.columnDirection #displayFile {
+    height:300px;
 }
