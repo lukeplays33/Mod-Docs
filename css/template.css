@@ -22,7 +22,8 @@
   margin-bottom:8px;
   margin-top:8px;
 
-  display:flex;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }

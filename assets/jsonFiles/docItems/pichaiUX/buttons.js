@@ -93,17 +93,21 @@ let buttons = {
       variables: { //the input or outputs it can have, the types they return or accept such as a string or number
         "Size": {
           content: `
-          <ul>
           <div class='exampleFrame correct'>
           <button> This button has a correct sizing!</button>
-          </div>
+
+                    <ul>
           <li style="text-align:left; margin-left:8px;">A button it's width/height is responsive to it's text content and wraps around it with even spacing.</li>
+          </ul>
+          </div>
 
           <div class='exampleFrame error'>
           <button style="width:60px; max-height:60px"> This button has a incorrect sizing!</button>
-          </div>
+
+                    <ul>
           <li style="text-align:left; margin-left:8px;">A button it's width/height is narrower than it's text.</li>
           </ul>
+          </div>
           `
         },
 
