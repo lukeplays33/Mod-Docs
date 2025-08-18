@@ -91,7 +91,7 @@ let responsiveness = {
           <img src='https://i.ibb.co/Q7KgBWDG/lukeplays33-github-io-Mod-Docs-page-Pichai-UX-Responsiveness-1.png'>
 
                     <ul>
-          <li style="text-align:left; margin-left:8px;">A drawer is open by default if the device is in landscape mode</li>
+          <li style="text-align:left; margin-left:8px;">A drawer is open by default if the device is in landscape mode.</li>
           </ul>
           </div>
 
@@ -99,11 +99,29 @@ let responsiveness = {
           <img src='https://i.ibb.co/hFNrxqXy/lukeplays33-github-io-Mod-Docs-page-Pichai-UX-Responsiveness.png'>
 
                     <ul>
-          <li style="text-align:left; margin-left:8px;">A drawer is closed by default in portrait mode</li>
+          <li style="text-align:left; margin-left:8px;">A drawer is closed by default in portrait mode, this preserves more sccreen space.</li>
+          </ul>
+          </div>
+          `
+        },
+
+        'Quick Settings Panel': {
+          content: `
+          <div class='exampleFrame correct'>
+          <img src='https://i.ibb.co/gLzWdW1Z/lukeplays33-github-io-Mod-Docs-Pixel-7-1.png'>
+
+                    <ul>
+          <li style="text-align:left; margin-left:8px;">The Quick Settings panel appears below the Quick Settings Button for better accesebility since someones hand is at the top of the screen and cant stretch accros it.</li>
           </ul>
           </div>
 
-          <p> In the above examples you see how a drawer reacts to various screen orientations
+          <div class='exampleFrame correct'>
+          <img src='https://i.ibb.co/wNZnczyg/lukeplays33-github-io-Mod-Docs-Pixel-7.png'>
+
+                    <ul>
+          <li style="text-align:left; margin-left:8px;">The Quick Settings panel appears at the bottom of the screen for better accesebility since someones hand is at the bottom.</li>
+          </ul>
+          </div>
           `
         },
       },
