@@ -99,9 +99,11 @@ let responsiveness = {
           <img src='https://i.ibb.co/hFNrxqXy/lukeplays33-github-io-Mod-Docs-page-Pichai-UX-Responsiveness.png'>
 
                     <ul>
-          <li style="text-align:left; margin-left:8px;">A drawer is closed by default in portrait mode.</li>
+          <li style="text-align:left; margin-left:8px;">A drawer is closed by default in portrait mode</li>
           </ul>
           </div>
+
+          <p> In the above examples you see how a drawer reacts to various screen orientations
           `
         },
       },
