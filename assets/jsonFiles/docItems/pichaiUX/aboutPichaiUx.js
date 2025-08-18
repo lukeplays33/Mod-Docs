@@ -62,7 +62,7 @@ let aboutPichaiUX = {
           description: 'The third principle of Pichai Ux is playfullness, with fun shapes, playfull aniamtions and fun animals or figures incorporated into the design we make the design more playfull.',
         },
         "Easy to use": {
-          description: 'The fourth principle of Pichai Ux is easy to use, Pichai UX aims at making designs easy, fun and quick, with tempaltes, extra functions and new elements we hope to increase productivity and speed of making new designs and building websites. <br> Not only that Pichai UX also aims at making the user navigation for its users easy and fast, limiting clicks and getting things done quickly!',
+          description: 'The fourth principle of Pichai Ux is easy to use, Pichai UX aims at making designs easy, fun and quick, with templates, extra functions and new elements we hope to increase productivity and speed of making new designs and building websites.',
         },
       },
 

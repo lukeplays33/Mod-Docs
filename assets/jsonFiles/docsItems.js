@@ -24,6 +24,8 @@ let docsItemsJson = {
       'Initializing Pichai UX': initPichaiUX,
       'Global items': globalItemsPichaiUX,
 
+      "General Guidelines": 'Type: divider',
+
       "Elements": 'Type: divider',
       'Buttons': buttons,
       "CSS": 'Type: divider',
