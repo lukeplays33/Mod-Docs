@@ -12,6 +12,7 @@ import { initPichaiUX } from './docItems/pichaiUX/initPichaiUX.js';
 import { aboutPichaiUX } from './docItems/pichaiUX/aboutPichaiUx.js';
 import { buttons } from './docItems/pichaiUX/elements/buttons.js';
 import { globalItemsPichaiUX } from './docItems/pichaiUX/global.js';
+import { responsiveness } from './docItems/pichaiUX/globalGuidelines/responsiveness.js'
 
 import { cssVars } from './docItems/pichaiUX/css/cssVariables.js';
 
@@ -25,7 +26,7 @@ let docsItemsJson = {
       'Global items': globalItemsPichaiUX,
 
       "General Guidelines": 'Type: divider',
-      'Responsiveness': globalItemsPichaiUX,
+      'Responsiveness': responsiveness,
 
       "Elements": 'Type: divider',
       'Buttons': buttons,

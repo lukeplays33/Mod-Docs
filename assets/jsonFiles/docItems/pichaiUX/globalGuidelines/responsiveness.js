@@ -1,4 +1,4 @@
-let initPichaiUX = {
+let responsiveness = {
   about: {
 
     installation: {
@@ -473,4 +473,4 @@ let initPichaiUX = {
   },
 }
 
-export { initPichaiUX };
+export { responsiveness };
