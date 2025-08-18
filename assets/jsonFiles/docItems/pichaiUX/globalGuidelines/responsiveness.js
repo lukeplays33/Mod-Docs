@@ -70,7 +70,7 @@ let responsiveness = {
 
     "Landscape VS Portrait mode": {
       generalInformation: {
-        description: 'When desinging a website Pichai UX does not build based on what the screen size is of the device but rather its orientation. <br> Weve noticed that most of the time it s not needed to design specifically for every device, since their almost always rectengular and not squared or rounded(watches excluded) and since Pichai UX automatically sizes its elements to fit the screen all you need to do is to keep an eye on the orientation (if not handled by Pichai UX itself).',
+        description: 'When desinging a website Pichai UX does not build based on what the screen size is of the device but rather its orientation. <br> Weve noticed that most of the time it s not needed to design specifically for every device, since theyre almost always rectengular and not squared or rounded(watches excluded) and since Pichai UX automatically sizes its elements to fit the screen, all you need to do is to keep an eye on the orientation (if not handled by Pichai UX itself).',
         outputValueOptions: [], // none for events, tells what kind of value is outputted
         type: 'Object', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
         displayFile: `
@@ -103,111 +103,6 @@ let responsiveness = {
           </ul>
           </div>
           `
-        },
-      },
-
-      controls: { // tells the docs page to display controls for displayFile
-        fullscreen: true,
-        play: false,
-        console: false,
-        viewCode: false,
-      },
-    },
-
-    "Functions": {
-      generalInformation: {
-        description: 'The Pichai UX functions are functions that developers can use through Pichai UX, these functions handle certain tasks such as creating drawer menus or making dynamic icons. .',
-        outputValueOptions: [], // none for events, tells what kind of value is outputted
-        type: 'Function', // boolean,int, string, function, class etc or event if it's a event or property for property of elements etc
-        displayFile: `
- import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.io/Pichai-UX/imports.js';
-        
- let options = {}; // A object with al the options you want to initialize Pichai UX with.
-        
- let pichai = new PichaiUX(options);
- pichai.initialize();`, // the file that is displayed all together with the info, it can be an image, video, a code file or a interactive demo that let's user see what happens when a variable it's value is changed for example.
-        codeFormat: 'javascript', // set to img to display a image
-      },
-
-      variables: { //the input or outputs it can have, the types they return or accept such as a string or number
-
-        initialize: {
-          valueOptions: ['Pichai UX init options'], // an array of options telling the developer wich choices are accepted by the input
-
-          inputTypes: ['Object'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.initialize function Initializes Pichai UX with the given options.',
-
-          accessCode: "pichaiUX.initialize", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        generateDynamicIcon: {
-          outputTypes: ['base64'],
-          inputTypes: ['image'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.generateDynamicIcon fuunction generates an icon(90x90) that matches the website it`s theme.',
-
-          accessCode: "pichaiUX.generateDynamicIcon", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        optimizeTextColor: {
-          defaultValue: 'document',
-
-          inputTypes: ['HTML element'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.optimizeTextColor function optimizes the text color of any given element.',
-
-          accessCode: "pichaiUX.optimizeTextColor", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        createSimpleDrawer: {
-          inputTypes: ['HTML element'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.createSimpleDrawer function allows you to turn a given HTML element into a drawwer menu.',
-
-          accessCode: "pichaiUX.createSimpleDrawer", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        removeSimpleDrawer: {
-          inputTypes: ['HTML element'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.removeSimpleDrawer function allows you to remove a given HTML element that has been turned a drawer menu.',
-
-          accessCode: "pichaiUX.removeSimpleDrawer", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        pickFiles: {
-
-          inputTypes: ['JS callback function'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.pickFiles function is a simple function to quickly open a file picker.',
-
-          accessCode: "pichaiUX.pickFiles", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        updateStyling: {
-          description: 'The pichaiUX.updateStyling function forces Pichai UX to update it`s theming and styles.',
-
-          accessCode: "pichaiUX.updateStyling", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        varExists: {
-          outputTypes: ['boolean'],
-          inputTypes: ['CSS variable name'],  // cannot have any value when in events since they cant accept input values
-
-          description: 'The pichaiUX.varExists function chekcs if a CSS variable has been properly created and/or exists.',
-
-          accessCode: "pichaiUX.varExists", //what the user can type to access the variable; e.g. event.detail.keyCode
-        },
-
-        pichaiStorageKeys: {
-          readOnly: true, // default for events, cannot be false for events
-
-          outputTypes: ['array'],
-
-          description: 'The pichaiUX.pichaiStorageKeys function returns a list of storage keys that is in use by Pichai UX.',
-
-          accessCode: "pichaiUX.pichaiStorageKeys", //what the user can type to access the variable; e.g. event.detail.keyCode
         },
       },
 
