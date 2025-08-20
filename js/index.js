@@ -53,9 +53,7 @@ for (i of items) {
       window.open('https://dreamforge-forging-our-dreams-in-tech.github.io/The-Magic-Garden/');
 
     } else if (this.classList.contains('header')) {
-      if (this.parentNode.platform == 'mobile') {
-        this.parentNode.toggle.click();
-      }
+
 
       this.parentNode.getElementsByClassName('current')[0].classList.remove('current');
       previusDrawerItem.classList.add('current');
